@@ -16,7 +16,8 @@
 | **05A** | Host Supercells & Minkowski Reduction | **PASSED** | Minkowski-reduced cells for Calcite and Dolomite (80, 160, 240 atoms) generated with minimal shear strain and $d_{\mathrm{min}} \ge 9.6\text{--}15.3\text{ \AA}$. | `step05A_host_supercells/resultados_step05A/supercells_R1/` |
 | **05B-R1** | $\mathrm{Pb_{Ca}}$ Size Gate (R1) | **PARTIAL** | Calcite 80-atom cell converged ($\langle\mathrm{Pb-O}\rangle_6 = 2.505\text{ \AA}$, $\Delta E_{\mathrm{sub}} = 2.727\text{ eV}$, $\Delta E_{\mathrm{relax}} = -0.558\text{ eV}$); 160 atoms suffered OOM termination. | `step05B_pbca_size_gate/resultados_step05B_R1/` |
 | **05B-R2** | $\Gamma$-Only Calibrated Strategy | **PARTIAL** | Memory diagnostics implemented; identified system memory ceiling under dense mesh; OOM kill verified by kernel dmesg. | `step05B_pbca_size_gate/diagnostico_memoria_R2/` |
-| **05B-R3** | 8 MPI Domain Decomposition Gate | **IN PROGRESS** | Full ionic relaxation in $\Gamma$-point passed for Calcite 80 ($f_{\mathrm{max}} = 0.0212\text{ eV/\AA}$); dense calibration on local 8 MPI reached RAM limit. Cluster migration protocol established for large cells. | `step05B_pbca_size_gate/resultados_step05B_R3/` |
+| **05B-R3** | Adaptive 4/8 MPI Domain Decomposition Gate | **IN PROGRESS** | **Calcite 80 PASSED:** $\Gamma$-point ionic relaxation converged ($f_{\max} = 0.0212\text{ eV/\AA}$, $\Delta E_{\mathrm{sub}} = 2.704\text{ eV}$, $\Delta E_{\mathrm{relax}} = -0.558\text{ eV}$, $\langle\mathrm{Pb-O}\rangle_6 = 2.504\text{ \AA}$) and denser $k$-mesh calibration passed ($|\Delta E| = 0.0228\text{ eV} \le 0.10\text{ eV}$). **Calcite 160:** pristine host converged in 24 SCF iterations ($E = -1275.12325\text{ eV}$); unrelaxed defect reached iter 21 before workstation reboot. Script updated with garbage-collected host calculator for memory safety. Dolomite sequence queued. | `step05B_pbca_size_gate/resultados_step05B_R3/` |
+
 
 ---
 

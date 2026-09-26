@@ -31,4 +31,16 @@ To avoid severe cell distortion produced by standard diagonal expansions or unco
 ## 3. High-Performance Execution & Parallelization
 * **Domain Decomposition:** Calculations on large supercells distribute real-space grid domains across MPI ranks (`parallel={'domain': 8, 'band': 1, 'kpt': 1}`).
 * **Threading Policy:** Strict single-threading per MPI rank (`OMP_NUM_THREADS=1`) to prevent thread contention with ScaLAPACK and BLAS/LAPACK backends.
-* **Memory Management:** Memory usage scales with $N_{\mathrm{atoms}} \times E_{\mathrm{cut}}^{3/2} \times N_{\mathrm{bands}}$. On local workstation hardware (~30 GiB RAM), 80-atom cells are accommodated in $\Gamma$-point mode with 4--8 MPI, whereas $\ge 160$-atom supercells require HPC cluster partitions with $\ge 64\text{--}128\text{ GiB}$ per node.
+* **Memory Management:** Memory usage scales with $N_{\mathrm{atoms}} \times E_{\mathrm{cut}}^{3/2} \times N_{\mathrm{bands}}$. On local workstation hardware (~30 GiB RAM), 80-atom cells are accommodated in $\Gamma$-point mode with 4--8 MPI, whereas $\ge 160$-atom supercells require domain decomposition with strict garbage collection or HPC cluster partitions.
+
+## 4. Multi-Tier Execution Architecture & Workload Placement
+To guarantee auditability, avoid quota exhaustion, and respect hardware memory bounds, the project enforces a clear multi-tier simulation architecture:
+1. **Local Workstation Tier (Strictly Local):**
+   * **First-Principles Quantum Mechanics (DFT):** GPAW (Plane-Wave/LCAO) and Siesta calculations are executed exclusively on the local workstation. No ab initio calculations are dispatched to unverified cloud runners.
+   * **Classical & Reactive Molecular Dynamics:** LAMMPS simulations (REAXFF, empirical force fields) are executed exclusively on the local machine.
+2. **Cloud / GitHub Actions Tier (with Automated Local Migration):**
+   * **Machine-Learned Interatomic Potentials (MLIPs) & Analytics:** Python data processing, structure generation, MACE, and CHGNet evaluations can execute within the GitHub repository environment up to available processing thresholds.
+   * **Automatic Migration Ceiling:** As soon as GitHub processing limits (time, memory, or runner quotas) are approached, simulation states and checkpoints migrate automatically to continue execution seamlessly on the local workstation.
+3. **Institutional Cloud Archival (Google Drive):**
+   * Automated mirroring via `scripts/sync_to_gdrive.py` maintains audited, versioned mirrors under the designated agent workspace (`GEMINI-APPLICATIONS/UPb-Carbonate-Geochronology-Petrobras`), ensuring persistent provenance.
+
