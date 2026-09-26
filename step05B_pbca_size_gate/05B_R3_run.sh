@@ -155,6 +155,11 @@ echo ">>> Decisão final"
 run_in_upb_env analysis python \
   "${SCRIPT_DIR}/05B_R3_analyze.py" --phase final
 
+echo
+echo ">>> Espelhamento automático no Google Drive"
+python3 "${PROJECT_ROOT}/scripts/sync_to_gdrive.py" || true
+
 echo "=============================================================================="
 echo "STEP 05B-R3 FINALIZADO"
 echo "=============================================================================="
+
