@@ -31,9 +31,9 @@ def req(name: str) -> str:
 mineral = req("UPB_PBCA_HOST")
 nreq = int(req("UPB_PBCA_NATOMS"))
 
-if world.size != MPI_PROCESSES:
+if world.size not in (4, 8):
     raise RuntimeError(
-        f"Step05B-R3 requer {MPI_PROCESSES} MPI ranks; world.size={world.size}"
+        f"Step05B-R3 requer 4 ou 8 MPI ranks; world.size={world.size}"
     )
 
 if mineral not in SUPERCELLS or nreq not in SUPERCELLS[mineral]:
@@ -167,18 +167,36 @@ local_ok = bool(
 
 # Full ionic relaxation, fixed cell.
 defect.set_constraint()
-opt_full = BFGS(
-    defect,
-    logfile=str(LOGS / f"{tag}_full_gamma.log"),
-    trajectory=str(RELAX / f"{tag}_full_gamma.traj"),
-    maxstep=0.12,
-)
-full_ok = bool(
-    opt_full.run(
-        fmax=FINAL_FMAX_EV_A,
-        steps=MAX_FINAL_STEPS,
+full_traj_file = RELAX / f"{tag}_full_gamma.traj"
+full_ok = False
+if full_traj_file.exists():
+    try:
+        past_traj = read(str(full_traj_file), index=-1)
+        past_forces = past_traj.get_forces()
+        past_fmax = float(np.max(np.linalg.norm(past_forces, axis=1)))
+        if past_fmax <= FINAL_FMAX_EV_A:
+            defect = past_traj
+            full_ok = True
+            local_ok = True
+            if world.rank == 0:
+                print(f">>> Trajetoria relaxada existente reutilizada: fmax={past_fmax:.6f} eV/A <= {FINAL_FMAX_EV_A}")
+    except Exception as e:
+        if world.rank == 0:
+            print(f">>> Nao foi possivel carregar trajetoria preexistente: {e}")
+
+if not full_ok:
+    opt_full = BFGS(
+        defect,
+        logfile=str(LOGS / f"{tag}_full_gamma.log"),
+        trajectory=str(RELAX / f"{tag}_full_gamma.traj"),
+        maxstep=0.12,
     )
-)
+    full_ok = bool(
+        opt_full.run(
+            fmax=FINAL_FMAX_EV_A,
+            steps=MAX_FINAL_STEPS,
+        )
+    )
 
 e_def_gamma = defect.get_potential_energy()
 f_def_gamma = defect.get_forces()
@@ -194,6 +212,13 @@ pbo6 = sorted(
 
 dense = None
 if nreq == 80:
+    import gc
+    try:
+        del defect.calc
+    except Exception:
+        pass
+    gc.collect()
+
     kmesh = tuple(
         int(x)
         for x in mindistance2monkhorstpack(
@@ -211,12 +236,26 @@ if nreq == 80:
     )
     e_host_dense = host_dense.get_potential_energy()
 
+    try:
+        del host_dense.calc
+        del host_dense
+    except Exception:
+        pass
+    gc.collect()
+
     defect_dense = defect.copy()
     defect_dense.calc = dense80_calc(
         LOGS / f"{tag}_PbCa_dense80.txt",
         kmesh,
     )
     e_def_dense = defect_dense.get_potential_energy()
+
+    try:
+        del defect_dense.calc
+        del defect_dense
+    except Exception:
+        pass
+    gc.collect()
 
     raw_gamma = float(e_def_gamma - e_host_gamma)
     raw_dense = float(e_def_dense - e_host_dense)

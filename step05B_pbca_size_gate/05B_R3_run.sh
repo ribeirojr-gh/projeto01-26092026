@@ -74,8 +74,13 @@ run_case() {
     return
   fi
 
+  local mpi_current=8
+  if (( natoms == 80 )); then
+    mpi_current=4
+  fi
+
   echo
-  echo ">>> ${mineral}: Pb_Ca ${natoms} átomos / ${MPI_N} MPI"
+  echo ">>> ${mineral}: Pb_Ca ${natoms} átomos / ${mpi_current} MPI"
 
   set +e
   (
@@ -83,7 +88,7 @@ run_case() {
       OMP_NUM_THREADS=1 \
       UPB_PBCA_HOST="${mineral}" \
       UPB_PBCA_NATOMS="${natoms}" \
-      mpiexec -n "${MPI_N}" gpaw python \
+      mpiexec -n "${mpi_current}" gpaw python \
         "${SCRIPT_DIR}/05B_R3_pbca_case.py"
   ) |& tee "${case_log}" &
   jobpid=$!

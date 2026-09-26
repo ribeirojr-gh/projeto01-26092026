@@ -37,9 +37,8 @@ XC = "PBEsol"
 ECUT_EV = 1400.0
 SMEARING_EV = 0.05
 
-# Validated in the R3 dry-run: 8 MPI gives 2x2x2 spatial decomposition
-# for the 80-atom Gamma calculation.
-MPI_PROCESSES = 8
+# Validated: 4 MPI for 80-atom memory safety on local workstation, 8 MPI for cluster
+MPI_PROCESSES = 4
 NBANDS = -8
 
 # Gamma is used only for the finite-size sequence.  Each 80-atom host
