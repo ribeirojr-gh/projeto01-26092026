@@ -85,10 +85,11 @@ run_case() {
   set +e
   (
     run_in_upb_env gpaw env \
+      PYTHONUNBUFFERED=1 \
       OMP_NUM_THREADS=1 \
       UPB_PBCA_HOST="${mineral}" \
       UPB_PBCA_NATOMS="${natoms}" \
-      mpiexec -n "${mpi_current}" gpaw python \
+      mpiexec -n "${mpi_current}" gpaw python -u \
         "${SCRIPT_DIR}/05B_R3_pbca_case.py"
   ) |& tee "${case_log}" &
   jobpid=$!

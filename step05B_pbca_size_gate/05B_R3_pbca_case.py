@@ -116,9 +116,36 @@ def dense80_calc(txt, kmesh):
 
 
 # Matched pristine Gamma reference.
-host.calc = gamma_calc(LOGS / f"{tag}_host_gamma.txt")
-e_host_gamma = host.get_potential_energy()
-f_host_gamma = host.get_forces()
+host_cache = RESULTS / f"{tag}_host_gamma_data.npz"
+if host_cache.exists():
+    try:
+        data = np.load(host_cache)
+        e_host_gamma = float(data["energy"])
+        f_host_gamma = data["forces"]
+        if world.rank == 0:
+            print(f">>> Pristine host reutilizado de {host_cache}: E = {e_host_gamma:.6f} eV")
+    except Exception as e:
+        if world.rank == 0:
+            print(f">>> Nao foi possivel carregar host cache: {e}, recalculando...")
+        host.calc = gamma_calc(LOGS / f"{tag}_host_gamma.txt")
+        e_host_gamma = host.get_potential_energy()
+        f_host_gamma = host.get_forces()
+        if world.rank == 0:
+            np.savez(host_cache, energy=e_host_gamma, forces=f_host_gamma)
+else:
+    host.calc = gamma_calc(LOGS / f"{tag}_host_gamma.txt")
+    e_host_gamma = host.get_potential_energy()
+    f_host_gamma = host.get_forces()
+    if world.rank == 0:
+        np.savez(host_cache, energy=e_host_gamma, forces=f_host_gamma)
+
+# Release pristine host calculator immediately to halve peak RAM before defect calculation
+import gc
+try:
+    del host.calc
+except Exception:
+    pass
+gc.collect()
 
 # Deterministic Ca site nearest fractional center.
 scaled = host.get_scaled_positions(wrap=True)
@@ -142,33 +169,11 @@ defect = initial.copy()
 defect.calc = gamma_calc(LOGS / f"{tag}_PbCa_gamma.txt")
 e_unrel_gamma = defect.get_potential_energy()
 
-# Local pre-relaxation.
-distances = defect.get_distances(
-    pb_index, np.arange(len(defect)), mic=True
-)
-fixed = [
-    i for i, d in enumerate(distances)
-    if d > LOCAL_RELAX_RADIUS_A and i != pb_index
-]
-defect.set_constraint(FixAtoms(indices=fixed))
 
-opt_local = BFGS(
-    defect,
-    logfile=str(LOGS / f"{tag}_local_gamma.log"),
-    trajectory=str(RELAX / f"{tag}_local_gamma.traj"),
-    maxstep=0.15,
-)
-local_ok = bool(
-    opt_local.run(
-        fmax=LOCAL_FMAX_EV_A,
-        steps=MAX_LOCAL_STEPS,
-    )
-)
-
-# Full ionic relaxation, fixed cell.
-defect.set_constraint()
+# Check if full relaxation trajectory already exists and is converged
 full_traj_file = RELAX / f"{tag}_full_gamma.traj"
 full_ok = False
+local_ok = False
 if full_traj_file.exists():
     try:
         past_traj = read(str(full_traj_file), index=-1)
@@ -185,6 +190,31 @@ if full_traj_file.exists():
             print(f">>> Nao foi possivel carregar trajetoria preexistente: {e}")
 
 if not full_ok:
+    # Local pre-relaxation.
+    distances = defect.get_distances(
+        pb_index, np.arange(len(defect)), mic=True
+    )
+    fixed = [
+        i for i, d in enumerate(distances)
+        if d > LOCAL_RELAX_RADIUS_A and i != pb_index
+    ]
+    defect.set_constraint(FixAtoms(indices=fixed))
+
+    opt_local = BFGS(
+        defect,
+        logfile=str(LOGS / f"{tag}_local_gamma.log"),
+        trajectory=str(RELAX / f"{tag}_local_gamma.traj"),
+        maxstep=0.15,
+    )
+    local_ok = bool(
+        opt_local.run(
+            fmax=LOCAL_FMAX_EV_A,
+            steps=MAX_LOCAL_STEPS,
+        )
+    )
+
+    # Full ionic relaxation, fixed cell.
+    defect.set_constraint()
     opt_full = BFGS(
         defect,
         logfile=str(LOGS / f"{tag}_full_gamma.log"),
@@ -197,6 +227,7 @@ if not full_ok:
             steps=MAX_FINAL_STEPS,
         )
     )
+
 
 e_def_gamma = defect.get_potential_energy()
 f_def_gamma = defect.get_forces()
