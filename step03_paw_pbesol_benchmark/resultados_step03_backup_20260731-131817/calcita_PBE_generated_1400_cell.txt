@@ -1,0 +1,212 @@
+
+  ___ ___ ___ _ _ _  
+ |   |   |_  | | | | 
+ | | | | | . | | | | 
+ |__ |  _|___|_____|  25.7.0
+ |___|_|             
+
+User:   luiz@AlienA51
+Date:   Thu Jul 23 12:37:33 2026
+Arch:   x86_64
+Pid:    991
+CWD:    /home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/step03_paw_pbesol_benchmark
+Python: 3.11.15
+gpaw:   /home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw
+_gpaw:  /home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/
+        _gpaw.cpython-311-x86_64-linux-gnu.so
+ase:    /home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/ase (version 3.29.0)
+numpy:  /home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/numpy (version 2.4.6)
+scipy:  /home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/scipy (version 1.17.1)
+libxc:  7.0.0
+units:  Angstrom and eV
+cores: 4
+OpenMP: True
+OMP_NUM_THREADS: 1
+
+Input parameters:
+  convergence: {density: 1e-06,
+                forces: 0.0001}
+  kpts: {gamma: True,
+         size: (5, 5, 5)}
+  mode: {dedecut: estimate,
+         ecut: 1400.0,
+         name: pw}
+  occupations: {name: fermi-dirac,
+                width: 0.05}
+  xc: PBE
+
+System changes: positions, numbers, cell, pbc, initial_charges, initial_magmoms 
+
+Initialize ...
+
+species:
+  Ca:
+    name: Calcium
+    id: a8b644554aaa5c931a83b97628f19eb7
+    Z: 20.0
+    valence: 10
+    core: 10
+    charge: 0.0
+    file: /home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/step03_paw_pbesol_benchmark/paw_generated/PBE/Ca.PBE
+    compensation charges: {type: gauss,
+                           rc: 0.37,
+                           lmax: 2}
+    cutoffs: {filter: 2.10,
+              core: 1.17}
+    projectors:
+      #              energy  rcut
+      - 3s(2.00)   -47.086   1.175
+      - 4s(2.00)    -3.766   1.175
+      - 3p(6.00)   -28.008   1.154
+      -  p          -0.797   1.154
+      -  d           0.000   0.937
+  
+    # Using partial waves for Ca as LCAO basis
+
+  C:
+    name: Carbon
+    id: 3fb1444535ce13701a4c120c96b79a17
+    Z: 6.0
+    valence: 4
+    core: 2
+    charge: 0.0
+    file: /home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/step03_paw_pbesol_benchmark/paw_generated/PBE/C.PBE
+    compensation charges: {type: gauss,
+                           rc: 0.20,
+                           lmax: 2}
+    cutoffs: {filter: 1.14,
+              core: 1.14}
+    projectors:
+      #              energy  rcut
+      - 2s(2.00)   -13.751   0.635
+      - 2p(2.00)    -5.285   0.635
+      -  s          13.461   0.635
+      -  p          21.927   0.635
+      -  d           0.000   0.635
+  
+    # Using partial waves for C as LCAO basis
+
+  O:
+    name: Oxygen
+    id: 94aced97d8e520598f046c77e8dd1989
+    Z: 8.0
+    valence: 6
+    core: 2
+    charge: 0.0
+    file: /home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/step03_paw_pbesol_benchmark/paw_generated/PBE/O.PBE
+    compensation charges: {type: gauss,
+                           rc: 0.21,
+                           lmax: 2}
+    cutoffs: {filter: 1.17,
+              core: 0.83}
+    projectors:
+      #              energy  rcut
+      - 2s(2.00)   -23.961   0.688
+      - 2p(4.00)    -9.029   0.598
+      -  s           3.251   0.688
+      -  p          18.182   0.598
+      -  d           0.000   0.619
+  
+    # Using partial waves for O as LCAO basis
+
+Reference energy: -51322.110147  # eV
+
+Spin-paired calculation
+
+Convergence criteria:
+ Maximum [total energy] change in last 3 cyles: 0.0005 eV / valence electron
+ Maximum integral of absolute [dens]ity change: 1e-06 electrons / valence electron
+ Maximum integral of absolute [eigenst]ate change: 4e-08 eV^2 / valence electron
+ Maximum change in the atomic [forces] across last 2 cycles: 0.0001 eV/Ang OR
+Maximum error relative to the maximum force is below inf
+ Maximum number of scf [iter]ations: 333
+ (Square brackets indicate name in SCF output, whereas a 'c' in
+ the SCF output indicates the quantity has converged.)
+
+Symmetries present (total): 2
+
+  ( 1  0  0)  (-1  0  0)
+  ( 0  1  0)  ( 0 -1  0)
+  ( 0  0  1)  ( 0  0 -1)
+
+125 k-points: 5 x 5 x 5 Monkhorst-Pack grid
+63 k-points in the irreducible part of the Brillouin zone
+       k-points in crystal coordinates                weights
+   0:     0.00000000    0.00000000    0.00000000          1/125
+   1:     0.00000000    0.00000000    0.20000000          2/125
+   2:     0.00000000    0.00000000    0.40000000          2/125
+   3:     0.00000000    0.20000000   -0.40000000          2/125
+   4:     0.00000000    0.20000000   -0.20000000          2/125
+   5:     0.00000000    0.20000000    0.00000000          2/125
+   6:     0.00000000    0.20000000    0.20000000          2/125
+   7:     0.00000000    0.20000000    0.40000000          2/125
+   8:     0.00000000    0.40000000   -0.40000000          2/125
+   9:     0.00000000    0.40000000   -0.20000000          2/125
+          ...
+  62:     0.40000000    0.40000000    0.40000000          2/125
+
+Wave functions: Plane wave expansion
+  Cutoff energy: 1400.000 eV
+  Number of coefficients (min, max): 15110, 15172
+  Pulay-stress correction: -0.000123 eV/Ang^3 (de/decut=-0.000017)
+  Using FFTW library
+  ScaLapack parameters: grid=1x1, blocksize=None
+  Wavefunction extrapolation:
+    Improved wavefunction reuse through dual PAW basis 
+
+Occupation numbers: Fermi-Dirac:
+  width: 0.0500  # eV
+ 
+
+Eigensolver
+   Davidson(niter=2) 
+
+Densities:
+  Coarse grid: 56*56*56 grid
+  Fine grid: 112*112*112 grid
+  Total Charge: 0.000000 
+
+Density mixing:
+  Method: separate
+  Backend: pulay
+  Linear mixing parameter: 0.05
+  old densities: 5
+  Damping of long wavelength oscillations: 50 
+
+Hamiltonian:
+  XC and Coulomb potentials evaluated on a 112*112*112 grid
+  Using the PBE Exchange-Correlation functional
+  External potential:
+    NoExternalPotential
+ 
+
+XC parameters: PBE with 2 nearest neighbor stencil
+
+Memory estimate:
+  Process memory now: 264.34 MiB
+  Calculator: 305.86 MiB
+    Density: 72.43 MiB
+      Arrays: 34.84 MiB
+      Localized functions: 24.19 MiB
+      Mixer: 13.40 MiB
+    Hamiltonian: 23.43 MiB
+      Arrays: 22.78 MiB
+      XC: 0.00 MiB
+      Poisson: 0.00 MiB
+      vbar: 0.65 MiB
+    Wavefunctions: 210.00 MiB
+      Arrays psit_nG: 145.85 MiB
+      Eigensolver: 11.15 MiB
+      Projections: 1.25 MiB
+      Projectors: 41.58 MiB
+      PW-descriptor: 10.17 MiB
+
+Total number of cores used: 4
+Parallelization over k-points: 4
+
+Number of atoms: 10
+Number of atomic orbitals: 42
+Number of bands in calculation: 42
+Number of valence electrons: 64
+Bands to converge: occupied
+

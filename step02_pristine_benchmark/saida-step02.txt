@@ -1,0 +1,215 @@
+==============================================================================
+STEP 02 — PRÉ-RELAXAÇÃO MLIP + CONVERGÊNCIA NUMÉRICA GPAW
+==============================================================================
+Data: Wed Jul 22 12:40:56 -03 2026
+Host: AlienA51
+OMP_NUM_THREADS=1
+
+>>> STEP 02A — CHGNet -> MACE (GPU, processo único)
+/home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/mlip/lib/python3.11/site-packages/chgnet/model/model.py:898: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /__w/pytorch/pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:822.)
+  volumes = torch.tensor(volumes, dtype=TORCH_DTYPE, device=atomic_numbers.device)
+/home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/mlip/lib/python3.11/site-packages/e3nn/o3/_wigner.py:10: UserWarning: Environment variable TORCH_FORCE_NO_WEIGHTS_ONLY_LOAD detected, since the`weights_only` argument was not explicitly passed to `torch.load`, forcing weights_only=False.
+  _Jd, _W3j_flat, _W3j_indices = torch.load(os.path.join(os.path.dirname(__file__), 'constants.pt'))
+/home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/mlip/lib/python3.11/site-packages/mace/calculators/mace.py:226: UserWarning: Environment variable TORCH_FORCE_NO_WEIGHTS_ONLY_LOAD detected, since the`weights_only` argument was not explicitly passed to `torch.load`, forcing weights_only=False.
+  torch.load(f=model_path, map_location=device)
+/home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/mlip/lib/python3.11/site-packages/mace/calculators/mace.py:226: UserWarning: Environment variable TORCH_FORCE_NO_WEIGHTS_ONLY_LOAD detected, since the`weights_only` argument was not explicitly passed to `torch.load`, forcing weights_only=False.
+  torch.load(f=model_path, map_location=device)
+================================================================================
+STEP 02A — PRÉ-RELAXAÇÃO MLIP
+================================================================================
+GPU: NVIDIA GeForce RTX 5070 Laptop GPU
+PyTorch: 2.13.0+cu130
+CUDA: 13.0
+MACE: medium-mpa-0 | dtype: float64
+fmax: 0.02 eV/Å
+================================================================================
+
+[calcita] CHGNet — relaxação completa de célula + átomos
+CHGNet v0.3.0 initialized with 412,525 parameters
+CHGNet will run on cuda
+      Step     Time          Energy          fmax
+FIRE:    0 12:40:59      -78.900574        1.074791
+FIRE:    1 12:40:59      -78.948624        0.395191
+FIRE:    2 12:40:59      -78.941216        0.593396
+FIRE:    3 12:40:59      -78.946976        0.478248
+FIRE:    4 12:40:59      -78.954758        0.329620
+FIRE:    5 12:41:00      -78.959915        0.245621
+FIRE:    6 12:41:00      -78.960129        0.209100
+FIRE:    7 12:41:00      -78.960335        0.201181
+FIRE:    8 12:41:00      -78.960732        0.185668
+FIRE:    9 12:41:00      -78.961273        0.176248
+FIRE:   10 12:41:00      -78.961906        0.184550
+FIRE:   11 12:41:00      -78.962585        0.194114
+FIRE:   12 12:41:00      -78.963257        0.204315
+FIRE:   13 12:41:00      -78.963921        0.214310
+FIRE:   14 12:41:00      -78.964622        0.224047
+FIRE:   15 12:41:00      -78.965401        0.232032
+FIRE:   16 12:41:00      -78.966377        0.236589
+FIRE:   17 12:41:00      -78.967651        0.236090
+FIRE:   18 12:41:00      -78.969315        0.229139
+FIRE:   19 12:41:00      -78.971390        0.214914
+FIRE:   20 12:41:00      -78.973763        0.194138
+FIRE:   21 12:41:00      -78.976341        0.170521
+FIRE:   22 12:41:00      -78.979233        0.150646
+FIRE:   23 12:41:00      -78.982666        0.140296
+FIRE:   24 12:41:00      -78.986565        0.141072
+FIRE:   25 12:41:00      -78.990456        0.144671
+FIRE:   26 12:41:00      -78.994385        0.129394
+FIRE:   27 12:41:00      -78.998299        0.085965
+FIRE:   28 12:41:00      -79.001305        0.067442
+FIRE:   29 12:41:00      -79.003433        0.028095
+FIRE:   30 12:41:00      -79.003632        0.036673
+FIRE:   31 12:41:01      -79.003670        0.026431
+FIRE:   32 12:41:01      -79.003700        0.021884
+FIRE:   33 12:41:01      -79.003708        0.021525
+FIRE:   34 12:41:01      -79.003708        0.021504
+FIRE:   35 12:41:01      -79.003708        0.021468
+FIRE:   36 12:41:01      -79.003716        0.021420
+FIRE:   37 12:41:01      -79.003716        0.021358
+FIRE:   38 12:41:01      -79.003723        0.021284
+FIRE:   39 12:41:01      -79.003723        0.021204
+FIRE:   40 12:41:01      -79.003731        0.021108
+FIRE:   41 12:41:01      -79.003738        0.020981
+FIRE:   42 12:41:01      -79.003746        0.020804
+FIRE:   43 12:41:01      -79.003761        0.020566
+FIRE:   44 12:41:01      -79.003769        0.020250
+FIRE:   45 12:41:01      -79.003784        0.019857
+
+[calcita] MACE — relaxação completa a partir do resultado CHGNet
+cuequivariance or cuequivariance_torch is not available. Cuequivariance acceleration will be disabled.
+Using medium MPA-0 model as default MACE-MP model, to use previous (before 3.10) default model please specify 'medium' as model argument
+Using Materials Project MACE for MACECalculator with /home/luiz/.cache/mace/macempa0mediummodel
+Using float64 for MACECalculator, which is slower but more accurate. Recommended for geometry optimization.
+
+[dolomita] CHGNet — relaxação completa de célula + átomos
+CHGNet v0.3.0 initialized with 412,525 parameters
+CHGNet will run on cuda
+      Step     Time          Energy          fmax
+FIRE:    0 12:41:04      -77.386879        0.735424
+FIRE:    1 12:41:05      -77.410591        0.273313
+FIRE:    2 12:41:05      -77.405937        0.490561
+FIRE:    3 12:41:05      -77.409317        0.409609
+FIRE:    4 12:41:05      -77.414047        0.263402
+FIRE:    5 12:41:05      -77.417366        0.179610
+FIRE:    6 12:41:05      -77.417885        0.233488
+FIRE:    7 12:41:05      -77.418030        0.231193
+FIRE:    8 12:41:05      -77.418320        0.226654
+FIRE:    9 12:41:05      -77.418716        0.220126
+FIRE:   10 12:41:05      -77.419197        0.211858
+FIRE:   11 12:41:05      -77.419693        0.202292
+FIRE:   12 12:41:05      -77.420212        0.191917
+FIRE:   13 12:41:05      -77.420715        0.181465
+FIRE:   14 12:41:05      -77.421280        0.170568
+FIRE:   15 12:41:05      -77.421944        0.160193
+FIRE:   16 12:41:05      -77.422752        0.151434
+FIRE:   17 12:41:05      -77.423798        0.145273
+FIRE:   18 12:41:05      -77.425095        0.142399
+FIRE:   19 12:41:05      -77.426620        0.141689
+FIRE:   20 12:41:05      -77.428268        0.143698
+FIRE:   21 12:41:05      -77.429962        0.143127
+FIRE:   22 12:41:05      -77.431801        0.133992
+FIRE:   23 12:41:06      -77.433784        0.112900
+FIRE:   24 12:41:06      -77.435753        0.081644
+FIRE:   25 12:41:06      -77.437477        0.068315
+FIRE:   26 12:41:06      -77.439217        0.057106
+FIRE:   27 12:41:06      -77.440735        0.046153
+FIRE:   28 12:41:06      -77.441872        0.046496
+FIRE:   29 12:41:06      -77.442612        0.031502
+FIRE:   30 12:41:06      -77.442642        0.024996
+FIRE:   31 12:41:06      -77.442665        0.023319
+FIRE:   32 12:41:06      -77.442673        0.020370
+FIRE:   33 12:41:06      -77.442696        0.017128
+
+[dolomita] MACE — relaxação completa a partir do resultado CHGNet
+Using medium MPA-0 model as default MACE-MP model, to use previous (before 3.10) default model please specify 'medium' as model argument
+Using Materials Project MACE for MACECalculator with /home/luiz/.cache/mace/macempa0mediummodel
+Using float64 for MACECalculator, which is slower but more accurate. Recommended for geometry optimization.
+
+STEP 02A concluído.
+Resumo: /home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/step02_pristine_benchmark/resultados_mlip/resumo_mlip.csv
+
+>>> STEP 02B — GPAW/PBEsol (4 processos MPI)
+rank=0 L00: Traceback (most recent call last):
+rank=0 L01:   File "/home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/gpaw/bin/gpaw", line 9, in <module>
+rank=0 L02:     sys.exit(main())
+rank=0 L03:              ^^^^^^
+rank=0 L04:   File "/home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/cli/main.py", line 90, in main
+rank=0 L05:     ase_main('gpaw', 'GPAW command-line tool', __version__,
+rank=0 L06:   File "/home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/ase/cli/main.py", line 106, in main
+rank=0 L07:     f(args)
+rank=0 L08:   File "/home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/cli/python.py", line 57, in run
+rank=0 L09:     runpy.run_path(args.arguments[0], run_name='__main__')
+rank=0 L10:   File "<frozen runpy>", line 291, in run_path
+rank=0 L11:   File "<frozen runpy>", line 98, in _run_module_code
+rank=0 L12:   File "<frozen runpy>", line 88, in _run_code
+rank=0 L13:   File "02B_gpaw_convergence.py", line 24, in <module>
+rank=0 L14:     from config_step02 import (
+rank=0 L15: ModuleNotFoundError: No module named 'config_step02'
+GPAW CLEANUP (node 0): <class 'ModuleNotFoundError'> occurred.  Calling MPI_Abort!
+rank=2 L00: Traceback (most recent call last):
+rank=2 L01:   File "/home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/gpaw/bin/gpaw", line 9, in <module>
+rank=2 L02:     sys.exit(main())
+rank=2 L03:              ^^^^^^
+rank=2 L04:   File "/home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/cli/main.py", line 90, in main
+rank=2 L05:     ase_main('gpaw', 'GPAW command-line tool', __version__,
+rank=2 L06:   File "/home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/ase/cli/main.py", line 106, in main
+rank=2 L07:     f(args)
+rank=2 L08:   File "/home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/cli/python.py", line 57, in run
+rank=2 L09:     runpy.run_path(args.arguments[0], run_name='__main__')
+rank=2 L10:   File "<frozen runpy>", line 291, in run_path
+rank=2 L11:   File "<frozen runpy>", line 98, in _run_module_code
+rank=2 L12:   File "<frozen runpy>", line 88, in _run_code
+rank=2 L13:   File "02B_gpaw_convergence.py", line 24, in <module>
+rank=2 L14:     from config_step02 import (
+rank=2 L15: ModuleNotFoundError: No module named 'config_step02'
+GPAW CLEANUP (node 2): <class 'ModuleNotFoundError'> occurred.  Calling MPI_Abort!
+rank=1 L00: Traceback (most recent call last):
+rank=1 L01:   File "/home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/gpaw/bin/gpaw", line 9, in <module>
+rank=1 L02:     sys.exit(main())
+rank=1 L03:              ^^^^^^
+rank=1 L04:   File "/home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/cli/main.py", line 90, in main
+rank=1 L05:     ase_main('gpaw', 'GPAW command-line tool', __version__,
+rank=1 L06:   File "/home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/ase/cli/main.py", line 106, in main
+rank=1 L07:     f(args)
+rank=1 L08:   File "/home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/cli/python.py", line 57, in run
+rank=1 L09:     runpy.run_path(args.arguments[0], run_name='__main__')
+rank=1 L10:   File "<frozen runpy>", line 291, in run_path
+rank=1 L11:   File "<frozen runpy>", line 98, in _run_module_code
+rank=1 L12:   File "<frozen runpy>", line 88, in _run_code
+rank=1 L13:   File "02B_gpaw_convergence.py", line 24, in <module>
+rank=1 L14:     from config_step02 import (
+rank=1 L15: ModuleNotFoundError: No module named 'config_step02'
+GPAW CLEANUP (node 1): <class 'ModuleNotFoundError'> occurred.  Calling MPI_Abort!
+rank=3 L00: Traceback (most recent call last):
+rank=3 L01:   File "/home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/gpaw/bin/gpaw", line 9, in <module>
+rank=3 L02:     sys.exit(main())
+rank=3 L03:              ^^^^^^
+rank=3 L04:   File "/home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/cli/main.py", line 90, in main
+rank=3 L05:     ase_main('gpaw', 'GPAW command-line tool', __version__,
+rank=3 L06:   File "/home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/ase/cli/main.py", line 106, in main
+rank=3 L07:     f(args)
+rank=3 L08:   File "/home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/cli/python.py", line 57, in run
+rank=3 L09:     runpy.run_path(args.arguments[0], run_name='__main__')
+rank=3 L10:   File "<frozen runpy>", line 291, in run_path
+rank=3 L11:   File "<frozen runpy>", line 98, in _run_module_code
+rank=3 L12:   File "<frozen runpy>", line 88, in _run_code
+rank=3 L13:   File "02B_gpaw_convergence.py", line 24, in <module>
+rank=3 L14:     from config_step02 import (
+rank=3 L15: ModuleNotFoundError: No module named 'config_step02'
+GPAW CLEANUP (node 3): <class 'ModuleNotFoundError'> occurred.  Calling MPI_Abort!
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 0 in communicator MPI_COMM_WORLD
+  Proc: [[35990,1],0]
+  Errorcode: 42
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+prterun has exited due to process rank 0 with PID 0 on node AlienA51 calling
+"abort". This may have caused other processes in the application to be
+terminated by signals sent by prterun (as reported here).
+--------------------------------------------------------------------------
+ 

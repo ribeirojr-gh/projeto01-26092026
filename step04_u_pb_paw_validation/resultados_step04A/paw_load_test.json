@@ -1,0 +1,42 @@
+[
+  {
+    "symbol": "Pb",
+    "xc": "PBE",
+    "setup_dir": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04_u_pb_paw_validation/paw_generated/Pb/PBE",
+    "Z": 82.0,
+    "Nv": 14.0,
+    "Nc": 68.0,
+    "generator_version": "1",
+    "filename": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04_u_pb_paw_validation/paw_generated/Pb/PBE/Pb.PBE"
+  },
+  {
+    "symbol": "Pb",
+    "xc": "PBEsol",
+    "setup_dir": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04_u_pb_paw_validation/paw_generated/Pb/PBEsol",
+    "Z": 82.0,
+    "Nv": 14.0,
+    "Nc": 68.0,
+    "generator_version": "1",
+    "filename": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04_u_pb_paw_validation/paw_generated/Pb/PBEsol/Pb.PBEsol"
+  },
+  {
+    "symbol": "U",
+    "xc": "PBE",
+    "setup_dir": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04_u_pb_paw_validation/paw_generated/U/PBE",
+    "Z": 92.0,
+    "Nv": 14.0,
+    "Nc": 78.0,
+    "generator_version": "3",
+    "filename": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04_u_pb_paw_validation/paw_generated/U/PBE/U.PBE"
+  },
+  {
+    "symbol": "U",
+    "xc": "PBEsol",
+    "setup_dir": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04_u_pb_paw_validation/paw_generated/U/PBEsol",
+    "Z": 92.0,
+    "Nv": 14.0,
+    "Nc": 78.0,
+    "generator_version": "3",
+    "filename": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04_u_pb_paw_validation/paw_generated/U/PBEsol/U.PBEsol"
+  }
+]

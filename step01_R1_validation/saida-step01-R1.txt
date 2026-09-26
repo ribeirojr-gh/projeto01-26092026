@@ -1,0 +1,21 @@
+================================================================================
+ETAPA 01-R1 — VALIDAÇÃO DAS REFERÊNCIAS CRISTALOGRÁFICAS
+================================================================================
+[LOCAL] calcita_COD_9007286.cif
+[DOWNLOAD] https://www.crystallography.net/cod/1010928.cif
+[LOCAL] calcita_MP_mp-3953.cif
+[LOCAL] dolomita_COD_1517797.cif
+[LOCAL] dolomita_MP_mp-6459.cif
+
+[DOLOMITA] StructureMatcher padrão: False
+[DOLOMITA] Anonymous fit: True
+[DOLOMITA] Anonymous mapping: {Species C4+: Element C, Species Ca2+: Element Ca, Species Mg2+: Element Mg, Species O2-: Element O}
+[DOLOMITA] Nenhum match encontrado no scan de tolerâncias.
+
+================================================================================
+ETAPA 01-R1 CONCLUÍDA
+Referências: /home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/step01_R1_validation/tabelas_R1/referencias_cristalograficas_R1.csv
+Comparações: /home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/step01_R1_validation/tabelas_R1/comparacoes_R1.csv
+Coordenação: /home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/step01_R1_validation/tabelas_R1/coordenacao_R1.csv
+Scan dolomita: /home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/step01_R1_validation/tabelas_R1/dolomita_scan_tolerancias_R1.csv
+================================================================================

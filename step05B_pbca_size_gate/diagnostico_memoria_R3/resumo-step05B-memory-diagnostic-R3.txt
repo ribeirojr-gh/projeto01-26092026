@@ -1,0 +1,631 @@
+======================================================================
+RESUMO EXTRAÍDO
+======================================================================
+
+### 4 MPI / auto
+OpenMP: True
+OMP_NUM_THREADS: 1
+
+Input parameters:
+  convergence: {bands: occupied,
+                density: 1e-05,
+                eigenstates: 1e-07,
+                energy: 0.001}
+  eigensolver: {name: dav,
+                niter: 4}
+  kpts: {gamma: True,
+         size: (1, 1, 1)}
+  mode: {dedecut: estimate,
+         ecut: 1400.0,
+         name: pw}
+  nbands: -8
+  occupations: {name: fermi-dirac,
+                width: 0.05}
+  xc: PBEsol
+
+System changes: positions, numbers, cell, pbc, initial_charges, initial_magmoms 
+
+Initialize ...
+
+species:
+  Pb:
+    name: Lead
+    id: 9ce2afbb33eb9eb0120aabe432508c8b
+    Z: 82.0
+    valence: 14
+    core: 68
+--
+  ( 1  0  0)
+  ( 0  1  0)
+  ( 0  0  1)
+
+1 k-point (Gamma)
+1 k-point in the irreducible part of the Brillouin zone
+       k-points in crystal coordinates                weights
+   0:     0.00000000    0.00000000    0.00000000          1/1
+
+Wave functions: Plane wave expansion
+  Cutoff energy: 1400.000 eV
+  Number of coefficients: 116295 (reduced to 58148)
+  Pulay-stress correction: -0.000124 eV/Ang^3 (de/decut=-0.000130)
+  Using FFTW library
+  ScaLapack parameters: grid=2x2, blocksize=64
+  Wavefunction extrapolation:
+    Improved wavefunction reuse through dual PAW basis 
+
+Occupation numbers: Fermi-Dirac:
+  width: 0.0500  # eV
+ 
+
+Eigensolver
+   Davidson(niter=4) 
+
+Densities:
+  Coarse grid: 90*90*105 grid
+  Fine grid: 180*180*210 grid
+  Total Charge: 0.000000 
+
+--
+      Projectors: 3.33 MiB
+      PW-descriptor: 16.70 MiB
+
+Total number of cores used: 4
+Domain decomposition: 1 x 2 x 2
+
+Number of atoms: 80
+Number of atomic orbitals: 340
+Number of bands in calculation: 266
+Number of valence electrons: 516
+Bands to converge: occupied
+
+Unit cell:
+           periodic     x           y           z      points  spacing
+  1. axis:    yes    3.916952   -3.769367   -8.398308    90     0.0955
+  2. axis:    yes    0.000000   -5.436050    8.398308    90     0.0933
+  3. axis:    yes  -10.711659   -1.839840   -4.170128   105     0.1074
+
+  Lengths:  10.004110  10.004110  11.641075
+  Angles:  102.406438  90.000000 120.000000
+
+Effective grid spacing dv^(1/3) = 0.1047
+
+                                                
+                                                
+                                                
+
+### 4 MPI / domain
+========================================================================
+PROBE calcita 80 / Pb_Ca / Gamma / mode=domain
+fake/world size = 4
+parallel = {'domain': 4, 'band': 1, 'kpt': 1, 'sl_auto': True}
+========================================================================
+
+  ___ ___ ___ _ _ _  
+ |   |   |_  | | | | 
+ | | | | | . | | | | 
+ |__ |  _|___|_____|  25.7.0
+ |___|_|             
+
+User:   luiz@alienware
+Date:   Wed Sep 23 16:14:42 2026
+Arch:   x86_64
+Pid:    202695
+CWD:    /home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project
+Python: 3.11.15
+gpaw:   /home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw
+--
+OpenMP: True
+OMP_NUM_THREADS: 1
+
+Input parameters:
+  convergence: {bands: occupied,
+                density: 1e-05,
+                eigenstates: 1e-07,
+                energy: 0.001}
+  eigensolver: {name: dav,
+                niter: 4}
+  kpts: {gamma: True,
+         size: (1, 1, 1)}
+  mode: {dedecut: estimate,
+         ecut: 1400.0,
+         name: pw}
+  nbands: -8
+  occupations: {name: fermi-dirac,
+                width: 0.05}
+  xc: PBEsol
+
+System changes: positions, numbers, cell, pbc, initial_charges, initial_magmoms 
+
+Initialize ...
+
+species:
+  Pb:
+    name: Lead
+    id: 9ce2afbb33eb9eb0120aabe432508c8b
+    Z: 82.0
+    valence: 14
+    core: 68
+--
+  ( 1  0  0)
+  ( 0  1  0)
+  ( 0  0  1)
+
+1 k-point (Gamma)
+1 k-point in the irreducible part of the Brillouin zone
+       k-points in crystal coordinates                weights
+   0:     0.00000000    0.00000000    0.00000000          1/1
+
+Wave functions: Plane wave expansion
+  Cutoff energy: 1400.000 eV
+  Number of coefficients: 116295 (reduced to 58148)
+  Pulay-stress correction: -0.000124 eV/Ang^3 (de/decut=-0.000130)
+  Using FFTW library
+  ScaLapack parameters: grid=2x2, blocksize=64
+  Wavefunction extrapolation:
+    Improved wavefunction reuse through dual PAW basis 
+
+Occupation numbers: Fermi-Dirac:
+  width: 0.0500  # eV
+ 
+
+Eigensolver
+   Davidson(niter=4) 
+
+Densities:
+  Coarse grid: 90*90*105 grid
+  Fine grid: 180*180*210 grid
+  Total Charge: 0.000000 
+
+--
+      Projectors: 3.33 MiB
+      PW-descriptor: 16.70 MiB
+
+Total number of cores used: 4
+Domain decomposition: 1 x 2 x 2
+
+Number of atoms: 80
+Number of atomic orbitals: 340
+Number of bands in calculation: 266
+Number of valence electrons: 516
+Bands to converge: occupied
+
+Unit cell:
+           periodic     x           y           z      points  spacing
+  1. axis:    yes    3.916952   -3.769367   -8.398308    90     0.0955
+  2. axis:    yes    0.000000   -5.436050    8.398308    90     0.0933
+  3. axis:    yes  -10.711659   -1.839840   -4.170128   105     0.1074
+
+  Lengths:  10.004110  10.004110  11.641075
+  Angles:  102.406438  90.000000 120.000000
+
+Effective grid spacing dv^(1/3) = 0.1047
+
+                                                
+                                                
+                                                
+
+### 4 MPI / hybrid
+========================================================================
+PROBE calcita 80 / Pb_Ca / Gamma / mode=hybrid
+fake/world size = 4
+parallel = {'domain': 2, 'band': 2, 'kpt': 1, 'sl_auto': True}
+========================================================================
+
+  ___ ___ ___ _ _ _  
+ |   |   |_  | | | | 
+ | | | | | . | | | | 
+ |__ |  _|___|_____|  25.7.0
+ |___|_|             
+
+User:   luiz@alienware
+Date:   Wed Sep 23 16:14:46 2026
+Arch:   x86_64
+Pid:    202721
+CWD:    /home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project
+Python: 3.11.15
+gpaw:   /home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw
+--
+OpenMP: True
+OMP_NUM_THREADS: 1
+
+Input parameters:
+  convergence: {bands: occupied,
+                density: 1e-05,
+                eigenstates: 1e-07,
+                energy: 0.001}
+  eigensolver: {name: dav,
+                niter: 4}
+  kpts: {gamma: True,
+         size: (1, 1, 1)}
+  mode: {dedecut: estimate,
+         ecut: 1400.0,
+         name: pw}
+  nbands: -8
+  occupations: {name: fermi-dirac,
+                width: 0.05}
+  xc: PBEsol
+
+System changes: positions, numbers, cell, pbc, initial_charges, initial_magmoms 
+
+Initialize ...
+
+species:
+  Pb:
+    name: Lead
+    id: 9ce2afbb33eb9eb0120aabe432508c8b
+    Z: 82.0
+    valence: 14
+    core: 68
+--
+  ( 1  0  0)
+  ( 0  1  0)
+  ( 0  0  1)
+
+1 k-point (Gamma)
+1 k-point in the irreducible part of the Brillouin zone
+       k-points in crystal coordinates                weights
+   0:     0.00000000    0.00000000    0.00000000          1/1
+
+Wave functions: Plane wave expansion
+  Cutoff energy: 1400.000 eV
+  Number of coefficients: 116295 (reduced to 58148)
+  Pulay-stress correction: -0.000124 eV/Ang^3 (de/decut=-0.000130)
+  Using FFTW library
+  ScaLapack parameters: grid=2x2, blocksize=64
+  Wavefunction extrapolation:
+    Improved wavefunction reuse through dual PAW basis 
+
+Occupation numbers: Fermi-Dirac:
+  width: 0.0500  # eV
+ 
+
+Eigensolver
+   Davidson(niter=4) 
+
+Densities:
+  Coarse grid: 90*90*105 grid
+  Fine grid: 180*180*210 grid
+  Total Charge: 0.000000 
+
+--
+      Projectors: 6.65 MiB
+      PW-descriptor: 16.87 MiB
+
+Total number of cores used: 4
+Domain decomposition: 1 x 1 x 2
+Parallelization over states: 2
+
+Number of atoms: 80
+Number of atomic orbitals: 340
+Number of bands in calculation: 266
+Number of valence electrons: 516
+Bands to converge: occupied
+
+Unit cell:
+           periodic     x           y           z      points  spacing
+  1. axis:    yes    3.916952   -3.769367   -8.398308    90     0.0955
+  2. axis:    yes    0.000000   -5.436050    8.398308    90     0.0933
+  3. axis:    yes  -10.711659   -1.839840   -4.170128   105     0.1074
+
+  Lengths:  10.004110  10.004110  11.641075
+  Angles:  102.406438  90.000000 120.000000
+
+Effective grid spacing dv^(1/3) = 0.1047
+
+                                                
+                                                
+                                                
+
+### 8 MPI / auto
+OpenMP: True
+OMP_NUM_THREADS: 1
+
+Input parameters:
+  convergence: {bands: occupied,
+                density: 1e-05,
+                eigenstates: 1e-07,
+                energy: 0.001}
+  eigensolver: {name: dav,
+                niter: 4}
+  kpts: {gamma: True,
+         size: (1, 1, 1)}
+  mode: {dedecut: estimate,
+         ecut: 1400.0,
+         name: pw}
+  nbands: -8
+  occupations: {name: fermi-dirac,
+                width: 0.05}
+  xc: PBEsol
+
+System changes: positions, numbers, cell, pbc, initial_charges, initial_magmoms 
+
+Initialize ...
+
+species:
+  Pb:
+    name: Lead
+    id: 9ce2afbb33eb9eb0120aabe432508c8b
+    Z: 82.0
+    valence: 14
+    core: 68
+--
+  ( 1  0  0)
+  ( 0  1  0)
+  ( 0  0  1)
+
+1 k-point (Gamma)
+1 k-point in the irreducible part of the Brillouin zone
+       k-points in crystal coordinates                weights
+   0:     0.00000000    0.00000000    0.00000000          1/1
+
+Wave functions: Plane wave expansion
+  Cutoff energy: 1400.000 eV
+  Number of coefficients: 116295 (reduced to 58148)
+  Pulay-stress correction: -0.000124 eV/Ang^3 (de/decut=-0.000130)
+  Using FFTW library
+  ScaLapack parameters: grid=4x2, blocksize=64
+  Wavefunction extrapolation:
+    Improved wavefunction reuse through dual PAW basis 
+
+Occupation numbers: Fermi-Dirac:
+  width: 0.0500  # eV
+ 
+
+Eigensolver
+   Davidson(niter=4) 
+
+Densities:
+  Coarse grid: 90*90*105 grid
+  Fine grid: 180*180*210 grid
+  Total Charge: 0.000000 
+
+--
+      Projectors: 1.66 MiB
+      PW-descriptor: 16.62 MiB
+
+Total number of cores used: 8
+Domain decomposition: 2 x 2 x 2
+
+Number of atoms: 80
+Number of atomic orbitals: 340
+Number of bands in calculation: 266
+Number of valence electrons: 516
+Bands to converge: occupied
+
+Unit cell:
+           periodic     x           y           z      points  spacing
+  1. axis:    yes    3.916952   -3.769367   -8.398308    90     0.0955
+  2. axis:    yes    0.000000   -5.436050    8.398308    90     0.0933
+  3. axis:    yes  -10.711659   -1.839840   -4.170128   105     0.1074
+
+  Lengths:  10.004110  10.004110  11.641075
+  Angles:  102.406438  90.000000 120.000000
+
+Effective grid spacing dv^(1/3) = 0.1047
+
+                                                
+                                                
+                                                
+
+### 8 MPI / domain
+========================================================================
+PROBE calcita 80 / Pb_Ca / Gamma / mode=domain
+fake/world size = 8
+parallel = {'domain': 8, 'band': 1, 'kpt': 1, 'sl_auto': True}
+========================================================================
+
+  ___ ___ ___ _ _ _  
+ |   |   |_  | | | | 
+ | | | | | . | | | | 
+ |__ |  _|___|_____|  25.7.0
+ |___|_|             
+
+User:   luiz@alienware
+Date:   Wed Sep 23 16:14:53 2026
+Arch:   x86_64
+Pid:    202773
+CWD:    /home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project
+Python: 3.11.15
+gpaw:   /home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw
+--
+OpenMP: True
+OMP_NUM_THREADS: 1
+
+Input parameters:
+  convergence: {bands: occupied,
+                density: 1e-05,
+                eigenstates: 1e-07,
+                energy: 0.001}
+  eigensolver: {name: dav,
+                niter: 4}
+  kpts: {gamma: True,
+         size: (1, 1, 1)}
+  mode: {dedecut: estimate,
+         ecut: 1400.0,
+         name: pw}
+  nbands: -8
+  occupations: {name: fermi-dirac,
+                width: 0.05}
+  xc: PBEsol
+
+System changes: positions, numbers, cell, pbc, initial_charges, initial_magmoms 
+
+Initialize ...
+
+species:
+  Pb:
+    name: Lead
+    id: 9ce2afbb33eb9eb0120aabe432508c8b
+    Z: 82.0
+    valence: 14
+    core: 68
+--
+  ( 1  0  0)
+  ( 0  1  0)
+  ( 0  0  1)
+
+1 k-point (Gamma)
+1 k-point in the irreducible part of the Brillouin zone
+       k-points in crystal coordinates                weights
+   0:     0.00000000    0.00000000    0.00000000          1/1
+
+Wave functions: Plane wave expansion
+  Cutoff energy: 1400.000 eV
+  Number of coefficients: 116295 (reduced to 58148)
+  Pulay-stress correction: -0.000124 eV/Ang^3 (de/decut=-0.000130)
+  Using FFTW library
+  ScaLapack parameters: grid=4x2, blocksize=64
+  Wavefunction extrapolation:
+    Improved wavefunction reuse through dual PAW basis 
+
+Occupation numbers: Fermi-Dirac:
+  width: 0.0500  # eV
+ 
+
+Eigensolver
+   Davidson(niter=4) 
+
+Densities:
+  Coarse grid: 90*90*105 grid
+  Fine grid: 180*180*210 grid
+  Total Charge: 0.000000 
+
+--
+      Projectors: 1.66 MiB
+      PW-descriptor: 16.62 MiB
+
+Total number of cores used: 8
+Domain decomposition: 2 x 2 x 2
+
+Number of atoms: 80
+Number of atomic orbitals: 340
+Number of bands in calculation: 266
+Number of valence electrons: 516
+Bands to converge: occupied
+
+Unit cell:
+           periodic     x           y           z      points  spacing
+  1. axis:    yes    3.916952   -3.769367   -8.398308    90     0.0955
+  2. axis:    yes    0.000000   -5.436050    8.398308    90     0.0933
+  3. axis:    yes  -10.711659   -1.839840   -4.170128   105     0.1074
+
+  Lengths:  10.004110  10.004110  11.641075
+  Angles:  102.406438  90.000000 120.000000
+
+Effective grid spacing dv^(1/3) = 0.1047
+
+                                                
+                                                
+                                                
+
+### 8 MPI / hybrid
+========================================================================
+PROBE calcita 80 / Pb_Ca / Gamma / mode=hybrid
+fake/world size = 8
+parallel = {'domain': 4, 'band': 2, 'kpt': 1, 'sl_auto': True}
+========================================================================
+
+  ___ ___ ___ _ _ _  
+ |   |   |_  | | | | 
+ | | | | | . | | | | 
+ |__ |  _|___|_____|  25.7.0
+ |___|_|             
+
+User:   luiz@alienware
+Date:   Wed Sep 23 16:14:57 2026
+Arch:   x86_64
+Pid:    202799
+CWD:    /home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project
+Python: 3.11.15
+gpaw:   /home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw
+--
+OpenMP: True
+OMP_NUM_THREADS: 1
+
+Input parameters:
+  convergence: {bands: occupied,
+                density: 1e-05,
+                eigenstates: 1e-07,
+                energy: 0.001}
+  eigensolver: {name: dav,
+                niter: 4}
+  kpts: {gamma: True,
+         size: (1, 1, 1)}
+  mode: {dedecut: estimate,
+         ecut: 1400.0,
+         name: pw}
+  nbands: -8
+  occupations: {name: fermi-dirac,
+                width: 0.05}
+  xc: PBEsol
+
+System changes: positions, numbers, cell, pbc, initial_charges, initial_magmoms 
+
+Initialize ...
+
+species:
+  Pb:
+    name: Lead
+    id: 9ce2afbb33eb9eb0120aabe432508c8b
+    Z: 82.0
+    valence: 14
+    core: 68
+--
+  ( 1  0  0)
+  ( 0  1  0)
+  ( 0  0  1)
+
+1 k-point (Gamma)
+1 k-point in the irreducible part of the Brillouin zone
+       k-points in crystal coordinates                weights
+   0:     0.00000000    0.00000000    0.00000000          1/1
+
+Wave functions: Plane wave expansion
+  Cutoff energy: 1400.000 eV
+  Number of coefficients: 116295 (reduced to 58148)
+  Pulay-stress correction: -0.000124 eV/Ang^3 (de/decut=-0.000130)
+  Using FFTW library
+  ScaLapack parameters: grid=4x2, blocksize=64
+  Wavefunction extrapolation:
+    Improved wavefunction reuse through dual PAW basis 
+
+Occupation numbers: Fermi-Dirac:
+  width: 0.0500  # eV
+ 
+
+Eigensolver
+   Davidson(niter=4) 
+
+Densities:
+  Coarse grid: 90*90*105 grid
+  Fine grid: 180*180*210 grid
+  Total Charge: 0.000000 
+
+--
+      Projectors: 3.33 MiB
+      PW-descriptor: 16.70 MiB
+
+Total number of cores used: 8
+Domain decomposition: 1 x 2 x 2
+Parallelization over states: 2
+
+Number of atoms: 80
+Number of atomic orbitals: 340
+Number of bands in calculation: 266
+Number of valence electrons: 516
+Bands to converge: occupied
+
+Unit cell:
+           periodic     x           y           z      points  spacing
+  1. axis:    yes    3.916952   -3.769367   -8.398308    90     0.0955
+  2. axis:    yes    0.000000   -5.436050    8.398308    90     0.0933
+  3. axis:    yes  -10.711659   -1.839840   -4.170128   105     0.1074
+
+  Lengths:  10.004110  10.004110  11.641075
+  Angles:  102.406438  90.000000 120.000000
+
+Effective grid spacing dv^(1/3) = 0.1047
+
+                                                
+                                                
+                                                

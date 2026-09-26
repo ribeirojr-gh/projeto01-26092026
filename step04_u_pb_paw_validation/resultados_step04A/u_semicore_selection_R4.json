@@ -1,0 +1,13 @@
+{
+  "strategy": "semicore_partition_scan",
+  "generator": "gpaw dataset / generator2",
+  "scalar_relativistic": true,
+  "selected_candidate_id": null,
+  "expected_valence_electrons": null,
+  "projectors": null,
+  "radii_Bohr_spdf": null,
+  "PBE_passes": false,
+  "PBEsol_passes": false,
+  "no_check_flag_used": false,
+  "candidate_status": "FAILED_SEMICORE_SCAN"
+}

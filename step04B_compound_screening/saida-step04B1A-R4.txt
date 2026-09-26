@@ -1,0 +1,245 @@
+==============================================================================
+STEP 04B1A-R4 — DIAGNÓSTICO UO2 DFT+U
+==============================================================================
+Data: ter 04 ago 2026 17:03:48 -03
+Host: alienware
+Projeto: /home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project
+
+
+>>> Dataset poly6
+[alienware][[36752,1],3][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[36752,1],3][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[36752,1],3][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[36752,1],1][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[36752,1],1][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[36752,1],1][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[36752,1],0][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[36752,1],0][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[36752,1],0][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[36752,1],2][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[36752,1],2][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[36752,1],2][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+{
+  "step": "04B1A-R4",
+  "purpose": "Diagnose whether fixed total magnetization, disabled magnetic symmetry, Hubbard normalization, or cold-start orbital degeneracy caused the UO2 DFT+U failures.",
+  "dataset": "poly6",
+  "cold_start_attempts": [
+    {
+      "status": "converged",
+      "dataset": "poly6",
+      "strategy": "sym_freeM_scaled",
+      "Ueff_eV": 4.0,
+      "hubbard_normalized": true,
+      "mpi_world_size": 4,
+      "ecut_eV": 1400.0,
+      "kpts": [
+        3,
+        3,
+        3
+      ],
+      "nbands": 80,
+      "scf_iterations": 159,
+      "energy_eV": -114.49016466644841,
+      "energy_eV_atom": -9.540847055537368,
+      "band_gap_eV": 1.9943978476887079,
+      "band_gap_error": null,
+      "total_magnetic_moment_muB": -6.509796920862137e-06,
+      "U_local_moments_muB": [
+        1.882997782302053,
+        -1.8829998943177968,
+        -1.8829998943177957,
+        1.882994517784096
+      ],
+      "U_abs_mean_moment_muB": 1.8829980221804354,
+      "max_force_eV_A": 0.0002100014735030032,
+      "stress_GPa": [
+        -0.9462492256141324,
+        -0.9462492256141324,
+        1.6990792898332763,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "max_abs_stress_GPa": 1.6990792898332763,
+      "gpw_file": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04B_compound_screening/resultados_step04B1A_R4/gpw/poly6_sym_freeM_scaled.gpw"
+    }
+  ],
+  "ramp_attempt": null,
+  "target_Ueff_4eV_converged": true,
+  "selected_success": {
+    "status": "converged",
+    "dataset": "poly6",
+    "strategy": "sym_freeM_scaled",
+    "Ueff_eV": 4.0,
+    "hubbard_normalized": true,
+    "mpi_world_size": 4,
+    "ecut_eV": 1400.0,
+    "kpts": [
+      3,
+      3,
+      3
+    ],
+    "nbands": 80,
+    "scf_iterations": 159,
+    "energy_eV": -114.49016466644841,
+    "energy_eV_atom": -9.540847055537368,
+    "band_gap_eV": 1.9943978476887079,
+    "band_gap_error": null,
+    "total_magnetic_moment_muB": -6.509796920862137e-06,
+    "U_local_moments_muB": [
+      1.882997782302053,
+      -1.8829998943177968,
+      -1.8829998943177957,
+      1.882994517784096
+    ],
+    "U_abs_mean_moment_muB": 1.8829980221804354,
+    "max_force_eV_A": 0.0002100014735030032,
+    "stress_GPa": [
+      -0.9462492256141324,
+      -0.9462492256141324,
+      1.6990792898332763,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "max_abs_stress_GPa": 1.6990792898332763,
+    "gpw_file": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04B_compound_screening/resultados_step04B1A_R4/gpw/poly6_sym_freeM_scaled.gpw"
+  },
+  "production_authorization": false
+}
+
+>>> Dataset nc6
+[alienware][[311,1],2][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[311,1],2][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[311,1],2][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[311,1],3][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[311,1],3][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[311,1],1][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[311,1],1][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[311,1],3][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[311,1],1][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[311,1],0][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[311,1],0][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[311,1],0][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+{
+  "step": "04B1A-R4",
+  "purpose": "Diagnose whether fixed total magnetization, disabled magnetic symmetry, Hubbard normalization, or cold-start orbital degeneracy caused the UO2 DFT+U failures.",
+  "dataset": "nc6",
+  "cold_start_attempts": [
+    {
+      "status": "failed_scf",
+      "dataset": "nc6",
+      "strategy": "sym_freeM_scaled",
+      "Ueff_eV": 4.0,
+      "hubbard_normalized": true,
+      "scf_iterations": 501,
+      "txt": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04B_compound_screening/logs/R4/nc6_sym_freeM_scaled.txt",
+      "error": "KohnShamConvergenceError('Did not converge!  See text output for help.')"
+    },
+    {
+      "status": "failed_scf",
+      "dataset": "nc6",
+      "strategy": "sym_freeM_unscaled",
+      "Ueff_eV": 4.0,
+      "hubbard_normalized": false,
+      "scf_iterations": 501,
+      "txt": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04B_compound_screening/logs/R4/nc6_sym_freeM_unscaled.txt",
+      "error": "KohnShamConvergenceError('Did not converge!  See text output for help.')"
+    },
+    {
+      "status": "converged",
+      "dataset": "nc6",
+      "strategy": "noPG_freeM_scaled",
+      "Ueff_eV": 4.0,
+      "hubbard_normalized": true,
+      "mpi_world_size": 4,
+      "ecut_eV": 1400.0,
+      "kpts": [
+        3,
+        3,
+        3
+      ],
+      "nbands": 80,
+      "scf_iterations": 279,
+      "energy_eV": -117.57375993942452,
+      "energy_eV_atom": -9.797813328285377,
+      "band_gap_eV": 3.345200619801515,
+      "band_gap_error": null,
+      "total_magnetic_moment_muB": -6.143782192596791e-06,
+      "U_local_moments_muB": [
+        1.9377976688929373,
+        -1.9378281134168414,
+        -1.937801179597645,
+        1.9378222560646263
+      ],
+      "U_abs_mean_moment_muB": 1.9378123044930124,
+      "max_force_eV_A": 0.0022696258974189976,
+      "stress_GPa": [
+        -0.08309752012970806,
+        -0.0836396734003571,
+        0.015814748196464345,
+        2.258493948532401e-06,
+        -9.01811590495087e-05,
+        -0.0006665183890365139
+      ],
+      "max_abs_stress_GPa": 0.0836396734003571,
+      "gpw_file": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04B_compound_screening/resultados_step04B1A_R4/gpw/nc6_noPG_freeM_scaled.gpw"
+    }
+  ],
+  "ramp_attempt": null,
+  "target_Ueff_4eV_converged": true,
+  "selected_success": {
+    "status": "converged",
+    "dataset": "nc6",
+    "strategy": "noPG_freeM_scaled",
+    "Ueff_eV": 4.0,
+    "hubbard_normalized": true,
+    "mpi_world_size": 4,
+    "ecut_eV": 1400.0,
+    "kpts": [
+      3,
+      3,
+      3
+    ],
+    "nbands": 80,
+    "scf_iterations": 279,
+    "energy_eV": -117.57375993942452,
+    "energy_eV_atom": -9.797813328285377,
+    "band_gap_eV": 3.345200619801515,
+    "band_gap_error": null,
+    "total_magnetic_moment_muB": -6.143782192596791e-06,
+    "U_local_moments_muB": [
+      1.9377976688929373,
+      -1.9378281134168414,
+      -1.937801179597645,
+      1.9378222560646263
+    ],
+    "U_abs_mean_moment_muB": 1.9378123044930124,
+    "max_force_eV_A": 0.0022696258974189976,
+    "stress_GPa": [
+      -0.08309752012970806,
+      -0.0836396734003571,
+      0.015814748196464345,
+      2.258493948532401e-06,
+      -9.01811590495087e-05,
+      -0.0006665183890365139
+    ],
+    "max_abs_stress_GPa": 0.0836396734003571,
+    "gpw_file": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04B_compound_screening/resultados_step04B1A_R4/gpw/nc6_noPG_freeM_scaled.gpw"
+  },
+  "production_authorization": false
+}
+
+>>> Pós-processamento
+================================================================================
+STEP 04B1A-R4 — DECISÃO
+================================================================================
+poly6 Ueff=4 convergiu: True
+nc6   Ueff=4 convergiu: True
+Status: DIAGNOSTIC_SUCCESS
+Produção com defeitos: NÃO AUTORIZADA.
+================================================================================
+
+==============================================================================
+STEP 04B1A-R4 FINALIZADO
+==============================================================================

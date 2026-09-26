@@ -1,0 +1,236 @@
+{
+  "step": "05A",
+  "purpose": "Freeze a fresh PBEsol pristine-host baseline and design near-isotropic supercells before introducing U/Pb defects.",
+  "hosts": {
+    "calcita": {
+      "host_relaxation_passes": true,
+      "symmetry_passes": true,
+      "relaxation_passes": true,
+      "validation1600_passes": true,
+      "selected_supercells_for_PbCa_size_gate": [
+        {
+          "determinant": 8,
+          "natoms": 80,
+          "matrix": [
+            [
+              1,
+              1,
+              0
+            ],
+            [
+              0,
+              2,
+              2
+            ],
+            [
+              0,
+              0,
+              4
+            ]
+          ],
+          "shortest_periodic_translation_A": 10.0041101447112,
+          "shortest_translation_coefficients": [
+            -2,
+            1,
+            0
+          ],
+          "cell_vector_lengths_A": [
+            11.641074648061984,
+            23.282149296123965,
+            25.34049517342783
+          ],
+          "basis_vector_anisotropy": 2.1768175138062995,
+          "traj": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05A_host_supercells/resultados_step05A/supercells/calcita_det8_80atoms.traj",
+          "cif": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05A_host_supercells/resultados_step05A/supercells/calcita_det8_80atoms.cif"
+        },
+        {
+          "determinant": 16,
+          "natoms": 160,
+          "matrix": [
+            [
+              1,
+              0,
+              13
+            ],
+            [
+              0,
+              1,
+              9
+            ],
+            [
+              0,
+              0,
+              16
+            ]
+          ],
+          "shortest_periodic_translation_A": 13.621884188889153,
+          "shortest_translation_coefficients": [
+            -2,
+            1,
+            1
+          ],
+          "cell_vector_lengths_A": [
+            86.83867978737032,
+            61.548309101013,
+            101.36198069371132
+          ],
+          "basis_vector_anisotropy": 1.6468686495896447,
+          "traj": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05A_host_supercells/resultados_step05A/supercells/calcita_det16_160atoms.traj",
+          "cif": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05A_host_supercells/resultados_step05A/supercells/calcita_det16_160atoms.cif"
+        }
+      ],
+      "fallback_supercell": {
+        "determinant": 24,
+        "natoms": 240,
+        "matrix": [
+          [
+            1,
+            0,
+            14
+          ],
+          [
+            0,
+            1,
+            20
+          ],
+          [
+            0,
+            0,
+            24
+          ]
+        ],
+        "shortest_periodic_translation_A": 17.639813814228905,
+        "shortest_translation_coefficients": [
+          -2,
+          -1,
+          2
+        ],
+        "cell_vector_lengths_A": [
+          93.16552883499415,
+          131.1434017573468,
+          152.04297104056695
+        ],
+        "basis_vector_anisotropy": 1.631965952877817,
+        "traj": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05A_host_supercells/resultados_step05A/supercells/calcita_det24_240atoms.traj",
+        "cif": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05A_host_supercells/resultados_step05A/supercells/calcita_det24_240atoms.cif"
+      }
+    },
+    "dolomita": {
+      "host_relaxation_passes": true,
+      "symmetry_passes": true,
+      "relaxation_passes": true,
+      "validation1600_passes": true,
+      "selected_supercells_for_PbCa_size_gate": [
+        {
+          "determinant": 8,
+          "natoms": 80,
+          "matrix": [
+            [
+              2,
+              0,
+              0
+            ],
+            [
+              0,
+              2,
+              0
+            ],
+            [
+              0,
+              0,
+              2
+            ]
+          ],
+          "shortest_periodic_translation_A": 9.641291604070624,
+          "shortest_translation_coefficients": [
+            -1,
+            0,
+            1
+          ],
+          "cell_vector_lengths_A": [
+            12.000743052931066,
+            12.000743052931062,
+            12.000743052931062
+          ],
+          "basis_vector_anisotropy": 1.0000000000000002,
+          "traj": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05A_host_supercells/resultados_step05A/supercells/dolomita_det8_80atoms.traj",
+          "cif": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05A_host_supercells/resultados_step05A/supercells/dolomita_det8_80atoms.cif"
+        },
+        {
+          "determinant": 16,
+          "natoms": 160,
+          "matrix": [
+            [
+              1,
+              0,
+              13
+            ],
+            [
+              0,
+              1,
+              9
+            ],
+            [
+              0,
+              0,
+              16
+            ]
+          ],
+          "shortest_periodic_translation_A": 12.93276690314776,
+          "shortest_translation_coefficients": [
+            -2,
+            1,
+            1
+          ],
+          "cell_vector_lengths_A": [
+            82.18741825832186,
+            58.234853928070464,
+            96.0059444234485
+          ],
+          "basis_vector_anisotropy": 1.6485993858940813,
+          "traj": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05A_host_supercells/resultados_step05A/supercells/dolomita_det16_160atoms.traj",
+          "cif": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05A_host_supercells/resultados_step05A/supercells/dolomita_det16_160atoms.cif"
+        }
+      ],
+      "fallback_supercell": {
+        "determinant": 24,
+        "natoms": 240,
+        "matrix": [
+          [
+            1,
+            0,
+            14
+          ],
+          [
+            0,
+            1,
+            20
+          ],
+          [
+            0,
+            0,
+            24
+          ]
+        ],
+        "shortest_periodic_translation_A": 16.66021831199113,
+        "shortest_translation_coefficients": [
+          -2,
+          -1,
+          2
+        ],
+        "cell_vector_lengths_A": [
+          88.17971642749022,
+          124.14988384994186,
+          144.00891663517277
+        ],
+        "basis_vector_anisotropy": 1.6331297317517532,
+        "traj": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05A_host_supercells/resultados_step05A/supercells/dolomita_det24_240atoms.traj",
+        "cif": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05A_host_supercells/resultados_step05A/supercells/dolomita_det24_240atoms.cif"
+      }
+    }
+  },
+  "step05A_passes": true,
+  "production_authorization_from_step04": true,
+  "defect_production_started": false,
+  "next_gate": "Step05B: neutral Pb2+->Ca2+ substitution finite-size gate on the two selected supercells for calcite and dolomite. If the raw substitution-energy difference is not converged, use the fallback supercell. U substitutions and charged/compensated defects remain blocked until that finite-size gate is resolved."
+}

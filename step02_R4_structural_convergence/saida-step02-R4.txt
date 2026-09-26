@@ -1,0 +1,39 @@
+==============================================================================
+STEP 02-R4 — CONVERGÊNCIA ESTRUTURAL PBE
+==============================================================================
+Data: Wed Jul 22 15:16:42 -03 2026
+Host: AlienA51
+OMP_NUM_THREADS=1
+CHGNet/MACE NÃO serão reexecutados.
+Scans R2/R3 NÃO serão reexecutados.
+
+[PAW] Ca.PBE: OK -> /home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw_data/setups/Ca.PBE.gz
+[PAW] C.PBE: OK -> /home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw_data/setups/C.PBE.gz
+[PAW] O.PBE: OK -> /home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw_data/setups/O.PBE.gz
+[PAW] Mg.PBE: OK -> /home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw_data/setups/Mg.PBE.gz
+====================================================================================
+STEP 02-R4 — CONVERGÊNCIA DAS GEOMETRIAS RELAXADAS
+====================================================================================
+Cutoffs: [1000, 1200, 1400]
+k-grid: 5x5x5
+XC: PBE
+Pulay correction: dedecut='estimate'
+Start preferencial: MACE
+====================================================================================
+[calcita] 1000 eV: relaxação célula + átomos (fmax=0.01 eV/Å)
+[calcita] 1200 eV: relaxação célula + átomos (fmax=0.01 eV/Å)
+[calcita] 1400 eV: relaxação célula + átomos (fmax=0.01 eV/Å)
+[dolomita] 1000 eV: relaxação célula + átomos (fmax=0.01 eV/Å)
+[dolomita] 1200 eV: relaxação célula + átomos (fmax=0.01 eV/Å)
+[dolomita] 1400 eV: relaxação célula + átomos (fmax=0.01 eV/Å)
+
+====================================================================================
+STEP 02-R4 CONCLUÍDO
+calcita: 1200 vs 1400 eV -> NÃO APROVADO
+dolomita: 1200 vs 1400 eV -> NÃO APROVADO
+Decisão comum: necessária revisão adicional
+====================================================================================
+
+==============================================================================
+STEP 02-R4 FINALIZADO
+==============================================================================

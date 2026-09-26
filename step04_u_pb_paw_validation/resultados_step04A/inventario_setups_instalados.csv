@@ -1,0 +1,5 @@
+element,xc,installed_setup_found,installed_setup_paths
+Pb,PBE,True,/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw_data/setups/Pb.PBE.gz
+Pb,PBEsol,False,
+U,PBE,False,
+U,PBEsol,False,

@@ -1,0 +1,68 @@
+{
+  "step": "04B2C2-structural-metrics",
+  "experimental_conventional_cell_A": [
+    9.787,
+    19.932,
+    9.705
+  ],
+  "relaxed_conventional_cell_A": [
+    6.9255373028787925,
+    6.9255373028787925,
+    20.090683193794305
+  ],
+  "sorted_lattice_errors_percent": [
+    28.63949198476257,
+    29.237383234098374,
+    0.7961227864454483
+  ],
+  "experimental_volume_A3": 1893.19786722,
+  "relaxed_conventional_volume_A3": 963.610782765019,
+  "volume_error_percent": 49.10142254808265,
+  "experimental_UO6_profile": {
+    "mean_first6_A": [
+      1.8296389368169448,
+      1.8296389368320276,
+      2.228552949797536,
+      2.2285529499391683,
+      2.31261688620391,
+      2.312616886386187
+    ],
+    "shortest_UO_A": 1.7929296756541402,
+    "mean_UO6_A": 2.1236029243292958
+  },
+  "relaxed_UO6_profile": {
+    "mean_first6_A": [
+      1.8235427827585133,
+      1.8235427827585196,
+      2.267818967494945,
+      2.2678189674949523,
+      2.2934481456476687,
+      2.2934481456476763
+    ],
+    "shortest_UO_A": 1.7790704845464338,
+    "mean_UO6_A": 2.128269965300379
+  },
+  "shortest_UO_error_percent": 0.9426233548756262,
+  "UO6_mean_profile_RMS_relative_error_percent": 1.199457230982821,
+  "symmetry": [
+    {
+      "symprec_A": 0.01,
+      "number": 70,
+      "international": "Fddd",
+      "hall": "F 2 2 -1d"
+    },
+    {
+      "symprec_A": 0.03,
+      "number": 141,
+      "international": "I4_1/amd",
+      "hall": "I 4bw 2bw -1bw"
+    },
+    {
+      "symprec_A": 0.05,
+      "number": 141,
+      "international": "I4_1/amd",
+      "hall": "I 4bw 2bw -1bw"
+    }
+  ],
+  "structural_gate_passes": false
+}

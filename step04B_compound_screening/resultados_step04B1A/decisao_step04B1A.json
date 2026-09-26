@@ -1,0 +1,268 @@
+{
+  "step": "04B1A-R2",
+  "scope": "Fixed-geometry chemical screening with robust SCF handling.",
+  "calculations_expected": {
+    "UO2": 10,
+    "delta_UO3": 2,
+    "PbCO3": 1
+  },
+  "calculations_converged": {
+    "UO2": 2,
+    "delta_UO3": 2,
+    "PbCO3": 1
+  },
+  "failed_scf_count": 8,
+  "failed_scf_records": [
+    {
+      "file": "UO2_nc6_Ueff_2p0.json",
+      "system": "UO2",
+      "dataset": "nc6",
+      "Ueff_eV": 2.0,
+      "attempts": [
+        {
+          "attempt": 1,
+          "strategy": "mixersum_screening",
+          "smearing_eV": 0.15,
+          "maxiter": 500,
+          "scf_iterations_reached": 501,
+          "txt": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04B_compound_screening/logs/UO2_nc6_Ueff_2p0_gpaw_attempt1_mixersum_screening.txt",
+          "error": "KohnShamConvergenceError('Did not converge!  See text output for help.')"
+        },
+        {
+          "attempt": 2,
+          "strategy": "mixerdif_damped",
+          "smearing_eV": 0.2,
+          "maxiter": 700,
+          "scf_iterations_reached": 701,
+          "txt": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04B_compound_screening/logs/UO2_nc6_Ueff_2p0_gpaw_attempt2_mixerdif_damped.txt",
+          "error": "KohnShamConvergenceError('Did not converge!  See text output for help.')"
+        }
+      ]
+    },
+    {
+      "file": "UO2_nc6_Ueff_3p0.json",
+      "system": "UO2",
+      "dataset": "nc6",
+      "Ueff_eV": 3.0,
+      "attempts": [
+        {
+          "attempt": 1,
+          "strategy": "mixersum_screening",
+          "smearing_eV": 0.15,
+          "maxiter": 500,
+          "scf_iterations_reached": 501,
+          "txt": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04B_compound_screening/logs/UO2_nc6_Ueff_3p0_gpaw_attempt1_mixersum_screening.txt",
+          "error": "KohnShamConvergenceError('Did not converge!  See text output for help.')"
+        },
+        {
+          "attempt": 2,
+          "strategy": "mixerdif_damped",
+          "smearing_eV": 0.2,
+          "maxiter": 700,
+          "scf_iterations_reached": 701,
+          "txt": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04B_compound_screening/logs/UO2_nc6_Ueff_3p0_gpaw_attempt2_mixerdif_damped.txt",
+          "error": "KohnShamConvergenceError('Did not converge!  See text output for help.')"
+        }
+      ]
+    },
+    {
+      "file": "UO2_nc6_Ueff_4p0.json",
+      "system": "UO2",
+      "dataset": "nc6",
+      "Ueff_eV": 4.0,
+      "attempts": [
+        {
+          "attempt": 1,
+          "strategy": "mixersum_screening",
+          "smearing_eV": 0.15,
+          "maxiter": 500,
+          "scf_iterations_reached": 501,
+          "txt": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04B_compound_screening/logs/UO2_nc6_Ueff_4p0_gpaw_attempt1_mixersum_screening.txt",
+          "error": "KohnShamConvergenceError('Did not converge!  See text output for help.')"
+        },
+        {
+          "attempt": 2,
+          "strategy": "mixerdif_damped",
+          "smearing_eV": 0.2,
+          "maxiter": 700,
+          "scf_iterations_reached": 701,
+          "txt": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04B_compound_screening/logs/UO2_nc6_Ueff_4p0_gpaw_attempt2_mixerdif_damped.txt",
+          "error": "KohnShamConvergenceError('Did not converge!  See text output for help.')"
+        }
+      ]
+    },
+    {
+      "file": "UO2_nc6_Ueff_5p0.json",
+      "system": "UO2",
+      "dataset": "nc6",
+      "Ueff_eV": 5.0,
+      "attempts": [
+        {
+          "attempt": 1,
+          "strategy": "mixersum_screening",
+          "smearing_eV": 0.15,
+          "maxiter": 500,
+          "scf_iterations_reached": 501,
+          "txt": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04B_compound_screening/logs/UO2_nc6_Ueff_5p0_gpaw_attempt1_mixersum_screening.txt",
+          "error": "KohnShamConvergenceError('Did not converge!  See text output for help.')"
+        },
+        {
+          "attempt": 2,
+          "strategy": "mixerdif_damped",
+          "smearing_eV": 0.2,
+          "maxiter": 700,
+          "scf_iterations_reached": 701,
+          "txt": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04B_compound_screening/logs/UO2_nc6_Ueff_5p0_gpaw_attempt2_mixerdif_damped.txt",
+          "error": "KohnShamConvergenceError('Did not converge!  See text output for help.')"
+        }
+      ]
+    },
+    {
+      "file": "UO2_poly6_Ueff_2p0.json",
+      "system": "UO2",
+      "dataset": "poly6",
+      "Ueff_eV": 2.0,
+      "attempts": [
+        {
+          "attempt": 1,
+          "strategy": "mixersum_screening",
+          "smearing_eV": 0.15,
+          "maxiter": 500,
+          "scf_iterations_reached": 501,
+          "txt": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04B_compound_screening/logs/UO2_poly6_Ueff_2p0_gpaw_attempt1_mixersum_screening.txt",
+          "error": "KohnShamConvergenceError('Did not converge!  See text output for help.')"
+        },
+        {
+          "attempt": 2,
+          "strategy": "mixerdif_damped",
+          "smearing_eV": 0.2,
+          "maxiter": 700,
+          "scf_iterations_reached": 701,
+          "txt": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04B_compound_screening/logs/UO2_poly6_Ueff_2p0_gpaw_attempt2_mixerdif_damped.txt",
+          "error": "KohnShamConvergenceError('Did not converge!  See text output for help.')"
+        }
+      ]
+    },
+    {
+      "file": "UO2_poly6_Ueff_3p0.json",
+      "system": "UO2",
+      "dataset": "poly6",
+      "Ueff_eV": 3.0,
+      "attempts": [
+        {
+          "attempt": 1,
+          "strategy": "mixersum_screening",
+          "smearing_eV": 0.15,
+          "maxiter": 500,
+          "scf_iterations_reached": 501,
+          "txt": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04B_compound_screening/logs/UO2_poly6_Ueff_3p0_gpaw_attempt1_mixersum_screening.txt",
+          "error": "KohnShamConvergenceError('Did not converge!  See text output for help.')"
+        },
+        {
+          "attempt": 2,
+          "strategy": "mixerdif_damped",
+          "smearing_eV": 0.2,
+          "maxiter": 700,
+          "scf_iterations_reached": 701,
+          "txt": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04B_compound_screening/logs/UO2_poly6_Ueff_3p0_gpaw_attempt2_mixerdif_damped.txt",
+          "error": "KohnShamConvergenceError('Did not converge!  See text output for help.')"
+        }
+      ]
+    },
+    {
+      "file": "UO2_poly6_Ueff_4p0.json",
+      "system": "UO2",
+      "dataset": "poly6",
+      "Ueff_eV": 4.0,
+      "attempts": [
+        {
+          "attempt": 1,
+          "strategy": "mixersum_screening",
+          "smearing_eV": 0.15,
+          "maxiter": 500,
+          "scf_iterations_reached": 501,
+          "txt": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04B_compound_screening/logs/UO2_poly6_Ueff_4p0_gpaw_attempt1_mixersum_screening.txt",
+          "error": "KohnShamConvergenceError('Did not converge!  See text output for help.')"
+        },
+        {
+          "attempt": 2,
+          "strategy": "mixerdif_damped",
+          "smearing_eV": 0.2,
+          "maxiter": 700,
+          "scf_iterations_reached": 701,
+          "txt": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04B_compound_screening/logs/UO2_poly6_Ueff_4p0_gpaw_attempt2_mixerdif_damped.txt",
+          "error": "KohnShamConvergenceError('Did not converge!  See text output for help.')"
+        }
+      ]
+    },
+    {
+      "file": "UO2_poly6_Ueff_5p0.json",
+      "system": "UO2",
+      "dataset": "poly6",
+      "Ueff_eV": 5.0,
+      "attempts": [
+        {
+          "attempt": 1,
+          "strategy": "mixersum_screening",
+          "smearing_eV": 0.15,
+          "maxiter": 500,
+          "scf_iterations_reached": 501,
+          "txt": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04B_compound_screening/logs/UO2_poly6_Ueff_5p0_gpaw_attempt1_mixersum_screening.txt",
+          "error": "KohnShamConvergenceError('Did not converge!  See text output for help.')"
+        },
+        {
+          "attempt": 2,
+          "strategy": "mixerdif_damped",
+          "smearing_eV": 0.2,
+          "maxiter": 700,
+          "scf_iterations_reached": 701,
+          "txt": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04B_compound_screening/logs/UO2_poly6_Ueff_5p0_gpaw_attempt2_mixerdif_damped.txt",
+          "error": "KohnShamConvergenceError('Did not converge!  See text output for help.')"
+        }
+      ]
+    }
+  ],
+  "UO2_experimental_guides": {
+    "a_A": 5.4706,
+    "ordered_moment_muB_per_U": 1.74,
+    "gap_target_interval_eV": [
+      2.0,
+      2.5
+    ],
+    "magnetic_model_warning": "Collinear 1-k AFM screening state; experimental low-temperature ground state is non-collinear 3-k AFM."
+  },
+  "best_screening_candidates": [
+    {
+      "dataset": "nc6",
+      "Ueff_eV": 0.0,
+      "band_gap_eV": null,
+      "U_abs_mean_moment_muB": 1.5091864425297472,
+      "moment_abs_error_muB": 0.23081355747025278,
+      "gap_interval_penalty_eV": 999.0,
+      "screening_score": 3996.923254229881,
+      "scf_strategy": "mixerdif_damped",
+      "smearing_eV": 0.2,
+      "scf_iterations": 440,
+      "max_force_eV_A": 0.0025878402309813617,
+      "max_abs_stress_GPa": 9.967762670645657
+    },
+    {
+      "dataset": "poly6",
+      "Ueff_eV": 0.0,
+      "band_gap_eV": null,
+      "U_abs_mean_moment_muB": 1.4645589180097227,
+      "moment_abs_error_muB": 0.2754410819902773,
+      "gap_interval_penalty_eV": 999.0,
+      "screening_score": 3997.101764327961,
+      "scf_strategy": "mixersum_screening",
+      "smearing_eV": 0.15,
+      "scf_iterations": 75,
+      "max_force_eV_A": 0.0004288255806420634,
+      "max_abs_stress_GPa": 11.232930077802386
+    }
+  ],
+  "step04B1A_complete": false,
+  "production_authorization": false,
+  "next_gate": "If complete: Step04B1B with structural relaxation/EOS for the shortlisted Ueff/dataset candidates and quantitative cerussite validation. If incomplete: inspect SCF_failures_R2.json and the corresponding attempt text logs.",
+  "warning": "The robust screening uses 0.15-0.20 eV smearing for UO2. Final shortlisted calculations must be repeated at 0.05 eV and tighter convergence before production."
+}

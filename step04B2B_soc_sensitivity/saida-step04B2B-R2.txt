@@ -1,0 +1,157 @@
+==============================================================================
+STEP 04B2B-R2 — CORREÇÃO SETUP_PATH + RAMO UO2 APROVADO
+==============================================================================
+Data: sex 21 ago 2026 15:31:20 -03
+Host: alienware
+Projeto: /home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project
+
+>>> Reutilizando PbCO3 escalar já convergido
+
+>>> Reconstruindo UO2 a partir do RAMO APROVADO do Step04B1B2-R2
+[alienware][[10,1],0][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[10,1],0][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[10,1],3][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[10,1],2][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[10,1],0][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[10,1],1][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[10,1],3][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[10,1],3][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[10,1],2][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[10,1],1][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[10,1],2][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[10,1],1][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+rank=0 L00: Traceback (most recent call last):
+rank=0 L01:   File "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/.envs/gpaw/bin/gpaw", line 9, in <module>
+rank=0 L02:     sys.exit(main())
+rank=0 L03:              ^^^^^^
+rank=0 L04:   File "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/cli/main.py", line 90, in main
+rank=0 L05:     ase_main('gpaw', 'GPAW command-line tool', __version__,
+rank=0 L06:   File "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/ase/cli/main.py", line 106, in main
+rank=0 L07:     f(args)
+rank=0 L08:   File "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/cli/python.py", line 57, in run
+rank=0 L09:     runpy.run_path(args.arguments[0], run_name='__main__')
+rank=0 L10:   File "<frozen runpy>", line 291, in run_path
+rank=0 L11:   File "<frozen runpy>", line 98, in _run_module_code
+rank=0 L12:   File "<frozen runpy>", line 88, in _run_code
+rank=0 L13:   File "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04B2B_soc_sensitivity/04B2B_prepare_uo2_approved_branch.py", line 180, in <module>
+rank=0 L14:     calc.write(TARGET_GPW, mode="all")
+rank=0 L15:   File "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/calculator.py", line 314, in write
+rank=0 L16:     self._write(writer, mode)
+rank=0 L17:   File "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/calculator.py", line 331, in _write
+rank=0 L18:     self.wfs.write(writer.child('wave_functions'), mode == 'all')
+rank=0 L19:   File "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/wavefunctions/pw.py", line 551, in write
+rank=0 L20:     psit_G = self.get_wave_function_array(n, k, s,
+rank=0 L21:              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+rank=0 L22:   File "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/wavefunctions/pw.py", line 491, in get_wave_function_array
+rank=0 L23:     psit_G = self._get_wave_function_array(u, myn, realspace, periodic)
+rank=0 L24:              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+rank=0 L25:   File "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/wavefunctions/pw.py", line 465, in _get_wave_function_array
+rank=0 L26:     psit_G = kpt.psit_nG[n]
+rank=0 L27:              ~~~~~~~~~~~^^^
+rank=0 L28: TypeError: 'NoneType' object is not subscriptable
+rank=3 L00: Traceback (most recent call last):
+rank=3 L01:   File "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/.envs/gpaw/bin/gpaw", line 9, in <module>
+rank=3 L02:     sys.exit(main())
+rank=3 L03:              ^^^^^^
+rank=3 L04:   File "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/cli/main.py", line 90, in main
+rank=3 L05:     ase_main('gpaw', 'GPAW command-line tool', __version__,
+rank=3 L06:   File "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/ase/cli/main.py", line 106, in main
+rank=3 L07:     f(args)
+rank=3 L08:   File "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/cli/python.py", line 57, in run
+rank=3 L09:     runpy.run_path(args.arguments[0], run_name='__main__')
+rank=3 L10:   File "<frozen runpy>", line 291, in run_path
+rank=3 L11:   File "<frozen runpy>", line 98, in _run_module_code
+rank=3 L12:   File "<frozen runpy>", line 88, in _run_code
+rank=3 L13:   File "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04B2B_soc_sensitivity/04B2B_prepare_uo2_approved_branch.py", line 180, in <module>
+rank=3 L14:     calc.write(TARGET_GPW, mode="all")
+rank=3 L15:   File "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/calculator.py", line 314, in write
+rank=3 L16:     self._write(writer, mode)
+rank=3 L17:   File "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/calculator.py", line 331, in _write
+rank=3 L18:     self.wfs.write(writer.child('wave_functions'), mode == 'all')
+rank=3 L19:   File "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/wavefunctions/pw.py", line 551, in write
+rank=3 L20:     psit_G = self.get_wave_function_array(n, k, s,
+rank=3 L21:              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+rank=3 L22:   File "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/wavefunctions/pw.py", line 491, in get_wave_function_array
+rank=3 L23:     psit_G = self._get_wave_function_array(u, myn, realspace, periodic)
+rank=3 L24:              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+rank=3 L25:   File "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/wavefunctions/pw.py", line 465, in _get_wave_function_array
+rank=3 L26:     psit_G = kpt.psit_nG[n]
+rank=3 L27:              ~~~~~~~~~~~^^^
+rank=3 L28: TypeError: 'NoneType' object is not subscriptable
+rank=2 L00: Traceback (most recent call last):
+rank=2 L01:   File "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/.envs/gpaw/bin/gpaw", line 9, in <module>
+rank=2 L02:     sys.exit(main())
+rank=2 L03:              ^^^^^^
+rank=2 L04:   File "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/cli/main.py", line 90, in main
+rank=2 L05:     ase_main('gpaw', 'GPAW command-line tool', __version__,
+rank=2 L06:   File "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/ase/cli/main.py", line 106, in main
+rank=2 L07:     f(args)
+rank=2 L08:   File "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/cli/python.py", line 57, in run
+rank=2 L09:     runpy.run_path(args.arguments[0], run_name='__main__')
+rank=2 L10:   File "<frozen runpy>", line 291, in run_path
+rank=2 L11:   File "<frozen runpy>", line 98, in _run_module_code
+rank=2 L12:   File "<frozen runpy>", line 88, in _run_code
+rank=2 L13:   File "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04B2B_soc_sensitivity/04B2B_prepare_uo2_approved_branch.py", line 180, in <module>
+rank=2 L14:     calc.write(TARGET_GPW, mode="all")
+rank=2 L15:   File "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/calculator.py", line 314, in write
+rank=2 L16:     self._write(writer, mode)
+rank=2 L17:   File "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/calculator.py", line 331, in _write
+rank=2 L18:     self.wfs.write(writer.child('wave_functions'), mode == 'all')
+rank=2 L19:   File "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/wavefunctions/pw.py", line 551, in write
+rank=2 L20:     psit_G = self.get_wave_function_array(n, k, s,
+rank=2 L21:              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+rank=2 L22:   File "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/wavefunctions/pw.py", line 491, in get_wave_function_array
+rank=2 L23:     psit_G = self._get_wave_function_array(u, myn, realspace, periodic)
+rank=2 L24:              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+rank=2 L25:   File "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/wavefunctions/pw.py", line 465, in _get_wave_function_array
+rank=2 L26:     psit_G = kpt.psit_nG[n]
+rank=2 L27:              ~~~~~~~~~~~^^^
+rank=2 L28: TypeError: 'NoneType' object is not subscriptable
+GPAW CLEANUP (node 2): <class 'TypeError'> occurred.  Calling MPI_Abort!
+rank=1 L00: Traceback (most recent call last):
+rank=1 L01:   File "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/.envs/gpaw/bin/gpaw", line 9, in <module>
+rank=1 L02:     sys.exit(main())
+rank=1 L03:              ^^^^^^
+rank=1 L04:   File "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/cli/main.py", line 90, in main
+rank=1 L05:     ase_main('gpaw', 'GPAW command-line tool', __version__,
+rank=1 L06:   File "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/ase/cli/main.py", line 106, in main
+rank=1 L07:     f(args)
+rank=1 L08:   File "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/cli/python.py", line 57, in run
+rank=1 L09:     runpy.run_path(args.arguments[0], run_name='__main__')
+rank=1 L10:   File "<frozen runpy>", line 291, in run_path
+rank=1 L11:   File "<frozen runpy>", line 98, in _run_module_code
+rank=1 L12:   File "<frozen runpy>", line 88, in _run_code
+rank=1 L13:   File "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04B2B_soc_sensitivity/04B2B_prepare_uo2_approved_branch.py", line 180, in <module>
+rank=1 L14:     calc.write(TARGET_GPW, mode="all")
+rank=1 L15:   File "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/calculator.py", line 314, in write
+rank=1 L16:     self._write(writer, mode)
+rank=1 L17:   File "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/calculator.py", line 331, in _write
+rank=1 L18:     self.wfs.write(writer.child('wave_functions'), mode == 'all')
+rank=1 L19:   File "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/wavefunctions/pw.py", line 551, in write
+rank=1 L20:     psit_G = self.get_wave_function_array(n, k, s,
+rank=1 L21:              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+rank=1 L22:   File "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/wavefunctions/pw.py", line 491, in get_wave_function_array
+rank=1 L23:     psit_G = self._get_wave_function_array(u, myn, realspace, periodic)
+rank=1 L24:              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+rank=1 L25:   File "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/wavefunctions/pw.py", line 465, in _get_wave_function_array
+rank=1 L26:     psit_G = kpt.psit_nG[n]
+rank=1 L27:              ~~~~~~~~~~~^^^
+rank=1 L28: TypeError: 'NoneType' object is not subscriptable
+GPAW CLEANUP (node 0): <class 'TypeError'> occurred.  Calling MPI_Abort!
+GPAW CLEANUP (node 3): <class 'TypeError'> occurred.  Calling MPI_Abort!
+GPAW CLEANUP (node 1): <class 'TypeError'> occurred.  Calling MPI_Abort!
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 1 in communicator MPI_COMM_WORLD
+  Proc: [[10,1],1]
+  Errorcode: 42
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+prterun has exited due to process rank 2 with PID 0 on node alienware calling
+"abort". This may have caused other processes in the application to be
+terminated by signals sent by prterun (as reported here).
+--------------------------------------------------------------------------
+ 

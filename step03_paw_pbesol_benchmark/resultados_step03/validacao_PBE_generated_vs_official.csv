@@ -1,0 +1,3 @@
+mineral,candidate,reference,max_lattice_rel_diff_pct,volume_rel_diff_pct,max_angle_diff_deg,max_bond_mean_diff_A,criterion_lattice_pct,criterion_volume_pct,criterion_bond_A,passes
+calcita,PBE_generated_1400,PBE_official_1400,0.0,0.0,0.0,0.0,0.1,0.2,0.005,True
+dolomita,PBE_generated_1400,PBE_official_1400,0.0,0.0,0.0,0.0,0.1,0.2,0.005,True

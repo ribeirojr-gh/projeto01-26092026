@@ -1,0 +1,51 @@
+{
+  "status": "converged",
+  "step": "05B-R1-PbCa",
+  "mineral": "calcita",
+  "natoms": 80,
+  "defect": "Pb2+_on_Ca2+",
+  "charge_state": 0,
+  "pb_atom_index": 0,
+  "selected_Ca_distance_from_fractional_center_A": 2.5010275361777987,
+  "ecut_eV": 1400.0,
+  "relaxation_kpts": [
+    1,
+    1,
+    1
+  ],
+  "final_kmesh": [
+    1,
+    2,
+    3
+  ],
+  "diagnostic_original_24A_kmesh": [
+    1,
+    3,
+    5
+  ],
+  "Nk_final_reducible": 6,
+  "Nk_original_24A_reducible": 15,
+  "energy_host_finalk_eV": -637.5341775354512,
+  "energy_defect_finalk_eV": -634.8075378219168,
+  "raw_substitution_energy_eV": 2.726639713534496,
+  "gamma_relaxation_energy_eV": -0.5582185735069061,
+  "local_stage_converged": true,
+  "gamma_full_stage_converged": true,
+  "dense_correction_used": false,
+  "dense_correction_converged": true,
+  "max_force_finalk_eV_A": 0.022360195060489692,
+  "PbO_first6_A": [
+    2.502382829185676,
+    2.5023828318475556,
+    2.5038174158659943,
+    2.5038175569268883,
+    2.508841636236537,
+    2.5088418464455122
+  ],
+  "PbO6_mean_A": 2.5050140194180273,
+  "PbO6_std_A": 0.0027692538972603343,
+  "maximum_atomic_displacement_A": 0.1667062662250317,
+  "relaxed_traj": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05B_pbca_size_gate/resultados_step05B_R1/relax/calcita_80_PbCa_relaxed_R1.traj",
+  "relaxed_cif": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05B_pbca_size_gate/resultados_step05B_R1/relax/calcita_80_PbCa_relaxed_R1.cif",
+  "note": "raw_substitution_energy is used only for the finite-size difference.  It is not a formation energy."
+}

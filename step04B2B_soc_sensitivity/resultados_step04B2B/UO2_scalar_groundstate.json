@@ -1,0 +1,26 @@
+{
+  "status": "approved_reference_reused",
+  "system": "UO2",
+  "dataset": "U14_nc6",
+  "Ueff_eV": 3.0,
+  "ecut_eV": 1600.0,
+  "kpts": [
+    3,
+    3,
+    3
+  ],
+  "energy_eV": -118.28124387572748,
+  "energy_eV_atom": -9.85677032297729,
+  "scalar_gap_eV": 2.531501613759467,
+  "scalar_gap_error": null,
+  "U_local_moments_muB": [
+    1.9291016506711332,
+    -1.9291016485470625,
+    1.9291016493704016,
+    -1.929101649426877
+  ],
+  "U_abs_mean_moment_muB": 1.9291016495038684,
+  "source_reference_json": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04B1B2_uo2_eos_R2/resultados_step04B1B2_R2/UO2_nc6_U3p0_center_1600.json",
+  "soc_source_gpw": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04B1B2_uo2_eos_R2/resultados_step04B1B2_R2/restart/UO2_nc6_U3p0_center_1600_tight.gpw",
+  "branch_policy": "Use exactly the Step04B1B2-R2 approved scalar branch. No new cold-start UO2 calculation is performed in Step04B2B-R3."
+}

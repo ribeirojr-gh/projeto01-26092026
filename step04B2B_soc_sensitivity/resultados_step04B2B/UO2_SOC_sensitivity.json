@@ -1,0 +1,70 @@
+{
+  "status": "completed",
+  "step": "04B2B-R3",
+  "system": "UO2",
+  "method": "GPAW-25.7 non-self-consistent soc_eigenstates",
+  "gpw_file": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04B1B2_uo2_eos_R2/resultados_step04B1B2_R2/restart/UO2_nc6_U3p0_center_1600_tight.gpw",
+  "requires_mode_all_wavefunctions": false,
+  "results": {
+    "scale0_z": {
+      "fermi_level_eV": 12.42316700638164,
+      "indirect_gap_eV": 2.531501613759467,
+      "VBM_eV": 11.157416199501906,
+      "CBM_eV": 13.688917813261373,
+      "direct_gap_eV": 2.606485218843604,
+      "scale": 0.0,
+      "theta_deg": 0.0,
+      "phi_deg": 0.0,
+      "band_energy_eV_cell": -39.07132027541898,
+      "band_energy_eV_fu": -9.767830068854744
+    },
+    "scale0p5_z": {
+      "fermi_level_eV": 12.429204275578877,
+      "indirect_gap_eV": 2.4557252393717874,
+      "VBM_eV": 11.201341655892984,
+      "CBM_eV": 13.657066895264771,
+      "direct_gap_eV": 2.5180161806393695,
+      "scale": 0.5,
+      "theta_deg": 0.0,
+      "phi_deg": 0.0,
+      "band_energy_eV_cell": -39.295200467084,
+      "band_energy_eV_fu": -9.823800116771
+    },
+    "scale1_z": {
+      "fermi_level_eV": 12.41234287201034,
+      "indirect_gap_eV": 2.296196016678696,
+      "VBM_eV": 11.264244863670992,
+      "CBM_eV": 13.560440880349688,
+      "direct_gap_eV": 2.3290167472649568,
+      "scale": 1.0,
+      "theta_deg": 0.0,
+      "phi_deg": 0.0,
+      "band_energy_eV_cell": -39.953947148443255,
+      "band_energy_eV_fu": -9.988486787110814
+    },
+    "scale1_x": {
+      "fermi_level_eV": 12.412342630378603,
+      "indirect_gap_eV": 2.296195497215944,
+      "VBM_eV": 11.264244881770631,
+      "CBM_eV": 13.560440378986575,
+      "direct_gap_eV": 2.3290158652696107,
+      "scale": 1.0,
+      "theta_deg": 90.0,
+      "phi_deg": 0.0,
+      "band_energy_eV_cell": -39.95394713866129,
+      "band_energy_eV_fu": -9.988486784665323
+    },
+    "scale1_y": {
+      "fermi_level_eV": 12.4016179443736,
+      "indirect_gap_eV": 2.364126890409441,
+      "VBM_eV": 11.21955449916888,
+      "CBM_eV": 13.58368138957832,
+      "direct_gap_eV": 2.401350961092774,
+      "scale": 1.0,
+      "theta_deg": 90.0,
+      "phi_deg": 90.0,
+      "band_energy_eV_cell": -39.973105608402825,
+      "band_energy_eV_fu": -9.993276402100706
+    }
+  }
+}

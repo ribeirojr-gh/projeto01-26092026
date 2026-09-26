@@ -1,0 +1,7 @@
+comparacao,ltol,stol,angle_tol_deg,scale,symmetric,match,rms_normalizado,maxdist_normalizado
+calcita_COD9007286_vs_MP3953,0.2,0.3,5.0,True,True,True,0.002368313632665312,0.003057479960573327
+calcita_COD9007286_vs_MP3953,0.2,0.3,5.0,False,True,True,0.00236828989536851,0.003057449314321305
+calcita_COD1010928exp_vs_MP3953,0.2,0.3,5.0,True,True,False,,
+calcita_COD1010928exp_vs_MP3953,0.2,0.3,5.0,False,True,False,,
+dolomita_COD1517797_vs_MP6459,0.2,0.3,5.0,True,True,False,,
+dolomita_COD1517797_vs_MP6459,0.2,0.3,5.0,False,True,False,,

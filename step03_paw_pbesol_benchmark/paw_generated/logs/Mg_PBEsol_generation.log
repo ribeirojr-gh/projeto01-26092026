@@ -1,0 +1,60 @@
+
+Scalar-relativistic atomic PBEsol calculation for Mg (Magnesium, Z=12)
+450 radial gridpoints.
+|------------------------------------------------|
+|------------------------------------------------|
+Converged in 21 iterations.
+
+Energy contributions:
+-------------------------
+Kinetic:     +199.992263
+XC:           -15.879268
+Potential:   -383.944247
+-------------------------
+Total:       -199.831252
+
+state      eigenvalue         ekin         rmax
+-----------------------------------------------
+1s^2.0 :   -46.176421    67.300447        0.085
+2s^2.0 :    -2.924796     8.663020        0.548
+2p^6.0 :    -1.710683     7.793732        0.479
+3s^2.0 :    -0.171955     0.651468        2.558
+3p^0.0 :    -0.047976     0.337984        3.486
+-----------------------------------------------
+(units: Bohr and Hartree)
+
+Generating PAW setup
+Kinetic energy of the core from tauc = 134.84728137404736
+Cutoffs:
+rc(s)=2.060
+rc(p)=2.050
+rc(d)=1.960
+rc(vbar)=2.000
+rc(comp)=1.950
+rc(nct)=2.060
+
+Kinetic energy of the core states: 134.600893
+Charge: 0.0
+Core electrons: 2.0
+Valence electrons: 10.0
+Pseudo-core charge: 0.000000
+Shape function alpha=2.630
+Pseudo-electron charge 2.8928122486202854
+state    eigenvalue         norm
+--------------------------------
+2s(2) :    -2.924796     0.142839
+3s(2) :    -0.171955     1.005264
+2p(6) :    -1.710683     0.099435
+3p(0) :    -0.047976     0.993808
+*d    :     0.000000
+--------------------------------
+
+Diagonalizing with gridspacing h=0.050
+
+state   all-electron     PAW
+-------------------------------
+2s:      -2.924796    -2.925376
+2p:      -1.710683    -1.711553
+*d:                    0.032264
+*f:                    0.067474
+-------------------------------

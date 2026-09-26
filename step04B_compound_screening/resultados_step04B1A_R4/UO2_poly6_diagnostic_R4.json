@@ -1,0 +1,88 @@
+{
+  "step": "04B1A-R4",
+  "purpose": "Diagnose whether fixed total magnetization, disabled magnetic symmetry, Hubbard normalization, or cold-start orbital degeneracy caused the UO2 DFT+U failures.",
+  "dataset": "poly6",
+  "cold_start_attempts": [
+    {
+      "status": "converged",
+      "dataset": "poly6",
+      "strategy": "sym_freeM_scaled",
+      "Ueff_eV": 4.0,
+      "hubbard_normalized": true,
+      "mpi_world_size": 4,
+      "ecut_eV": 1400.0,
+      "kpts": [
+        3,
+        3,
+        3
+      ],
+      "nbands": 80,
+      "scf_iterations": 159,
+      "energy_eV": -114.49016466644841,
+      "energy_eV_atom": -9.540847055537368,
+      "band_gap_eV": 1.9943978476887079,
+      "band_gap_error": null,
+      "total_magnetic_moment_muB": -6.509796920862137e-06,
+      "U_local_moments_muB": [
+        1.882997782302053,
+        -1.8829998943177968,
+        -1.8829998943177957,
+        1.882994517784096
+      ],
+      "U_abs_mean_moment_muB": 1.8829980221804354,
+      "max_force_eV_A": 0.0002100014735030032,
+      "stress_GPa": [
+        -0.9462492256141324,
+        -0.9462492256141324,
+        1.6990792898332763,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "max_abs_stress_GPa": 1.6990792898332763,
+      "gpw_file": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04B_compound_screening/resultados_step04B1A_R4/gpw/poly6_sym_freeM_scaled.gpw"
+    }
+  ],
+  "ramp_attempt": null,
+  "target_Ueff_4eV_converged": true,
+  "selected_success": {
+    "status": "converged",
+    "dataset": "poly6",
+    "strategy": "sym_freeM_scaled",
+    "Ueff_eV": 4.0,
+    "hubbard_normalized": true,
+    "mpi_world_size": 4,
+    "ecut_eV": 1400.0,
+    "kpts": [
+      3,
+      3,
+      3
+    ],
+    "nbands": 80,
+    "scf_iterations": 159,
+    "energy_eV": -114.49016466644841,
+    "energy_eV_atom": -9.540847055537368,
+    "band_gap_eV": 1.9943978476887079,
+    "band_gap_error": null,
+    "total_magnetic_moment_muB": -6.509796920862137e-06,
+    "U_local_moments_muB": [
+      1.882997782302053,
+      -1.8829998943177968,
+      -1.8829998943177957,
+      1.882994517784096
+    ],
+    "U_abs_mean_moment_muB": 1.8829980221804354,
+    "max_force_eV_A": 0.0002100014735030032,
+    "stress_GPa": [
+      -0.9462492256141324,
+      -0.9462492256141324,
+      1.6990792898332763,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "max_abs_stress_GPa": 1.6990792898332763,
+    "gpw_file": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04B_compound_screening/resultados_step04B1A_R4/gpw/poly6_sym_freeM_scaled.gpw"
+  },
+  "production_authorization": false
+}

@@ -1,0 +1,21 @@
+STEP 02 — RESUMO PRELIMINAR
+========================================================================
+
+1. MLIP × estrutura experimental
+ mineral       metodo                             arquivo      a_A      b_A      c_A  alpha_deg  beta_deg  gamma_deg  volume_A3  densidade_g_cm3  delta_volume_pct
+ calcita Experimental  calcita_experimental_primitiva.cif 6.360000 6.360000 6.360000  46.100000 46.100000  46.100000 121.856656         2.727766          0.000000
+ calcita       CHGNet            calcita_chgnet_relax.cif 6.431779 6.431779 6.431779  46.347943 46.347942  46.347943 127.146815              NaN          4.341297
+ calcita         MACE              calcita_mace_relax.cif 6.420640 6.420640 6.420640  46.273071 46.273071  46.273071 126.151543              NaN          3.524541
+dolomita Experimental dolomita_experimental_primitiva.cif 6.018998 6.018998 6.018998  47.081600 47.081600  47.081600 106.919033         2.863894          0.000000
+dolomita       CHGNet           dolomita_chgnet_relax.cif 6.081969 6.081969 6.081969  47.181418 47.181422  47.181414 110.691580              NaN          3.528415
+dolomita         MACE             dolomita_mace_relax.cif 6.079024 6.079024 6.079025  47.162174 47.162177  47.162171 110.457439              NaN          3.309426
+
+2. Parâmetros GPAW sugeridos automaticamente
+ mineral  xc  ecut_recomendado_eV  kgrid_recomendado  criterio_energia_meV_atom  criterio_stress_GPa                                                                 observacao
+ calcita PBE                  700                  3                        1.0                 0.05 Recomendação automática preliminar; revisar tabela antes da relaxação DFT.
+dolomita PBE                  700                  4                        1.0                 0.05 Recomendação automática preliminar; revisar tabela antes da relaxação DFT.
+
+IMPORTANTE:
+Os parâmetros GPAW são sugestões automáticas baseadas nos critérios
+de energia e stress definidos no config_step02.py. A relaxação DFT
+não é iniciada nesta etapa; os resultados devem ser revisados antes.

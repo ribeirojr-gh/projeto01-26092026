@@ -1,0 +1,3 @@
+mineral,comparacao,mp_disponivel,structure_matcher,rms,max_dist
+calcita,COD_vs_MP,True,True,0.002368313632665312,0.003057479960573327
+dolomita,COD_vs_MP,True,False,,

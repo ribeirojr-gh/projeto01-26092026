@@ -1,0 +1,50 @@
+{
+  "purpose": "Referências finais para Etapa 02",
+  "comparison_policy": "ElementComparator para equivalência geométrica entre bases; SpeciesComparator mantido apenas como diagnóstico de metadados de estados de oxidação.",
+  "systems": {
+    "calcita": {
+      "formula": "CaCO3",
+      "experimental_reference": {
+        "database": "COD",
+        "id": "1010928",
+        "note": "Elliott (1937), JACS",
+        "files": {
+          "primitiva": "calcita_ref_experimental_primitiva.cif",
+          "convencional": "calcita_ref_experimental_convencional.cif"
+        }
+      },
+      "dft_database_reference": {
+        "database": "Materials Project",
+        "id": "mp-3953",
+        "files": {
+          "primitiva": "calcita_ref_MP_primitiva.cif",
+          "convencional": "calcita_ref_MP_convencional.cif"
+        }
+      },
+      "step02_starting_structure": "calcita_ref_experimental_primitiva.cif",
+      "step02_validation_target": "calcita_ref_experimental_convencional.cif"
+    },
+    "dolomita": {
+      "formula": "CaMg(CO3)2",
+      "experimental_reference": {
+        "database": "COD",
+        "id": "1517796",
+        "note": "Effenberger, Kirfel & Will (1983), TMPM",
+        "files": {
+          "primitiva": "dolomita_ref_experimental_primitiva.cif",
+          "convencional": "dolomita_ref_experimental_convencional.cif"
+        }
+      },
+      "dft_database_reference": {
+        "database": "Materials Project",
+        "id": "mp-6459",
+        "files": {
+          "primitiva": "dolomita_ref_MP_primitiva.cif",
+          "convencional": "dolomita_ref_MP_convencional.cif"
+        }
+      },
+      "step02_starting_structure": "dolomita_ref_experimental_primitiva.cif",
+      "step02_validation_target": "dolomita_ref_experimental_convencional.cif"
+    }
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "status": "completed",
+  "step": "04B2A-relaxation",
+  "production_matrix": {
+    "xc": "PBEsol",
+    "ecut_eV": 1400.0,
+    "kpts": [
+      3,
+      2,
+      3
+    ]
+  },
+  "stages": [
+    {
+      "stage": "01_atoms_exp_cell",
+      "type": "atomic_positions_fixed_cell",
+      "target_fmax_eV_A": 0.03,
+      "steps": 3,
+      "converged": true,
+      "cell_A": [
+        5.179,
+        8.492,
+        6.141
+      ]
+    },
+    {
+      "stage": "02_cell_round1",
+      "type": "cell_only_fixed_scaled_positions",
+      "target_generalized_fmax_eV": 0.15,
+      "steps": 4,
+      "converged": true,
+      "cell_A": [
+        5.171670262408612,
+        8.482541921411254,
+        6.077731826249723
+      ],
+      "stress_GPa": [
+        0.02484253514428408,
+        0.009716519538231827,
+        0.0177755107597139,
+        8.746073374205858e-06,
+        5.116363279132712e-07,
+        -2.0688817324522878e-07
+      ]
+    },
+    {
+      "stage": "03_atoms_round1",
+      "type": "atomic_positions_fixed_cell",
+      "target_fmax_eV_A": 0.03,
+      "steps": 1,
+      "converged": true,
+      "cell_A": [
+        5.171670262408612,
+        8.482541921411254,
+        6.077731826249723
+      ]
+    },
+    {
+      "stage": "04_cell_round2",
+      "type": "cell_only_fixed_scaled_positions",
+      "target_generalized_fmax_eV": 0.1,
+      "steps": 2,
+      "converged": true,
+      "cell_A": [
+        5.168159504174424,
+        8.478786122248538,
+        6.082365058329479
+      ],
+      "stress_GPa": [
+        -0.0247285685882668,
+        0.021562359256604713,
+        0.022116225313820733,
+        1.4037878985815863e-06,
+        7.011478141379022e-07,
+        2.9300936023641932e-06
+      ]
+    },
+    {
+      "stage": "05_atoms_final",
+      "type": "atomic_positions_fixed_cell",
+      "target_fmax_eV_A": 0.01,
+      "steps": 7,
+      "converged": true,
+      "cell_A": [
+        5.168159504174424,
+        8.478786122248538,
+        6.082365058329479
+      ]
+    }
+  ],
+  "all_stages_converged": true,
+  "energy_eV": -149.33807734933,
+  "energy_eV_atom": -7.466903867466501,
+  "cell_lengths_A": [
+    5.168159504174424,
+    8.478786122248538,
+    6.082365058329479
+  ],
+  "cell_angles_deg": [
+    90.0,
+    90.0,
+    90.0
+  ],
+  "volume_A3": 266.52752820750015,
+  "max_force_eV_A": 0.007748584880212838,
+  "stress_GPa": [
+    0.23624537907586085,
+    0.14026856817518096,
+    0.0342505947327606,
+    6.869830209940333e-06,
+    5.165146461328858e-06,
+    -4.6940439679458373e-07
+  ],
+  "max_abs_stress_GPa": 0.23624537907586085,
+  "final_traj": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04B2A_pb_cerussite_validation/resultados_step04B2A/relax/PbCO3_relaxed_production.traj",
+  "final_cif": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04B2A_pb_cerussite_validation/resultados_step04B2A/relax/PbCO3_relaxed_production.cif"
+}

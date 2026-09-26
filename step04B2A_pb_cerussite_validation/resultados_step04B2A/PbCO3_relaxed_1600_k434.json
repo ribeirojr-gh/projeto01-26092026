@@ -1,0 +1,29 @@
+{
+  "status": "converged",
+  "step": "04B2A",
+  "system": "PbCO3_cerussite",
+  "xc": "PBEsol",
+  "ecut_eV": 1600.0,
+  "kpts": [
+    4,
+    3,
+    4
+  ],
+  "mpi_world_size": 4,
+  "energy_eV": -149.33920578444204,
+  "energy_eV_atom": -7.4669602892221025,
+  "band_gap_eV": 3.2291856442697964,
+  "band_gap_error": null,
+  "max_force_eV_A": 0.009868441211743965,
+  "stress_GPa": [
+    0.15022053323118356,
+    0.07131930712918318,
+    -0.04664007219777912,
+    6.876018210115891e-06,
+    4.546819409832811e-06,
+    -4.7307282431922106e-07
+  ],
+  "hydrostatic_stress_GPa": 0.05829992272086254,
+  "max_abs_stress_GPa": 0.15022053323118356,
+  "volume_A3": 266.52752820750015
+}

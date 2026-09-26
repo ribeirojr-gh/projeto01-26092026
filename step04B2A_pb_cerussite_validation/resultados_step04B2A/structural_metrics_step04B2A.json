@@ -1,0 +1,91 @@
+{
+  "step": "04B2A-structural-metrics",
+  "experimental_reference": {
+    "source": "Chevrier et al., Z. Kristallogr. 199 (1992) 67-74; neutron single-crystal refinement.",
+    "a_A": 5.179,
+    "b_A": 8.492,
+    "c_A": 6.141,
+    "volume_A3": 270.0815975880001,
+    "spacegroup_number": 62,
+    "carbonate_aplanarity_A": 0.026
+  },
+  "relaxed_lattice": {
+    "a_A": 5.168159504174424,
+    "b_A": 8.478786122248538,
+    "c_A": 6.082365058329479,
+    "alpha_deg": 90.0,
+    "beta_deg": 90.0,
+    "gamma_deg": 90.0,
+    "volume_A3": 266.52752820750015
+  },
+  "relative_errors": {
+    "a_percent": 0.20931638975817943,
+    "b_percent": 0.15560383598048735,
+    "c_percent": 0.9548109700459331,
+    "volume_percent": 1.3159243029662215,
+    "max_angle_error_deg": 0.0,
+    "CO_mean_percent": 0.797422471197734,
+    "PbO9_mean_percent": 0.48410028979457165
+  },
+  "experimental_structure_chemistry": {
+    "CO_bonds_A": {
+      "count": 12,
+      "mean": 1.2843069493889478,
+      "std": 0.0018437132452563695,
+      "min": 1.2816995451123792,
+      "max": 1.2856106515272325
+    },
+    "carbonate_C_to_O3_plane_A": {
+      "count": 4,
+      "mean": 0.026330320527243666,
+      "std": 1.5032157172419021e-16,
+      "min": 0.026330320527243416,
+      "max": 0.02633032052724382
+    },
+    "PbO_nearest9_A": {
+      "count": 36,
+      "mean": 2.8436687589354714,
+      "std": 0.45649789701882715,
+      "min": 2.5936617098106187,
+      "max": 4.128585479588029
+    }
+  },
+  "relaxed_structure_chemistry": {
+    "CO_bonds_A": {
+      "count": 12,
+      "mean": 1.2945483016025294,
+      "std": 0.0002466893280190758,
+      "min": 1.2943736815585904,
+      "max": 1.2948973623228732
+    },
+    "carbonate_C_to_O3_plane_A": {
+      "count": 4,
+      "mean": 0.027676634434101226,
+      "std": 4.765051865151392e-08,
+      "min": 0.0276765867835796,
+      "max": 0.02767668208462029
+    },
+    "PbO_nearest9_A": {
+      "count": 36,
+      "mean": 2.829902550232667,
+      "std": 0.4587509986098088,
+      "min": 2.565068302866073,
+      "max": 4.119760725568348
+    }
+  },
+  "symmetry": [
+    {
+      "symprec_A": 0.01,
+      "number": 62,
+      "international": "Pnma",
+      "hall": "-P 2ac 2n"
+    },
+    {
+      "symprec_A": 0.05,
+      "number": 62,
+      "international": "Pnma",
+      "hall": "-P 2ac 2n"
+    }
+  ],
+  "structural_gate_passes": true
+}

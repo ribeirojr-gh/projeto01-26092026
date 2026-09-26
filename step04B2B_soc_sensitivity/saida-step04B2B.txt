@@ -1,0 +1,303 @@
+==============================================================================
+STEP 04B2B — SENSIBILIDADE SOC PbCO3 + UO2
+==============================================================================
+Data: qui 20 ago 2026 14:44:55 -03
+Host: alienware
+Projeto: /home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project
+
+>>> Ground state PbCO3
+[alienware][[61909,1],3][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[61909,1],3][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[61909,1],3][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[61909,1],1][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[61909,1],1][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[61909,1],1][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[61909,1],2][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[61909,1],2][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[61909,1],2][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[61909,1],0][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[61909,1],0][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[61909,1],0][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+{
+  "status": "converged",
+  "system": "PbCO3",
+  "energy_eV": -149.33920578442888,
+  "energy_eV_atom": -7.466960289221444,
+  "scalar_gap_eV": 3.229185644269367,
+  "scalar_gap_error": null,
+  "ecut_eV": 1600.0,
+  "kpts": [
+    4,
+    3,
+    4
+  ],
+  "gpw_file": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04B2B_soc_sensitivity/resultados_step04B2B/gpw/PbCO3_scalar_1600_k434_all.gpw",
+  "mpi_world_size": 4
+}
+>>> Ground state UO2
+[alienware][[33806,1],2][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[33806,1],2][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[33806,1],2][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[33806,1],3][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[33806,1],3][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[33806,1],3][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[33806,1],0][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[33806,1],0][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[33806,1],0][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[33806,1],1][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[33806,1],1][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[33806,1],1][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+{
+  "status": "converged",
+  "system": "UO2",
+  "dataset": "U14_nc6",
+  "Ueff_eV": 3.0,
+  "ecut_eV": 1600.0,
+  "kpts": [
+    3,
+    3,
+    3
+  ],
+  "energy_eV": -118.16412045492592,
+  "energy_eV_atom": -9.847010037910493,
+  "scalar_gap_eV": 2.1424101140345098,
+  "scalar_gap_error": null,
+  "U_local_moments_muB": [
+    1.896832246563767,
+    -1.893815630098338,
+    1.8934682945710724,
+    -1.8964052547517023
+  ],
+  "U_abs_mean_moment_muB": 1.8951303564962199,
+  "gpw_file": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04B2B_soc_sensitivity/resultados_step04B2B/gpw/UO2_scalar_1600_U3_all.gpw",
+  "preconvergence": {
+    "strategy": "lcao_0p10",
+    "iterations": 640
+  },
+  "failures_before_success": [],
+  "mpi_world_size": 4
+}
+>>> SOC PbCO3
+[alienware][[46299,1],2][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[46299,1],2][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[46299,1],2][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[46299,1],1][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[46299,1],1][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[46299,1],1][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[46299,1],3][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[46299,1],3][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[46299,1],3][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[46299,1],0][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[46299,1],0][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[46299,1],0][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+rank=0 L00: Traceback (most recent call last):
+rank=0 L01:   File "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/.envs/gpaw/bin/gpaw", line 9, in <module>
+rank=0 L02:     sys.exit(main())
+rank=0 L03:              ^^^^^^
+rank=0 L04:   File "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/cli/main.py", line 90, in main
+rank=0 L05:     ase_main('gpaw', 'GPAW command-line tool', __version__,
+rank=0 L06:   File "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/ase/cli/main.py", line 106, in main
+rank=0 L07:     f(args)
+rank=0 L08:   File "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/cli/python.py", line 57, in run
+rank=0 L09:     runpy.run_path(args.arguments[0], run_name='__main__')
+rank=0 L10:   File "<frozen runpy>", line 291, in run_path
+rank=0 L11:   File "<frozen runpy>", line 98, in _run_module_code
+rank=0 L12:   File "<frozen runpy>", line 88, in _run_code
+rank=0 L13:   File "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04B2B_soc_sensitivity/04B2B_soc_postprocess.py", line 68, in <module>
+rank=0 L14:     main()
+rank=0 L15:   File "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04B2B_soc_sensitivity/04B2B_soc_postprocess.py", line 55, in main
+rank=0 L16:     calc=GPAW(str(gpw))
+rank=0 L17:          ^^^^^^^^^^^^^^
+rank=0 L18:   File "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/calculator.py", line 168, in __init__
+rank=0 L19:     Calculator.__init__(self, restart, label=label, _set_ok=True, **kwargs)
+rank=0 L20:   File "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/ase/calculators/calculator.py", line 633, in __init__
+rank=0 L21:     self.read(restart)  # read parameters, atoms and results
+rank=0 L22:     ^^^^^^^^^^^^^^^^^^
+rank=0 L23:   File "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/calculator.py", line 379, in read
+rank=0 L24:     self.initialize(reading=True)
+rank=0 L25:   File "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/calculator.py", line 774, in initialize
+rank=0 L26:     self.create_setups(mode, xc)
+rank=0 L27:   File "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/calculator.py", line 1050, in create_setups
+rank=0 L28:     self.setups = Setups(Z_a,
+rank=0 L29:                   ^^^^^^^^^^^
+rank=0 L30:   File "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/setup.py", line 1319, in __init__
+rank=0 L31:     setup = create_setup(symbol, xc, 2, type,
+rank=0 L32:             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+rank=0 L33:   File "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/setup.py", line 80, in create_setup
+rank=0 L34:     setupdata = SetupData.find_and_read_path(symbol,
+rank=0 L35:                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+rank=0 L36:   File "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/setup_data.py", line 127, in find_and_read_path
+rank=0 L37:     setupdata.filename, source = search_for_file(setupdata.stdfilename,
+rank=0 L38:                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+rank=0 L39:   File "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/setup_data.py", line 472, in search_for_file
+rank=0 L40:     raise FileNotFoundError(f'{err}\n{helpful_message}\n')
+rank=0 L41: FileNotFoundError: Could not find required PAW dataset file "Pb.PBEsol".
+rank=0 L42: 
+rank=0 L43: You need to set the GPAW_SETUP_PATH environment variable to point to
+rank=0 L44: the directories where PAW dataset and basis files are stored.  See
+rank=0rank=3 L00: Traceback (most recent call last):
+rank=3 L01:   File "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/.envs/gpaw/bin/gpaw", line 9, in <module>
+rank=3 L02:     sys.exit(main())
+rank=3 L03:              ^^^^^^
+rank=3 L04:   File "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/cli/main.py", line 90, in main
+rank=3 L05:     ase_main('gpaw', 'GPAW command-line tool', __version__,
+rank=3 L06:   File "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/ase/cli/main.py", line 106, in main
+rank=3 L07:     f(args)
+rank=3 L08:   File "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/cli/python.py", line 57, in run
+rank=3 L09:     runpy.run_path(args.arguments[0], run_name='__main__')
+rank=3 L10:   File "<frozen runpy>", line 291, in run_path
+rank=3 L11:   File "<frozen runpy>", line 98, in _run_module_code
+rank=3 L12:   File "<frozen runpy>", line 88, in _run_code
+rank=3 L13:   File "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04B2B_soc_sensitivity/04B2B_soc_postprocess.py", line 68, in <module>
+rank=3 L14:     main()
+rank=3 L15:   File "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04B2B_soc_sensitivity/04B2B_soc_postprocess.py", line 55, in main
+rank=3 L16:     calc=GPAW(str(gpw))
+rank=3 L17:          ^^^^^^^^^^^^^^
+rank=3 L18:   File "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/calculator.py", line 168, in __init__
+rank=3 L19:     Calculator.__init__(self, restart, label=label, _set_ok=True, **kwargs)
+rank=3 L20:   File "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/ase/calculators/calculator.py", line 633, in __init__
+rank=3 L21:     self.read(restart)  # read parameters, atoms and results
+rank=3 L22:     ^^^^^^^^^^^^^^^^^^
+rank=3 L23:   File "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/calculator.py", line 379, in read
+rank=3 L24:     self.initialize(reading=True)
+rank=3 L25:   File "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/calculator.py", line 774, in initialize
+rank=3 L26:     self.create_setups(mode, xc)
+rank=3 L27:   File "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/calculator.py", line 1050, in create_setups
+rank=3 L28:     self.setups = Setups(Z_a,
+rank=3 L29:                   ^^^^^^^^^^^
+rank=3 L30:   File "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/setup.py", line 1319, in __init__
+rank=3 L31:     setup = create_setup(symbol, xc, 2, type,
+rank=3 L32:             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+rank=3 L33:   File "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/setup.py", line 80, in create_setup
+rank=3 L34:     setupdata = SetupData.find_and_read_path(symbol,
+rank=3 L35:                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+rank=3 L36:   File "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/setup_data.py", line 127, in find_and_read_path
+rank=3 L37:     setupdata.filename, source = search_for_file(setupdata.stdfilename,
+rank=3 L38:                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+rank=3 L39:   File "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/setup_data.py", line 472, in search_for_file
+rank=3 L40:     raise FileNotFoundError(f'{err}\n{helpful_message}\n')
+rank=3 L41: FileNotFoundError: Could not find required PAW dataset file "Pb.PBEsol".
+rank=3 L42: 
+rank=3 L43: You need to set the GPAW_SETUP_PATH environment variable to point to
+rank=3 L44: the directories where PAW dataset and basis files are stored.  See
+rank=3rank=1 L00: Traceback (most recent call last):
+rank=1 L01:   File "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/.envs/gpaw/bin/gpaw", line 9, in <module>
+rank=1 L02:     sys.exit(main())
+rank=1 L03:              ^^^^^^
+rank=1 L04:   File "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/cli/main.py", line 90, in main
+rank=1 L05:     ase_main('gpaw', 'GPAW command-line tool', __version__,
+rank=1 L06:   File "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/ase/cli/main.py", line 106, in main
+rank=1 L07:     f(args)
+rank=1 L08:   File "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/cli/python.py", line 57, in run
+rank=1 L09:     runpy.run_path(args.arguments[0], run_name='__main__')
+rank=1 L10:   File "<frozen runpy>", line 291, in run_path
+rank=1 L11:   File "<frozen runpy>", line 98, in _run_module_code
+rank=1 L12:   File "<frozen runpy>", line 88, in _run_code
+rank=1 L13:   File "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04B2B_soc_sensitivity/04B2B_soc_postprocess.py", line 68, in <module>
+rank=1 L14:     main()
+rank=1 L15:   File "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04B2B_soc_sensitivity/04B2B_soc_postprocess.py", line 55, in main
+rank=1 L16:     calc=GPAW(str(gpw))
+rank=1 L17:          ^^^^^^^^^^^^^^
+rank=1 L18:   File "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/calculator.py", line 168, in __init__
+rank=1 L19:     Calculator.__init__(self, restart, label=label, _set_ok=True, **kwargs)
+rank=1 L20:   File "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/ase/calculators/calculator.py", line 633, in __init__
+rank=1 L21:     self.read(restart)  # read parameters, atoms and results
+rank=1 L22:     ^^^^^^^^^^^^^^^^^^
+rank=1 L23:   File "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/calculator.py", line 379, in read
+rank=1 L24:     self.initialize(reading=True)
+rank=1 L25:   File "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/calculator.py", line 774, in initialize
+rank=1 L26:     self.create_setups(mode, xc)
+rank=1 L27:   File "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/calculator.py", line 1050, in create_setups
+rank=1 L28:     self.setups = Setups(Z_a,
+rank=1 L29:                   ^^^^^^^^^^^
+rank=1 L30:   File "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/setup.py", line 1319, in __init__
+rank=1 L31:     setup = create_setup(symbol, xc, 2, type,
+rank=1 L32:             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+rank=1 L33:   File "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/setup.py", line 80, in create_setup
+rank=1 L34:     setupdata = SetupData.find_and_read_path(symbol,
+rank=1 L35:                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+rank=1 L36:   File "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/setup_data.py", line 127, in find_and_read_path
+rank=1 L37:     setupdata.filename, source = search_for_file(setupdata.stdfilename,
+rank=1 L38:                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+rank=1 L39:   File "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/setup_data.py", line 472, in search_for_file
+rank=1 L40:     raise FileNotFoundError(f'{err}\n{helpful_message}\n')
+rank=1 L41: FileNotFoundError: Could not find required PAW dataset file "Pb.PBEsol".
+rank=1 L42: 
+rank=1 L43: You need to set the GPAW_SETUP_PATH environment variable to point to
+rank=1 L44: the directories where PAW dataset and basis files are stored.  See
+rank=1rank=2 L00: Traceback (most recent call last):
+rank=2 L01:   File "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/.envs/gpaw/bin/gpaw", line 9, in <module>
+rank=2 L02:     sys.exit(main())
+rank=2 L03:              ^^^^^^
+rank=2 L04:   File "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/cli/main.py", line 90, in main
+rank=2 L05:     ase_main('gpaw', 'GPAW command-line tool', __version__,
+rank=2 L06:   File "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/ase/cli/main.py", line 106, in main
+rank=2 L07:     f(args)
+rank=2 L08:   File "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/cli/python.py", line 57, in run
+rank=2 L09:     runpy.run_path(args.arguments[0], run_name='__main__')
+rank=2 L10:   File "<frozen runpy>", line 291, in run_path
+rank=2 L11:   File "<frozen runpy>", line 98, in _run_module_code
+rank=2 L12:   File "<frozen runpy>", line 88, in _run_code
+rank=2 L13:   File "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04B2B_soc_sensitivity/04B2B_soc_postprocess.py", line 68, in <module>
+rank=2 L14:     main()
+rank=2 L15:   File "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04B2B_soc_sensitivity/04B2B_soc_postprocess.py", line 55, in main
+rank=2 L16:     calc=GPAW(str(gpw))
+rank=2 L17:          ^^^^^^^^^^^^^^
+rank=2 L18:   File "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/calculator.py", line 168, in __init__
+rank=2 L19:     Calculator.__init__(self, restart, label=label, _set_ok=True, **kwargs)
+rank=2 L20:   File "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/ase/calculators/calculator.py", line 633, in __init__
+rank=2 L21:     self.read(restart)  # read parameters, atoms and results
+rank=2 L22:     ^^^^^^^^^^^^^^^^^^
+rank=2 L23:   File "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/calculator.py", line 379, in read
+rank=2 L24:     self.initialize(reading=True)
+rank=2 L25:   File "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/calculator.py", line 774, in initialize
+rank=2 L26:     self.create_setups(mode, xc)
+rank=2 L27:   File "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/calculator.py", line 1050, in create_setups
+rank=2 L28:     self.setups = Setups(Z_a,
+rank=2 L29:                   ^^^^^^^^^^^
+rank=2 L30:   File "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/setup.py", line 1319, in __init__
+rank=2 L31:     setup = create_setup(symbol, xc, 2, type,
+rank=2 L32:             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+rank=2 L33:   File "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/setup.py", line 80, in create_setup
+rank=2 L34:     setupdata = SetupData.find_and_read_path(symbol,
+rank=2 L35:                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+rank=2 L36:   File "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/setup_data.py", line 127, in find_and_read_path
+rank=2 L37:     setupdata.filename, source = search_for_file(setupdata.stdfilename,
+rank=2 L38:                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+rank=2 L39:   File "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/setup_data.py", line 472, in search_for_file
+rank=2 L40:     raise FileNotFoundError(f'{err}\n{helpful_message}\n')
+rank=2 L41: FileNotFoundError: Could not find required PAW dataset file "Pb.PBEsol".
+rank=2 L42: 
+rank=2 L43: You need to set the GPAW_SETUP_PATH environment variable to point to
+rank=2 L44: the directories where PAW dataset and basis files are stored.  See
+rank=2 L45: https://gpaw.readthedocs.io/install.html#install-paw-datasets
+rank=0 L46: for details.
+rank=0 L47: 
+GPAW CLEANUP (node 0): <class 'FileNotFoundError'> occurred.  Calling MPI_Abort!
+ L45: https://gpaw.readthedocs.io/install.html#install-paw-datasets
+rank=3 L46: for details.
+rank=3 L47: 
+GPAW CLEANUP (node 3): <class 'FileNotFoundError'> occurred.  Calling MPI_Abort!
+ L45: https://gpaw.readthedocs.io/install.html#install-paw-datasets
+rank=1 L46: for details.
+rank=1 L47: 
+GPAW CLEANUP (node 1): <class 'FileNotFoundError'> occurred.  Calling MPI_Abort!
+ L45: https://gpaw.readthedocs.io/install.html#install-paw-datasets
+rank=2 L46: for details.
+rank=2 L47: 
+GPAW CLEANUP (node 2): <class 'FileNotFoundError'> occurred.  Calling MPI_Abort!
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 0 in communicator MPI_COMM_WORLD
+  Proc: [[46299,1],0]
+  Errorcode: 42
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+prterun has exited due to process rank 1 with PID 0 on node alienware calling
+"abort". This may have caused other processes in the application to be
+terminated by signals sent by prterun (as reported here).
+--------------------------------------------------------------------------
+ 

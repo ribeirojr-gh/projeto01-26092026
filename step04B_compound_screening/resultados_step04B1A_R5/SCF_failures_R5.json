@@ -1,0 +1,102 @@
+[
+  {
+    "file": "UO2_nc6_Ueff_0p0.json",
+    "dataset": "nc6",
+    "Ueff_eV": 0.0,
+    "attempts": [
+      {
+        "attempt": 1,
+        "strategy": "common_noPG_primary",
+        "smearing_eV": 0.1,
+        "maxiter": 600,
+        "scf_iterations_reached": 601,
+        "txt": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04B_compound_screening/logs/R5/UO2_nc6_Ueff_0p0_attempt1_common_noPG_primary.txt",
+        "error": "KohnShamConvergenceError('Did not converge!  See text output for help.')"
+      },
+      {
+        "attempt": 2,
+        "strategy": "common_noPG_damped",
+        "smearing_eV": 0.15,
+        "maxiter": 900,
+        "scf_iterations_reached": 901,
+        "txt": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04B_compound_screening/logs/R5/UO2_nc6_Ueff_0p0_attempt2_common_noPG_damped.txt",
+        "error": "KohnShamConvergenceError('Did not converge!  See text output for help.')"
+      }
+    ]
+  },
+  {
+    "file": "UO2_poly6_Ueff_2p0.json",
+    "dataset": "poly6",
+    "Ueff_eV": 2.0,
+    "attempts": [
+      {
+        "attempt": 1,
+        "strategy": "common_noPG_primary",
+        "smearing_eV": 0.1,
+        "maxiter": 600,
+        "scf_iterations_reached": 601,
+        "txt": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04B_compound_screening/logs/R5/UO2_poly6_Ueff_2p0_attempt1_common_noPG_primary.txt",
+        "error": "KohnShamConvergenceError('Did not converge!  See text output for help.')"
+      },
+      {
+        "attempt": 2,
+        "strategy": "common_noPG_damped",
+        "smearing_eV": 0.15,
+        "maxiter": 900,
+        "scf_iterations_reached": 901,
+        "txt": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04B_compound_screening/logs/R5/UO2_poly6_Ueff_2p0_attempt2_common_noPG_damped.txt",
+        "error": "KohnShamConvergenceError('Did not converge!  See text output for help.')"
+      }
+    ]
+  },
+  {
+    "file": "UO2_poly6_Ueff_3p0.json",
+    "dataset": "poly6",
+    "Ueff_eV": 3.0,
+    "attempts": [
+      {
+        "attempt": 1,
+        "strategy": "common_noPG_primary",
+        "smearing_eV": 0.1,
+        "maxiter": 600,
+        "scf_iterations_reached": 601,
+        "txt": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04B_compound_screening/logs/R5/UO2_poly6_Ueff_3p0_attempt1_common_noPG_primary.txt",
+        "error": "KohnShamConvergenceError('Did not converge!  See text output for help.')"
+      },
+      {
+        "attempt": 2,
+        "strategy": "common_noPG_damped",
+        "smearing_eV": 0.15,
+        "maxiter": 900,
+        "scf_iterations_reached": 901,
+        "txt": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04B_compound_screening/logs/R5/UO2_poly6_Ueff_3p0_attempt2_common_noPG_damped.txt",
+        "error": "KohnShamConvergenceError('Did not converge!  See text output for help.')"
+      }
+    ]
+  },
+  {
+    "file": "UO2_poly6_Ueff_4p0.json",
+    "dataset": "poly6",
+    "Ueff_eV": 4.0,
+    "attempts": [
+      {
+        "attempt": 1,
+        "strategy": "common_noPG_primary",
+        "smearing_eV": 0.1,
+        "maxiter": 600,
+        "scf_iterations_reached": 601,
+        "txt": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04B_compound_screening/logs/R5/UO2_poly6_Ueff_4p0_attempt1_common_noPG_primary.txt",
+        "error": "KohnShamConvergenceError('Did not converge!  See text output for help.')"
+      },
+      {
+        "attempt": 2,
+        "strategy": "common_noPG_damped",
+        "smearing_eV": 0.15,
+        "maxiter": 900,
+        "scf_iterations_reached": 901,
+        "txt": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04B_compound_screening/logs/R5/UO2_poly6_Ueff_4p0_attempt2_common_noPG_damped.txt",
+        "error": "KohnShamConvergenceError('Did not converge!  See text output for help.')"
+      }
+    ]
+  }
+]

@@ -1,0 +1,7 @@
+candidate_id,expected_valence_electrons,projectors,radii_Bohr,PBE_passes,PBEsol_passes,selected
+"U24_5d_r2p50",24,"6s,7s,6p,7p,5d,6d,d,5f,f,G","2.50,2.50,2.50,2.50",false,false,false
+"U24_5d_r2p30",24,"6s,7s,6p,7p,5d,6d,d,5f,f,G","2.30,2.30,2.30,2.30",false,false,false
+"U24_5d_r2p20",24,"6s,7s,6p,7p,5d,6d,d,5f,f,G","2.20,2.20,2.20,2.20",false,false,false
+"U32_5spd_r2p50",32,"5s,6s,7s,5p,6p,7p,5d,6d,d,5f,f,G","2.50,2.50,2.50,2.50",false,false,false
+"U32_5spd_r2p30",32,"5s,6s,7s,5p,6p,7p,5d,6d,d,5f,f,G","2.30,2.30,2.30,2.30",false,false,false
+"U32_5spd_r2p20",32,"5s,6s,7s,5p,6p,7p,5d,6d,d,5f,f,G","2.20,2.20,2.20,2.20",false,false,false

@@ -1,0 +1,46 @@
+{
+  "step": "05A-host-relax",
+  "mineral": "dolomita",
+  "formula": "CaMg(CO3)2",
+  "input": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step01_R2_final_references/referencias_finais/dolomita_ref_experimental_primitiva.cif",
+  "xc": "PBEsol",
+  "ecut_eV": 1400.0,
+  "kpts": [
+    5,
+    5,
+    5
+  ],
+  "natoms": 10,
+  "atomic_stage_converged": true,
+  "cell_stage_converged": true,
+  "energy_eV": -78.21821109073086,
+  "energy_eV_atom": -7.8218211090730865,
+  "max_force_eV_A": 0.006461253979391531,
+  "stress_GPa": [
+    0.20843563189153744,
+    0.1786344928400988,
+    0.1746089951102731,
+    0.0045425776241722225,
+    0.010426902393209375,
+    0.01602459935106929
+  ],
+  "max_abs_stress_GPa": 0.20843563189153744,
+  "volume_A3": 106.98273767913845,
+  "cell_lengths_A": [
+    6.000371526465533,
+    6.000371526465531,
+    6.000371526465531
+  ],
+  "cell_angles_deg": [
+    47.36844425502528,
+    47.36844425502529,
+    47.3684442550253
+  ],
+  "spacegroup": {
+    "number": 148,
+    "international": "R-3"
+  },
+  "expected_spacegroup": 148,
+  "traj": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05A_host_supercells/resultados_step05A/hosts_relaxed/dolomita_PBEsol1400_relaxed.traj",
+  "cif": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05A_host_supercells/resultados_step05A/hosts_relaxed/dolomita_PBEsol1400_relaxed.cif"
+}

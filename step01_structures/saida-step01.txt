@@ -1,0 +1,38 @@
+==============================================================================
+ETAPA 01 — BUSCA E PADRONIZAÇÃO DE ESTRUTURAS
+==============================================================================
+Python: /home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/structures/bin/python
+Diretório: /home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/step01_structures
+
+--- CALCITA (CaCO3) ---
+[COD] Baixando calcita: https://www.crystallography.net/cod/9007286.cif
+[COD] Salvo: calcita_COD_9007286.cif
+[CHECK] calcita / COD: grupo espacial detectado = R-3c (167)
+[STD] Convencional: calcita_COD_9007286_convencional.cif
+[STD] Primitiva:    calcita_COD_9007286_primitiva.cif
+[MP] Baixando calcita: mp-3953
+Retrieving MaterialsDoc documents:   0%|          | 0/1 [00:00<?, ?it/s]Retrieving MaterialsDoc documents: 100%|██████████| 1/1 [00:00<00:00, 35848.75it/s]
+[MP] Salvo: calcita_MP_mp-3953.cif
+[CHECK] calcita / MP: grupo espacial detectado = R-3c (167)
+[STD] Convencional: calcita_MP_mp-3953_convencional.cif
+[STD] Primitiva:    calcita_MP_mp-3953_primitiva.cif
+
+--- DOLOMITA (CaMg(CO3)2) ---
+[COD] Baixando dolomita: https://www.crystallography.net/cod/1517797.cif
+[COD] Salvo: dolomita_COD_1517797.cif
+[CHECK] dolomita / COD: grupo espacial detectado = R-3 (148)
+[STD] Convencional: dolomita_COD_1517797_convencional.cif
+[STD] Primitiva:    dolomita_COD_1517797_primitiva.cif
+[MP] Baixando dolomita: mp-6459
+Retrieving MaterialsDoc documents:   0%|          | 0/1 [00:00<?, ?it/s]Retrieving MaterialsDoc documents: 100%|██████████| 1/1 [00:00<00:00, 32017.59it/s]
+[MP] Salvo: dolomita_MP_mp-6459.cif
+[CHECK] dolomita / MP: grupo espacial detectado = R-3 (148)
+[STD] Convencional: dolomita_MP_mp-6459_convencional.cif
+[STD] Primitiva:    dolomita_MP_mp-6459_primitiva.cif
+
+==============================================================================
+ETAPA 01 CONCLUÍDA
+Resumo:     /home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/step01_structures/tabelas/resumo_estruturas.csv
+Comparação: /home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/step01_structures/tabelas/comparacao_estrutural.csv
+Estruturas: /home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/step01_structures/estruturas
+==============================================================================

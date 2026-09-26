@@ -1,0 +1,61 @@
+============================================================
+ETAPA 00 — VALIDAÇÃO FINAL GPAW/MPI
+============================================================
+
+[1/3] Informação da instalação
+ -----------------------------------------------------------------------------------------------------------------------------------------------------------------
+| python-3.11.15    /home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/gpaw/bin/python                                                         |
+| gpaw-25.7.0       /home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/                                 |
+| ase-3.29.0        /home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/ase/                                  |
+| numpy-2.4.6       /home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/numpy/                                |
+| scipy-1.17.1      /home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/scipy/                                |
+| gpaw_data-1.0.1   /home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw_data/                            |
+| libxc-7.0.0       yes                                                                                                                                           |
+| _gpaw             /home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/_gpaw.cpython-311-x86_64-linux-gnu.so |
+| MPI enabled       yes                                                                                                                                           |
+| OpenMP enabled    yes                                                                                                                                           |
+| GPU enabled       no                                                                                                                                            |
+| GPU-aware MPI     no                                                                                                                                            |
+| cupy-fake         /home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/gpu/cpupy/__init__.py            |
+| MAGMA             no                                                                                                                                            |
+| scalapack         yes                                                                                                                                           |
+| Elpa              yes; version: 20250131                                                                                                                        |
+| FFTW              yes                                                                                                                                           |
+| libvdwxc          yes                                                                                                                                           |
+| PAW-datasets (1)  /home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw_data/setups                      |
+ -----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+[2/3] Mundo MPI interno do GPAW — 4 processos
+GPAW rank=0/4
+GPAW rank=2/4
+GPAW rank=1/4
+GPAW rank=3/4
+GPAW MPI: OK (4 processos).
+
+[3/3] Teste oficial GPAW em paralelo — 4 processos
+ -----------------------------------------------------------------------------------------------------------------------------------------------------------------
+| python-3.11.15    /home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/gpaw/bin/python                                                         |
+| gpaw-25.7.0       /home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/                                 |
+| ase-3.29.0        /home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/ase/                                  |
+| numpy-2.4.6       /home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/numpy/                                |
+| scipy-1.17.1      /home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/scipy/                                |
+| gpaw_data-1.0.1   /home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw_data/                            |
+| libxc-7.0.0       yes                                                                                                                                           |
+| _gpaw             /home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/_gpaw.cpython-311-x86_64-linux-gnu.so |
+| MPI enabled       yes                                                                                                                                           |
+| OpenMP enabled    yes                                                                                                                                           |
+| GPU enabled       no                                                                                                                                            |
+| GPU-aware MPI     no                                                                                                                                            |
+| cupy-fake         /home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/gpu/cpupy/__init__.py            |
+| MAGMA             no                                                                                                                                            |
+| scalapack         yes                                                                                                                                           |
+| Elpa              yes; version: 20250131                                                                                                                        |
+| FFTW              yes                                                                                                                                           |
+| libvdwxc          yes                                                                                                                                           |
+| PAW-datasets (1)  /home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw_data/setups                      |
+ -----------------------------------------------------------------------------------------------------------------------------------------------------------------
+Doing a test calculation (cores: 4): ... Done
+
+============================================================
+ETAPA 00 VALIDADA COM SUCESSO
+============================================================

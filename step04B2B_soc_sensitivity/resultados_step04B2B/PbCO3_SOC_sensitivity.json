@@ -1,0 +1,46 @@
+{
+  "status": "completed",
+  "step": "04B2B-R3",
+  "system": "PbCO3",
+  "method": "GPAW-25.7 non-self-consistent soc_eigenstates",
+  "gpw_file": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04B2B_soc_sensitivity/resultados_step04B2B/gpw/PbCO3_scalar_1600_k434_all.gpw",
+  "requires_mode_all_wavefunctions": false,
+  "results": {
+    "scale0": {
+      "fermi_level_eV": 5.448842778807384,
+      "indirect_gap_eV": 3.229185644269367,
+      "VBM_eV": 3.834249956672701,
+      "CBM_eV": 7.063435600942068,
+      "direct_gap_eV": 3.3183327928735773,
+      "scale": 0.0,
+      "theta_deg": 0.0,
+      "phi_deg": 0.0,
+      "band_energy_eV_cell": -831.9947349121044,
+      "band_energy_eV_fu": -207.9986837280261
+    },
+    "scale0p5": {
+      "fermi_level_eV": 5.420875683519997,
+      "indirect_gap_eV": 3.1730450934877217,
+      "VBM_eV": 3.8343531367761354,
+      "CBM_eV": 7.007398230263857,
+      "direct_gap_eV": 3.262516569580123,
+      "scale": 0.5,
+      "theta_deg": 0.0,
+      "phi_deg": 0.0,
+      "band_energy_eV_cell": -832.0972079493322,
+      "band_energy_eV_fu": -208.02430198733305
+    },
+    "scale1": {
+      "fermi_level_eV": 5.327886642324431,
+      "indirect_gap_eV": 2.986477881604012,
+      "VBM_eV": 3.8346477015224254,
+      "CBM_eV": 6.821125583126437,
+      "direct_gap_eV": 3.0769894536723403,
+      "scale": 1.0,
+      "theta_deg": 0.0,
+      "phi_deg": 0.0,
+      "band_energy_eV_cell": -832.4280097174443,
+      "band_energy_eV_fu": -208.10700242936107
+    }
+  }
+}

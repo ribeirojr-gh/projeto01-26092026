@@ -1,0 +1,30 @@
+==================================================================================
+ETAPA 01-R2 — SELEÇÃO FINAL DAS REFERÊNCIAS CRISTALOGRÁFICAS
+==================================================================================
+
+--- CALCITA ---
+[LOCAL COD] /home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/step01_R1_validation/estruturas_R1/calcita_experimental_COD_1010928.cif
+[LOCAL MP] /home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/step01_structures/estruturas/calcita_MP_mp-3953.cif
+COD SG: 167; MP SG: 167
+SpeciesComparator  scale=True  match=False
+SpeciesComparator  scale=False match=False
+ElementComparator  scale=True  match=True
+ElementComparator  scale=False match=True
+
+--- DOLOMITA ---
+[DOWNLOAD COD] https://www.crystallography.net/cod/1517796.cif
+[LOCAL MP] /home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/step01_structures/estruturas/dolomita_MP_mp-6459.cif
+COD SG: 148; MP SG: 148
+SpeciesComparator  scale=True  match=False
+SpeciesComparator  scale=False match=False
+ElementComparator  scale=True  match=True
+ElementComparator  scale=False match=True
+
+==================================================================================
+ETAPA 01-R2 CONCLUÍDA
+Resumo:      /home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/step01_R2_final_references/tabelas_R2/resumo_referencias_finais.csv
+Comparação:  /home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/step01_R2_final_references/tabelas_R2/comparacao_elementos_vs_especies.csv
+Coordenação: /home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/step01_R2_final_references/tabelas_R2/coordenacao_referencias_finais.csv
+Manifesto:   /home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/step01_R2_final_references/tabelas_R2/manifesto_referencias_finais.json
+CIFs finais: /home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/step01_R2_final_references/referencias_finais
+==================================================================================

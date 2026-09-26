@@ -1,0 +1,3 @@
+dataset,Ueff_eV,band_gap_eV,U_abs_mean_moment_muB,moment_abs_error_muB,gap_interval_penalty_eV,screening_score,scf_strategy,smearing_eV,scf_iterations,max_force_eV_A,max_abs_stress_GPa
+nc6,0.0,,1.5091864425297472,0.23081355747025278,999.0,3996.923254229881,mixerdif_damped,0.2,440,0.0025878402309813617,9.967762670645657
+poly6,0.0,,1.4645589180097227,0.2754410819902773,999.0,3997.101764327961,mixersum_screening,0.15,75,0.0004288255806420634,11.232930077802386

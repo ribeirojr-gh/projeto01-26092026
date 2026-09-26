@@ -1,0 +1,53 @@
+{
+  "step": "04B2C1-structure",
+  "source": {
+    "COD_ID": "1527742",
+    "reference": "Loopstra, Taylor & Waugh, Journal of Solid State Chemistry 20 (1977) 9-19; neutron powder refinement at 293 K.",
+    "temperature_K": 293.0,
+    "spacegroup_expected": 70,
+    "cell_A": [
+      9.787,
+      19.932,
+      9.705
+    ],
+    "shortest_UO_reference_A": 1.796
+  },
+  "sha256_cif": "a5728ef3dbe5ebad0786a982c961b86a7569db28f9a0d6a1921c8b6a18135333",
+  "conventional": {
+    "natoms": 128,
+    "formula": "O96U32",
+    "cell_lengths_A": [
+      9.787,
+      19.932,
+      9.705
+    ],
+    "cell_angles_deg": [
+      90.0,
+      90.0,
+      90.0
+    ],
+    "spacegroup": {
+      "number": 70,
+      "international": "Fddd",
+      "hall": "F 2 2 -1d"
+    },
+    "sorted_cell_relative_errors_percent": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "primitive": {
+    "natoms": 32,
+    "nU": 8,
+    "nO": 24,
+    "formula": "O24U8",
+    "spacegroup": {
+      "number": 70,
+      "international": "Fddd",
+      "hall": "F 2 2 -1d"
+    },
+    "shortest_UO_A": 1.7929296756541402
+  },
+  "structure_gate_passes": true
+}

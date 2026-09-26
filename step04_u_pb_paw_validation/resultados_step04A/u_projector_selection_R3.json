@@ -1,0 +1,14 @@
+{
+  "strategy": "projector_optimization_at_fixed_default_radius",
+  "generator": "gpaw dataset / generator2",
+  "gpaw_version_target": "25.7.0",
+  "valence_electrons": 14,
+  "scalar_relativistic": true,
+  "radii_Bohr_spdf": [2.5, 2.5, 2.5, 2.5],
+  "selected_candidate_id": null,
+  "selected_projectors": null,
+  "PBE_passes": false,
+  "PBEsol_passes": false,
+  "no_check_flag_used": false,
+  "candidate_status": "FAILED_PROJECTOR_SCAN"
+}

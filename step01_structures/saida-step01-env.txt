@@ -1,0 +1,17 @@
+============================================================
+DIAGNÓSTICO DO AMBIENTE — ETAPA 01
+============================================================
+Python executável: /home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/structures/bin/python
+Python versão: 3.11.15
+ASE: 3.29.0
+pymatgen: OK
+mp-api: OK
+NumPy: 2.4.6
+SciPy: 1.17.1
+pandas: 3.0.3
+requests: 2.34.2
+spglib: 2.7.0
+seekpath: 2.2.1
+============================================================
+AMBIENTE structures: OK
+============================================================

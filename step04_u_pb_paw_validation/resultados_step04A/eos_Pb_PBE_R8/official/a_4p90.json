@@ -1,0 +1,30 @@
+{
+  "label": "Pb_PBE_official_a_4p90",
+  "setup_kind": "official",
+  "setup_dir": "OFFICIAL_GPAW_SETUP_PATH",
+  "xc": "PBE",
+  "mpi_world_size": 4,
+  "ecut_eV": 1400.0,
+  "kgrid": [
+    6,
+    6,
+    6
+  ],
+  "smearing_eV": 0.05,
+  "a_A": 4.9,
+  "volume_A3_atom": 29.41225,
+  "natoms": 1,
+  "energy_eV": -3.682454433917998,
+  "energy_eV_atom": -3.682454433917998,
+  "stress_GPa": [
+    -4.833533075803906,
+    -4.833533075803905,
+    -4.833533075803905,
+    5.316388112272512e-16,
+    -2.658194056136256e-16,
+    -2.658194056136256e-16
+  ],
+  "mean_normal_stress_GPa": -4.8335330758039055,
+  "max_abs_stress_GPa": 4.833533075803906,
+  "max_force_eV_A": 2.6409413016492293e-31
+}

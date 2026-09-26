@@ -1,0 +1,1263 @@
+==============================================================================
+STEP 04B2C2-R1 — CORREÇÃO DA DEPENDÊNCIA spglib NO AMBIENTE GPAW
+==============================================================================
+Data: sex 11 set 2026 12:50:43 -03
+Host: alienware
+Projeto: /home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project
+
+>>> Verificando spglib no ambiente GPAW
+spglib 2.7.0
+spglib já disponível no ambiente GPAW.
+
+>>> Iniciando Step04B2C2 original após correção do ambiente
+==============================================================================
+STEP 04B2C2 — RELAXAÇÃO FINAL U(VI) / gamma-UO3
+==============================================================================
+Data: sex 11 set 2026 12:50:43 -03
+Host: alienware
+Projeto: /home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project
+
+>>> Relaxação escalar Fddd com simetria preservada
+/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/utilities/gpts.py:44: UserWarning: Initial realspace grid (105,105,64) inconsistent with symmetries.
+  warnings.warn(
+/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/utilities/gpts.py:71: UserWarning: Using symmetrized grid: (105,105,105).
+
+  warnings.warn('Using symmetrized grid: ({},{},{}).\n'.format(*N_c))
+/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/utilities/gpts.py:44: UserWarning: Initial realspace grid (105,105,64) inconsistent with symmetries.
+  warnings.warn(
+/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/utilities/gpts.py:44: UserWarning: Initial realspace grid (105,105,64) inconsistent with symmetries.
+  warnings.warn(
+/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/utilities/gpts.py:71: UserWarning: Using symmetrized grid: (105,105,105).
+
+  warnings.warn('Using symmetrized grid: ({},{},{}).\n'.format(*N_c))
+/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/utilities/gpts.py:71: UserWarning: Using symmetrized grid: (105,105,105).
+
+  warnings.warn('Using symmetrized grid: ({},{},{}).\n'.format(*N_c))
+/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/utilities/gpts.py:44: UserWarning: Initial realspace grid (105,105,64) inconsistent with symmetries.
+  warnings.warn(
+/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/utilities/gpts.py:71: UserWarning: Using symmetrized grid: (105,105,105).
+
+  warnings.warn('Using symmetrized grid: ({},{},{}).\n'.format(*N_c))
+{
+  "status": "completed",
+  "step": "04B2C2-relaxation",
+  "system": "gamma-UO3-Fddd",
+  "matrix": {
+    "dataset": "U14_nc6",
+    "xc": "PBEsol",
+    "Ueff_eV": 3.0,
+    "ecut_eV": 1600.0,
+    "kpts": [
+      2,
+      2,
+      2
+    ],
+    "spin_state": "nonmagnetic_5f0",
+    "SOC": false
+  },
+  "symmetry_constraint": {
+    "class": "ase.constraints.FixSymmetry",
+    "symprec_A": 0.01
+  },
+  "cell_filter": "ase.filters.FrechetCellFilter",
+  "stages": [
+    {
+      "stage": "01_atoms_exp_cell",
+      "energy_eV": -285.9288395566785,
+      "max_force_eV_A": 0.021607840980769035,
+      "stress_GPa": [
+        -1.28115588667147,
+        -1.6194161667954377,
+        -1.5831474564416288,
+        -0.18179802128120973,
+        -0.06591994863052711,
+        0.05967157510381024
+      ],
+      "max_abs_stress_GPa": 1.6194161667954377,
+      "volume_A3": 473.29946681001286,
+      "cell_lengths_A": [
+        11.102589708985999,
+        11.08457993062929,
+        6.891523670621439
+      ],
+      "cell_angles_deg": [
+        72.04647841272808,
+        71.76182539997818,
+        36.19169618729374
+      ],
+      "type": "atomic_positions_fixed_cell",
+      "target_fmax_eV_A": 0.03,
+      "optimizer_steps": 15,
+      "converged": true
+    },
+    {
+      "stage": "02_coupled_round1",
+      "energy_eV": -285.9643383064042,
+      "max_force_eV_A": 0.021059506330814822,
+      "stress_GPa": [
+        -0.1879381776629417,
+        0.03365961814476742,
+        0.056446727216579194,
+        -0.11422108142570403,
+        0.16682173473547918,
+        -0.15100915365638928
+      ],
+      "max_abs_stress_GPa": 0.1879381776629417,
+      "volume_A3": 481.5002328779266,
+      "cell_lengths_A": [
+        11.157994043564608,
+        11.14336973202201,
+        6.933941837499006
+      ],
+      "cell_angles_deg": [
+        72.00020274346912,
+        71.77049737080674,
+        36.229299885724096
+      ],
+      "type": "positions_plus_cell_FrechetCellFilter",
+      "target_filter_fmax_eV_A": 0.03,
+      "optimizer_steps": 11,
+      "converged": true
+    },
+    {
+      "stage": "03_atoms_tight",
+      "energy_eV": -285.96453339959686,
+      "max_force_eV_A": 0.010866671936792083,
+      "stress_GPa": [
+        -0.09724571210824083,
+        0.07647194571515176,
+        0.10110800394102246,
+        -0.1234889957213049,
+        0.14876584912567004,
+        -0.13466473660053271
+      ],
+      "max_abs_stress_GPa": 0.14876584912567004,
+      "volume_A3": 481.5002328779266,
+      "cell_lengths_A": [
+        11.157994043564608,
+        11.14336973202201,
+        6.933941837499006
+      ],
+      "cell_angles_deg": [
+        72.00020274346912,
+        71.77049737080674,
+        36.229299885724096
+      ],
+      "type": "atomic_positions_fixed_cell",
+      "target_fmax_eV_A": 0.015,
+      "optimizer_steps": 2,
+      "converged": true
+    },
+    {
+      "stage": "04_coupled_final",
+      "energy_eV": -285.9672616035629,
+      "max_force_eV_A": 0.013324181078720115,
+      "stress_GPa": [
+        -0.00013032025735358052,
+        -0.022947613208921035,
+        -0.020666356647456387,
+        -0.011434868373853258,
+        -0.004885533791152897,
+        0.004422447264011218
+      ],
+      "max_abs_stress_GPa": 0.022947613208921035,
+      "volume_A3": 481.8044594697365,
+      "cell_lengths_A": [
+        11.17754842706734,
+        11.173327780515281,
+        6.925537302878795
+      ],
+      "cell_angles_deg": [
+        71.9826924976017,
+        71.91629374624814,
+        36.10101375615017
+      ],
+      "type": "positions_plus_cell_FrechetCellFilter",
+      "target_filter_fmax_eV_A": 0.015,
+      "optimizer_steps": 18,
+      "converged": true
+    }
+  ],
+  "all_stages_converged": true,
+  "energy_eV": -285.9672616035629,
+  "energy_eV_atom": -8.936476925111341,
+  "max_force_eV_A": 0.013324210801549335,
+  "stress_GPa": [
+    -0.00013032025735358195,
+    -0.022947613208921025,
+    -0.020666356647456394,
+    -0.011434868373853248,
+    -0.004885533791152905,
+    0.004422447264011212
+  ],
+  "max_abs_stress_GPa": 0.022947613208921025,
+  "volume_A3": 481.8044594697365
+}
+{
+  "status": "completed",
+  "step": "04B2C2-relaxation",
+  "system": "gamma-UO3-Fddd",
+  "matrix": {
+    "dataset": "U14_nc6",
+    "xc": "PBEsol",
+    "Ueff_eV": 3.0,
+    "ecut_eV": 1600.0,
+    "kpts": [
+      2,
+      2,
+      2
+    ],
+    "spin_state": "nonmagnetic_5f0",
+    "SOC": false
+  },
+  "symmetry_constraint": {
+    "class": "ase.constraints.FixSymmetry",
+    "symprec_A": 0.01
+  },
+  "cell_filter": "ase.filters.FrechetCellFilter",
+  "stages": [
+    {
+      "stage": "01_atoms_exp_cell",
+      "energy_eV": -285.9288395566785,
+      "max_force_eV_A": 0.021607840980769035,
+      "stress_GPa": [
+        -1.28115588667147,
+        -1.6194161667954377,
+        -1.5831474564416288,
+        -0.18179802128120973,
+        -0.06591994863052711,
+        0.05967157510381024
+      ],
+      "max_abs_stress_GPa": 1.6194161667954377,
+      "volume_A3": 473.29946681001286,
+      "cell_lengths_A": [
+        11.102589708985999,
+        11.08457993062929,
+        6.891523670621439
+      ],
+      "cell_angles_deg": [
+        72.04647841272808,
+        71.76182539997818,
+        36.19169618729374
+      ],
+      "type": "atomic_positions_fixed_cell",
+      "target_fmax_eV_A": 0.03,
+      "optimizer_steps": 15,
+      "converged": true
+    },
+    {
+      "stage": "02_coupled_round1",
+      "energy_eV": -285.9643383064042,
+      "max_force_eV_A": 0.021059506330814822,
+      "stress_GPa": [
+        -0.1879381776629417,
+        0.03365961814476742,
+        0.056446727216579194,
+        -0.11422108142570403,
+        0.16682173473547918,
+        -0.15100915365638928
+      ],
+      "max_abs_stress_GPa": 0.1879381776629417,
+      "volume_A3": 481.5002328779266,
+      "cell_lengths_A": [
+        11.157994043564608,
+        11.14336973202201,
+        6.933941837499006
+      ],
+      "cell_angles_deg": [
+        72.00020274346912,
+        71.77049737080674,
+        36.229299885724096
+      ],
+      "type": "positions_plus_cell_FrechetCellFilter",
+      "target_filter_fmax_eV_A": 0.03,
+      "optimizer_steps": 11,
+      "converged": true
+    },
+    {
+      "stage": "03_atoms_tight",
+      "energy_eV": -285.96453339959686,
+      "max_force_eV_A": 0.010866671936792083,
+      "stress_GPa": [
+        -0.09724571210824083,
+        0.07647194571515176,
+        0.10110800394102246,
+        -0.1234889957213049,
+        0.14876584912567004,
+        -0.13466473660053271
+      ],
+      "max_abs_stress_GPa": 0.14876584912567004,
+      "volume_A3": 481.5002328779266,
+      "cell_lengths_A": [
+        11.157994043564608,
+        11.14336973202201,
+        6.933941837499006
+      ],
+      "cell_angles_deg": [
+        72.00020274346912,
+        71.77049737080674,
+        36.229299885724096
+      ],
+      "type": "atomic_positions_fixed_cell",
+      "target_fmax_eV_A": 0.015,
+      "optimizer_steps": 2,
+      "converged": true
+    },
+    {
+      "stage": "04_coupled_final",
+      "energy_eV": -285.9672616035629,
+      "max_force_eV_A": 0.013324181078720115,
+      "stress_GPa": [
+        -0.00013032025735358052,
+        -0.022947613208921035,
+        -0.020666356647456387,
+        -0.011434868373853258,
+        -0.004885533791152897,
+        0.004422447264011218
+      ],
+      "max_abs_stress_GPa": 0.022947613208921035,
+      "volume_A3": 481.8044594697365,
+      "cell_lengths_A": [
+        11.17754842706734,
+        11.173327780515281,
+        6.925537302878795
+      ],
+      "cell_angles_deg": [
+        71.9826924976017,
+        71.91629374624814,
+        36.10101375615017
+      ],
+      "type": "positions_plus_cell_FrechetCellFilter",
+      "target_filter_fmax_eV_A": 0.015,
+      "optimizer_steps": 18,
+      "converged": true
+    }
+  ],
+  "all_stages_converged": true,
+  "energy_eV": -285.9672616035629,
+  "energy_eV_atom": -8.936476925111341,
+  "max_force_eV_A": 0.013324210801549335,
+  "stress_GPa": [
+    -0.00013032025735358195,
+    -0.022947613208921025,
+    -0.020666356647456394,
+    -0.011434868373853248,
+    -0.004885533791152905,
+    0.004422447264011212
+  ],
+  "max_abs_stress_GPa": 0.022947613208921025,
+  "volume_A3": 481.8044594697365
+}
+{
+  "status": "completed",
+  "step": "04B2C2-relaxation",
+  "system": "gamma-UO3-Fddd",
+  "matrix": {
+    "dataset": "U14_nc6",
+    "xc": "PBEsol",
+    "Ueff_eV": 3.0,
+    "ecut_eV": 1600.0,
+    "kpts": [
+      2,
+      2,
+      2
+    ],
+    "spin_state": "nonmagnetic_5f0",
+    "SOC": false
+  },
+  "symmetry_constraint": {
+    "class": "ase.constraints.FixSymmetry",
+    "symprec_A": 0.01
+  },
+  "cell_filter": "ase.filters.FrechetCellFilter",
+  "stages": [
+    {
+      "stage": "01_atoms_exp_cell",
+      "energy_eV": -285.9288395566785,
+      "max_force_eV_A": 0.021607840980769035,
+      "stress_GPa": [
+        -1.28115588667147,
+        -1.6194161667954377,
+        -1.5831474564416288,
+        -0.18179802128120973,
+        -0.06591994863052711,
+        0.05967157510381024
+      ],
+      "max_abs_stress_GPa": 1.6194161667954377,
+      "volume_A3": 473.29946681001286,
+      "cell_lengths_A": [
+        11.102589708985999,
+        11.08457993062929,
+        6.891523670621439
+      ],
+      "cell_angles_deg": [
+        72.04647841272808,
+        71.76182539997818,
+        36.19169618729374
+      ],
+      "type": "atomic_positions_fixed_cell",
+      "target_fmax_eV_A": 0.03,
+      "optimizer_steps": 15,
+      "converged": true
+    },
+    {
+      "stage": "02_coupled_round1",
+      "energy_eV": -285.9643383064042,
+      "max_force_eV_A": 0.021059506330814822,
+      "stress_GPa": [
+        -0.1879381776629417,
+        0.03365961814476742,
+        0.056446727216579194,
+        -0.11422108142570403,
+        0.16682173473547918,
+        -0.15100915365638928
+      ],
+      "max_abs_stress_GPa": 0.1879381776629417,
+      "volume_A3": 481.5002328779266,
+      "cell_lengths_A": [
+        11.157994043564608,
+        11.14336973202201,
+        6.933941837499006
+      ],
+      "cell_angles_deg": [
+        72.00020274346912,
+        71.77049737080674,
+        36.229299885724096
+      ],
+      "type": "positions_plus_cell_FrechetCellFilter",
+      "target_filter_fmax_eV_A": 0.03,
+      "optimizer_steps": 11,
+      "converged": true
+    },
+    {
+      "stage": "03_atoms_tight",
+      "energy_eV": -285.96453339959686,
+      "max_force_eV_A": 0.010866671936792083,
+      "stress_GPa": [
+        -0.09724571210824083,
+        0.07647194571515176,
+        0.10110800394102246,
+        -0.1234889957213049,
+        0.14876584912567004,
+        -0.13466473660053271
+      ],
+      "max_abs_stress_GPa": 0.14876584912567004,
+      "volume_A3": 481.5002328779266,
+      "cell_lengths_A": [
+        11.157994043564608,
+        11.14336973202201,
+        6.933941837499006
+      ],
+      "cell_angles_deg": [
+        72.00020274346912,
+        71.77049737080674,
+        36.229299885724096
+      ],
+      "type": "atomic_positions_fixed_cell",
+      "target_fmax_eV_A": 0.015,
+      "optimizer_steps": 2,
+      "converged": true
+    },
+    {
+      "stage": "04_coupled_final",
+      "energy_eV": -285.9672616035629,
+      "max_force_eV_A": 0.013324181078720115,
+      "stress_GPa": [
+        -0.00013032025735358052,
+        -0.022947613208921035,
+        -0.020666356647456387,
+        -0.011434868373853258,
+        -0.004885533791152897,
+        0.004422447264011218
+      ],
+      "max_abs_stress_GPa": 0.022947613208921035,
+      "volume_A3": 481.8044594697365,
+      "cell_lengths_A": [
+        11.17754842706734,
+        11.173327780515281,
+        6.925537302878795
+      ],
+      "cell_angles_deg": [
+        71.9826924976017,
+        71.91629374624814,
+        36.10101375615017
+      ],
+      "type": "positions_plus_cell_FrechetCellFilter",
+      "target_filter_fmax_eV_A": 0.015,
+      "optimizer_steps": 18,
+      "converged": true
+    }
+  ],
+  "all_stages_converged": true,
+  "energy_eV": -285.9672616035629,
+  "energy_eV_atom": -8.936476925111341,
+  "max_force_eV_A": 0.013324210801549335,
+  "stress_GPa": [
+    -0.00013032025735358195,
+    -0.022947613208921025,
+    -0.020666356647456394,
+    -0.011434868373853248,
+    -0.004885533791152905,
+    0.004422447264011212
+  ],
+  "max_abs_stress_GPa": 0.022947613208921025,
+  "volume_A3": 481.8044594697365
+}
+{
+  "status": "completed",
+  "step": "04B2C2-relaxation",
+  "system": "gamma-UO3-Fddd",
+  "matrix": {
+    "dataset": "U14_nc6",
+    "xc": "PBEsol",
+    "Ueff_eV": 3.0,
+    "ecut_eV": 1600.0,
+    "kpts": [
+      2,
+      2,
+      2
+    ],
+    "spin_state": "nonmagnetic_5f0",
+    "SOC": false
+  },
+  "symmetry_constraint": {
+    "class": "ase.constraints.FixSymmetry",
+    "symprec_A": 0.01
+  },
+  "cell_filter": "ase.filters.FrechetCellFilter",
+  "stages": [
+    {
+      "stage": "01_atoms_exp_cell",
+      "energy_eV": -285.9288395566785,
+      "max_force_eV_A": 0.021607840980769035,
+      "stress_GPa": [
+        -1.28115588667147,
+        -1.6194161667954377,
+        -1.5831474564416288,
+        -0.18179802128120973,
+        -0.06591994863052711,
+        0.05967157510381024
+      ],
+      "max_abs_stress_GPa": 1.6194161667954377,
+      "volume_A3": 473.29946681001286,
+      "cell_lengths_A": [
+        11.102589708985999,
+        11.08457993062929,
+        6.891523670621439
+      ],
+      "cell_angles_deg": [
+        72.04647841272808,
+        71.76182539997818,
+        36.19169618729374
+      ],
+      "type": "atomic_positions_fixed_cell",
+      "target_fmax_eV_A": 0.03,
+      "optimizer_steps": 15,
+      "converged": true
+    },
+    {
+      "stage": "02_coupled_round1",
+      "energy_eV": -285.9643383064042,
+      "max_force_eV_A": 0.021059506330814822,
+      "stress_GPa": [
+        -0.1879381776629417,
+        0.03365961814476742,
+        0.056446727216579194,
+        -0.11422108142570403,
+        0.16682173473547918,
+        -0.15100915365638928
+      ],
+      "max_abs_stress_GPa": 0.1879381776629417,
+      "volume_A3": 481.5002328779266,
+      "cell_lengths_A": [
+        11.157994043564608,
+        11.14336973202201,
+        6.933941837499006
+      ],
+      "cell_angles_deg": [
+        72.00020274346912,
+        71.77049737080674,
+        36.229299885724096
+      ],
+      "type": "positions_plus_cell_FrechetCellFilter",
+      "target_filter_fmax_eV_A": 0.03,
+      "optimizer_steps": 11,
+      "converged": true
+    },
+    {
+      "stage": "03_atoms_tight",
+      "energy_eV": -285.96453339959686,
+      "max_force_eV_A": 0.010866671936792083,
+      "stress_GPa": [
+        -0.09724571210824083,
+        0.07647194571515176,
+        0.10110800394102246,
+        -0.1234889957213049,
+        0.14876584912567004,
+        -0.13466473660053271
+      ],
+      "max_abs_stress_GPa": 0.14876584912567004,
+      "volume_A3": 481.5002328779266,
+      "cell_lengths_A": [
+        11.157994043564608,
+        11.14336973202201,
+        6.933941837499006
+      ],
+      "cell_angles_deg": [
+        72.00020274346912,
+        71.77049737080674,
+        36.229299885724096
+      ],
+      "type": "atomic_positions_fixed_cell",
+      "target_fmax_eV_A": 0.015,
+      "optimizer_steps": 2,
+      "converged": true
+    },
+    {
+      "stage": "04_coupled_final",
+      "energy_eV": -285.9672616035629,
+      "max_force_eV_A": 0.013324181078720115,
+      "stress_GPa": [
+        -0.00013032025735358052,
+        -0.022947613208921035,
+        -0.020666356647456387,
+        -0.011434868373853258,
+        -0.004885533791152897,
+        0.004422447264011218
+      ],
+      "max_abs_stress_GPa": 0.022947613208921035,
+      "volume_A3": 481.8044594697365,
+      "cell_lengths_A": [
+        11.17754842706734,
+        11.173327780515281,
+        6.925537302878795
+      ],
+      "cell_angles_deg": [
+        71.9826924976017,
+        71.91629374624814,
+        36.10101375615017
+      ],
+      "type": "positions_plus_cell_FrechetCellFilter",
+      "target_filter_fmax_eV_A": 0.015,
+      "optimizer_steps": 18,
+      "converged": true
+    }
+  ],
+  "all_stages_converged": true,
+  "energy_eV": -285.9672616035629,
+  "energy_eV_atom": -8.936476925111341,
+  "max_force_eV_A": 0.013324210801549335,
+  "stress_GPa": [
+    -0.00013032025735358195,
+    -0.022947613208921025,
+    -0.020666356647456394,
+    -0.011434868373853248,
+    -0.004885533791152905,
+    0.004422447264011212
+  ],
+  "max_abs_stress_GPa": 0.022947613208921025,
+  "volume_A3": 481.8044594697365
+}
+
+>>> Métricas estruturais
+{
+  "step": "04B2C2-structural-metrics",
+  "experimental_conventional_cell_A": [
+    9.787,
+    19.932,
+    9.705
+  ],
+  "relaxed_conventional_cell_A": [
+    6.9255373028787925,
+    6.9255373028787925,
+    20.090683193794305
+  ],
+  "sorted_lattice_errors_percent": [
+    28.63949198476257,
+    29.237383234098374,
+    0.7961227864454483
+  ],
+  "experimental_volume_A3": 1893.19786722,
+  "relaxed_conventional_volume_A3": 963.610782765019,
+  "volume_error_percent": 49.10142254808265,
+  "experimental_UO6_profile": {
+    "mean_first6_A": [
+      1.8296389368169448,
+      1.8296389368320276,
+      2.228552949797536,
+      2.2285529499391683,
+      2.31261688620391,
+      2.312616886386187
+    ],
+    "shortest_UO_A": 1.7929296756541402,
+    "mean_UO6_A": 2.1236029243292958
+  },
+  "relaxed_UO6_profile": {
+    "mean_first6_A": [
+      1.8235427827585133,
+      1.8235427827585196,
+      2.267818967494945,
+      2.2678189674949523,
+      2.2934481456476687,
+      2.2934481456476763
+    ],
+    "shortest_UO_A": 1.7790704845464338,
+    "mean_UO6_A": 2.128269965300379
+  },
+  "shortest_UO_error_percent": 0.9426233548756262,
+  "UO6_mean_profile_RMS_relative_error_percent": 1.199457230982821,
+  "symmetry": [
+    {
+      "symprec_A": 0.01,
+      "number": 70,
+      "international": "Fddd",
+      "hall": "F 2 2 -1d"
+    },
+    {
+      "symprec_A": 0.03,
+      "number": 141,
+      "international": "I4_1/amd",
+      "hall": "I 4bw 2bw -1bw"
+    },
+    {
+      "symprec_A": 0.05,
+      "number": 141,
+      "international": "I4_1/amd",
+      "hall": "I 4bw 2bw -1bw"
+    }
+  ],
+  "structural_gate_passes": false
+}
+
+>>> Single points finais / convergência
+
+[B2C2] gammaUO3_relaxed_1600_k222
+/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/utilities/gpts.py:44: UserWarning: Initial realspace grid (105,105,64) inconsistent with symmetries.
+  warnings.warn(
+/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/utilities/gpts.py:71: UserWarning: Using symmetrized grid: (105,105,105).
+
+  warnings.warn('Using symmetrized grid: ({},{},{}).\n'.format(*N_c))
+/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/utilities/gpts.py:44: UserWarning: Initial realspace grid (105,105,64) inconsistent with symmetries.
+  warnings.warn(
+/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/utilities/gpts.py:71: UserWarning: Using symmetrized grid: (105,105,105).
+
+  warnings.warn('Using symmetrized grid: ({},{},{}).\n'.format(*N_c))
+/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/utilities/gpts.py:44: UserWarning: Initial realspace grid (105,105,64) inconsistent with symmetries.
+  warnings.warn(
+/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/utilities/gpts.py:71: UserWarning: Using symmetrized grid: (105,105,105).
+
+  warnings.warn('Using symmetrized grid: ({},{},{}).\n'.format(*N_c))
+/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/utilities/gpts.py:44: UserWarning: Initial realspace grid (105,105,64) inconsistent with symmetries.
+  warnings.warn(
+/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/utilities/gpts.py:71: UserWarning: Using symmetrized grid: (105,105,105).
+
+  warnings.warn('Using symmetrized grid: ({},{},{}).\n'.format(*N_c))
+{
+  "status": "converged",
+  "step": "04B2C2-final-singlepoint",
+  "case": "gammaUO3_relaxed_1600_k222",
+  "system": "gamma-UO3-Fddd-relaxed",
+  "dataset": "U14_nc6",
+  "xc": "PBEsol",
+  "Ueff_eV": 3.0,
+  "spin_state": "nonmagnetic_5f0",
+  "ecut_eV": 1600.0,
+  "kpts": [
+    2,
+    2,
+    2
+  ],
+  "nbands": 192,
+  "energy_eV": -285.96726158228523,
+  "energy_eV_atom": -8.936476924446414,
+  "band_gap_eV": 2.6896132356978537,
+  "band_gap_error": null,
+  "max_force_eV_A": 0.013482209812304042,
+  "stress_GPa": [
+    0.000574616874848951,
+    -0.02186390329728363,
+    -0.019595635277209058,
+    -0.011369762912045115,
+    -0.004738344917236092,
+    0.0042892100252980665
+  ],
+  "hydrostatic_stress_GPa": -0.013628307233214579,
+  "max_abs_stress_GPa": 0.02186390329728363,
+  "gpw_file": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04B2C2_uvi_gamma_uo3_relax/resultados_step04B2C2/gpw/gammaUO3_relaxed_1600_k222.gpw",
+  "mpi_world_size": 4
+}
+
+[B2C2] gammaUO3_relaxed_1600_k333
+/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/utilities/gpts.py:44: UserWarning: Initial realspace grid (105,105,64) inconsistent with symmetries.
+  warnings.warn(
+/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/utilities/gpts.py:71: UserWarning: Using symmetrized grid: (105,105,105).
+
+  warnings.warn('Using symmetrized grid: ({},{},{}).\n'.format(*N_c))
+/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/utilities/gpts.py:44: UserWarning: Initial realspace grid (105,105,64) inconsistent with symmetries.
+  warnings.warn(
+/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/utilities/gpts.py:71: UserWarning: Using symmetrized grid: (105,105,105).
+
+  warnings.warn('Using symmetrized grid: ({},{},{}).\n'.format(*N_c))
+/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/utilities/gpts.py:44: UserWarning: Initial realspace grid (105,105,64) inconsistent with symmetries.
+  warnings.warn(
+/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/utilities/gpts.py:71: UserWarning: Using symmetrized grid: (105,105,105).
+
+  warnings.warn('Using symmetrized grid: ({},{},{}).\n'.format(*N_c))
+/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/utilities/gpts.py:44: UserWarning: Initial realspace grid (105,105,64) inconsistent with symmetries.
+  warnings.warn(
+/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/utilities/gpts.py:71: UserWarning: Using symmetrized grid: (105,105,105).
+
+  warnings.warn('Using symmetrized grid: ({},{},{}).\n'.format(*N_c))
+{
+  "status": "converged",
+  "step": "04B2C2-final-singlepoint",
+  "case": "gammaUO3_relaxed_1600_k333",
+  "system": "gamma-UO3-Fddd-relaxed",
+  "dataset": "U14_nc6",
+  "xc": "PBEsol",
+  "Ueff_eV": 3.0,
+  "spin_state": "nonmagnetic_5f0",
+  "ecut_eV": 1600.0,
+  "kpts": [
+    3,
+    3,
+    3
+  ],
+  "nbands": 192,
+  "energy_eV": -285.9697898903235,
+  "energy_eV_atom": -8.93655593407261,
+  "band_gap_eV": 2.7018155326435496,
+  "band_gap_error": null,
+  "max_force_eV_A": 0.012245219565707031,
+  "stress_GPa": [
+    -0.003410769418828163,
+    -0.014910724838035265,
+    -0.012929664622054724,
+    -0.009930124987797702,
+    -0.00025423837810029413,
+    0.00023013981553249334
+  ],
+  "hydrostatic_stress_GPa": -0.010417052959639383,
+  "max_abs_stress_GPa": 0.014910724838035265,
+  "gpw_file": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04B2C2_uvi_gamma_uo3_relax/resultados_step04B2C2/gpw/gammaUO3_relaxed_1600_k333.gpw",
+  "mpi_world_size": 4
+}
+
+[B2C2] gammaUO3_relaxed_1800_k222
+/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/utilities/gpts.py:44: UserWarning: Initial realspace grid (112,112,70) inconsistent with symmetries.
+  warnings.warn(
+/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/utilities/gpts.py:71: UserWarning: Using symmetrized grid: (112,112,112).
+
+  warnings.warn('Using symmetrized grid: ({},{},{}).\n'.format(*N_c))
+/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/utilities/gpts.py:44: UserWarning: Initial realspace grid (112,112,70) inconsistent with symmetries.
+  warnings.warn(
+/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/utilities/gpts.py:71: UserWarning: Using symmetrized grid: (112,112,112).
+
+  warnings.warn('Using symmetrized grid: ({},{},{}).\n'.format(*N_c))
+/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/utilities/gpts.py:44: UserWarning: Initial realspace grid (112,112,70) inconsistent with symmetries.
+  warnings.warn(
+/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/utilities/gpts.py:71: UserWarning: Using symmetrized grid: (112,112,112).
+
+  warnings.warn('Using symmetrized grid: ({},{},{}).\n'.format(*N_c))
+/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/utilities/gpts.py:44: UserWarning: Initial realspace grid (112,112,70) inconsistent with symmetries.
+  warnings.warn(
+/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/utilities/gpts.py:71: UserWarning: Using symmetrized grid: (112,112,112).
+
+  warnings.warn('Using symmetrized grid: ({},{},{}).\n'.format(*N_c))
+{
+  "status": "converged",
+  "step": "04B2C2-final-singlepoint",
+  "case": "gammaUO3_relaxed_1800_k222",
+  "system": "gamma-UO3-Fddd-relaxed",
+  "dataset": "U14_nc6",
+  "xc": "PBEsol",
+  "Ueff_eV": 3.0,
+  "spin_state": "nonmagnetic_5f0",
+  "ecut_eV": 1800.0,
+  "kpts": [
+    2,
+    2,
+    2
+  ],
+  "nbands": 192,
+  "energy_eV": -285.9677723427877,
+  "energy_eV_atom": -8.936492885712116,
+  "band_gap_eV": 2.689556759349215,
+  "band_gap_error": null,
+  "max_force_eV_A": 0.01344578918221286,
+  "stress_GPa": [
+    -0.04571406083633465,
+    -0.06851463611380806,
+    -0.06622970127377073,
+    -0.01145330585776653,
+    -0.0048677445856926795,
+    0.00440634424923057
+  ],
+  "hydrostatic_stress_GPa": -0.06015279940797114,
+  "max_abs_stress_GPa": 0.06851463611380806,
+  "gpw_file": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04B2C2_uvi_gamma_uo3_relax/resultados_step04B2C2/gpw/gammaUO3_relaxed_1800_k222.gpw",
+  "mpi_world_size": 4
+}
+
+>>> Convergência SOC: subespaço, k-points e cutoff
+{
+  "status": "completed",
+  "step": "04B2C2-final-SOC",
+  "system": "gamma-UO3-Fddd-relaxed",
+  "method": "GPAW-25.7 soc_eigenstates non-self-consistent",
+  "cases": {
+    "central_n160_scale0": {
+      "label": "1600_k222",
+      "gpw": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04B2C2_uvi_gamma_uo3_relax/resultados_step04B2C2/gpw/gammaUO3_relaxed_1600_k222.gpw",
+      "n2": 160,
+      "scale": 0.0,
+      "indirect_gap_eV": 2.6896132356978537,
+      "fermi_level_eV": 6.543082046365508,
+      "band_energy_eV_cell": -1278.1042841547815
+    },
+    "central_n160_scale1": {
+      "label": "1600_k222",
+      "gpw": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04B2C2_uvi_gamma_uo3_relax/resultados_step04B2C2/gpw/gammaUO3_relaxed_1600_k222.gpw",
+      "n2": 160,
+      "scale": 1.0,
+      "indirect_gap_eV": 1.788580139690418,
+      "fermi_level_eV": 6.713259391698609,
+      "band_energy_eV_cell": -1278.9471137901262
+    },
+    "central_n192_scale0": {
+      "label": "1600_k222",
+      "gpw": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04B2C2_uvi_gamma_uo3_relax/resultados_step04B2C2/gpw/gammaUO3_relaxed_1600_k222.gpw",
+      "n2": 192,
+      "scale": 0.0,
+      "indirect_gap_eV": 2.6896132356978537,
+      "fermi_level_eV": 6.543082046365508,
+      "band_energy_eV_cell": -1278.1042841547815
+    },
+    "central_n192_scale1": {
+      "label": "1600_k222",
+      "gpw": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04B2C2_uvi_gamma_uo3_relax/resultados_step04B2C2/gpw/gammaUO3_relaxed_1600_k222.gpw",
+      "n2": 192,
+      "scale": 1.0,
+      "indirect_gap_eV": 1.836456786194316,
+      "fermi_level_eV": 6.682505414420005,
+      "band_energy_eV_cell": -1283.7820491652797
+    },
+    "1600_k333_n192_scale0": {
+      "label": "1600_k333",
+      "gpw": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04B2C2_uvi_gamma_uo3_relax/resultados_step04B2C2/gpw/gammaUO3_relaxed_1600_k333.gpw",
+      "n2": 192,
+      "scale": 0.0,
+      "indirect_gap_eV": 2.7018155326435496,
+      "fermi_level_eV": 6.537145698144906,
+      "band_energy_eV_cell": -1278.145894803819
+    },
+    "1600_k333_n192_scale1": {
+      "label": "1600_k333",
+      "gpw": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04B2C2_uvi_gamma_uo3_relax/resultados_step04B2C2/gpw/gammaUO3_relaxed_1600_k333.gpw",
+      "n2": 192,
+      "scale": 1.0,
+      "indirect_gap_eV": 1.8966168897587359,
+      "fermi_level_eV": 6.65720597791615,
+      "band_energy_eV_cell": -1284.125321999541
+    },
+    "1800_k222_n192_scale0": {
+      "label": "1800_k222",
+      "gpw": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04B2C2_uvi_gamma_uo3_relax/resultados_step04B2C2/gpw/gammaUO3_relaxed_1800_k222.gpw",
+      "n2": 192,
+      "scale": 0.0,
+      "indirect_gap_eV": 2.689556759349215,
+      "fermi_level_eV": 6.543032541369543,
+      "band_energy_eV_cell": -1278.1120884116135
+    },
+    "1800_k222_n192_scale1": {
+      "label": "1800_k222",
+      "gpw": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04B2C2_uvi_gamma_uo3_relax/resultados_step04B2C2/gpw/gammaUO3_relaxed_1800_k222.gpw",
+      "n2": 192,
+      "scale": 1.0,
+      "indirect_gap_eV": 1.8363928384255832,
+      "fermi_level_eV": 6.682457530349227,
+      "band_energy_eV_cell": -1283.7826152346236
+    }
+  }
+}
+{
+  "status": "completed",
+  "step": "04B2C2-final-SOC",
+  "system": "gamma-UO3-Fddd-relaxed",
+  "method": "GPAW-25.7 soc_eigenstates non-self-consistent",
+  "cases": {
+    "central_n160_scale0": {
+      "label": "1600_k222",
+      "gpw": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04B2C2_uvi_gamma_uo3_relax/resultados_step04B2C2/gpw/gammaUO3_relaxed_1600_k222.gpw",
+      "n2": 160,
+      "scale": 0.0,
+      "indirect_gap_eV": 2.6896132356978537,
+      "fermi_level_eV": 6.543082046365508,
+      "band_energy_eV_cell": -1278.1042841547815
+    },
+    "central_n160_scale1": {
+      "label": "1600_k222",
+      "gpw": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04B2C2_uvi_gamma_uo3_relax/resultados_step04B2C2/gpw/gammaUO3_relaxed_1600_k222.gpw",
+      "n2": 160,
+      "scale": 1.0,
+      "indirect_gap_eV": 1.788580139690418,
+      "fermi_level_eV": 6.713259391698609,
+      "band_energy_eV_cell": -1278.9471137901262
+    },
+    "central_n192_scale0": {
+      "label": "1600_k222",
+      "gpw": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04B2C2_uvi_gamma_uo3_relax/resultados_step04B2C2/gpw/gammaUO3_relaxed_1600_k222.gpw",
+      "n2": 192,
+      "scale": 0.0,
+      "indirect_gap_eV": 2.6896132356978537,
+      "fermi_level_eV": 6.543082046365508,
+      "band_energy_eV_cell": -1278.1042841547815
+    },
+    "central_n192_scale1": {
+      "label": "1600_k222",
+      "gpw": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04B2C2_uvi_gamma_uo3_relax/resultados_step04B2C2/gpw/gammaUO3_relaxed_1600_k222.gpw",
+      "n2": 192,
+      "scale": 1.0,
+      "indirect_gap_eV": 1.836456786194316,
+      "fermi_level_eV": 6.682505414420005,
+      "band_energy_eV_cell": -1283.7820491652797
+    },
+    "1600_k333_n192_scale0": {
+      "label": "1600_k333",
+      "gpw": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04B2C2_uvi_gamma_uo3_relax/resultados_step04B2C2/gpw/gammaUO3_relaxed_1600_k333.gpw",
+      "n2": 192,
+      "scale": 0.0,
+      "indirect_gap_eV": 2.7018155326435496,
+      "fermi_level_eV": 6.537145698144906,
+      "band_energy_eV_cell": -1278.145894803819
+    },
+    "1600_k333_n192_scale1": {
+      "label": "1600_k333",
+      "gpw": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04B2C2_uvi_gamma_uo3_relax/resultados_step04B2C2/gpw/gammaUO3_relaxed_1600_k333.gpw",
+      "n2": 192,
+      "scale": 1.0,
+      "indirect_gap_eV": 1.8966168897587359,
+      "fermi_level_eV": 6.65720597791615,
+      "band_energy_eV_cell": -1284.125321999541
+    },
+    "1800_k222_n192_scale0": {
+      "label": "1800_k222",
+      "gpw": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04B2C2_uvi_gamma_uo3_relax/resultados_step04B2C2/gpw/gammaUO3_relaxed_1800_k222.gpw",
+      "n2": 192,
+      "scale": 0.0,
+      "indirect_gap_eV": 2.689556759349215,
+      "fermi_level_eV": 6.543032541369543,
+      "band_energy_eV_cell": -1278.1120884116135
+    },
+    "1800_k222_n192_scale1": {
+      "label": "1800_k222",
+      "gpw": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04B2C2_uvi_gamma_uo3_relax/resultados_step04B2C2/gpw/gammaUO3_relaxed_1800_k222.gpw",
+      "n2": 192,
+      "scale": 1.0,
+      "indirect_gap_eV": 1.8363928384255832,
+      "fermi_level_eV": 6.682457530349227,
+      "band_energy_eV_cell": -1283.7826152346236
+    }
+  }
+}
+{
+  "status": "completed",
+  "step": "04B2C2-final-SOC",
+  "system": "gamma-UO3-Fddd-relaxed",
+  "method": "GPAW-25.7 soc_eigenstates non-self-consistent",
+  "cases": {
+    "central_n160_scale0": {
+      "label": "1600_k222",
+      "gpw": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04B2C2_uvi_gamma_uo3_relax/resultados_step04B2C2/gpw/gammaUO3_relaxed_1600_k222.gpw",
+      "n2": 160,
+      "scale": 0.0,
+      "indirect_gap_eV": 2.6896132356978537,
+      "fermi_level_eV": 6.543082046365508,
+      "band_energy_eV_cell": -1278.1042841547815
+    },
+    "central_n160_scale1": {
+      "label": "1600_k222",
+      "gpw": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04B2C2_uvi_gamma_uo3_relax/resultados_step04B2C2/gpw/gammaUO3_relaxed_1600_k222.gpw",
+      "n2": 160,
+      "scale": 1.0,
+      "indirect_gap_eV": 1.788580139690418,
+      "fermi_level_eV": 6.713259391698609,
+      "band_energy_eV_cell": -1278.9471137901262
+    },
+    "central_n192_scale0": {
+      "label": "1600_k222",
+      "gpw": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04B2C2_uvi_gamma_uo3_relax/resultados_step04B2C2/gpw/gammaUO3_relaxed_1600_k222.gpw",
+      "n2": 192,
+      "scale": 0.0,
+      "indirect_gap_eV": 2.6896132356978537,
+      "fermi_level_eV": 6.543082046365508,
+      "band_energy_eV_cell": -1278.1042841547815
+    },
+    "central_n192_scale1": {
+      "label": "1600_k222",
+      "gpw": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04B2C2_uvi_gamma_uo3_relax/resultados_step04B2C2/gpw/gammaUO3_relaxed_1600_k222.gpw",
+      "n2": 192,
+      "scale": 1.0,
+      "indirect_gap_eV": 1.836456786194316,
+      "fermi_level_eV": 6.682505414420005,
+      "band_energy_eV_cell": -1283.7820491652797
+    },
+    "1600_k333_n192_scale0": {
+      "label": "1600_k333",
+      "gpw": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04B2C2_uvi_gamma_uo3_relax/resultados_step04B2C2/gpw/gammaUO3_relaxed_1600_k333.gpw",
+      "n2": 192,
+      "scale": 0.0,
+      "indirect_gap_eV": 2.7018155326435496,
+      "fermi_level_eV": 6.537145698144906,
+      "band_energy_eV_cell": -1278.145894803819
+    },
+    "1600_k333_n192_scale1": {
+      "label": "1600_k333",
+      "gpw": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04B2C2_uvi_gamma_uo3_relax/resultados_step04B2C2/gpw/gammaUO3_relaxed_1600_k333.gpw",
+      "n2": 192,
+      "scale": 1.0,
+      "indirect_gap_eV": 1.8966168897587359,
+      "fermi_level_eV": 6.65720597791615,
+      "band_energy_eV_cell": -1284.125321999541
+    },
+    "1800_k222_n192_scale0": {
+      "label": "1800_k222",
+      "gpw": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04B2C2_uvi_gamma_uo3_relax/resultados_step04B2C2/gpw/gammaUO3_relaxed_1800_k222.gpw",
+      "n2": 192,
+      "scale": 0.0,
+      "indirect_gap_eV": 2.689556759349215,
+      "fermi_level_eV": 6.543032541369543,
+      "band_energy_eV_cell": -1278.1120884116135
+    },
+    "1800_k222_n192_scale1": {
+      "label": "1800_k222",
+      "gpw": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04B2C2_uvi_gamma_uo3_relax/resultados_step04B2C2/gpw/gammaUO3_relaxed_1800_k222.gpw",
+      "n2": 192,
+      "scale": 1.0,
+      "indirect_gap_eV": 1.8363928384255832,
+      "fermi_level_eV": 6.682457530349227,
+      "band_energy_eV_cell": -1283.7826152346236
+    }
+  }
+}
+{
+  "status": "completed",
+  "step": "04B2C2-final-SOC",
+  "system": "gamma-UO3-Fddd-relaxed",
+  "method": "GPAW-25.7 soc_eigenstates non-self-consistent",
+  "cases": {
+    "central_n160_scale0": {
+      "label": "1600_k222",
+      "gpw": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04B2C2_uvi_gamma_uo3_relax/resultados_step04B2C2/gpw/gammaUO3_relaxed_1600_k222.gpw",
+      "n2": 160,
+      "scale": 0.0,
+      "indirect_gap_eV": 2.6896132356978537,
+      "fermi_level_eV": 6.543082046365508,
+      "band_energy_eV_cell": -1278.1042841547815
+    },
+    "central_n160_scale1": {
+      "label": "1600_k222",
+      "gpw": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04B2C2_uvi_gamma_uo3_relax/resultados_step04B2C2/gpw/gammaUO3_relaxed_1600_k222.gpw",
+      "n2": 160,
+      "scale": 1.0,
+      "indirect_gap_eV": 1.788580139690418,
+      "fermi_level_eV": 6.713259391698609,
+      "band_energy_eV_cell": -1278.9471137901262
+    },
+    "central_n192_scale0": {
+      "label": "1600_k222",
+      "gpw": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04B2C2_uvi_gamma_uo3_relax/resultados_step04B2C2/gpw/gammaUO3_relaxed_1600_k222.gpw",
+      "n2": 192,
+      "scale": 0.0,
+      "indirect_gap_eV": 2.6896132356978537,
+      "fermi_level_eV": 6.543082046365508,
+      "band_energy_eV_cell": -1278.1042841547815
+    },
+    "central_n192_scale1": {
+      "label": "1600_k222",
+      "gpw": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04B2C2_uvi_gamma_uo3_relax/resultados_step04B2C2/gpw/gammaUO3_relaxed_1600_k222.gpw",
+      "n2": 192,
+      "scale": 1.0,
+      "indirect_gap_eV": 1.836456786194316,
+      "fermi_level_eV": 6.682505414420005,
+      "band_energy_eV_cell": -1283.7820491652797
+    },
+    "1600_k333_n192_scale0": {
+      "label": "1600_k333",
+      "gpw": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04B2C2_uvi_gamma_uo3_relax/resultados_step04B2C2/gpw/gammaUO3_relaxed_1600_k333.gpw",
+      "n2": 192,
+      "scale": 0.0,
+      "indirect_gap_eV": 2.7018155326435496,
+      "fermi_level_eV": 6.537145698144906,
+      "band_energy_eV_cell": -1278.145894803819
+    },
+    "1600_k333_n192_scale1": {
+      "label": "1600_k333",
+      "gpw": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04B2C2_uvi_gamma_uo3_relax/resultados_step04B2C2/gpw/gammaUO3_relaxed_1600_k333.gpw",
+      "n2": 192,
+      "scale": 1.0,
+      "indirect_gap_eV": 1.8966168897587359,
+      "fermi_level_eV": 6.65720597791615,
+      "band_energy_eV_cell": -1284.125321999541
+    },
+    "1800_k222_n192_scale0": {
+      "label": "1800_k222",
+      "gpw": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04B2C2_uvi_gamma_uo3_relax/resultados_step04B2C2/gpw/gammaUO3_relaxed_1800_k222.gpw",
+      "n2": 192,
+      "scale": 0.0,
+      "indirect_gap_eV": 2.689556759349215,
+      "fermi_level_eV": 6.543032541369543,
+      "band_energy_eV_cell": -1278.1120884116135
+    },
+    "1800_k222_n192_scale1": {
+      "label": "1800_k222",
+      "gpw": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04B2C2_uvi_gamma_uo3_relax/resultados_step04B2C2/gpw/gammaUO3_relaxed_1800_k222.gpw",
+      "n2": 192,
+      "scale": 1.0,
+      "indirect_gap_eV": 1.8363928384255832,
+      "fermi_level_eV": 6.682457530349227,
+      "band_energy_eV_cell": -1283.7826152346236
+    }
+  }
+}
+
+>>> Decisão final
+{
+  "step": "04B2C2",
+  "system": "gamma-UO3-Fddd-relaxed",
+  "role": "final compound-level U(VI) validation",
+  "relaxation_passes": true,
+  "structural_gate_passes": false,
+  "kpoint_convergence": {
+    "delta_energy_meV_atom": 0.07900962619622476,
+    "delta_gap_eV": 0.012202296945695856,
+    "delta_hydrostatic_stress_GPa": 0.0032112542735751957,
+    "passes": true
+  },
+  "cutoff_convergence": {
+    "delta_energy_meV_atom": 0.015961265702912897,
+    "delta_gap_eV": 5.647634863858997e-05,
+    "delta_hydrostatic_stress_GPa": 0.046524492174756564,
+    "passes": true
+  },
+  "validation_force_stress_passes": true,
+  "SOC": {
+    "scalar_gap_eV": 2.6896132356978537,
+    "final_SOC_gap_eV": 1.836456786194316,
+    "experimental_gap_guide_eV": 2.38,
+    "SOC_gap_shift_eV": -0.8531564495035378,
+    "scale0_consistency_passes": true,
+    "subspace_160_vs_192_delta_gap_eV": 0.047876646503898,
+    "subspace_convergence_passes": true,
+    "kpoint_SOC_delta_gap_eV": 0.06016010356441992,
+    "kpoint_SOC_convergence_passes": true,
+    "cutoff_SOC_delta_gap_eV": 6.394776873275276e-05,
+    "cutoff_SOC_convergence_passes": true,
+    "physical_gap_gate_passes": true
+  },
+  "step04B2C2_passes": false,
+  "selected_UVI_matrix": null,
+  "production_authorization": false,
+  "next_gate": "If approved: Step05 may begin with carbonate supercell-size, charge-compensation and defect-configuration convergence before production formation-energy calculations.",
+  "warning": "SOC remains non-self-consistent; do not use raw SOC band-energy shifts as defect formation-energy corrections."
+}

@@ -1,0 +1,13 @@
+==============================================================================
+STEP 05B-R2 — GAMMA-CALIBRATED MEMORY-SAFE SIZE GATE
+==============================================================================
+Data: qua 23 set 2026 10:45:31 -03
+Host: alienware
+Projeto: /home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project
+
+
+>>> calcita: Pb_Ca 80 átomos
+--------------------------------------------------------------------------
+prterun noticed that process rank 2 with PID 198200 on node alienware exited on
+signal 9 (Killed).
+--------------------------------------------------------------------------

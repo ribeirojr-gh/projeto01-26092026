@@ -1,0 +1,30 @@
+{
+  "label": "Pb_PBE_official_a_5p10",
+  "setup_kind": "official",
+  "setup_dir": "OFFICIAL_GPAW_SETUP_PATH",
+  "xc": "PBE",
+  "mpi_world_size": 4,
+  "ecut_eV": 1400.0,
+  "kgrid": [
+    6,
+    6,
+    6
+  ],
+  "smearing_eV": 0.05,
+  "a_A": 5.1,
+  "volume_A3_atom": 33.162749999999996,
+  "natoms": 1,
+  "energy_eV": -3.7194414551980977,
+  "energy_eV_atom": -3.7194414551980977,
+  "stress_GPa": [
+    0.6513765111754788,
+    0.6513765111754792,
+    0.651376511175479,
+    2.658194056136256e-16,
+    0.0,
+    0.0
+  ],
+  "mean_normal_stress_GPa": 0.651376511175479,
+  "max_abs_stress_GPa": 0.6513765111754792,
+  "max_force_eV_A": 1.0563765206596917e-31
+}

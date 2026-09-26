@@ -1,0 +1,826 @@
+==============================================================================
+STEP 04B2A — Pb(II) / CERUSSITA PbCO3
+==============================================================================
+Data: qui 20 ago 2026 09:45:29 -03
+Host: alienware
+Projeto: /home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project
+
+>>> Gate numérico na estrutura experimental
+
+[B2A] PbCO3_exp_1400_k323
+[alienware][[29058,1],3][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[29058,1],3][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[29058,1],3][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[29058,1],0][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[29058,1],0][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[29058,1],0][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[29058,1],1][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[29058,1],1][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[29058,1],1][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[29058,1],2][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[29058,1],2][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[29058,1],2][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+{
+  "status": "converged",
+  "step": "04B2A",
+  "system": "PbCO3_cerussite",
+  "xc": "PBEsol",
+  "ecut_eV": 1400.0,
+  "kpts": [
+    3,
+    2,
+    3
+  ],
+  "mpi_world_size": 4,
+  "energy_eV": -149.2778351113992,
+  "energy_eV_atom": -7.463891755569961,
+  "band_gap_eV": 3.3190167721971893,
+  "band_gap_error": null,
+  "max_force_eV_A": 0.7931806030593833,
+  "stress_GPa": [
+    -1.9902872579919977,
+    -2.133118914999161,
+    1.0921827803546027,
+    7.59826474209334e-07,
+    8.378461320493215e-08,
+    -1.758734258393096e-07
+  ],
+  "hydrostatic_stress_GPa": -1.0104077975455186,
+  "max_abs_stress_GPa": 2.133118914999161,
+  "volume_A3": 270.081597588
+}
+
+[B2A] PbCO3_exp_1400_k434
+[alienware][[45223,1],0][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[45223,1],0][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[45223,1],0][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[45223,1],3][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[45223,1],3][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[45223,1],3][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[45223,1],2][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[45223,1],2][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[45223,1],2][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[45223,1],1][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[45223,1],1][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[45223,1],1][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+{
+  "status": "converged",
+  "step": "04B2A",
+  "system": "PbCO3_cerussite",
+  "xc": "PBEsol",
+  "ecut_eV": 1400.0,
+  "kpts": [
+    4,
+    3,
+    4
+  ],
+  "mpi_world_size": 4,
+  "energy_eV": -149.27823248300987,
+  "energy_eV_atom": -7.4639116241504935,
+  "band_gap_eV": 3.3193989791038656,
+  "band_gap_error": null,
+  "max_force_eV_A": 0.7897530962641184,
+  "stress_GPa": [
+    -1.997864211077814,
+    -2.1260724203493235,
+    1.0868520893535027,
+    5.579489186319618e-07,
+    -3.8351113224531027e-07,
+    -2.9088085561210804e-07
+  ],
+  "hydrostatic_stress_GPa": -1.012361514024545,
+  "max_abs_stress_GPa": 2.1260724203493235,
+  "volume_A3": 270.081597588
+}
+
+[B2A] PbCO3_exp_1600_k323
+[alienware][[35276,1],0][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[35276,1],0][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[35276,1],0][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[35276,1],3][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[35276,1],3][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[35276,1],3][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[35276,1],2][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[35276,1],2][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[35276,1],2][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[35276,1],1][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[35276,1],1][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[35276,1],1][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+{
+  "status": "converged",
+  "step": "04B2A",
+  "system": "PbCO3_cerussite",
+  "xc": "PBEsol",
+  "ecut_eV": 1600.0,
+  "kpts": [
+    3,
+    2,
+    3
+  ],
+  "mpi_world_size": 4,
+  "energy_eV": -149.2786844729268,
+  "energy_eV_atom": -7.463934223646341,
+  "band_gap_eV": 3.3190340479208023,
+  "band_gap_error": null,
+  "max_force_eV_A": 0.793255310624913,
+  "stress_GPa": [
+    -2.064511855163211,
+    -2.2074551246755365,
+    1.017848077452795,
+    -5.561201675291622e-10,
+    -3.5087922213842846e-12,
+    -1.3500206775775515e-09
+  ],
+  "hydrostatic_stress_GPa": -1.0847063007953175,
+  "max_abs_stress_GPa": 2.2074551246755365,
+  "volume_A3": 270.081597588
+}
+
+[B2A] PbCO3_exp_1600_k434
+[alienware][[34659,1],0][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[34659,1],0][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[34659,1],0][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[34659,1],2][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[34659,1],2][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[34659,1],2][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[34659,1],1][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[34659,1],1][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[34659,1],1][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[34659,1],3][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[34659,1],3][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[34659,1],3][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+{
+  "status": "converged",
+  "step": "04B2A",
+  "system": "PbCO3_cerussite",
+  "xc": "PBEsol",
+  "ecut_eV": 1600.0,
+  "kpts": [
+    4,
+    3,
+    4
+  ],
+  "mpi_world_size": 4,
+  "energy_eV": -149.27908327763427,
+  "energy_eV_atom": -7.463954163881714,
+  "band_gap_eV": 3.319400747813059,
+  "band_gap_error": null,
+  "max_force_eV_A": 0.7899692702435623,
+  "stress_GPa": [
+    -2.072269755632469,
+    -2.2005325397979347,
+    1.012856284991824,
+    4.835292461534309e-07,
+    -9.433815309399997e-09,
+    2.241365677969124e-10
+  ],
+  "hydrostatic_stress_GPa": -1.0866486701461933,
+  "max_abs_stress_GPa": 2.2005325397979347,
+  "volume_A3": 270.081597588
+}
+
+>>> Avaliação do gate numérico
+================================================================================
+STEP04B2A — GATE NUMÉRICO PbCO3
+================================================================================
+k 1400: {'delta_energy_meV_atom': 0.019868580532822477, 'delta_gap_eV': 0.00038220690667634116, 'delta_hydrostatic_stress_GPa': 0.001953716479026424, 'delta_max_force_eV_A': 0.003427506795264934, 'passes': True}
+k 1600: {'delta_energy_meV_atom': 0.019940235373105963, 'delta_gap_eV': 0.0003666998922566833, 'delta_hydrostatic_stress_GPa': 0.0019423693508757722, 'delta_max_force_eV_A': 0.003286040381350608, 'passes': True}
+cutoff k323: {'delta_energy_meV_atom': 0.04246807637997563, 'delta_gap_eV': 1.7275723612986127e-05, 'delta_hydrostatic_stress_GPa': 0.07429850324979892, 'delta_max_force_eV_A': 7.470756552963032e-05, 'passes': True}
+cutoff k434: {'delta_energy_meV_atom': 0.042539731220259114, 'delta_gap_eV': 1.7687091933282773e-06, 'delta_hydrostatic_stress_GPa': 0.07428715612164827, 'delta_max_force_eV_A': 0.00021617397944395655, 'passes': True}
+GATE: APROVADO
+================================================================================
+
+>>> Relaxação alternada posições/célula
+[alienware][[53616,1],1][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[53616,1],1][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[53616,1],1][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[53616,1],0][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[53616,1],0][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[53616,1],0][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[53616,1],3][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[53616,1],3][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[53616,1],3][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[53616,1],2][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[53616,1],2][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[53616,1],2][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+{
+  "status": "completed",
+  "step": "04B2A-relaxation",
+  "production_matrix": {
+    "xc": "PBEsol",
+    "ecut_eV": 1400.0,
+    "kpts": [
+      3,
+      2,
+      3
+    ]
+  },
+  "stages": [
+    {
+      "stage": "01_atoms_exp_cell",
+      "type": "atomic_positions_fixed_cell",
+      "target_fmax_eV_A": 0.03,
+      "steps": 3,
+      "converged": true,
+      "cell_A": [
+        5.179,
+        8.492,
+        6.141
+      ]
+    },
+    {
+      "stage": "02_cell_round1",
+      "type": "cell_only_fixed_scaled_positions",
+      "target_generalized_fmax_eV": 0.15,
+      "steps": 4,
+      "converged": true,
+      "cell_A": [
+        5.171670262408612,
+        8.482541921411254,
+        6.077731826249723
+      ],
+      "stress_GPa": [
+        0.02484253514428408,
+        0.009716519538231827,
+        0.0177755107597139,
+        8.746073374205858e-06,
+        5.116363279132712e-07,
+        -2.0688817324522878e-07
+      ]
+    },
+    {
+      "stage": "03_atoms_round1",
+      "type": "atomic_positions_fixed_cell",
+      "target_fmax_eV_A": 0.03,
+      "steps": 1,
+      "converged": true,
+      "cell_A": [
+        5.171670262408612,
+        8.482541921411254,
+        6.077731826249723
+      ]
+    },
+    {
+      "stage": "04_cell_round2",
+      "type": "cell_only_fixed_scaled_positions",
+      "target_generalized_fmax_eV": 0.1,
+      "steps": 2,
+      "converged": true,
+      "cell_A": [
+        5.168159504174424,
+        8.478786122248538,
+        6.082365058329479
+      ],
+      "stress_GPa": [
+        -0.0247285685882668,
+        0.021562359256604713,
+        0.022116225313820733,
+        1.4037878985815863e-06,
+        7.011478141379022e-07,
+        2.9300936023641932e-06
+      ]
+    },
+    {
+      "stage": "05_atoms_final",
+      "type": "atomic_positions_fixed_cell",
+      "target_fmax_eV_A": 0.01,
+      "steps": 7,
+      "converged": true,
+      "cell_A": [
+        5.168159504174424,
+        8.478786122248538,
+        6.082365058329479
+      ]
+    }
+  ],
+  "all_stages_converged": true,
+  "energy_eV": -149.33807734933,
+  "energy_eV_atom": -7.466903867466501,
+  "cell_lengths_A": [
+    5.168159504174424,
+    8.478786122248538,
+    6.082365058329479
+  ],
+  "cell_angles_deg": [
+    90.0,
+    90.0,
+    90.0
+  ],
+  "volume_A3": 266.52752820750015,
+  "max_force_eV_A": 0.007748584880212838,
+  "stress_GPa": [
+    0.23624537907586085,
+    0.14026856817518096,
+    0.0342505947327606,
+    6.869830209940333e-06,
+    5.165146461328858e-06,
+    -4.6940439679458373e-07
+  ],
+  "max_abs_stress_GPa": 0.23624537907586085,
+  "final_traj": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04B2A_pb_cerussite_validation/resultados_step04B2A/relax/PbCO3_relaxed_production.traj",
+  "final_cif": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04B2A_pb_cerussite_validation/resultados_step04B2A/relax/PbCO3_relaxed_production.cif"
+}
+{
+  "status": "completed",
+  "step": "04B2A-relaxation",
+  "production_matrix": {
+    "xc": "PBEsol",
+    "ecut_eV": 1400.0,
+    "kpts": [
+      3,
+      2,
+      3
+    ]
+  },
+  "stages": [
+    {
+      "stage": "01_atoms_exp_cell",
+      "type": "atomic_positions_fixed_cell",
+      "target_fmax_eV_A": 0.03,
+      "steps": 3,
+      "converged": true,
+      "cell_A": [
+        5.179,
+        8.492,
+        6.141
+      ]
+    },
+    {
+      "stage": "02_cell_round1",
+      "type": "cell_only_fixed_scaled_positions",
+      "target_generalized_fmax_eV": 0.15,
+      "steps": 4,
+      "converged": true,
+      "cell_A": [
+        5.171670262408612,
+        8.482541921411254,
+        6.077731826249723
+      ],
+      "stress_GPa": [
+        0.02484253514428408,
+        0.009716519538231827,
+        0.0177755107597139,
+        8.746073374205858e-06,
+        5.116363279132712e-07,
+        -2.0688817324522878e-07
+      ]
+    },
+    {
+      "stage": "03_atoms_round1",
+      "type": "atomic_positions_fixed_cell",
+      "target_fmax_eV_A": 0.03,
+      "steps": 1,
+      "converged": true,
+      "cell_A": [
+        5.171670262408612,
+        8.482541921411254,
+        6.077731826249723
+      ]
+    },
+    {
+      "stage": "04_cell_round2",
+      "type": "cell_only_fixed_scaled_positions",
+      "target_generalized_fmax_eV": 0.1,
+      "steps": 2,
+      "converged": true,
+      "cell_A": [
+        5.168159504174424,
+        8.478786122248538,
+        6.082365058329479
+      ],
+      "stress_GPa": [
+        -0.0247285685882668,
+        0.021562359256604713,
+        0.022116225313820733,
+        1.4037878985815863e-06,
+        7.011478141379022e-07,
+        2.9300936023641932e-06
+      ]
+    },
+    {
+      "stage": "05_atoms_final",
+      "type": "atomic_positions_fixed_cell",
+      "target_fmax_eV_A": 0.01,
+      "steps": 7,
+      "converged": true,
+      "cell_A": [
+        5.168159504174424,
+        8.478786122248538,
+        6.082365058329479
+      ]
+    }
+  ],
+  "all_stages_converged": true,
+  "energy_eV": -149.33807734933,
+  "energy_eV_atom": -7.466903867466501,
+  "cell_lengths_A": [
+    5.168159504174424,
+    8.478786122248538,
+    6.082365058329479
+  ],
+  "cell_angles_deg": [
+    90.0,
+    90.0,
+    90.0
+  ],
+  "volume_A3": 266.52752820750015,
+  "max_force_eV_A": 0.007748584880212838,
+  "stress_GPa": [
+    0.23624537907586085,
+    0.14026856817518096,
+    0.0342505947327606,
+    6.869830209940333e-06,
+    5.165146461328858e-06,
+    -4.6940439679458373e-07
+  ],
+  "max_abs_stress_GPa": 0.23624537907586085,
+  "final_traj": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04B2A_pb_cerussite_validation/resultados_step04B2A/relax/PbCO3_relaxed_production.traj",
+  "final_cif": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04B2A_pb_cerussite_validation/resultados_step04B2A/relax/PbCO3_relaxed_production.cif"
+}
+{
+  "status": "completed",
+  "step": "04B2A-relaxation",
+  "production_matrix": {
+    "xc": "PBEsol",
+    "ecut_eV": 1400.0,
+    "kpts": [
+      3,
+      2,
+      3
+    ]
+  },
+  "stages": [
+    {
+      "stage": "01_atoms_exp_cell",
+      "type": "atomic_positions_fixed_cell",
+      "target_fmax_eV_A": 0.03,
+      "steps": 3,
+      "converged": true,
+      "cell_A": [
+        5.179,
+        8.492,
+        6.141
+      ]
+    },
+    {
+      "stage": "02_cell_round1",
+      "type": "cell_only_fixed_scaled_positions",
+      "target_generalized_fmax_eV": 0.15,
+      "steps": 4,
+      "converged": true,
+      "cell_A": [
+        5.171670262408612,
+        8.482541921411254,
+        6.077731826249723
+      ],
+      "stress_GPa": [
+        0.02484253514428408,
+        0.009716519538231827,
+        0.0177755107597139,
+        8.746073374205858e-06,
+        5.116363279132712e-07,
+        -2.0688817324522878e-07
+      ]
+    },
+    {
+      "stage": "03_atoms_round1",
+      "type": "atomic_positions_fixed_cell",
+      "target_fmax_eV_A": 0.03,
+      "steps": 1,
+      "converged": true,
+      "cell_A": [
+        5.171670262408612,
+        8.482541921411254,
+        6.077731826249723
+      ]
+    },
+    {
+      "stage": "04_cell_round2",
+      "type": "cell_only_fixed_scaled_positions",
+      "target_generalized_fmax_eV": 0.1,
+      "steps": 2,
+      "converged": true,
+      "cell_A": [
+        5.168159504174424,
+        8.478786122248538,
+        6.082365058329479
+      ],
+      "stress_GPa": [
+        -0.0247285685882668,
+        0.021562359256604713,
+        0.022116225313820733,
+        1.4037878985815863e-06,
+        7.011478141379022e-07,
+        2.9300936023641932e-06
+      ]
+    },
+    {
+      "stage": "05_atoms_final",
+      "type": "atomic_positions_fixed_cell",
+      "target_fmax_eV_A": 0.01,
+      "steps": 7,
+      "converged": true,
+      "cell_A": [
+        5.168159504174424,
+        8.478786122248538,
+        6.082365058329479
+      ]
+    }
+  ],
+  "all_stages_converged": true,
+  "energy_eV": -149.33807734933,
+  "energy_eV_atom": -7.466903867466501,
+  "cell_lengths_A": [
+    5.168159504174424,
+    8.478786122248538,
+    6.082365058329479
+  ],
+  "cell_angles_deg": [
+    90.0,
+    90.0,
+    90.0
+  ],
+  "volume_A3": 266.52752820750015,
+  "max_force_eV_A": 0.007748584880212838,
+  "stress_GPa": [
+    0.23624537907586085,
+    0.14026856817518096,
+    0.0342505947327606,
+    6.869830209940333e-06,
+    5.165146461328858e-06,
+    -4.6940439679458373e-07
+  ],
+  "max_abs_stress_GPa": 0.23624537907586085,
+  "final_traj": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04B2A_pb_cerussite_validation/resultados_step04B2A/relax/PbCO3_relaxed_production.traj",
+  "final_cif": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04B2A_pb_cerussite_validation/resultados_step04B2A/relax/PbCO3_relaxed_production.cif"
+}
+{
+  "status": "completed",
+  "step": "04B2A-relaxation",
+  "production_matrix": {
+    "xc": "PBEsol",
+    "ecut_eV": 1400.0,
+    "kpts": [
+      3,
+      2,
+      3
+    ]
+  },
+  "stages": [
+    {
+      "stage": "01_atoms_exp_cell",
+      "type": "atomic_positions_fixed_cell",
+      "target_fmax_eV_A": 0.03,
+      "steps": 3,
+      "converged": true,
+      "cell_A": [
+        5.179,
+        8.492,
+        6.141
+      ]
+    },
+    {
+      "stage": "02_cell_round1",
+      "type": "cell_only_fixed_scaled_positions",
+      "target_generalized_fmax_eV": 0.15,
+      "steps": 4,
+      "converged": true,
+      "cell_A": [
+        5.171670262408612,
+        8.482541921411254,
+        6.077731826249723
+      ],
+      "stress_GPa": [
+        0.02484253514428408,
+        0.009716519538231827,
+        0.0177755107597139,
+        8.746073374205858e-06,
+        5.116363279132712e-07,
+        -2.0688817324522878e-07
+      ]
+    },
+    {
+      "stage": "03_atoms_round1",
+      "type": "atomic_positions_fixed_cell",
+      "target_fmax_eV_A": 0.03,
+      "steps": 1,
+      "converged": true,
+      "cell_A": [
+        5.171670262408612,
+        8.482541921411254,
+        6.077731826249723
+      ]
+    },
+    {
+      "stage": "04_cell_round2",
+      "type": "cell_only_fixed_scaled_positions",
+      "target_generalized_fmax_eV": 0.1,
+      "steps": 2,
+      "converged": true,
+      "cell_A": [
+        5.168159504174424,
+        8.478786122248538,
+        6.082365058329479
+      ],
+      "stress_GPa": [
+        -0.0247285685882668,
+        0.021562359256604713,
+        0.022116225313820733,
+        1.4037878985815863e-06,
+        7.011478141379022e-07,
+        2.9300936023641932e-06
+      ]
+    },
+    {
+      "stage": "05_atoms_final",
+      "type": "atomic_positions_fixed_cell",
+      "target_fmax_eV_A": 0.01,
+      "steps": 7,
+      "converged": true,
+      "cell_A": [
+        5.168159504174424,
+        8.478786122248538,
+        6.082365058329479
+      ]
+    }
+  ],
+  "all_stages_converged": true,
+  "energy_eV": -149.33807734933,
+  "energy_eV_atom": -7.466903867466501,
+  "cell_lengths_A": [
+    5.168159504174424,
+    8.478786122248538,
+    6.082365058329479
+  ],
+  "cell_angles_deg": [
+    90.0,
+    90.0,
+    90.0
+  ],
+  "volume_A3": 266.52752820750015,
+  "max_force_eV_A": 0.007748584880212838,
+  "stress_GPa": [
+    0.23624537907586085,
+    0.14026856817518096,
+    0.0342505947327606,
+    6.869830209940333e-06,
+    5.165146461328858e-06,
+    -4.6940439679458373e-07
+  ],
+  "max_abs_stress_GPa": 0.23624537907586085,
+  "final_traj": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04B2A_pb_cerussite_validation/resultados_step04B2A/relax/PbCO3_relaxed_production.traj",
+  "final_cif": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04B2A_pb_cerussite_validation/resultados_step04B2A/relax/PbCO3_relaxed_production.cif"
+}
+
+>>> Métricas estruturais
+{
+  "step": "04B2A-structural-metrics",
+  "experimental_reference": {
+    "source": "Chevrier et al., Z. Kristallogr. 199 (1992) 67-74; neutron single-crystal refinement.",
+    "a_A": 5.179,
+    "b_A": 8.492,
+    "c_A": 6.141,
+    "volume_A3": 270.0815975880001,
+    "spacegroup_number": 62,
+    "carbonate_aplanarity_A": 0.026
+  },
+  "relaxed_lattice": {
+    "a_A": 5.168159504174424,
+    "b_A": 8.478786122248538,
+    "c_A": 6.082365058329479,
+    "alpha_deg": 90.0,
+    "beta_deg": 90.0,
+    "gamma_deg": 90.0,
+    "volume_A3": 266.52752820750015
+  },
+  "relative_errors": {
+    "a_percent": 0.20931638975817943,
+    "b_percent": 0.15560383598048735,
+    "c_percent": 0.9548109700459331,
+    "volume_percent": 1.3159243029662215,
+    "max_angle_error_deg": 0.0,
+    "CO_mean_percent": 0.797422471197734,
+    "PbO9_mean_percent": 0.48410028979457165
+  },
+  "experimental_structure_chemistry": {
+    "CO_bonds_A": {
+      "count": 12,
+      "mean": 1.2843069493889478,
+      "std": 0.0018437132452563695,
+      "min": 1.2816995451123792,
+      "max": 1.2856106515272325
+    },
+    "carbonate_C_to_O3_plane_A": {
+      "count": 4,
+      "mean": 0.026330320527243666,
+      "std": 1.5032157172419021e-16,
+      "min": 0.026330320527243416,
+      "max": 0.02633032052724382
+    },
+    "PbO_nearest9_A": {
+      "count": 36,
+      "mean": 2.8436687589354714,
+      "std": 0.45649789701882715,
+      "min": 2.5936617098106187,
+      "max": 4.128585479588029
+    }
+  },
+  "relaxed_structure_chemistry": {
+    "CO_bonds_A": {
+      "count": 12,
+      "mean": 1.2945483016025294,
+      "std": 0.0002466893280190758,
+      "min": 1.2943736815585904,
+      "max": 1.2948973623228732
+    },
+    "carbonate_C_to_O3_plane_A": {
+      "count": 4,
+      "mean": 0.027676634434101226,
+      "std": 4.765051865151392e-08,
+      "min": 0.0276765867835796,
+      "max": 0.02767668208462029
+    },
+    "PbO_nearest9_A": {
+      "count": 36,
+      "mean": 2.829902550232667,
+      "std": 0.4587509986098088,
+      "min": 2.565068302866073,
+      "max": 4.119760725568348
+    }
+  },
+  "symmetry": [
+    {
+      "symprec_A": 0.01,
+      "number": 62,
+      "international": "Pnma",
+      "hall": "-P 2ac 2n"
+    },
+    {
+      "symprec_A": 0.05,
+      "number": 62,
+      "international": "Pnma",
+      "hall": "-P 2ac 2n"
+    }
+  ],
+  "structural_gate_passes": true
+}
+
+>>> Single point final de validação
+
+[B2A] PbCO3_relaxed_1600_k434
+[alienware][[58919,1],2][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[58919,1],2][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[58919,1],2][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[58919,1],3][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[58919,1],1][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[58919,1],0][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[58919,1],3][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[58919,1],1][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[58919,1],0][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[58919,1],3][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[58919,1],1][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[58919,1],0][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+{
+  "status": "converged",
+  "step": "04B2A",
+  "system": "PbCO3_cerussite",
+  "xc": "PBEsol",
+  "ecut_eV": 1600.0,
+  "kpts": [
+    4,
+    3,
+    4
+  ],
+  "mpi_world_size": 4,
+  "energy_eV": -149.33920578444204,
+  "energy_eV_atom": -7.4669602892221025,
+  "band_gap_eV": 3.2291856442697964,
+  "band_gap_error": null,
+  "max_force_eV_A": 0.009868441211743965,
+  "stress_GPa": [
+    0.15022053323118356,
+    0.07131930712918318,
+    -0.04664007219777912,
+    6.876018210115891e-06,
+    4.546819409832811e-06,
+    -4.7307282431922106e-07
+  ],
+  "hydrostatic_stress_GPa": 0.05829992272086254,
+  "max_abs_stress_GPa": 0.15022053323118356,
+  "volume_A3": 266.52752820750015
+}
+
+>>> Decisão final
+================================================================================
+STEP 04B2A — Pb(II) / CERUSSITA
+================================================================================
+Gate numérico: PASS
+Relaxação: PASS
+Estrutura: PASS
+Validação força/stress: PASS
+STEP04B2A: APROVADO
+Produção com defeitos: NÃO AUTORIZADA.
+================================================================================
+==============================================================================
+STEP 04B2A FINALIZADO
+==============================================================================

@@ -1,0 +1,36 @@
+{
+  "step": "04B2B",
+  "scope": "Controlled non-self-consistent SOC sensitivity for approved PbCO3 and UO2 references.",
+  "technical_consistency": {
+    "PbCO3_scale0_vs_scalar_gap_diff_eV": 0.0,
+    "PbCO3_pass": true,
+    "UO2_scale0_vs_scalar_gap_diff_eV": 0.0,
+    "UO2_pass": true,
+    "overall_pass": true
+  },
+  "PbCO3_SOC": {
+    "scalar_gap_eV": 3.229185644269367,
+    "SOC_gap_eV": 2.986477881604012,
+    "delta_gap_eV": -0.2427077626653551,
+    "band_energy_shift_eV_fu": -0.10831870133498,
+    "SOC_significant_for_electronic_structure": true
+  },
+  "UO2_SOC": {
+    "scalar_gap_eV": 2.531501613759467,
+    "SOC_gap_z_eV": 2.296196016678696,
+    "SOC_gap_x_eV": 2.296195497215944,
+    "SOC_gap_y_eV": 2.364126890409441,
+    "delta_gap_z_eV": -0.23530559708077092,
+    "band_energy_anisotropy_meV_fu": 4.78961743538342,
+    "SOC_significant": true
+  },
+  "policy": {
+    "structural_relaxations": "Remain scalar-relativistic at this stage.",
+    "electronic_structure": "Include SOC when classified significant.",
+    "defect_thermodynamics": "For U/Pb defects, carry a SOC single-point energy sensitivity correction if SOC is significant."
+  },
+  "step04B2B_passes": true,
+  "production_authorization": false,
+  "next_gate": "Step04B2C: realistic U(VI) compound validation before Step05 defect production.",
+  "warning": "soc_eigenstates is non-self-consistent; UO2 remains a collinear 1-k sensitivity test, not a self-consistent 3-k SOC calculation."
+}

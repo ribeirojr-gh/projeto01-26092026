@@ -1,0 +1,47 @@
+{
+  "status": "converged",
+  "step": "04B2C1",
+  "case": "U3_seeded_1600_k222",
+  "system": "gamma-UO3-Fddd",
+  "formal_U_oxidation_state": 6,
+  "dataset": "U14_nc6",
+  "xc": "PBEsol",
+  "Ueff_eV": 3.0,
+  "spin_mode": "seeded",
+  "ecut_eV": 1600.0,
+  "kpts": [
+    2,
+    2,
+    2
+  ],
+  "natoms": 32,
+  "energy_eV": -285.7572892969922,
+  "energy_eV_atom": -8.929915290531007,
+  "band_gap_eV": 2.6605793483392146,
+  "band_gap_error": null,
+  "max_force_eV_A": 0.5836689910230675,
+  "stress_GPa": [
+    -0.453181873977631,
+    -0.7904639840055734,
+    -0.8813121362971807,
+    0.4487535737212448,
+    -0.3993187252691424,
+    0.3614209542010618
+  ],
+  "hydrostatic_stress_GPa": -0.7083193314267952,
+  "max_abs_stress_GPa": 0.8813121362971807,
+  "mpi_world_size": 4,
+  "U_local_moments_muB": [
+    -4.536992555722745e-06,
+    4.426224008191285e-06,
+    2.5404369897679926e-05,
+    -2.5416723723719797e-05,
+    2.640538793852421e-05,
+    -2.6393413900108326e-05,
+    2.6413418522100727e-05,
+    -2.6324651930969967e-05
+  ],
+  "U_abs_mean_moment_muB": 2.0665147809627124e-05,
+  "total_magnetic_moment_muB": 7.585420907813265e-09,
+  "gpw_file": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04B2C1_uvi_gamma_uo3_screen/resultados_step04B2C1/gpw/gammaUO3_U3_seeded_1600_k222.gpw"
+}

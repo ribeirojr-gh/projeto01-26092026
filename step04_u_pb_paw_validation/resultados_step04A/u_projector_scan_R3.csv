@@ -1,0 +1,10 @@
+candidate_id,projectors,PBE_passes,PBEsol_passes,selected
+"fE0p00","6s,7s,6p,7p,6d,d,5f,0.0f,G",false,false,false
+"fE0p25","6s,7s,6p,7p,6d,d,5f,0.25f,G",false,false,false
+"fE0p50","6s,7s,6p,7p,6d,d,5f,0.5f,G",false,false,false
+"fE0p75","6s,7s,6p,7p,6d,d,5f,0.75f,G",false,false,false
+"fE1p00","6s,7s,6p,7p,6d,d,5f,1.0f,G",false,false,false
+"fE0p00_0p50","6s,7s,6p,7p,6d,d,5f,0.0f,0.5f,G",false,false,false
+"fE0p00_0p25","6s,7s,6p,7p,6d,d,5f,0.0f,0.25f,G",false,false,false
+"fE0p25_0p75","6s,7s,6p,7p,6d,d,5f,0.25f,0.75f,G",false,false,false
+"fE0p00_1p00","6s,7s,6p,7p,6d,d,5f,0.0f,1.0f,G",false,false,false

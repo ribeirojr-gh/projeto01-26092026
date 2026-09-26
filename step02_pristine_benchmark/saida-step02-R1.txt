@@ -1,0 +1,265 @@
+==============================================================================
+STEP 02-R1 — RETOMADA A PARTIR DO GPAW
+==============================================================================
+Data: Wed Jul 22 12:32:29 -03 2026
+Host: AlienA51
+Step 02A detectado: /home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/step02_pristine_benchmark/resultados_mlip/resumo_mlip.csv
+Step 02A NÃO será reexecutado.
+
+>>> STEP 02B-R1 — GPAW/PBEsol (4 MPI)
+================================================================================
+STEP 02B-R1 — CONVERGÊNCIA GPAW/PBEsol
+================================================================================
+MPI world size: 4
+Script dir: /home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/step02_pristine_benchmark
+Cutoffs: [400, 500, 600, 700] eV
+k fixo no scan de cutoff: 5
+k-grids: [3, 4, 5, 6, 7]
+cutoff fixo no scan k: 600 eV
+Critérios de recomendação: 1.0 meV/átomo e 0.05 GPa
+Checkpoint existente: 0 pontos
+================================================================================
+[calcita] ecut: ecut=400 eV | k=5x5x5 | XC=PBEsol
+rank=2 L00: Traceback (most recent call last):
+rank=2 L01:   File "/home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/gpaw/bin/gpaw", line 9, in <module>
+rank=2 L02:     sys.exit(main())
+rank=2 L03:              ^^^^^^
+rank=2 L04:   File "/home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/cli/main.py", line 90, in main
+rank=2 L05:     ase_main('gpaw', 'GPAW command-line tool', __version__,
+rank=2 L06:   File "/home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/ase/cli/main.py", line 106, in main
+rank=2 L07:     f(args)
+rank=2 L08:   File "/home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/cli/python.py", line 57, in run
+rank=2 L09:     runpy.run_path(args.arguments[0], run_name='__main__')
+rank=2 L10:   File "<frozen runpy>", line 291, in run_path
+rank=2 L11:   File "<frozen runpy>", line 98, in _run_module_code
+rank=2 L12:   File "<frozen runpy>", line 88, in _run_code
+rank=2 L13:   File "/home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/step02_pristine_benchmark/02B_gpaw_convergence.py", line 400, in <module>
+rank=2 L14:     main()
+rank=2 L15:   File "/home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/step02_pristine_benchmark/02B_gpaw_convergence.py", line 294, in main
+rank=2 L16:     row = run_static(
+rank=2 L17:           ^^^^^^^^^^^
+rank=2 L18:   File "/home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/step02_pristine_benchmark/02B_gpaw_convergence.py", line 82, in run_static
+rank=2 L19:     energy = atoms.get_potential_energy()
+rank=2 L20:              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+rank=2 L21:   File "/home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/ase/atoms.py", line 1971, in get_potential_energy
+rank=2 L22:     energy = self._calc.get_potential_energy(self)
+rank=2 L23:              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+rank=2 L24:   File "/home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/ase/calculators/abc.py", line 25, in get_potential_energy
+rank=2 L25:     return self.get_property(name, atoms)
+rank=2 L26:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+rank=2 L27:   File "/home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/ase/calculators/calculator.py", line 517, in get_property
+rank=2 L28:     self.calculate(atoms, [name], system_changes)
+rank=2 L29:   File "/home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/calculator.py", line 418, in calculate
+rank=2 L30:     for _ in self.icalculate(atoms, properties, system_changes):
+rank=2 L31:   File "/home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/calculator.py", line 439, in icalculate
+rank=2 L32:     self.initialize(atoms)
+rank=2 L33:   File "/home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/calculator.py", line 774, in initialize
+rank=2 L34:     self.create_setups(mode, xc)
+rank=2 L35:   File "/home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/calculator.py", line 1050, in create_setups
+rank=2 L36:     self.setups = Setups(Z_a,
+rank=2 L37:                   ^^^^^^^^^^^
+rank=2 L38:   File "/home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/setup.py", line 1319, in __init__
+rank=2 L39:     setup = create_setup(symbol, xc, 2, type,
+rank=2 L40:             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+rank=2 L41:   File "/home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/setup.py", line 80, in create_setup
+rank=2 L42:     setupdata = SetupData.find_and_read_path(symbol,
+rank=2 L43:                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+rank=2 L44:   File "/homrank=0 L00: Traceback (most recent call last):
+rank=0 L01:   File "/home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/gpaw/bin/gpaw", line 9, in <module>
+rank=0 L02:     sys.exit(main())
+rank=0 L03:              ^^^^^^
+rank=0 L04:   File "/home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/cli/main.py", line 90, in main
+rank=0 L05:     ase_main('gpaw', 'GPAW command-line tool', __version__,
+rank=0 L06:   File "/home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/ase/cli/main.py", line 106, in main
+rank=0 L07:     f(args)
+rank=0 L08:   File "/home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/cli/python.py", line 57, in run
+rank=0 L09:     runpy.run_path(args.arguments[0], run_name='__main__')
+rank=0 L10:   File "<frozen runpy>", line 291, in run_path
+rank=0 L11:   File "<frozen runpy>", line 98, in _run_module_code
+rank=0 L12:   File "<frozen runpy>", line 88, in _run_code
+rank=0 L13:   File "/home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/step02_pristine_benchmark/02B_gpaw_convergence.py", line 400, in <module>
+rank=0 L14:     main()
+rank=0 L15:   File "/home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/step02_pristine_benchmark/02B_gpaw_convergence.py", line 294, in main
+rank=0 L16:     row = run_static(
+rank=0 L17:           ^^^^^^^^^^^
+rank=0 L18:   File "/home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/step02_pristine_benchmark/02B_gpaw_convergence.py", line 82, in run_static
+rank=0 L19:     energy = atoms.get_potential_energy()
+rank=0 L20:              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+rank=0 L21:   File "/home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/ase/atoms.py", line 1971, in get_potential_energy
+rank=0 L22:     energy = self._calc.get_potential_energy(self)
+rank=0 L23:              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+rank=0 L24:   File "/home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/ase/calculators/abc.py", line 25, in get_potential_energy
+rank=0 L25:     return self.get_property(name, atoms)
+rank=0 L26:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+rank=0 L27:   File "/home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/ase/calculators/calculator.py", line 517, in get_property
+rank=0 L28:     self.calculate(atoms, [name], system_changes)
+rank=0 L29:   File "/home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/calculator.py", line 418, in calculate
+rank=0 L30:     for _ in self.icalculate(atoms, properties, system_changes):
+rank=0 L31:   File "/home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/calculator.py", line 439, in icalculate
+rank=0 L32:     self.initialize(atoms)
+rank=0 L33:   File "/home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/calculator.py", line 774, in initialize
+rank=0 L34:     self.create_setups(mode, xc)
+rank=0 L35:   File "/home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/calculator.py", line 1050, in create_setups
+rank=0 L36:     self.setups = Setups(Z_a,
+rank=0 L37:                   ^^^^^^^^^^^
+rank=0 L38:   File "/home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/setup.py", line 1319, in __init__
+rank=0 L39:     setup = create_setup(symbol, xc, 2, type,
+rank=0 L40:             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+rank=0 L41:   File "/home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/setup.py", line 80, in create_setup
+rank=0 L42:     setupdata = SetupData.find_and_read_path(symbol,
+rank=0 L43:                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+rank=0 L44:   File "/homrank=3 L00: Traceback (most recent call last):
+rank=3 L01:   File "/home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/gpaw/bin/gpaw", line 9, in <module>
+rank=3 L02:     sys.exit(main())
+rank=3 L03:              ^^^^^^
+rank=3 L04:   File "/home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/cli/main.py", line 90, in main
+rank=3 L05:     ase_main('gpaw', 'GPAW command-line tool', __version__,
+rank=3 L06:   File "/home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/ase/cli/main.py", line 106, in main
+rank=3 L07:     f(args)
+rank=3 L08:   File "/home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/cli/python.py", line 57, in run
+rank=3 L09:     runpy.run_path(args.arguments[0], run_name='__main__')
+rank=3 L10:   File "<frozen runpy>", line 291, in run_path
+rank=3 L11:   File "<frozen runpy>", line 98, in _run_module_code
+rank=3 L12:   File "<frozen runpy>", line 88, in _run_code
+rank=3 L13:   File "/home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/step02_pristine_benchmark/02B_gpaw_convergence.py", line 400, in <module>
+rank=3 L14:     main()
+rank=3 L15:   File "/home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/step02_pristine_benchmark/02B_gpaw_convergence.py", line 294, in main
+rank=3 L16:     row = run_static(
+rank=3 L17:           ^^^^^^^^^^^
+rank=3 L18:   File "/home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/step02_pristine_benchmark/02B_gpaw_convergence.py", line 82, in run_static
+rank=3 L19:     energy = atoms.get_potential_energy()
+rank=3 L20:              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+rank=3 L21:   File "/home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/ase/atoms.py", line 1971, in get_potential_energy
+rank=3 L22:     energy = self._calc.get_potential_energy(self)
+rank=3 L23:              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+rank=3 L24:   File "/home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/ase/calculators/abc.py", line 25, in get_potential_energy
+rank=3 L25:     return self.get_property(name, atoms)
+rank=3 L26:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+rank=3 L27:   File "/home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/ase/calculators/calculator.py", line 517, in get_property
+rank=3 L28:     self.calculate(atoms, [name], system_changes)
+rank=3 L29:   File "/home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/calculator.py", line 418, in calculate
+rank=3 L30:     for _ in self.icalculate(atoms, properties, system_changes):
+rank=3 L31:   File "/home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/calculator.py", line 439, in icalculate
+rank=3 L32:     self.initialize(atoms)
+rank=3 L33:   File "/home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/calculator.py", line 774, in initialize
+rank=3 L34:     self.create_setups(mode, xc)
+rank=3 L35:   File "/home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/calculator.py", line 1050, in create_setups
+rank=3 L36:     self.setups = Setups(Z_a,
+rank=3 L37:                   ^^^^^^^^^^^
+rank=3 L38:   File "/home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/setup.py", line 1319, in __init__
+rank=3 L39:     setup = create_setup(symbol, xc, 2, type,
+rank=3 L40:             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+rank=3 L41:   File "/home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/setup.py", line 80, in create_setup
+rank=3 L42:     setupdata = SetupData.find_and_read_path(symbol,
+rank=3 L43:                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+rank=3 L44:   File "/homrank=1 L00: Traceback (most recent call last):
+rank=1 L01:   File "/home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/gpaw/bin/gpaw", line 9, in <module>
+rank=1 L02:     sys.exit(main())
+rank=1 L03:              ^^^^^^
+rank=1 L04:   File "/home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/cli/main.py", line 90, in main
+rank=1 L05:     ase_main('gpaw', 'GPAW command-line tool', __version__,
+rank=1 L06:   File "/home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/ase/cli/main.py", line 106, in main
+rank=1 L07:     f(args)
+rank=1 L08:   File "/home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/cli/python.py", line 57, in run
+rank=1 L09:     runpy.run_path(args.arguments[0], run_name='__main__')
+rank=1 L10:   File "<frozen runpy>", line 291, in run_path
+rank=1 L11:   File "<frozen runpy>", line 98, in _run_module_code
+rank=1 L12:   File "<frozen runpy>", line 88, in _run_code
+rank=1 L13:   File "/home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/step02_pristine_benchmark/02B_gpaw_convergence.py", line 400, in <module>
+rank=1 L14:     main()
+rank=1 L15:   File "/home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/step02_pristine_benchmark/02B_gpaw_convergence.py", line 294, in main
+rank=1 L16:     row = run_static(
+rank=1 L17:           ^^^^^^^^^^^
+rank=1 L18:   File "/home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/step02_pristine_benchmark/02B_gpaw_convergence.py", line 82, in run_static
+rank=1 L19:     energy = atoms.get_potential_energy()
+rank=1 L20:              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+rank=1 L21:   File "/home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/ase/atoms.py", line 1971, in get_potential_energy
+rank=1 L22:     energy = self._calc.get_potential_energy(self)
+rank=1 L23:              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+rank=1 L24:   File "/home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/ase/calculators/abc.py", line 25, in get_potential_energy
+rank=1 L25:     return self.get_property(name, atoms)
+rank=1 L26:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+rank=1 L27:   File "/home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/ase/calculators/calculator.py", line 517, in get_property
+rank=1 L28:     self.calculate(atoms, [name], system_changes)
+rank=1 L29:   File "/home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/calculator.py", line 418, in calculate
+rank=1 L30:     for _ in self.icalculate(atoms, properties, system_changes):
+rank=1 L31:   File "/home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/calculator.py", line 439, in icalculate
+rank=1 L32:     self.initialize(atoms)
+rank=1 L33:   File "/home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/calculator.py", line 774, in initialize
+rank=1 L34:     self.create_setups(mode, xc)
+rank=1 L35:   File "/home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/calculator.py", line 1050, in create_setups
+rank=1 L36:     self.setups = Setups(Z_a,
+rank=1 L37:                   ^^^^^^^^^^^
+rank=1 L38:   File "/home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/setup.py", line 1319, in __init__
+rank=1 L39:     setup = create_setup(symbol, xc, 2, type,
+rank=1 L40:             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+rank=1 L41:   File "/home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/setup.py", line 80, in create_setup
+rank=1 L42:     setupdata = SetupData.find_and_read_path(symbol,
+rank=1 L43:                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+rank=1 L44:   File "/home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/setup_data.py", line 127, in find_and_read_path
+rank=2 L45:     setupdata.filename, source = search_for_file(setupdata.stdfilename,
+rank=2 L46:                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+rank=2 L47:   File "/home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/setup_data.py", line 472, in search_for_file
+rank=2 L48:     raise FileNotFoundError(f'{err}\n{helpful_message}\n')
+rank=2 L49: FileNotFoundError: Could not find required PAW dataset file "Ca.PBEsol".
+rank=2 L50: 
+rank=2 L51: You need to set the GPAW_SETUP_PATH environment variable to point to
+rank=2 L52: the directories where PAW dataset and basis files are stored.  See
+rank=2 L53: https://gpaw.readthedocs.io/install.html#install-paw-datasets
+rank=2 L54: for details.
+rank=2 L55: 
+GPAW CLEANUP (node 2): <class 'FileNotFoundError'> occurred.  Calling MPI_Abort!
+e/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/setup_data.py", line 127, in find_and_read_path
+rank=0 L45:     setupdata.filename, source = search_for_file(setupdata.stdfilename,
+rank=0 L46:                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+rank=0 L47:   File "/home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/setup_data.py", line 472, in search_for_file
+rank=0 L48:     raise FileNotFoundError(f'{err}\n{helpful_message}\n')
+rank=0 L49: FileNotFoundError: Could not find required PAW dataset file "Ca.PBEsol".
+rank=0 L50: 
+rank=0 L51: You need to set the GPAW_SETUP_PATH environment variable to point to
+rank=0 L52: the directories where PAW dataset and basis files are stored.  See
+rank=0 L53: https://gpaw.readthedocs.io/install.html#install-paw-datasets
+rank=0 L54: for details.
+rank=0 L55: 
+GPAW CLEANUP (node 0): <class 'FileNotFoundError'> occurred.  Calling MPI_Abort!
+e/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/setup_data.py", line 127, in find_and_read_path
+rank=3 L45:     setupdata.filename, source = search_for_file(setupdata.stdfilename,
+rank=3 L46:                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+rank=3 L47:   File "/home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/setup_data.py", line 472, in search_for_file
+rank=3 L48:     raise FileNotFoundError(f'{err}\n{helpful_message}\n')
+rank=3 L49: FileNotFoundError: Could not find required PAW dataset file "Ca.PBEsol".
+rank=3 L50: 
+rank=3 L51: You need to set the GPAW_SETUP_PATH environment variable to point to
+rank=3 L52: the directories where PAW dataset and basis files are stored.  See
+rank=3 L53: https://gpaw.readthedocs.io/install.html#install-paw-datasets
+rank=3 L54: for details.
+rank=3 L55: 
+GPAW CLEANUP (node 3): <class 'FileNotFoundError'> occurred.  Calling MPI_Abort!
+e/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/setup_data.py", line 127, in find_and_read_path
+rank=1 L45:     setupdata.filename, source = search_for_file(setupdata.stdfilename,
+rank=1 L46:                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+rank=1 L47:   File "/home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/setup_data.py", line 472, in search_for_file
+rank=1 L48:     raise FileNotFoundError(f'{err}\n{helpful_message}\n')
+rank=1 L49: FileNotFoundError: Could not find required PAW dataset file "Ca.PBEsol".
+rank=1 L50: 
+rank=1 L51: You need to set the GPAW_SETUP_PATH environment variable to point to
+rank=1 L52: the directories where PAW dataset and basis files are stored.  See
+rank=1 L53: https://gpaw.readthedocs.io/install.html#install-paw-datasets
+rank=1 L54: for details.
+rank=1 L55: 
+GPAW CLEANUP (node 1): <class 'FileNotFoundError'> occurred.  Calling MPI_Abort!
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 2 in communicator MPI_COMM_WORLD
+  Proc: [[18010,1],2]
+  Errorcode: 42
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+prterun has exited due to process rank 0 with PID 0 on node AlienA51 calling
+"abort". This may have caused other processes in the application to be
+terminated by signals sent by prterun (as reported here).
+--------------------------------------------------------------------------
+ 

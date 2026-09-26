@@ -1,0 +1,3 @@
+converged,ecut_recomendado_eV,maior_ecut_calculado_eV,criterio_energia_meV_atom,criterio_stress_GPa,intervalos_consecutivos_exigidos,mineral,kgrid,xc
+False,,1600,1.0,0.05,2,calcita,5,PBE
+False,,1600,1.0,0.05,2,dolomita,5,PBE

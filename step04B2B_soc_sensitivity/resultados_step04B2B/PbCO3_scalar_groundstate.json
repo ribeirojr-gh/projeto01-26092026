@@ -1,0 +1,16 @@
+{
+  "status": "converged",
+  "system": "PbCO3",
+  "energy_eV": -149.33920578442888,
+  "energy_eV_atom": -7.466960289221444,
+  "scalar_gap_eV": 3.229185644269367,
+  "scalar_gap_error": null,
+  "ecut_eV": 1600.0,
+  "kpts": [
+    4,
+    3,
+    4
+  ],
+  "gpw_file": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04B2B_soc_sensitivity/resultados_step04B2B/gpw/PbCO3_scalar_1600_k434_all.gpw",
+  "mpi_world_size": 4
+}

@@ -1,0 +1,55 @@
+{
+  "step": "04B2A-numerical-gate",
+  "system": "PbCO3_cerussite",
+  "production_candidate": {
+    "ecut_eV": 1400.0,
+    "kpts": [
+      3,
+      2,
+      3
+    ]
+  },
+  "validation_matrix": {
+    "ecut_eV": 1600.0,
+    "kpts": [
+      4,
+      3,
+      4
+    ]
+  },
+  "criteria": {
+    "max_delta_energy_meV_atom": 1.0,
+    "max_delta_gap_eV": 0.03,
+    "max_delta_hydrostatic_stress_GPa": 0.1,
+    "max_delta_force_eV_A": 0.02
+  },
+  "kpoint_1400": {
+    "delta_energy_meV_atom": 0.019868580532822477,
+    "delta_gap_eV": 0.00038220690667634116,
+    "delta_hydrostatic_stress_GPa": 0.001953716479026424,
+    "delta_max_force_eV_A": 0.003427506795264934,
+    "passes": true
+  },
+  "kpoint_1600": {
+    "delta_energy_meV_atom": 0.019940235373105963,
+    "delta_gap_eV": 0.0003666998922566833,
+    "delta_hydrostatic_stress_GPa": 0.0019423693508757722,
+    "delta_max_force_eV_A": 0.003286040381350608,
+    "passes": true
+  },
+  "cutoff_k323": {
+    "delta_energy_meV_atom": 0.04246807637997563,
+    "delta_gap_eV": 1.7275723612986127e-05,
+    "delta_hydrostatic_stress_GPa": 0.07429850324979892,
+    "delta_max_force_eV_A": 7.470756552963032e-05,
+    "passes": true
+  },
+  "cutoff_k434": {
+    "delta_energy_meV_atom": 0.042539731220259114,
+    "delta_gap_eV": 1.7687091933282773e-06,
+    "delta_hydrostatic_stress_GPa": 0.07428715612164827,
+    "delta_max_force_eV_A": 0.00021617397944395655,
+    "passes": true
+  },
+  "numerical_gate_passes": true
+}

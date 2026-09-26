@@ -1,0 +1,180 @@
+==============================================================================
+STEP 04A — VALIDAÇÃO INICIAL DOS PAWs DE U E Pb — R6
+==============================================================================
+Data: sex 31 jul 2026 17:54:04 -03
+Host: alienware
+Projeto: /home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project
+
+>>> Auditoria
+================================================================================
+STEP 04A — AUDITORIA DE PAWs U/Pb
+================================================================================
+GPAW: 25.7.0
+Old generator: Pb parameters = True
+Old generator: U parameters  = False
+Generator2 Pb default e-     = 14
+Generator2 U default e-      = 14
+Generator2 U entry           = ('6s,7s,6p,7p,6d,d,5f,f,G', 2.5)
+Installed Pb.PBE: YES /home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw_data/setups/Pb.PBE.gz
+Installed Pb.PBEsol: NO 
+Installed U.PBE: NO 
+Installed U.PBEsol: NO 
+Audit JSON: /home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04_u_pb_paw_validation/resultados_step04A/auditoria_geradores.json
+================================================================================
+
+>>> Artefatos R5 íntegros; scan de pseudização NÃO será repetido.
+
+>>> Retomando gates computacionais
+==============================================================================
+STEP 04A2 — TESTE DE CARREGAMENTO DOS PAWs
+==============================================================================
+{'symbol': 'Pb', 'xc': 'PBE', 'setup_dir': '/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04_u_pb_paw_validation/paw_generated/Pb/PBE', 'Z': 82.0, 'Nv': 14.0, 'Nc': 68.0, 'generator_version': '1', 'filename': '/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04_u_pb_paw_validation/paw_generated/Pb/PBE/Pb.PBE'}
+{'symbol': 'Pb', 'xc': 'PBEsol', 'setup_dir': '/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04_u_pb_paw_validation/paw_generated/Pb/PBEsol', 'Z': 82.0, 'Nv': 14.0, 'Nc': 68.0, 'generator_version': '1', 'filename': '/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04_u_pb_paw_validation/paw_generated/Pb/PBEsol/Pb.PBEsol'}
+{'symbol': 'U', 'xc': 'PBE', 'setup_dir': '/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04_u_pb_paw_validation/paw_generated/U/PBE', 'Z': 92.0, 'Nv': 14.0, 'Nc': 78.0, 'generator_version': '3', 'filename': '/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04_u_pb_paw_validation/paw_generated/U/PBE/U.PBE'}
+{'symbol': 'U', 'xc': 'PBEsol', 'setup_dir': '/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04_u_pb_paw_validation/paw_generated/U/PBEsol', 'Z': 92.0, 'Nv': 14.0, 'Nc': 78.0, 'generator_version': '3', 'filename': '/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04_u_pb_paw_validation/paw_generated/U/PBEsol/U.PBEsol'}
+
+==============================================================================
+STEP 04A3 — GATE Pb-PBE GERADO vs OFICIAL
+==============================================================================
+[MPI] Pb_PBE_official | xc=PBE | setup=OFFICIAL
+[alienware][[18238,1],0][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[18238,1],0][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[18238,1],0][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[18238,1],2][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[18238,1],2][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[18238,1],2][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[18238,1],1][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[18238,1],1][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[18238,1],1][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[18238,1],3][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[18238,1],3][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[18238,1],3][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+{
+  "label": "Pb_PBE_official",
+  "xc": "PBE",
+  "setup_dir": "OFFICIAL_GPAW_SETUP_PATH",
+  "mpi_world_size": 4,
+  "ecut_eV": 1400.0,
+  "kgrid": [
+    6,
+    6,
+    6
+  ],
+  "a_reference_A": 4.95,
+  "natoms": 1,
+  "energy_eV": -3.704362176123199,
+  "energy_eV_atom": -3.704362176123199,
+  "stress_GPa": [
+    -3.1024769789225055,
+    -3.1024769789225073,
+    -3.1024769789225077,
+    -2.658194056136256e-16,
+    0.0,
+    0.0
+  ],
+  "max_abs_stress_GPa": 3.1024769789225077,
+  "max_force_eV_A": 2.1127530413193833e-31
+}
+[MPI] Pb_PBE_generated | xc=PBE | setup=/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04_u_pb_paw_validation/paw_generated/Pb/PBE
+[alienware][[5468,1],2][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[5468,1],2][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[5468,1],2][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[5468,1],1][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[5468,1],0][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[5468,1],3][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[5468,1],1][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[5468,1],0][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[5468,1],3][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[5468,1],1][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[5468,1],0][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[5468,1],3][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+{
+  "label": "Pb_PBE_generated",
+  "xc": "PBE",
+  "setup_dir": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04_u_pb_paw_validation/paw_generated/Pb/PBE",
+  "mpi_world_size": 4,
+  "ecut_eV": 1400.0,
+  "kgrid": [
+    6,
+    6,
+    6
+  ],
+  "a_reference_A": 4.95,
+  "natoms": 1,
+  "energy_eV": -3.701500639177499,
+  "energy_eV_atom": -3.701500639177499,
+  "stress_GPa": [
+    -3.1026367448160936,
+    -3.1026367448160928,
+    -3.1026367448160928,
+    -2.658194056136256e-16,
+    0.0,
+    0.0
+  ],
+  "max_abs_stress_GPa": 3.1026367448160936,
+  "max_force_eV_A": 1.0563765206596917e-31
+}
+
+==============================================================================
+STEP 04A4 — TESTE Pb-PBEsol GERADO
+==============================================================================
+[MPI] Pb_PBEsol_generated | xc=PBEsol | setup=/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04_u_pb_paw_validation/paw_generated/Pb/PBEsol
+[alienware][[17794,1],0][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[17794,1],0][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[17794,1],0][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[17794,1],1][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[17794,1],1][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[17794,1],1][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[17794,1],2][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[17794,1],2][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[17794,1],2][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[17794,1],3][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[17794,1],3][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[17794,1],3][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+{
+  "label": "Pb_PBEsol_generated",
+  "xc": "PBEsol",
+  "setup_dir": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04_u_pb_paw_validation/paw_generated/Pb/PBEsol",
+  "mpi_world_size": 4,
+  "ecut_eV": 1400.0,
+  "kgrid": [
+    6,
+    6,
+    6
+  ],
+  "a_reference_A": 4.95,
+  "natoms": 1,
+  "energy_eV": -4.146087831101338,
+  "energy_eV_atom": -4.146087831101338,
+  "stress_GPa": [
+    -0.23060008346124147,
+    -0.23060008346124267,
+    -0.23060008346124056,
+    -2.658194056136256e-16,
+    -1.329097028068128e-16,
+    -1.329097028068128e-16
+  ],
+  "max_abs_stress_GPa": 0.23060008346124267,
+  "max_force_eV_A": 3.4332236921439977e-31
+}
+
+==============================================================================
+STEP 04A5 — PÓS-PROCESSAMENTO
+==============================================================================
+================================================================================
+STEP 04A-R5 — DECISÃO
+================================================================================
+Pb PBE generated vs official: REPROVADO
+  ΔE = 2.861537 meV/atom
+  Δstress(max) = 0.00015977 GPa
+U generator2 internal gate: APROVADO
+U selected candidate: U14_poly6
+U pseudization: poly,6
+U PBE/PBEsol load: APROVADO
+STEP04A-R5: REPROVADO
+Produção com defeitos U/Pb: NÃO AUTORIZADA ainda.
+================================================================================
+
+==============================================================================
+STEP 04A-R6 FINALIZADO
+==============================================================================

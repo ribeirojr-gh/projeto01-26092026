@@ -1,0 +1,190 @@
+{
+  "step": "04B1B1",
+  "scope": "Tight 0.05 eV fixed-geometry reproducibility test for nc6 using three symmetry-equivalent collinear 1-k AFM domains.",
+  "protocol": {
+    "dataset": "nc6",
+    "xc": "PBEsol",
+    "ecut_eV": 1400,
+    "kpts": [
+      3,
+      3,
+      3
+    ],
+    "nbands": 80,
+    "Ueff_grid_eV": [
+      2.5,
+      3.0,
+      4.0
+    ],
+    "AFM_domains": [
+      "kz",
+      "kx",
+      "ky"
+    ],
+    "final_smearing_eV": 0.05,
+    "point_group": false,
+    "time_reversal": true,
+    "fixmagmom": false
+  },
+  "reproducibility_criteria": {
+    "max_energy_spread_meV_atom": 2.0,
+    "max_gap_spread_eV": 0.1,
+    "max_moment_spread_muB": 0.05
+  },
+  "ueff_summaries": [
+    {
+      "Ueff_eV": 2.5,
+      "domains_converged": 1,
+      "energy_spread_meV_atom": 0.0,
+      "gap_spread_eV": 0.0,
+      "moment_spread_muB": 0.0,
+      "reproducible": false,
+      "minimum_energy_domain": "kz",
+      "minimum_energy_eV_atom": -9.889427825542766,
+      "minimum_gap_eV": 2.100065006309194,
+      "minimum_U_abs_mean_moment_muB": 1.9240074793362765,
+      "minimum_max_abs_stress_GPa": 1.603083212558548,
+      "gap_interval_penalty_eV": 0.0,
+      "moment_abs_error_muB": 0.18400747933627648
+    },
+    {
+      "Ueff_eV": 3.0,
+      "domains_converged": 3,
+      "energy_spread_meV_atom": 0.001034503910091189,
+      "gap_spread_eV": 0.010326670785449465,
+      "moment_spread_muB": 9.31598561093594e-06,
+      "reproducible": true,
+      "minimum_energy_domain": "ky",
+      "minimum_energy_eV_atom": -9.85662185006527,
+      "minimum_gap_eV": 2.5212041801498657,
+      "minimum_U_abs_mean_moment_muB": 1.929124581175604,
+      "minimum_max_abs_stress_GPa": 1.044882032981009,
+      "gap_interval_penalty_eV": 0.021204180149865692,
+      "moment_abs_error_muB": 0.18912458117560393
+    },
+    {
+      "Ueff_eV": 4.0,
+      "domains_converged": 3,
+      "energy_spread_meV_atom": 0.001169491424590774,
+      "gap_spread_eV": 0.0008512707018670795,
+      "moment_spread_muB": 3.2028552479079764e-06,
+      "reproducible": true,
+      "minimum_energy_domain": "ky",
+      "minimum_energy_eV_atom": -9.797691582631309,
+      "minimum_gap_eV": 3.345354402740554,
+      "minimum_U_abs_mean_moment_muB": 1.937842803051607,
+      "minimum_max_abs_stress_GPa": 0.0805399075684709,
+      "gap_interval_penalty_eV": 0.8453544027405542,
+      "moment_abs_error_muB": 0.19784280305160706
+    }
+  ],
+  "failed_runs": [
+    {
+      "file": "UO2_nc6_U2p5_kx.json",
+      "Ueff_eV": 2.5,
+      "AFM_domain": "kx",
+      "status": "failed_preconvergence",
+      "attempts": [
+        {
+          "stage": "preconvergence",
+          "attempt": 1,
+          "strategy": "pre_0p10",
+          "smearing_eV": 0.1,
+          "maxiter": 700,
+          "scf_iterations_reached": 701,
+          "txt": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04B1B_uo2_reproducibility/logs/U2p5_kx_attempt1_pre_0p10.txt",
+          "error": "KohnShamConvergenceError('Did not converge!  See text output for help.')"
+        },
+        {
+          "stage": "preconvergence",
+          "attempt": 2,
+          "strategy": "pre_0p15_damped",
+          "smearing_eV": 0.15,
+          "maxiter": 1000,
+          "scf_iterations_reached": 1001,
+          "txt": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04B1B_uo2_reproducibility/logs/U2p5_kx_attempt2_pre_0p15_damped.txt",
+          "error": "KohnShamConvergenceError('Did not converge!  See text output for help.')"
+        }
+      ]
+    },
+    {
+      "file": "UO2_nc6_U2p5_ky.json",
+      "Ueff_eV": 2.5,
+      "AFM_domain": "ky",
+      "status": "failed_preconvergence",
+      "attempts": [
+        {
+          "stage": "preconvergence",
+          "attempt": 1,
+          "strategy": "pre_0p10",
+          "smearing_eV": 0.1,
+          "maxiter": 700,
+          "scf_iterations_reached": 701,
+          "txt": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04B1B_uo2_reproducibility/logs/U2p5_ky_attempt1_pre_0p10.txt",
+          "error": "KohnShamConvergenceError('Did not converge!  See text output for help.')"
+        },
+        {
+          "stage": "preconvergence",
+          "attempt": 2,
+          "strategy": "pre_0p15_damped",
+          "smearing_eV": 0.15,
+          "maxiter": 1000,
+          "scf_iterations_reached": 1001,
+          "txt": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04B1B_uo2_reproducibility/logs/U2p5_ky_attempt2_pre_0p15_damped.txt",
+          "error": "KohnShamConvergenceError('Did not converge!  See text output for help.')"
+        }
+      ]
+    }
+  ],
+  "reproducible_candidates": [
+    {
+      "Ueff_eV": 3.0,
+      "domains_converged": 3,
+      "energy_spread_meV_atom": 0.001034503910091189,
+      "gap_spread_eV": 0.010326670785449465,
+      "moment_spread_muB": 9.31598561093594e-06,
+      "reproducible": true,
+      "minimum_energy_domain": "ky",
+      "minimum_energy_eV_atom": -9.85662185006527,
+      "minimum_gap_eV": 2.5212041801498657,
+      "minimum_U_abs_mean_moment_muB": 1.929124581175604,
+      "minimum_max_abs_stress_GPa": 1.044882032981009,
+      "gap_interval_penalty_eV": 0.021204180149865692,
+      "moment_abs_error_muB": 0.18912458117560393
+    },
+    {
+      "Ueff_eV": 4.0,
+      "domains_converged": 3,
+      "energy_spread_meV_atom": 0.001169491424590774,
+      "gap_spread_eV": 0.0008512707018670795,
+      "moment_spread_muB": 3.2028552479079764e-06,
+      "reproducible": true,
+      "minimum_energy_domain": "ky",
+      "minimum_energy_eV_atom": -9.797691582631309,
+      "minimum_gap_eV": 3.345354402740554,
+      "minimum_U_abs_mean_moment_muB": 1.937842803051607,
+      "minimum_max_abs_stress_GPa": 0.0805399075684709,
+      "gap_interval_penalty_eV": 0.8453544027405542,
+      "moment_abs_error_muB": 0.19784280305160706
+    }
+  ],
+  "preferred_candidate_for_next_gate": {
+    "Ueff_eV": 3.0,
+    "domains_converged": 3,
+    "energy_spread_meV_atom": 0.001034503910091189,
+    "gap_spread_eV": 0.010326670785449465,
+    "moment_spread_muB": 9.31598561093594e-06,
+    "reproducible": true,
+    "minimum_energy_domain": "ky",
+    "minimum_energy_eV_atom": -9.85662185006527,
+    "minimum_gap_eV": 2.5212041801498657,
+    "minimum_U_abs_mean_moment_muB": 1.929124581175604,
+    "minimum_max_abs_stress_GPa": 1.044882032981009,
+    "gap_interval_penalty_eV": 0.021204180149865692,
+    "moment_abs_error_muB": 0.18912458117560393
+  },
+  "step04B1B1_passes": true,
+  "production_authorization": false,
+  "next_gate": "Step04B1B2: EOS/structural validation of the best reproducible Ueff candidate(s), followed by 1400-versus-1600 eV convergence. SOC remains a later controlled sensitivity test.",
+  "warning": "The three collinear 1-k domains are a reproducibility diagnostic, not a substitute for the experimental non-collinear 3-k magnetic ground state of UO2."
+}

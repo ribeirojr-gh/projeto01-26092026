@@ -1,0 +1,23 @@
+{
+  "UO2": {
+    "formula": "UO2",
+    "role": "U(IV) screening reference",
+    "space_group": "Fm-3m (225)",
+    "a_A": 5.4706,
+    "magnetism": "1-k collinear AFM screening configuration; experimental ground state is non-collinear 3-k AFM."
+  },
+  "delta_UO3": {
+    "formula": "UO3",
+    "role": "compact U(VI) screening reference",
+    "space_group": "Pm-3m (221), ideal ReO3 type",
+    "a_A": 4.1658,
+    "warning": "Not the final ambient-condition U(VI) validation phase. gamma-UO3 will be required before production authorization."
+  },
+  "cerussite": {
+    "formula": "PbCO3",
+    "role": "Pb(II) carbonate transferability reference",
+    "COD_ID": 9008411,
+    "source_url": "https://www.crystallography.net/cod/9008411.cif",
+    "expected_space_group": "Pmcn/Pnma setting, No. 62"
+  }
+}

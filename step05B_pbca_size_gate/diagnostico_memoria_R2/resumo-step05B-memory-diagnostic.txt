@@ -1,0 +1,7 @@
+=== 4 PROCESSOS ===
+
+=== 8 PROCESSOS ===
+
+=== STATUS ===
+dry-run 4 processos: 0
+dry-run 8 processos: 0

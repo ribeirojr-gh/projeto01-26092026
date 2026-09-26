@@ -1,0 +1,13 @@
+[
+  {
+    "Ueff_eV": 5.0,
+    "gap_poly6_eV": 3.366977520576274,
+    "gap_nc6_eV": 3.950498251157075,
+    "delta_gap_nc_minus_poly_eV": 0.5835207305808012,
+    "moment_poly6_muB": 1.9337993359093502,
+    "moment_nc6_muB": 1.9452396229800972,
+    "delta_moment_nc_minus_poly_muB": 0.011440287070747068,
+    "stress_poly6_GPa": 1.9523942313187863,
+    "stress_nc6_GPa": 1.1536184922361823
+  }
+]

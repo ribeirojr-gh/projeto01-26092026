@@ -1,0 +1,29 @@
+{
+  "step": "04A-R8",
+  "rationale": "Absolute total energies from different PAW datasets are not used as a transferability gate because GPAW energies are referenced to the atomic reference state stored/generated with each setup. The gate therefore compares relative E(V) curves, stress, a0 and B0.",
+  "official_PBE_fit": {
+    "v0_A3_atom": 32.378487959418415,
+    "a0_A": 5.059475746453877,
+    "e0_eV_atom": -3.7216606463803044,
+    "B0_GPa": 36.551866073386726
+  },
+  "generated_PBE_fit": {
+    "v0_A3_atom": 32.3784882267532,
+    "a0_A": 5.059475760378492,
+    "e0_eV_atom": -3.718799101463815,
+    "B0_GPa": 36.55186054271514
+  },
+  "gate": {
+    "max_relative_curve_difference_meV_atom": 2.6641354452294763e-05,
+    "criterion_max_relative_curve_difference_meV_atom": 0.2,
+    "energy_offset_span_meV_atom": 4.300160716397272e-05,
+    "criterion_energy_offset_span_meV_atom": 0.2,
+    "max_stress_component_difference_GPa": 0.0009394247768583774,
+    "criterion_max_stress_component_difference_GPa": 0.01,
+    "a0_relative_difference_percent": 2.752185216070553e-07,
+    "criterion_a0_relative_difference_percent": 0.05,
+    "B0_relative_difference_percent": 1.5131023886387349e-05,
+    "criterion_B0_relative_difference_percent": 1.0,
+    "passes": true
+  }
+}

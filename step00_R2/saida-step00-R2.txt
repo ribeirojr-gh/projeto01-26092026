@@ -1,0 +1,132 @@
+============================================================
+ETAPA 00-R2 — Validação corrigida do GPAW/MPI
+============================================================
+
+[1/4] gpaw info
+ -----------------------------------------------------------------------------------------------------------------------------------------------------------------
+| python-3.11.15    /home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/gpaw/bin/python                                                         |
+| gpaw-25.7.0       /home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/                                 |
+| ase-3.29.0        /home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/ase/                                  |
+| numpy-2.4.6       /home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/numpy/                                |
+| scipy-1.17.1      /home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/scipy/                                |
+| gpaw_data-1.0.1   /home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw_data/                            |
+| libxc-7.0.0       yes                                                                                                                                           |
+| _gpaw             /home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/_gpaw.cpython-311-x86_64-linux-gnu.so |
+| MPI enabled       yes                                                                                                                                           |
+| OpenMP enabled    yes                                                                                                                                           |
+| GPU enabled       no                                                                                                                                            |
+| GPU-aware MPI     no                                                                                                                                            |
+| cupy-fake         /home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/gpu/cpupy/__init__.py            |
+| MAGMA             no                                                                                                                                            |
+| scalapack         yes                                                                                                                                           |
+| Elpa              yes; version: 20250131                                                                                                                        |
+| FFTW              yes                                                                                                                                           |
+| libvdwxc          yes                                                                                                                                           |
+| PAW-datasets (1)  /home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw_data/setups                      |
+ -----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+[2/4] Teste MPI interno do GPAW com 4 processos
+GPAW rank=0/4
+GPAW rank=1/4
+GPAW rank=3/4
+GPAW rank=2/4
+GPAW MPI: OK (4 processos).
+
+[3/4] Teste GPAW serial
+ -----------------------------------------------------------------------------------------------------------------------------------------------------------------
+| python-3.11.15    /home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/gpaw/bin/python                                                         |
+| gpaw-25.7.0       /home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/                                 |
+| ase-3.29.0        /home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/ase/                                  |
+| numpy-2.4.6       /home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/numpy/                                |
+| scipy-1.17.1      /home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/scipy/                                |
+| gpaw_data-1.0.1   /home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw_data/                            |
+| libxc-7.0.0       yes                                                                                                                                           |
+| _gpaw             /home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/_gpaw.cpython-311-x86_64-linux-gnu.so |
+| MPI enabled       yes                                                                                                                                           |
+| OpenMP enabled    yes                                                                                                                                           |
+| GPU enabled       no                                                                                                                                            |
+| GPU-aware MPI     no                                                                                                                                            |
+| cupy-fake         /home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/gpu/cpupy/__init__.py            |
+| MAGMA             no                                                                                                                                            |
+| scalapack         yes                                                                                                                                           |
+| Elpa              yes; version: 20250131                                                                                                                        |
+| FFTW              yes                                                                                                                                           |
+| libvdwxc          yes                                                                                                                                           |
+| PAW-datasets (1)  /home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw_data/setups                      |
+ -----------------------------------------------------------------------------------------------------------------------------------------------------------------
+Doing a test calculation (cores: 1): ... Done
+
+Test parallel calculation with "gpaw -P 4 test".
+
+[4/4] Teste GPAW paralelo com 4 processos
+rank=0 L00: Traceback (most recent call last):
+rank=0 L01:   File "/home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/gpaw/bin/gpaw", line 9, in <module>
+rank=0 L02:     sys.exit(main())
+rank=0 L03:              ^^^^^^
+rank=0 L04:   File "/home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/cli/main.py", line 90, in main
+rank=0 L05:     ase_main('gpaw', 'GPAW command-line tool', __version__,
+rank=0 L06:   File "/home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/ase/cli/main.py", line 106, in main
+rank=0 L07:     f(args)
+rank=0 L08:   File "/home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/cli/python.py", line 52, in run
+rank=0 L09:     runpy.run_module(args.module[0],
+rank=0 L10:   File "<frozen runpy>", line 222, in run_module
+rank=0 L11:   File "<frozen runpy>", line 142, in _get_module_details
+rank=0 L12: ImportError: No module named pytest
+GPAW CLEANUP (node 0): <class 'ImportError'> occurred.  Calling MPI_Abort!
+rank=1 L00: Traceback (most recent call last):
+rank=1 L01:   File "/home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/gpaw/bin/gpaw", line 9, in <module>
+rank=1 L02:     sys.exit(main())
+rank=1 L03:              ^^^^^^
+rank=1 L04:   File "/home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/cli/main.py", line 90, in main
+rank=1 L05:     ase_main('gpaw', 'GPAW command-line tool', __version__,
+rank=1 L06:   File "/home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/ase/cli/main.py", line 106, in main
+rank=1 L07:     f(args)
+rank=1 L08:   File "/home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/cli/python.py", line 52, in run
+rank=1 L09:     runpy.run_module(args.module[0],
+rank=1 L10:   File "<frozen runpy>", line 222, in run_module
+rank=1 L11:   File "<frozen runpy>", line 142, in _get_module_details
+rank=1 L12: ImportError: No module named pytest
+GPAW CLEANUP (node 1): <class 'ImportError'> occurred.  Calling MPI_Abort!
+rank=3 L00: Traceback (most recent call last):
+rank=3 L01:   File "/home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/gpaw/bin/gpaw", line 9, in <module>
+rank=3 L02:     sys.exit(main())
+rank=3 L03:              ^^^^^^
+rank=3 L04:   File "/home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/cli/main.py", line 90, in main
+rank=3 L05:     ase_main('gpaw', 'GPAW command-line tool', __version__,
+rank=3 L06:   File "/home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/ase/cli/main.py", line 106, in main
+rank=3 L07:     f(args)
+rank=3 L08:   File "/home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/cli/python.py", line 52, in run
+rank=3 L09:     runpy.run_module(args.module[0],
+rank=3 L10:   File "<frozen runpy>", line 222, in run_module
+rank=3 L11:   File "<frozen runpy>", line 142, in _get_module_details
+rank=3 L12: ImportError: No module named pytest
+GPAW CLEANUP (node 3): <class 'ImportError'> occurred.  Calling MPI_Abort!
+rank=2 L00: Traceback (most recent call last):
+rank=2 L01:   File "/home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/gpaw/bin/gpaw", line 9, in <module>
+rank=2 L02:     sys.exit(main())
+rank=2 L03:              ^^^^^^
+rank=2 L04:   File "/home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/cli/main.py", line 90, in main
+rank=2 L05:     ase_main('gpaw', 'GPAW command-line tool', __version__,
+rank=2 L06:   File "/home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/ase/cli/main.py", line 106, in main
+rank=2 L07:     f(args)
+rank=2 L08:   File "/home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw/cli/python.py", line 52, in run
+rank=2 L09:     runpy.run_module(args.module[0],
+rank=2 L10:   File "<frozen runpy>", line 222, in run_module
+rank=2 L11:   File "<frozen runpy>", line 142, in _get_module_details
+rank=2 L12: ImportError: No module named pytest
+GPAW CLEANUP (node 2): <class 'ImportError'> occurred.  Calling MPI_Abort!
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 0 in communicator MPI_COMM_WORLD
+  Proc: [[33279,1],0]
+  Errorcode: 42
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+prterun has exited due to process rank 0 with PID 0 on node AlienA51 calling
+"abort". This may have caused other processes in the application to be
+terminated by signals sent by prterun (as reported here).
+--------------------------------------------------------------------------
+ 

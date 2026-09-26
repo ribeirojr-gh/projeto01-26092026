@@ -1,0 +1,39 @@
+{
+  "step": "04B2C2",
+  "system": "gamma-UO3-Fddd-relaxed",
+  "role": "final compound-level U(VI) validation",
+  "relaxation_passes": true,
+  "structural_gate_passes": false,
+  "kpoint_convergence": {
+    "delta_energy_meV_atom": 0.07900962619622476,
+    "delta_gap_eV": 0.012202296945695856,
+    "delta_hydrostatic_stress_GPa": 0.0032112542735751957,
+    "passes": true
+  },
+  "cutoff_convergence": {
+    "delta_energy_meV_atom": 0.015961265702912897,
+    "delta_gap_eV": 5.647634863858997e-05,
+    "delta_hydrostatic_stress_GPa": 0.046524492174756564,
+    "passes": true
+  },
+  "validation_force_stress_passes": true,
+  "SOC": {
+    "scalar_gap_eV": 2.6896132356978537,
+    "final_SOC_gap_eV": 1.836456786194316,
+    "experimental_gap_guide_eV": 2.38,
+    "SOC_gap_shift_eV": -0.8531564495035378,
+    "scale0_consistency_passes": true,
+    "subspace_160_vs_192_delta_gap_eV": 0.047876646503898,
+    "subspace_convergence_passes": true,
+    "kpoint_SOC_delta_gap_eV": 0.06016010356441992,
+    "kpoint_SOC_convergence_passes": true,
+    "cutoff_SOC_delta_gap_eV": 6.394776873275276e-05,
+    "cutoff_SOC_convergence_passes": true,
+    "physical_gap_gate_passes": true
+  },
+  "step04B2C2_passes": false,
+  "selected_UVI_matrix": null,
+  "production_authorization": false,
+  "next_gate": "If approved: Step05 may begin with carbonate supercell-size, charge-compensation and defect-configuration convergence before production formation-energy calculations.",
+  "warning": "SOC remains non-self-consistent; do not use raw SOC band-energy shifts as defect formation-energy corrections."
+}

@@ -1,0 +1,58 @@
+
+Scalar-relativistic atomic PBE calculation for O (Oxygen, Z=8)
+300 radial gridpoints.
+|------------------------------------------------|
+|------------------------------------------------|
+Converged in 20 iterations.
+
+Energy contributions:
+-------------------------
+Kinetic:      +74.889487
+XC:            -8.275248
+Potential:   -141.614183
+-------------------------
+Total:        -74.999944
+
+state      eigenvalue         ekin         rmax
+-----------------------------------------------
+1s^2.0 :   -18.913699    29.145489        0.129
+2s^2.0 :    -0.880545     3.220963        0.871
+2p^4.0 :    -0.331818     2.539146        0.819
+-----------------------------------------------
+(units: Bohr and Hartree)
+
+Generating PAW setup
+Kinetic energy of the core from tauc = 58.337696392110104
+Cutoffs:
+rc(s)=1.300
+rc(p)=1.130
+rc(d)=1.170
+rc(vbar)=1.300
+rc(comp)=1.260
+rc(nct)=1.300
+
+Kinetic energy of the core states: 58.290978
+Charge: 0.0
+Core electrons: 2.0
+Valence electrons: 6.0
+Pseudo-core charge: 0.000736
+Shape function alpha=6.299
+Pseudo-electron charge 5.680116682803564
+state    eigenvalue         norm
+--------------------------------
+2s(2) :    -0.880545     1.081993
+*s    :     0.119455
+2p(4) :    -0.331818     0.878848
+*p    :     0.668182
+*d    :     0.000000
+--------------------------------
+
+Diagonalizing with gridspacing h=0.050
+
+state   all-electron     PAW
+-------------------------------
+2s:      -0.880545    -0.881653
+2p:      -0.331818    -0.335594
+*d:                    0.049820
+*f:                    0.077145
+-------------------------------

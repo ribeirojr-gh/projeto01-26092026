@@ -1,0 +1,26 @@
+==============================================================================
+STEP 05A-R1 — CORREÇÃO DO DESIGN DE SUPERCÉLULAS
+==============================================================================
+Data: seg 14 set 2026 12:43:21 -03
+Host: alienware
+Projeto: /home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project
+
+Nenhum DFT novo será executado.
+
+================================================================================
+STEP 05A-R1 — SUPERCÉLULAS MINKOWSKI-REDUZIDAS
+================================================================================
+
+CALCITA
+  det= 8 N= 80 dmin=10.004110 A anis=1.1636
+  det=16 N=160 dmin=13.234194 A anis=1.0293
+  det=24 N=240 dmin=15.349164 A anis=1.0099
+
+DOLOMITA
+  det= 8 N= 80 dmin=9.641292 A anis=1.1399
+  det=16 N=160 dmin=12.754230 A anis=1.0140
+  det=24 N=240 dmin=14.619634 A anis=1.0190
+
+STEP05A-R1: APROVADO
+READY FOR STEP05B: True
+================================================================================

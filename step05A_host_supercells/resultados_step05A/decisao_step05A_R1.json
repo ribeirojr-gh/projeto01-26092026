@@ -1,0 +1,507 @@
+{
+  "step": "05A-R1",
+  "purpose": "Correct and validate the periodic supercell lattice geometry before any Pb/U defect DFT calculation.",
+  "original_host_relaxation_step05A_passes": true,
+  "hosts": {
+    "calcita": {
+      "host_gate_from_original_step05A": true,
+      "supercell_geometry_gate_passes": true,
+      "shortest_translation_monotonic": true,
+      "all_reduced_basis_anisotropy_le_2": true,
+      "selected_for_step05B": [
+        {
+          "determinant": 8,
+          "natoms": 80,
+          "hnf_candidates_tested": 155,
+          "raw_HNF_matrix": [
+            [
+              1,
+              0,
+              1
+            ],
+            [
+              0,
+              2,
+              2
+            ],
+            [
+              0,
+              0,
+              4
+            ]
+          ],
+          "minkowski_reduced_matrix": [
+            [
+              2,
+              0,
+              -2
+            ],
+            [
+              0,
+              -2,
+              2
+            ],
+            [
+              -1,
+              0,
+              -1
+            ]
+          ],
+          "shortest_periodic_translation_A": 10.004110144711198,
+          "reduced_cell_vector_lengths_A": [
+            10.004110144711198,
+            10.0041101447112,
+            11.64107464806198
+          ],
+          "reduced_cell_angles_deg": [
+            102.40643825843642,
+            90.0,
+            119.99999999999997
+          ],
+          "reduced_basis_anisotropy": 1.1636291963674734,
+          "metric_deviation": 0.887251067401275,
+          "is_minkowski_reduced": true,
+          "old_step05A": {
+            "matrix": [
+              [
+                1,
+                1,
+                0
+              ],
+              [
+                0,
+                2,
+                2
+              ],
+              [
+                0,
+                0,
+                4
+              ]
+            ],
+            "reported_shortest_translation_A": 10.0041101447112,
+            "reported_basis_vector_lengths_A": [
+              11.641074648061984,
+              23.282149296123965,
+              25.34049517342783
+            ]
+          },
+          "traj": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05A_host_supercells/resultados_step05A/supercells_R1/calcita_det8_80atoms_R1.traj",
+          "cif": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05A_host_supercells/resultados_step05A/supercells_R1/calcita_det8_80atoms_R1.cif"
+        },
+        {
+          "determinant": 16,
+          "natoms": 160,
+          "hnf_candidates_tested": 651,
+          "raw_HNF_matrix": [
+            [
+              1,
+              0,
+              11
+            ],
+            [
+              0,
+              1,
+              9
+            ],
+            [
+              0,
+              0,
+              16
+            ]
+          ],
+          "minkowski_reduced_matrix": [
+            [
+              3,
+              -2,
+              -1
+            ],
+            [
+              -1,
+              -2,
+              3
+            ],
+            [
+              -1,
+              1,
+              -2
+            ]
+          ],
+          "shortest_periodic_translation_A": 13.234193765702111,
+          "reduced_cell_vector_lengths_A": [
+            13.234193765702111,
+            13.234193765702116,
+            13.621884188889144
+          ],
+          "reduced_cell_angles_deg": [
+            119.06290512849178,
+            102.01612461830621,
+            98.21321070173818
+          ],
+          "reduced_basis_anisotropy": 1.0292946007932706,
+          "metric_deviation": 0.9261727741735118,
+          "is_minkowski_reduced": true,
+          "old_step05A": {
+            "matrix": [
+              [
+                1,
+                0,
+                13
+              ],
+              [
+                0,
+                1,
+                9
+              ],
+              [
+                0,
+                0,
+                16
+              ]
+            ],
+            "reported_shortest_translation_A": 13.621884188889153,
+            "reported_basis_vector_lengths_A": [
+              86.83867978737032,
+              61.548309101013,
+              101.36198069371132
+            ]
+          },
+          "traj": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05A_host_supercells/resultados_step05A/supercells_R1/calcita_det16_160atoms_R1.traj",
+          "cif": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05A_host_supercells/resultados_step05A/supercells_R1/calcita_det16_160atoms_R1.cif"
+        }
+      ],
+      "fallback": {
+        "determinant": 24,
+        "natoms": 240,
+        "hnf_candidates_tested": 2015,
+        "raw_HNF_matrix": [
+          [
+            1,
+            0,
+            5
+          ],
+          [
+            0,
+            3,
+            0
+          ],
+          [
+            0,
+            0,
+            8
+          ]
+        ],
+        "minkowski_reduced_matrix": [
+          [
+            -3,
+            0,
+            1
+          ],
+          [
+            1,
+            0,
+            -3
+          ],
+          [
+            2,
+            -3,
+            2
+          ]
+        ],
+        "shortest_periodic_translation_A": 15.349164105880975,
+        "reduced_cell_vector_lengths_A": [
+          15.349164105880975,
+          15.349164105880977,
+          15.501555826825404
+        ],
+        "reduced_cell_angles_deg": [
+          116.26390164175683,
+          116.26390164175686,
+          81.35022802352454
+        ],
+        "reduced_basis_anisotropy": 1.009928340064202,
+        "metric_deviation": 1.0914418531527899,
+        "is_minkowski_reduced": true,
+        "old_step05A": {
+          "matrix": [
+            [
+              1,
+              0,
+              14
+            ],
+            [
+              0,
+              1,
+              20
+            ],
+            [
+              0,
+              0,
+              24
+            ]
+          ],
+          "reported_shortest_translation_A": 17.639813814228905,
+          "reported_basis_vector_lengths_A": [
+            93.16552883499415,
+            131.1434017573468,
+            152.04297104056695
+          ]
+        },
+        "traj": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05A_host_supercells/resultados_step05A/supercells_R1/calcita_det24_240atoms_R1.traj",
+        "cif": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05A_host_supercells/resultados_step05A/supercells_R1/calcita_det24_240atoms_R1.cif"
+      }
+    },
+    "dolomita": {
+      "host_gate_from_original_step05A": true,
+      "supercell_geometry_gate_passes": true,
+      "shortest_translation_monotonic": true,
+      "all_reduced_basis_anisotropy_le_2": true,
+      "selected_for_step05B": [
+        {
+          "determinant": 8,
+          "natoms": 80,
+          "hnf_candidates_tested": 155,
+          "raw_HNF_matrix": [
+            [
+              1,
+              1,
+              0
+            ],
+            [
+              0,
+              2,
+              2
+            ],
+            [
+              0,
+              0,
+              4
+            ]
+          ],
+          "minkowski_reduced_matrix": [
+            [
+              -2,
+              2,
+              0
+            ],
+            [
+              0,
+              2,
+              -2
+            ],
+            [
+              -1,
+              -1,
+              0
+            ]
+          ],
+          "shortest_periodic_translation_A": 9.641291604070622,
+          "reduced_cell_vector_lengths_A": [
+            9.641291604070622,
+            9.641291604070624,
+            10.989959411835539
+          ],
+          "reduced_cell_angles_deg": [
+            102.66912320619275,
+            89.99999999999999,
+            60.00000000000002
+          ],
+          "reduced_basis_anisotropy": 1.1398845572926661,
+          "metric_deviation": 0.8843223297633039,
+          "is_minkowski_reduced": true,
+          "old_step05A": {
+            "matrix": [
+              [
+                2,
+                0,
+                0
+              ],
+              [
+                0,
+                2,
+                0
+              ],
+              [
+                0,
+                0,
+                2
+              ]
+            ],
+            "reported_shortest_translation_A": 9.641291604070624,
+            "reported_basis_vector_lengths_A": [
+              12.000743052931066,
+              12.000743052931062,
+              12.000743052931062
+            ]
+          },
+          "traj": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05A_host_supercells/resultados_step05A/supercells_R1/dolomita_det8_80atoms_R1.traj",
+          "cif": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05A_host_supercells/resultados_step05A/supercells_R1/dolomita_det8_80atoms_R1.cif"
+        },
+        {
+          "determinant": 16,
+          "natoms": 160,
+          "hnf_candidates_tested": 651,
+          "raw_HNF_matrix": [
+            [
+              1,
+              0,
+              13
+            ],
+            [
+              0,
+              1,
+              9
+            ],
+            [
+              0,
+              0,
+              16
+            ]
+          ],
+          "minkowski_reduced_matrix": [
+            [
+              1,
+              -3,
+              2
+            ],
+            [
+              3,
+              -1,
+              -2
+            ],
+            [
+              1,
+              2,
+              -1
+            ]
+          ],
+          "shortest_periodic_translation_A": 12.754229950912931,
+          "reduced_cell_vector_lengths_A": [
+            12.754229950912931,
+            12.75422995091296,
+            12.932766903147764
+          ],
+          "reduced_cell_angles_deg": [
+            77.79984162122595,
+            119.544375126993,
+            81.78678929826185
+          ],
+          "reduced_basis_anisotropy": 1.0139982541417212,
+          "metric_deviation": 0.9399665212571486,
+          "is_minkowski_reduced": true,
+          "old_step05A": {
+            "matrix": [
+              [
+                1,
+                0,
+                13
+              ],
+              [
+                0,
+                1,
+                9
+              ],
+              [
+                0,
+                0,
+                16
+              ]
+            ],
+            "reported_shortest_translation_A": 12.93276690314776,
+            "reported_basis_vector_lengths_A": [
+              82.18741825832186,
+              58.234853928070464,
+              96.0059444234485
+            ]
+          },
+          "traj": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05A_host_supercells/resultados_step05A/supercells_R1/dolomita_det16_160atoms_R1.traj",
+          "cif": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05A_host_supercells/resultados_step05A/supercells_R1/dolomita_det16_160atoms_R1.cif"
+        }
+      ],
+      "fallback": {
+        "determinant": 24,
+        "natoms": 240,
+        "hnf_candidates_tested": 2015,
+        "raw_HNF_matrix": [
+          [
+            3,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            5
+          ],
+          [
+            0,
+            0,
+            8
+          ]
+        ],
+        "minkowski_reduced_matrix": [
+          [
+            0,
+            3,
+            -1
+          ],
+          [
+            0,
+            -1,
+            3
+          ],
+          [
+            3,
+            -2,
+            -2
+          ]
+        ],
+        "shortest_periodic_translation_A": 14.619634457417703,
+        "reduced_cell_vector_lengths_A": [
+          14.619634457417703,
+          14.619634457417709,
+          14.896760253325674
+        ],
+        "reduced_cell_angles_deg": [
+          115.93468566902865,
+          115.9346856690286,
+          82.5197763730185
+        ],
+        "reduced_basis_anisotropy": 1.018955726746462,
+        "metric_deviation": 1.071900469199417,
+        "is_minkowski_reduced": true,
+        "old_step05A": {
+          "matrix": [
+            [
+              1,
+              0,
+              14
+            ],
+            [
+              0,
+              1,
+              20
+            ],
+            [
+              0,
+              0,
+              24
+            ]
+          ],
+          "reported_shortest_translation_A": 16.66021831199113,
+          "reported_basis_vector_lengths_A": [
+            88.17971642749022,
+            124.14988384994186,
+            144.00891663517277
+          ]
+        },
+        "traj": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05A_host_supercells/resultados_step05A/supercells_R1/dolomita_det24_240atoms_R1.traj",
+        "cif": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05A_host_supercells/resultados_step05A/supercells_R1/dolomita_det24_240atoms_R1.cif"
+      }
+    }
+  },
+  "step05A_R1_passes": true,
+  "ready_for_step05B": true,
+  "defect_DFT_executed_in_this_patch": false,
+  "next_gate": "Step05B: Pb2+ on Ca2+ neutral substitution finite-size gate using the R1 80- and 160-atom supercells.  The 240-atom cell is used only if 80->160 atoms is not converged."
+}

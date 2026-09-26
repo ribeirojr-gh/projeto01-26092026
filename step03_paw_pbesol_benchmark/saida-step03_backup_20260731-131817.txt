@@ -1,0 +1,30 @@
+==============================================================================
+STEP 03 — VALIDAÇÃO PAW + BENCHMARK PBE/PBEsol
+==============================================================================
+Data: sex 31 jul 2026 12:20:21 -03
+Host: alienware
+OMP_NUM_THREADS=1
+
+>>> STEP 03A — Geração dos PAWs PBE/PBEsol
+[PAW] Ca.PBE: já existe; reutilizando.
+[PAW] Mg.PBE: já existe; reutilizando.
+[PAW] C.PBE: já existe; reutilizando.
+[PAW] O.PBE: já existe; reutilizando.
+[PAW] Ca.PBEsol: já existe; reutilizando.
+[PAW] Mg.PBEsol: já existe; reutilizando.
+[PAW] C.PBEsol: já existe; reutilizando.
+[PAW] O.PBEsol: já existe; reutilizando.
+
+============================================================
+GERAÇÃO PAW CONCLUÍDA
+PBE:    /home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step03_paw_pbesol_benchmark/paw_generated/PBE
+PBEsol: /home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step03_paw_pbesol_benchmark/paw_generated/PBEsol
+Hashes: /home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step03_paw_pbesol_benchmark/paw_generated/paw_sha256.csv
+============================================================
+
+>>> STEP 03B — Validação PBE gerado + benchmark PBEsol
+/tmp/mambaff29ta91r67: line 5: /home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/.envs/gpaw/bin/mpiexec: Success
+
+==============================================================================
+STEP 03 FINALIZADO
+==============================================================================

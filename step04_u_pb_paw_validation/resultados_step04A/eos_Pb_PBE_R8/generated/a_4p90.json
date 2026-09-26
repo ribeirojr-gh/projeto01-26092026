@@ -1,0 +1,30 @@
+{
+  "label": "Pb_PBE_generated_a_4p90",
+  "setup_kind": "generated",
+  "setup_dir": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04_u_pb_paw_validation/paw_generated/Pb/PBE",
+  "xc": "PBE",
+  "mpi_world_size": 4,
+  "ecut_eV": 1400.0,
+  "kgrid": [
+    6,
+    6,
+    6
+  ],
+  "smearing_eV": 0.05,
+  "a_A": 4.9,
+  "volume_A3_atom": 29.41225,
+  "natoms": 1,
+  "energy_eV": -3.6795928830429028,
+  "energy_eV_atom": -3.6795928830429028,
+  "stress_GPa": [
+    -4.833585377824738,
+    -4.833585377824738,
+    -4.83358537782474,
+    -2.658194056136256e-16,
+    1.329097028068128e-16,
+    1.329097028068128e-16
+  ],
+  "mean_normal_stress_GPa": -4.833585377824739,
+  "max_abs_stress_GPa": 4.83358537782474,
+  "max_force_eV_A": 3.3011766270615364e-33
+}

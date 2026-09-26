@@ -1,0 +1,54 @@
+{
+  "status": "converged_tight",
+  "step": "04B1B2",
+  "system": "UO2",
+  "dataset": "nc6",
+  "Ueff_eV": 3.0,
+  "AFM_domain": "ky",
+  "xc": "PBEsol",
+  "ecut_eV": 1400.0,
+  "kpts": [
+    3,
+    3,
+    3
+  ],
+  "nbands": 80,
+  "a_A": 5.580012,
+  "volume_A3": 173.74223291281055,
+  "volume_A3_atom": 14.47851940940088,
+  "mpi_world_size": 4,
+  "hubbard_normalized": true,
+  "symmetry_protocol": {
+    "point_group": false,
+    "time_reversal": true
+  },
+  "fixmagmom": false,
+  "preconvergence_strategy": "pre_0p10",
+  "preconvergence_iterations": 653,
+  "final_smearing_eV": 0.05,
+  "final_iterations": 181,
+  "energy_eV": -117.8452310028503,
+  "energy_eV_atom": -9.820435916904191,
+  "band_gap_eV": 2.4334299488143625,
+  "band_gap_error": null,
+  "total_magnetic_moment_muB": 0.00039573703173049004,
+  "U_local_moments_muB": [
+    1.9295311048930206,
+    -1.9318942141865356,
+    1.9295622543415247,
+    -1.931890940551024
+  ],
+  "U_abs_mean_moment_muB": 1.9307196284930261,
+  "max_force_eV_A": 0.041072182506376745,
+  "stress_GPa": [
+    11.890677986258682,
+    12.108024342415423,
+    11.972698173198365,
+    2.2765674186631985e-06,
+    -0.0055772822609690435,
+    2.2540207873549542e-07
+  ],
+  "max_abs_stress_GPa": 12.108024342415423,
+  "restart_file": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04B1B2_uo2_eos/resultados_step04B1B2/restart/UO2_nc6_U3p0_s1p02_1400_tight.gpw",
+  "failed_attempts_before_success": []
+}

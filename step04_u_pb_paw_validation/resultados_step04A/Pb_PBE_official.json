@@ -1,0 +1,26 @@
+{
+  "label": "Pb_PBE_official",
+  "xc": "PBE",
+  "setup_dir": "OFFICIAL_GPAW_SETUP_PATH",
+  "mpi_world_size": 4,
+  "ecut_eV": 1400.0,
+  "kgrid": [
+    6,
+    6,
+    6
+  ],
+  "a_reference_A": 4.95,
+  "natoms": 1,
+  "energy_eV": -3.704362176123199,
+  "energy_eV_atom": -3.704362176123199,
+  "stress_GPa": [
+    -3.1024769789225055,
+    -3.1024769789225073,
+    -3.1024769789225077,
+    -2.658194056136256e-16,
+    0.0,
+    0.0
+  ],
+  "max_abs_stress_GPa": 3.1024769789225077,
+  "max_force_eV_A": 2.1127530413193833e-31
+}

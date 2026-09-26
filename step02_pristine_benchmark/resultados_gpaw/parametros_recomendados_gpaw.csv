@@ -1,0 +1,3 @@
+mineral,xc,ecut_recomendado_eV,kgrid_recomendado,criterio_energia_meV_atom,criterio_stress_GPa,observacao
+calcita,PBE,700,3,1.0,0.05,Recomendação automática preliminar; revisar tabela antes da relaxação DFT.
+dolomita,PBE,700,4,1.0,0.05,Recomendação automática preliminar; revisar tabela antes da relaxação DFT.

@@ -1,0 +1,76 @@
+{
+  "step": "04B2C2-R2",
+  "system": "gamma-UO3",
+  "purpose": "Correct the structural gate by comparing equivalent crystallographic normalizations after the relaxed structure becomes pseudotetragonal.",
+  "original_gate_diagnosis": {
+    "original_structural_gate_passes": false,
+    "reason": "The original code standardized the relaxed structure at symprec=0.03 as I41/amd (#141), whose conventional cell contains 16 UO3 formula units, and compared that cell directly to the 293 K Fddd conventional cell containing 32 formula units. The resulting ~49% volume error is therefore not a physical volume error.",
+    "fine_symmetry_Fddd_at_0p01_A": true,
+    "higher_symmetry_I41amd_at_looser_tolerance": true
+  },
+  "pseudotetragonal_comparison_293K": {
+    "experimental_a_over_sqrt2_A": 6.920454067472741,
+    "experimental_c_over_sqrt2_A": 6.862471311415443,
+    "experimental_mean_basal_A": 6.891462689444092,
+    "relaxed_tetragonal_basal_A": 6.9255373028787925,
+    "basal_error_percent": 0.4944467520210782,
+    "experimental_long_axis_b_A": 19.932,
+    "relaxed_tetragonal_long_axis_A": 20.090683193794305,
+    "long_axis_error_percent": 0.7961227864454483,
+    "experimental_orthorhombic_distortion_percent": 0.841370818797463
+  },
+  "volume_per_formula_unit": {
+    "experimental_A3_fu": 59.162433350625,
+    "relaxed_A3_fu": 60.225557433717064,
+    "error_percent": 1.7969580067666913
+  },
+  "local_UO_geometry": {
+    "shortest_UO_error_percent": 0.9426233548756262,
+    "UO6_RMS_relative_error_percent": 1.199457230982821,
+    "passes": true
+  },
+  "secondary_373K_tetragonal_comparison": {
+    "reference_a_A": 6.9013,
+    "reference_c_A": 19.9754,
+    "a_error_percent": 0.35119909116822273,
+    "c_error_percent": 0.5771258337470331,
+    "note": "Supporting comparison only; not used as the primary 293 K gate."
+  },
+  "structural_reanalysis_passes": true,
+  "kpoint_convergence": {
+    "delta_energy_meV_atom": 0.07900962619622476,
+    "delta_gap_eV": 0.012202296945695856,
+    "delta_hydrostatic_stress_GPa": 0.0032112542735751957,
+    "passes": true
+  },
+  "cutoff_convergence": {
+    "delta_energy_meV_atom": 0.015961265702912897,
+    "delta_gap_eV": 5.647634863858997e-05,
+    "delta_hydrostatic_stress_GPa": 0.046524492174756564,
+    "passes": true
+  },
+  "force_stress_validation_passes": true,
+  "SOC": {
+    "scalar_gap_eV": 2.6896132356978537,
+    "final_SOC_gap_eV": 1.836456786194316,
+    "SOC_gap_shift_eV": -0.8531564495035378,
+    "scale0_consistency_passes": true,
+    "subspace_delta_gap_eV": 0.047876646503898,
+    "kpoint_delta_gap_eV": 0.06016010356441992,
+    "cutoff_delta_gap_eV": 6.394776873275276e-05,
+    "passes": true
+  },
+  "step04B2C2_R2_passes": true,
+  "selected_UVI_matrix": {
+    "dataset": "U14_nc6",
+    "xc": "PBEsol",
+    "Ueff_eV": 3.0,
+    "production_cutoff_eV": 1600,
+    "validation_cutoff_eV": 1800,
+    "spin_state": "nonmagnetic_5f0",
+    "SOC_required_for_electronic_structure": true
+  },
+  "production_authorization": true,
+  "next_gate": "If approved, Step05 may begin with carbonate supercell-size, charge-compensation and defect-configuration convergence.",
+  "scientific_caveat": "Static PBEsol+U relaxation suppresses the small orthorhombic distortion and approaches the closely related pseudotetragonal/I41/amd geometry. This is documented explicitly and is not treated as evidence that the experimental 293 K phase is tetragonal."
+}

@@ -1,0 +1,51 @@
+Usage: gpaw-setup [options] [elements]
+
+Options:
+  --version             show program's version number and exit
+  -h, --help            show this help message and exit
+  -f <XC>, --xcfunctional=<XC>
+                        Exchange-Correlation functional (default value LDA)
+  -n, --non-scalar-relativistic
+                        Do *not* do a scalar-relativistic calculation.
+  -x, --exact-exchange  Calculate exact exchange integrals.
+  --gamma=GAMMA         Set gamma for Yukawa dampening.
+  -r <rcut>, --radius=<rcut>
+                        Cutoff radius or radii (comma separated).
+  -v type,radius, --zero-potential=type,radius
+                        Type of zero-potential - type must be either "poly" or
+                        "f".
+  --filter=h,x          Parameters used for Fourier-filtering and projector
+                        functions and zero-potential. "h" is the cutoff grid-
+                        spacing (in Bohr) and "x" is the ratio between outer
+                        and inner radii.
+  -l, --logarithmic-derivatives
+                        Calculate logarithmic derivatives.
+  -a, --all-electron-only
+                        Skip generation of PAW setup.
+  -e 0.0;0.0,1.0;0.0, --extra-projectors=0.0;0.0,1.0;0.0
+                        Extra projectors. Use ";" to separate s, p and d
+                        channels.  Examples: "0.0,1.0" for two extra s-type.
+                        "0.0;1.0" for extra s and p. ";1.0" for extra p.
+  -c <core>, --core=<core>
+                        Frozen core.  Examples: "[Ne]", "[Ar]3d".
+  --normconserving=NORMCONSERVING
+                        Examples: s, sp.
+  --core-hole=state,occ
+                        Add core hole. Examples: "1s,0.5", "2p,1".
+  --configuration=config
+                        Specify non-groundstate configuration. Na+ ion:
+                        "Ne,3s0", O2- ion: "1s2,2s2,2p6" or "He,2s2,2p6".
+  --compensation-charge-radius=rcut
+                        Cutoff radius for compensation charges.
+  --name=<id>           Name to use for setup file: <symbol>.<id>.<xc>.
+                        Default name is <symbol>.<xc>.
+  -w, --write-files     Write wave functions and other things to files.
+  -p, --plot            Show plot and generate reStructuredText.
+  -g <gpernode>, --points-per-node=<gpernode>
+                        Number of radial grid points per node.
+  --empty-states=<states>
+                        Add empty state(s).  Example: 5p.
+  --tw-coefficient=<tw-coefficient>
+                        Sets value of coefficient in Thomas-Fermi
+                        calculations. Default is 1
+  --orbital-free        Generates orbital-free Thomas-Fermi setup

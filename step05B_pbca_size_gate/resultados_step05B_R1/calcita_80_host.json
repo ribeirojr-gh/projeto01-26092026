@@ -1,0 +1,21 @@
+{
+  "status": "converged",
+  "step": "05B-R1-host",
+  "mineral": "calcita",
+  "natoms": 80,
+  "ecut_eV": 1400.0,
+  "kmesh_original_24A": [
+    1,
+    3,
+    5
+  ],
+  "kmesh_final_16A": [
+    1,
+    2,
+    3
+  ],
+  "Nk_original_reducible": 15,
+  "Nk_final_reducible": 6,
+  "energy_finalk_eV": -637.5341775354512,
+  "max_force_finalk_eV_A": 0.011624082062500936
+}

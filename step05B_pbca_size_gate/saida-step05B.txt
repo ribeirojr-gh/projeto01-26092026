@@ -1,0 +1,13 @@
+==============================================================================
+STEP 05B — GATE DE TAMANHO Pb2+_Ca NEUTRO
+==============================================================================
+Data: seg 14 set 2026 12:49:18 -03
+Host: alienware
+Projeto: /home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project
+
+
+>>> calcita: Pb_Ca em 80 átomos
+--------------------------------------------------------------------------
+prterun noticed that process rank 0 with PID 63464 on node alienware exited on
+signal 9 (Killed).
+--------------------------------------------------------------------------

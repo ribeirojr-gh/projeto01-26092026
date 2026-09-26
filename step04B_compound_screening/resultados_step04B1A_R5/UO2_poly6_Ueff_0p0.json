@@ -1,0 +1,59 @@
+{
+  "status": "converged",
+  "step": "04B1A-R5",
+  "system": "UO2",
+  "dataset": "poly6",
+  "Ueff_eV": 0.0,
+  "hubbard_normalized": true,
+  "symmetry_protocol": {
+    "point_group": false,
+    "time_reversal": true
+  },
+  "fixmagmom": false,
+  "scf_strategy": "common_noPG_damped",
+  "smearing_eV": 0.15,
+  "maxiter_allowed": 900,
+  "scf_iterations": 59,
+  "mpi_world_size": 4,
+  "ecut_eV": 1400.0,
+  "kpts": [
+    3,
+    3,
+    3
+  ],
+  "nbands": 80,
+  "energy_eV": -121.37566738827654,
+  "energy_eV_atom": -10.114638949023044,
+  "band_gap_eV": 0.0,
+  "band_gap_error": null,
+  "total_magnetic_moment_muB": -3.0341711976442964e-09,
+  "U_local_moments_muB": [
+    1.4622773398392455,
+    -1.4622773318773057,
+    -1.462277335340488,
+    1.4622773243155662
+  ],
+  "U_abs_mean_moment_muB": 1.4622773328431515,
+  "max_force_eV_A": 3.2499719599831302e-06,
+  "stress_GPa": [
+    11.23928150474616,
+    11.23893780816251,
+    10.837956768040664,
+    2.0112489130186112e-05,
+    -1.0901868556908717e-05,
+    -1.9735061583061123e-05
+  ],
+  "max_abs_stress_GPa": 11.23928150474616,
+  "gpw_file": null,
+  "failed_attempts_before_success": [
+    {
+      "attempt": 1,
+      "strategy": "common_noPG_primary",
+      "smearing_eV": 0.1,
+      "maxiter": 600,
+      "scf_iterations_reached": 601,
+      "txt": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04B_compound_screening/logs/R5/UO2_poly6_Ueff_0p0_attempt1_common_noPG_primary.txt",
+      "error": "KohnShamConvergenceError('Did not converge!  See text output for help.')"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "step": "05A-host-relax",
+  "mineral": "calcita",
+  "formula": "CaCO3",
+  "input": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step01_R2_final_references/referencias_finais/calcita_ref_experimental_primitiva.cif",
+  "xc": "PBEsol",
+  "ecut_eV": 1400.0,
+  "kpts": [
+    5,
+    5,
+    5
+  ],
+  "natoms": 10,
+  "atomic_stage_converged": true,
+  "cell_stage_converged": true,
+  "energy_eV": -79.69556065683308,
+  "energy_eV_atom": -7.969556065683308,
+  "max_force_eV_A": 0.005223956978016958,
+  "stress_GPa": [
+    -0.017931243438369354,
+    -0.027741775292816996,
+    -0.029001992538571213,
+    0.0014039084489617729,
+    0.0032993927782023207,
+    0.005097325494133058
+  ],
+  "max_abs_stress_GPa": 0.029001992538571213,
+  "volume_A3": 122.17925725842312,
+  "cell_lengths_A": [
+    6.335123793356957,
+    6.335123793356958,
+    6.335123793356957
+  ],
+  "cell_angles_deg": [
+    46.50544036200399,
+    46.50544036200401,
+    46.505440362004
+  ],
+  "spacegroup": {
+    "number": 167,
+    "international": "R-3c"
+  },
+  "expected_spacegroup": 167,
+  "traj": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05A_host_supercells/resultados_step05A/hosts_relaxed/calcita_PBEsol1400_relaxed.traj",
+  "cif": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05A_host_supercells/resultados_step05A/hosts_relaxed/calcita_PBEsol1400_relaxed.cif"
+}

@@ -1,0 +1,36 @@
+==============================================================================
+STEP 02-R5 — VALIDAÇÃO FINAL DE CUTOFF 1400 vs 1600 eV
+==============================================================================
+Data: Thu Jul 23 08:30:07 -03 2026
+Host: AlienA51
+OMP_NUM_THREADS=1
+R1-R4 NÃO serão reexecutados.
+
+[PAW] Ca.PBE: OK -> /home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw_data/setups/Ca.PBE.gz
+[PAW] C.PBE: OK -> /home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw_data/setups/C.PBE.gz
+[PAW] O.PBE: OK -> /home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw_data/setups/O.PBE.gz
+[PAW] Mg.PBE: OK -> /home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw_data/setups/Mg.PBE.gz
+====================================================================================
+STEP 02-R5 — VALIDAÇÃO FINAL 1400 vs 1600 eV
+====================================================================================
+XC: PBE
+k-grid: 5x5x5
+Refinamento 1400 eV -> teste 1600 eV
+fmax célula: 0.005 eV/Å
+fmax átomos: 0.003 eV/Å
+====================================================================================
+[calcita] 1400 eV: célula + átomos (fmax=0.005 eV/Å)
+[calcita] 1600 eV: célula + átomos (fmax=0.005 eV/Å)
+[calcita] 1400 vs 1600 eV -> APROVADO
+[dolomita] 1400 eV: célula + átomos (fmax=0.005 eV/Å)
+[dolomita] 1600 eV: célula + átomos (fmax=0.005 eV/Å)
+[dolomita] 1400 vs 1600 eV -> APROVADO
+
+====================================================================================
+STEP 02-R5 CONCLUÍDO
+Decisão: ADOTAR 1400 eV
+====================================================================================
+
+==============================================================================
+STEP 02-R5 FINALIZADO
+==============================================================================

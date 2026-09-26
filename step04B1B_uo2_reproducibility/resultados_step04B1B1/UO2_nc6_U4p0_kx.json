@@ -1,0 +1,63 @@
+{
+  "status": "converged_tight",
+  "step": "04B1B1",
+  "system": "UO2",
+  "dataset": "nc6",
+  "Ueff_eV": 4.0,
+  "AFM_domain": "kx",
+  "initial_U_moment_muB": 2.0,
+  "xc": "PBEsol",
+  "ecut_eV": 1400.0,
+  "kpts": [
+    3,
+    3,
+    3
+  ],
+  "nbands": 80,
+  "mpi_world_size": 4,
+  "hubbard_normalized": true,
+  "symmetry_protocol": {
+    "point_group": false,
+    "time_reversal": true
+  },
+  "fixmagmom": false,
+  "preconvergence_strategy": "pre_0p15_damped",
+  "preconvergence_iterations": 217,
+  "final_smearing_eV": 0.05,
+  "final_iterations": 21,
+  "energy_eV": -117.5722849576786,
+  "energy_eV_atom": -9.797690413139884,
+  "band_gap_eV": 3.3448988385712166,
+  "band_gap_error": null,
+  "total_magnetic_moment_muB": 1.6883450541363398e-10,
+  "U_local_moments_muB": [
+    1.937846005951959,
+    1.9378460059506053,
+    -1.9378460058625306,
+    -1.9378460058623252
+  ],
+  "U_abs_mean_moment_muB": 1.937846005906855,
+  "max_force_eV_A": 3.3410157485095753e-06,
+  "stress_GPa": [
+    0.03331195861459808,
+    -0.09110314481600836,
+    -0.09107476122422499,
+    5.1188646142670624e-05,
+    1.0461945693131857e-05,
+    -3.796444614658139e-05
+  ],
+  "max_abs_stress_GPa": 0.09110314481600836,
+  "restart_file": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04B1B_uo2_reproducibility/resultados_step04B1B1/restart/U4p0_kx_tight.gpw",
+  "failed_attempts_before_success": [
+    {
+      "stage": "preconvergence",
+      "attempt": 1,
+      "strategy": "pre_0p10",
+      "smearing_eV": 0.1,
+      "maxiter": 700,
+      "scf_iterations_reached": 701,
+      "txt": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04B1B_uo2_reproducibility/logs/U4p0_kx_attempt1_pre_0p10.txt",
+      "error": "KohnShamConvergenceError('Did not converge!  See text output for help.')"
+    }
+  ]
+}

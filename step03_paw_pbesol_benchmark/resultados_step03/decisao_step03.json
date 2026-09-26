@@ -1,0 +1,83 @@
+{
+  "paw_generator": "gpaw-setup (old generator)",
+  "paw_generated_pbe_validated": true,
+  "pbesol_executed": true,
+  "pbesol_1400_vs_1600_converged": true,
+  "pbesol_structurally_better_than_pbe_for_all_systems": true,
+  "suggested_matrix_functional": "PBEsol",
+  "pbe_gate": [
+    {
+      "mineral": "calcita",
+      "candidate": "PBE_generated_1400",
+      "reference": "PBE_official_1400",
+      "max_lattice_rel_diff_pct": 0.0,
+      "volume_rel_diff_pct": 0.0,
+      "max_angle_diff_deg": 0.0,
+      "max_bond_mean_diff_A": 0.0,
+      "criterion_lattice_pct": 0.1,
+      "criterion_volume_pct": 0.2,
+      "criterion_bond_A": 0.005,
+      "passes": true
+    },
+    {
+      "mineral": "dolomita",
+      "candidate": "PBE_generated_1400",
+      "reference": "PBE_official_1400",
+      "max_lattice_rel_diff_pct": 0.0,
+      "volume_rel_diff_pct": 0.0,
+      "max_angle_diff_deg": 0.0,
+      "max_bond_mean_diff_A": 0.0,
+      "criterion_lattice_pct": 0.1,
+      "criterion_volume_pct": 0.2,
+      "criterion_bond_A": 0.005,
+      "passes": true
+    }
+  ],
+  "pbesol_convergence": [
+    {
+      "mineral": "calcita",
+      "candidate": "PBEsol_generated_1400",
+      "reference": "PBEsol_generated_1600",
+      "max_lattice_rel_diff_pct": 0.03359514892564354,
+      "volume_rel_diff_pct": 0.09319027237795031,
+      "max_angle_diff_deg": 0.002144399284382814,
+      "max_bond_mean_diff_A": 0.0009060883518126062,
+      "criterion_lattice_pct": 0.1,
+      "criterion_volume_pct": 0.2,
+      "criterion_bond_A": 0.005,
+      "passes": true
+    },
+    {
+      "mineral": "dolomita",
+      "candidate": "PBEsol_generated_1400",
+      "reference": "PBEsol_generated_1600",
+      "max_lattice_rel_diff_pct": 0.033702540540041286,
+      "volume_rel_diff_pct": 0.0942325959888166,
+      "max_angle_diff_deg": 0.001998671484635395,
+      "max_bond_mean_diff_A": 0.0009298998401399139,
+      "criterion_lattice_pct": 0.1,
+      "criterion_volume_pct": 0.2,
+      "criterion_bond_A": 0.005,
+      "passes": true
+    }
+  ],
+  "improvement_vs_experiment": [
+    {
+      "mineral": "calcita",
+      "pbesol_better_lattice_and_volume": true,
+      "PBE_volume_error_pct": 4.455116764339085,
+      "PBEsol_volume_error_pct": 0.2746714212846663,
+      "PBE_mean_abs_lattice_error_pct": 1.5630307916806423,
+      "PBEsol_mean_abs_lattice_error_pct": 0.3846771171646166
+    },
+    {
+      "mineral": "dolomita",
+      "pbesol_better_lattice_and_volume": true,
+      "PBE_volume_error_pct": 3.577479747135237,
+      "PBEsol_volume_error_pct": -0.17615385394069658,
+      "PBE_mean_abs_lattice_error_pct": 1.2340638316959638,
+      "PBEsol_mean_abs_lattice_error_pct": 0.46722531507412274
+    }
+  ],
+  "warning": "A validação realizada é específica para Ca-Mg-C-O nas fases calcita/dolomita. Ela não valida transferibilidade para U ou Pb."
+}

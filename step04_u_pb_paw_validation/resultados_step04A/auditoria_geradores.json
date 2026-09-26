@@ -1,0 +1,26 @@
+{
+  "gpaw_version": "25.7.0",
+  "setup_paths": [
+    "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw_data/setups"
+  ],
+  "old_generator": {
+    "Pb_has_atomic_configuration": true,
+    "U_has_atomic_configuration": true,
+    "Pb_has_default_generation_parameters": true,
+    "U_has_default_generation_parameters": false
+  },
+  "generator2": {
+    "Pb_default_valence_electrons": 14,
+    "U_default_valence_electrons": 14,
+    "Pb_parameter_key": "Pb14",
+    "U_parameter_key": "U14",
+    "Pb_parameter_entry_exists": true,
+    "U_parameter_entry_exists": true,
+    "Pb_parameter_entry": "('6s,s,6p,p,5d,d,F', 2.6)",
+    "U_parameter_entry": "('6s,7s,6p,7p,6d,d,5f,f,G', 2.5)"
+  },
+  "policy": {
+    "Pb": "Validar gpaw-setup PBE gerado contra PAW-PBE oficial; gerar PBEsol com o mesmo old generator.",
+    "U": "Nao ha setup U no conjunto oficial instalado. O old generator possui configuracao atomica de U, mas nao parametros default de geracao. Usar generator2/dataset U14 apenas como candidato, exigindo check_all + validacao posterior em compostos antes de producao."
+  }
+}

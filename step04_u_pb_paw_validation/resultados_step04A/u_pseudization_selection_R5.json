@@ -1,0 +1,14 @@
+{
+  "strategy": "pseudization_scan_default_U14",
+  "generator": "gpaw dataset / generator2",
+  "scalar_relativistic": true,
+  "valence_electrons": 14,
+  "projectors": "6s,7s,6p,7p,6d,d,5f,f,G",
+  "radii_Bohr_spdf": [2.5, 2.5, 2.5, 2.5],
+  "selected_candidate_id": "U14_poly6",
+  "pseudization": "poly,6",
+  "PBE_passes": true,
+  "PBEsol_passes": true,
+  "no_check_flag_used": false,
+  "candidate_status": "INTERNAL_ATOMIC_GATE_PASSED_REQUIRES_COMPOUND_VALIDATION"
+}

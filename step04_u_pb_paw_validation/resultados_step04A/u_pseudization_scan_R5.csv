@@ -1,0 +1,7 @@
+candidate_id,pseudization,projectors,radii_Bohr,PBE_passes,PBEsol_passes,selected
+U14_poly4,"poly,4","6s,7s,6p,7p,6d,d,5f,f,G","2.50,2.50,2.50,2.50",false,false,false
+U14_poly6,"poly,6","6s,7s,6p,7p,6d,d,5f,f,G","2.50,2.50,2.50,2.50",true,true,true
+U14_poly8,"poly,8","6s,7s,6p,7p,6d,d,5f,f,G","2.50,2.50,2.50,2.50",true,true,false
+U14_nc4,"nc,4","6s,7s,6p,7p,6d,d,5f,f,G","2.50,2.50,2.50,2.50",false,false,false
+U14_nc6,"nc,6","6s,7s,6p,7p,6d,d,5f,f,G","2.50,2.50,2.50,2.50",true,true,false
+U14_nc8,"nc,8","6s,7s,6p,7p,6d,d,5f,f,G","2.50,2.50,2.50,2.50",true,true,false

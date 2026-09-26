@@ -1,0 +1,129 @@
+{
+  "step": "04B1B2-R3",
+  "purpose": "Resolve the UO2 structural gate using the smooth hydrostatic stress-versus-volumetric-strain response after the energy EOS was shown to be contaminated by DFT+U orbital-branch offsets.",
+  "energy_eos_diagnostic": {
+    "Ueff_3_eV_energy_EOS_valid_for_B0": false,
+    "reason": "The deterministic R2 energy fit has RMSE 8.5306 meV/atom and discontinuous gap/moment behavior across volumes. It is retained as a metastability diagnostic, not used for B0.",
+    "R2_energy_EOS_a0_A": 5.464393129623863,
+    "R2_energy_EOS_B0_GPa": 137.1021396362581
+  },
+  "stress_strain_fits": {
+    "five_point": {
+      "fit": "five_point_pm2pct",
+      "npoints": 5,
+      "a_min_A": 5.361188,
+      "a_max_A": 5.580012,
+      "a0_from_zero_stress_A": 5.471251847497623,
+      "a_exp_A": 5.47127,
+      "lattice_error_percent": 0.00033177858845935825,
+      "B0_from_stress_slope_GPa": 211.12922104508257,
+      "stress_fit_R2": 0.9921669318747277,
+      "stress_fit_RMSE_GPa": 0.7957528940416697,
+      "slope_GPa_per_volumetric_strain": 211.12922104508257,
+      "intercept_GPa": 0.0021014376759795226
+    },
+    "central_three": {
+      "fit": "central_three_pm1pct",
+      "npoints": 3,
+      "a_min_A": 5.415894,
+      "a_max_A": 5.525306,
+      "a0_from_zero_stress_A": 5.465915936697064,
+      "a_exp_A": 5.47127,
+      "lattice_error_percent": 0.09785777896056791,
+      "B0_from_stress_slope_GPa": 207.41494081393122,
+      "stress_fit_R2": 0.9952500470514872,
+      "stress_fit_RMSE_GPa": 0.3508781853937396,
+      "slope_GPa_per_volumetric_strain": 207.41494081393122,
+      "intercept_GPa": 0.6083192866487431
+    },
+    "a0_difference_between_fits_A": 0.005335910800559063,
+    "B0_relative_difference_between_fits_percent": 1.790748639695813,
+    "fit_consistency_pass": true
+  },
+  "stress_gate_criteria": {
+    "min_R2": 0.98,
+    "max_lattice_error_percent": 0.5,
+    "B0_range_GPa": [
+      175.0,
+      240.0
+    ],
+    "max_full_vs_local_a0_difference_A": 0.02,
+    "max_full_vs_local_B0_relative_difference_percent": 5.0
+  },
+  "B1B1_reproducibility_pass": true,
+  "center_branch_consistency_pass": true,
+  "cutoff_gate": {
+    "steps": [
+      {
+        "from_eV": 1400.0,
+        "to_eV": 1600.0,
+        "delta_energy_meV_atom": 0.14950372749389373,
+        "delta_gap_eV": 5.555812070845434e-05,
+        "delta_moment_muB": 3.667408260077387e-05,
+        "delta_hydrostatic_stress_GPa": 0.10676073338887837,
+        "passes": false
+      },
+      {
+        "from_eV": 1600.0,
+        "to_eV": 1800.0,
+        "delta_energy_meV_atom": 0.05783247956259174,
+        "delta_gap_eV": 4.6733718120250956e-05,
+        "delta_moment_muB": 4.355086192342483e-06,
+        "delta_hydrostatic_stress_GPa": 0.04659736172922857,
+        "passes": true
+      }
+    ],
+    "selected_production_cutoff_eV": 1600,
+    "validation_cutoff_eV": 1800,
+    "passes": true
+  },
+  "cutoff_gate_pass": true,
+  "Ueff_4_eV_status": {
+    "primary_candidate": false,
+    "reason": "Ueff=4 eV shows severe electronic branch switching in the cutoff ladder and an incomplete EOS.",
+    "cutoff_ladder": {
+      "steps": [
+        {
+          "from_eV": 1400.0,
+          "to_eV": 1600.0,
+          "delta_energy_meV_atom": 20.206031875432018,
+          "delta_gap_eV": 0.4620474593481365,
+          "delta_moment_muB": 0.018093184894736103,
+          "delta_hydrostatic_stress_GPa": 0.5866307588129329,
+          "passes": false
+        },
+        {
+          "from_eV": 1600.0,
+          "to_eV": 1800.0,
+          "delta_energy_meV_atom": 20.41090858989314,
+          "delta_gap_eV": 0.4621128376019765,
+          "delta_moment_muB": 0.018064939443499073,
+          "delta_hydrostatic_stress_GPa": 0.43339993410390387,
+          "passes": false
+        }
+      ],
+      "selected_production_cutoff_eV": null,
+      "validation_cutoff_eV": null,
+      "passes": false
+    }
+  },
+  "selected_scalar_collinear_reference": {
+    "dataset": "U14_nc6",
+    "xc": "PBEsol",
+    "Ueff_eV": 3.0,
+    "production_cutoff_eV": 1600,
+    "validation_cutoff_eV": 1800,
+    "kpts_UO2": [
+      3,
+      3,
+      3
+    ],
+    "smearing_eV": 0.05,
+    "magnetic_model": "collinear 1-k AFM benchmark",
+    "SOC": false
+  },
+  "step04B1B2_R3_passes": true,
+  "production_authorization": false,
+  "next_gate": "Pb(II) compound-level validation in cerussite with the generated PBEsol Pb PAW, followed by controlled SOC sensitivity for UO2 and realistic U(VI) validation before carbonate-defect production.",
+  "warning": "The stress-derived B0 is a local elastic estimate for the scalar-collinear benchmark. DFT+U orbital metastability invalidates the absolute energy EOS across independently initialized volumes."
+}

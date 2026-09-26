@@ -1,0 +1,303 @@
+
+  ___ ___ ___ _ _ _  
+ |   |   |_  | | | | 
+ | | | | | . | | | | 
+ |__ |  _|___|_____|  25.7.0
+ |___|_|             
+
+User:   luiz@alienware
+Date:   Fri Jul 31 13:03:52 2026
+Arch:   x86_64
+Pid:    71439
+CWD:    /home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step00_fix_gpaw_mpi
+Python: 3.11.15
+gpaw:   /home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw
+_gpaw:  /home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/
+        _gpaw.cpython-311-x86_64-linux-gnu.so
+ase:    /home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/ase (version 3.29.0)
+numpy:  /home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/numpy (version 2.4.6)
+scipy:  /home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/scipy (version 1.17.1)
+libxc:  7.0.0
+units:  Angstrom and eV
+cores: 4
+OpenMP: True
+OMP_NUM_THREADS: 1
+
+Input parameters:
+  kpts: [1 1 8]
+  mode: {ecut: 200.0,
+         name: pw}
+
+System changes: positions, numbers, cell, pbc, initial_charges, initial_magmoms 
+
+Initialize ...
+
+species:
+  H:
+    name: Hydrogen
+    id: 4766778ce56282eaa64abeb28b7c1de3
+    Z: 1.0
+    valence: 1
+    core: 0
+    charge: 0.0
+    file: /home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw_data/setups/H.LDA.gz
+    compensation charges: {type: gauss,
+                           rc: 0.15,
+                           lmax: 2}
+    cutoffs: {filter: 0.85,
+              core: 0.53}
+    projectors:
+      #              energy  rcut
+      - 1s(1.00)    -6.353   0.476
+      -  s          20.858   0.476
+      -  p           0.000   0.476
+  
+    # Using partial waves for H as LCAO basis
+
+Reference energy: -12.128958  # eV
+
+Spin-paired calculation
+
+Convergence criteria:
+ Maximum [total energy] change in last 3 cyles: 0.0005 eV / valence electron
+ Maximum integral of absolute [dens]ity change: 0.0001 electrons / valence electron
+ Maximum integral of absolute [eigenst]ate change: 4e-08 eV^2 / valence electron
+ Maximum number of scf [iter]ations: 333
+ (Square brackets indicate name in SCF output, whereas a 'c' in
+ the SCF output indicates the quantity has converged.)
+
+Symmetries present (total): 16
+
+  ( 1  0  0)  ( 1  0  0)  ( 1  0  0)  ( 1  0  0)  ( 0  1  0)  ( 0  1  0)
+  ( 0  1  0)  ( 0  1  0)  ( 0 -1  0)  ( 0 -1  0)  ( 1  0  0)  ( 1  0  0)
+  ( 0  0  1)  ( 0  0 -1)  ( 0  0  1)  ( 0  0 -1)  ( 0  0  1)  ( 0  0 -1)
+
+  ( 0  1  0)  ( 0  1  0)  ( 0 -1  0)  ( 0 -1  0)  ( 0 -1  0)  ( 0 -1  0)
+  (-1  0  0)  (-1  0  0)  ( 1  0  0)  ( 1  0  0)  (-1  0  0)  (-1  0  0)
+  ( 0  0  1)  ( 0  0 -1)  ( 0  0  1)  ( 0  0 -1)  ( 0  0  1)  ( 0  0 -1)
+
+  (-1  0  0)  (-1  0  0)  (-1  0  0)  (-1  0  0)
+  ( 0  1  0)  ( 0  1  0)  ( 0 -1  0)  ( 0 -1  0)
+  ( 0  0  1)  ( 0  0 -1)  ( 0  0  1)  ( 0  0 -1)
+
+8 k-points: 1 x 1 x 8 Monkhorst-Pack grid
+4 k-points in the irreducible part of the Brillouin zone
+       k-points in crystal coordinates                weights
+   0:     0.00000000    0.00000000    0.06250000          2/8
+   1:     0.00000000    0.00000000    0.18750000          2/8
+   2:     0.00000000    0.00000000    0.31250000          2/8
+   3:     0.00000000    0.00000000    0.43750000          2/8
+
+Wave functions: Plane wave expansion
+  Cutoff energy: 200.000 eV
+  Number of coefficients (min, max): 30, 42
+  Pulay-stress correction: 0.000000 eV/Ang^3 (de/decut=0.000000)
+  Using FFTW library
+  ScaLapack parameters: grid=1x1, blocksize=None
+  Wavefunction extrapolation:
+    Improved wavefunction reuse through dual PAW basis 
+
+Occupation numbers: Fermi-Dirac:
+  width: 0.1000  # eV
+ 
+
+Eigensolver
+   Davidson(niter=2) 
+
+Densities:
+  Coarse grid: 9*9*3 grid
+  Fine grid: 18*18*6 grid
+  Total Charge: 0.000000 
+
+Density mixing:
+  Method: separate
+  Backend: pulay
+  Linear mixing parameter: 0.05
+  old densities: 5
+  Damping of long wavelength oscillations: 50 
+
+Hamiltonian:
+  XC and Coulomb potentials evaluated on a 18*18*6 grid
+  Using the LDA Exchange-Correlation functional
+  External potential:
+    NoExternalPotential
+ 
+
+Memory estimate:
+  Process memory now: 170.74 MiB
+  Calculator: 0.15 MiB
+    Density: 0.10 MiB
+      Arrays: 0.05 MiB
+      Localized functions: 0.04 MiB
+      Mixer: 0.02 MiB
+    Hamiltonian: 0.03 MiB
+      Arrays: 0.03 MiB
+      XC: 0.00 MiB
+      Poisson: 0.00 MiB
+      vbar: 0.00 MiB
+    Wavefunctions: 0.02 MiB
+      Arrays psit_nG: 0.00 MiB
+      Eigensolver: 0.00 MiB
+      Projections: 0.00 MiB
+      Projectors: 0.00 MiB
+      PW-descriptor: 0.01 MiB
+
+Total number of cores used: 4
+Parallelization over k-points: 4
+
+Number of atoms: 1
+Number of atomic orbitals: 1
+Number of bands in calculation: 1
+Number of valence electrons: 1
+Bands to converge: occupied
+
+... initialized
+
+Initializing position-dependent things.
+
+Density initialized from atomic densities
+Creating initial wave functions:
+  1 band from LCAO basis set
+
+   .-----.  
+  /.-----.  
+ */  H  /   
+ *-----*    
+
+Atomic positions and initial magnetic moments
+
+Positions:
+   0 H      1.250000    1.250000    0.450000    ( 0.0000,  0.0000,  0.0000)
+
+Unit cell:
+           periodic     x           y           z      points  spacing
+  1. axis:    no     2.500000    0.000000    0.000000     9     0.2778
+  2. axis:    no     0.000000    2.500000    0.000000     9     0.2778
+  3. axis:    yes    0.000000    0.000000    0.900000     3     0.3000
+
+  Lengths:   2.500000   2.500000   0.900000
+  Angles:   90.000000  90.000000  90.000000
+
+Effective grid spacing dv^(1/3) = 0.2850
+
+     iter     time        total  log10-change:
+                         energy   eigst   dens
+iter:   1 13:03:52    -4.728249
+iter:   2 13:03:52    -4.732041   -1.25  -0.89
+iter:   3 13:03:52    -4.760165   -2.09  -0.86
+iter:   4 13:03:52    -4.711286   -1.39  -0.68
+iter:   5 13:03:52    -4.714082   -2.70  -1.83
+iter:   6 13:03:52    -4.710863   -2.70  -1.36
+iter:   7 13:03:52    -4.710868   -5.10  -2.94
+iter:   8 13:03:52    -4.710868c  -7.50c -2.81
+iter:   9 13:03:52    -4.710864c  -5.77  -2.80
+iter:  10 13:03:52    -4.710864c  -7.41c -3.41
+iter:  11 13:03:52    -4.710864c  -7.64c -3.53
+iter:  12 13:03:52    -4.710864c  -7.53c -3.79
+iter:  13 13:03:52    -4.710864c  -9.17c -5.05c
+
+Converged after 13 iterations.
+
+Dipole moment: (-0.000000, 0.000000, -0.000000) |e|*Ang
+
+Energy contributions relative to reference atoms: (reference = -12.128958)
+
+Kinetic:         -0.546824
+Potential:       -1.736054
+External:        +0.000000
+XC:              -2.418620
+Entropy (-ST):   -0.000000
+Local:           -0.009365
+SIC:             +0.000000
+--------------------------
+Free energy:     -4.710864
+Extrapolated:    -4.710864
+
+Showing only first 2 kpts
+ Kpt  Band  Eigenvalues  Occupancy
+  0     0    -13.13572    2.00000
+
+  1     0     -7.39837    2.00000
+
+
+Fermi level: -2.20398
+
+No gap
+No difference between direct/indirect transitions
+
+Forces in eV/Ang:
+  0 H     0.00000    0.00000    0.00000
+
+Stress tensor:
+     0.666767     0.000000     0.000000
+     0.000000     0.666767     0.000000
+     0.000000     0.000000    -0.501779
+Timing:                              incl.     excl.
+-----------------------------------------------------------
+Forces:                              0.000     0.000   0.1% |
+Hamiltonian:                         0.002     0.000   0.0% |
+ Atomic:                             0.002     0.002   0.5% |
+  XC Correction:                     0.000     0.000   0.0% |
+ Calculate atomic Hamiltonians:      0.000     0.000   0.0% |
+ Communicate:                        0.000     0.000   0.0% |
+ Initialize Hamiltonian:             0.000     0.000   0.0% |
+ Poisson:                            0.000     0.000   0.0% |
+ XC 3D grid:                         0.000     0.000   0.0% |
+LCAO initialization:                 0.017     0.001   0.2% |
+ LCAO eigensolver:                   0.002     0.000   0.0% |
+  Calculate projections:             0.000     0.000   0.0% |
+  DenseAtomicCorrection:             0.000     0.000   0.0% |
+  Distribute overlap matrix:         0.000     0.000   0.0% |
+  Orbital Layouts:                   0.000     0.000   0.0% |
+  Potential matrix:                  0.002     0.002   0.6% |
+  Sum over cells:                    0.000     0.000   0.0% |
+ LCAO to grid:                       0.000     0.000   0.0% |
+ Set positions (LCAO WFS):           0.014     0.001   0.4% |
+  Basic WFS set positions:           0.000     0.000   0.0% |
+  Basis functions set positions:     0.000     0.000   0.0% |
+  P tci:                             0.001     0.001   0.4% |
+  ST tci:                            0.006     0.006   1.8% ||
+  mktci:                             0.006     0.006   1.9% ||
+PWDescriptor:                        0.012     0.012   3.8% |-|
+SCF-cycle:                           0.033     0.005   1.6% ||
+ Davidson:                           0.007     0.002   0.6% |
+  Apply H:                           0.000     0.000   0.0% |
+   HMM T:                            0.000     0.000   0.0% |
+  Subspace diag:                     0.001     0.000   0.1% |
+   calc_h_matrix:                    0.001     0.000   0.1% |
+    Apply H:                         0.000     0.000   0.1% |
+     HMM T:                          0.000     0.000   0.0% |
+   diagonalize:                      0.000     0.000   0.1% |
+   rotate_psi:                       0.000     0.000   0.0% |
+  calc. matrices:                    0.002     0.002   0.5% |
+   Apply H:                          0.000     0.000   0.1% |
+    HMM T:                           0.000     0.000   0.0% |
+  diagonalize:                       0.001     0.001   0.2% |
+  rotate_psi:                        0.000     0.000   0.0% |
+ Density:                            0.005     0.000   0.0% |
+  Atomic density matrices:           0.001     0.001   0.4% |
+  Mix:                               0.002     0.002   0.6% |
+  Multipole moments:                 0.000     0.000   0.1% |
+  Pseudo density:                    0.001     0.000   0.1% |
+   Symmetrize density:               0.001     0.001   0.3% |
+ Hamiltonian:                        0.017     0.001   0.2% |
+  Atomic:                            0.014     0.014   4.4% |-|
+   XC Correction:                    0.000     0.000   0.0% |
+  Calculate atomic Hamiltonians:     0.001     0.001   0.2% |
+  Communicate:                       0.000     0.000   0.0% |
+  Poisson:                           0.000     0.000   0.0% |
+  XC 3D grid:                        0.001     0.001   0.4% |
+ Orthonormalize:                     0.000     0.000   0.0% |
+  calc_s_matrix:                     0.000     0.000   0.0% |
+  inverse-cholesky:                  0.000     0.000   0.0% |
+  projections:                       0.000     0.000   0.0% |
+  rotate_psi_s:                      0.000     0.000   0.0% |
+Set symmetry:                        0.001     0.001   0.4% |
+Stress:                              0.002     0.000   0.0% |
+ Stress tensor:                      0.002     0.002   0.8% |
+Other:                               0.255     0.255  78.7% |------------------------------|
+-----------------------------------------------------------
+Total:                                         0.324 100.0%
+
+Memory usage: 170.74 MiB
+Date: Fri Jul 31 13:03:52 2026

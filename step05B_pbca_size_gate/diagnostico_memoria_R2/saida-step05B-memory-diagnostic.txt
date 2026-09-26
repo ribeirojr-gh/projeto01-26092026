@@ -1,0 +1,95 @@
+======================================================================
+STEP 05B-R2 - DIAGNÓSTICO DE MEMÓRIA / DRY-RUN
+======================================================================
+Data: qua 23 set 2026 16:06:55 -03
+Host: alienware
+Projeto: /home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project
+
+IMPORTANTE: este script NÃO executa um SCF real.
+Ele coleta memória disponível e faz dry-run do GPAW para 4 e 8 processos.
+
+>>> CPU
+nproc = 24
+CPU(s):                                    24
+Thread(s) per núcleo:                      1
+CPU(s) MHz de escala:                      47%
+CPU(s) de nó0 NUMA:                        0-23
+
+>>> MEMÓRIA
+               total       usada       livre    compart.  buff/cache  disponível
+Mem.:           30Gi       3,9Gi        26Gi       867Mi       2,1Gi        26Gi
+Swap:           15Gi       1,4Gi        13Gi
+
+>>> SWAP
+NAME           TYPE       SIZE USED PRIO
+/dev/nvme0n1p3 partition 15,3G 1,4G   -1
+
+>>> LIMITES DO SHELL
+real-time non-blocking time  (microseconds, -R) unlimited
+core file size              (blocks, -c) 0
+data seg size               (kbytes, -d) unlimited
+scheduling priority                 (-e) 0
+file size                   (blocks, -f) unlimited
+pending signals                     (-i) 125777
+max locked memory           (kbytes, -l) 4036684
+max memory size             (kbytes, -m) unlimited
+open files                          (-n) 1024
+pipe size                (512 bytes, -p) 8
+POSIX message queues         (bytes, -q) 819200
+real-time priority                  (-r) 0
+stack size                  (kbytes, -s) 8192
+cpu time                   (seconds, -t) unlimited
+max user processes                  (-u) 125777
+virtual memory              (kbytes, -v) unlimited
+file locks                          (-x) unlimited
+
+>>> 20 PROCESSOS COM MAIOR RSS
+    PID USER     %CPU %MEM   RSS CMD
+ 166041 luiz      7.1  2.3 767512 /opt/google/chrome/chrome --type=renderer --crashpad-handler-pid=165536 --enable-crash-reporter=0d6a0117-7899-4f4e-9cae-da36380adab0, --change-stack-guard-on-fork=enable --ozone-platform=x11 --lang=pt-BR --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=27 --time-ticks-at-unix-epoch=-1789073723981111 --launch-time-ticks=918421010863 --shared-files=v8_context_snapshot_data:100 --metrics-shmem-handle=4,i,6245523314350179009,7787156425443221109,2097152 --field-trial-handle=3,i,14553191232213543172,14159593340767785558,262144 --variations-seed-version=20260921-010039.319000-production --pseudonymization-salt-handle=7,i,11954940526699117737,4821073240639973508,4 --trace-process-track-uuid=3190709011612001417
+ 165526 luiz      0.1  0.7 253612 /opt/google/chrome/chrome
+ 186679 luiz      0.5  0.7 244872 /usr/bin/anydesk --backend
+ 164608 root      1.0  0.6 196960 /usr/lib/xorg/Xorg -core :0 -seat seat0 -auth /var/run/lightdm/root/:0 -nolisten tcp vt7 -novtswitch
+ 185361 luiz      0.0  0.3 124396 /opt/google/chrome/chrome --type=renderer --crashpad-handler-pid=165536 --enable-crash-reporter=0d6a0117-7899-4f4e-9cae-da36380adab0, --extension-process --change-stack-guard-on-fork=enable --ozone-platform=x11 --lang=pt-BR --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=72 --time-ticks-at-unix-epoch=-1789073723981111 --launch-time-ticks=1021381535795 --shared-files=v8_context_snapshot_data:100 --metrics-shmem-handle=4,i,16366992372493416265,2184891909291000568,2097152 --field-trial-handle=3,i,14553191232213543172,14159593340767785558,262144 --variations-seed-version=20260921-010039.319000-production --pseudonymization-salt-handle=7,i,11954940526699117737,4821073240639973508,4 --trace-process-track-uuid=3190709053778884622
+ 165808 luiz      0.0  0.3 117864 /opt/google/chrome/chrome --type=renderer --crashpad-handler-pid=165536 --enable-crash-reporter=0d6a0117-7899-4f4e-9cae-da36380adab0, --extension-process --change-stack-guard-on-fork=enable --ozone-platform=x11 --lang=pt-BR --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=16 --time-ticks-at-unix-epoch=-1789073723981111 --launch-time-ticks=918415861744 --shared-files=v8_context_snapshot_data:100 --metrics-shmem-handle=4,i,7573819710593462129,6738551864564460151,2097152 --field-trial-handle=3,i,14553191232213543172,14159593340767785558,262144 --variations-seed-version=20260921-010039.319000-production --pseudonymization-salt-handle=7,i,11954940526699117737,4821073240639973508,4 --trace-process-track-uuid=3190709001304541078
+ 165830 luiz      0.0  0.3 115128 /opt/google/chrome/chrome --type=renderer --crashpad-handler-pid=165536 --enable-crash-reporter=0d6a0117-7899-4f4e-9cae-da36380adab0, --extension-process --change-stack-guard-on-fork=enable --ozone-platform=x11 --lang=pt-BR --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=19 --time-ticks-at-unix-epoch=-1789073723981111 --launch-time-ticks=918415871804 --shared-files=v8_context_snapshot_data:100 --metrics-shmem-handle=4,i,1352563092403424559,10767205332125010260,2097152 --field-trial-handle=3,i,14553191232213543172,14159593340767785558,262144 --variations-seed-version=20260921-010039.319000-production --pseudonymization-salt-handle=7,i,11954940526699117737,4821073240639973508,4 --trace-process-track-uuid=3190709004115666625
+ 165820 luiz      0.0  0.2 96400 /opt/google/chrome/chrome --type=renderer --crashpad-handler-pid=165536 --enable-crash-reporter=0d6a0117-7899-4f4e-9cae-da36380adab0, --extension-process --change-stack-guard-on-fork=enable --ozone-platform=x11 --lang=pt-BR --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=18 --time-ticks-at-unix-epoch=-1789073723981111 --launch-time-ticks=918415868582 --shared-files=v8_context_snapshot_data:100 --metrics-shmem-handle=4,i,15705507274152364070,13437365264352107481,2097152 --field-trial-handle=3,i,14553191232213543172,14159593340767785558,262144 --variations-seed-version=20260921-010039.319000-production --pseudonymization-salt-handle=7,i,11954940526699117737,4821073240639973508,4 --trace-process-track-uuid=3190709003178624776
+ 165053 luiz      0.7  0.2 96384 cinnamon --replace
+ 165600 luiz      2.7  0.2 86844 /opt/google/chrome/chrome --type=gpu-process --ozone-platform=x11 --crashpad-handler-pid=165536 --enable-crash-reporter=0d6a0117-7899-4f4e-9cae-da36380adab0, --change-stack-guard-on-fork=enable --gpu-preferences=YAAAAAAAAAAgAQAEAAAAAAAAAAAAAGAASAAAAAAAAAABAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAwAAAAAAAAAAEAAAAAAAAACAAAAAAAAAAMAAAAAQAAAAAAAAAAAAAACAAAAAAAAAAIAAAAAAAAAA== --shared-files --metrics-shmem-handle=4,i,6336228136860678878,6666686913567237512,262144 --field-trial-handle=3,i,14553191232213543172,14159593340767785558,262144 --variations-seed-version=20260921-010039.319000-production --pseudonymization-salt-handle=7,i,11954940526699117737,4821073240639973508,4 --trace-process-track-uuid=3190708988185955192
+ 165602 luiz      0.0  0.2 77344 /opt/google/chrome/chrome --type=utility --utility-sub-type=network.mojom.NetworkService --lang=pt-BR --service-sandbox-type=none --crashpad-handler-pid=165536 --enable-crash-reporter=0d6a0117-7899-4f4e-9cae-da36380adab0, --change-stack-guard-on-fork=enable --shared-files=v8_context_snapshot_data:100 --metrics-shmem-handle=4,i,6818301495162701253,15733786388647677740,524288 --field-trial-handle=3,i,14553191232213543172,14159593340767785558,262144 --variations-seed-version=20260921-010039.319000-production --pseudonymization-salt-handle=7,i,11954940526699117737,4821073240639973508,4 --trace-process-track-uuid=3190708989122997041
+ 202396 luiz      0.0  0.2 73264 /opt/google/chrome/chrome --type=renderer --crashpad-handler-pid=165536 --enable-crash-reporter=0d6a0117-7899-4f4e-9cae-da36380adab0, --change-stack-guard-on-fork=enable --ozone-platform=x11 --lang=pt-BR --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=107 --time-ticks-at-unix-epoch=-1789073723981111 --launch-time-ticks=1116643482982 --shared-files=v8_context_snapshot_data:100 --metrics-shmem-handle=4,i,10090222673285837687,17497825593161411987,2097152 --field-trial-handle=3,i,14553191232213543172,14159593340767785558,262144 --variations-seed-version=20260921-010039.319000-production --pseudonymization-salt-handle=7,i,11954940526699117737,4821073240639973508,4 --trace-process-track-uuid=3190709086575349337
+ 165814 luiz      0.0  0.1 56740 /opt/google/chrome/chrome --type=renderer --crashpad-handler-pid=165536 --enable-crash-reporter=0d6a0117-7899-4f4e-9cae-da36380adab0, --extension-process --change-stack-guard-on-fork=enable --ozone-platform=x11 --lang=pt-BR --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=17 --time-ticks-at-unix-epoch=-1789073723981111 --launch-time-ticks=918415865332 --shared-files=v8_context_snapshot_data:100 --metrics-shmem-handle=4,i,15031851659194065756,16678266972874063335,2097152 --field-trial-handle=3,i,14553191232213543172,14159593340767785558,262144 --variations-seed-version=20260921-010039.319000-production --pseudonymization-salt-handle=7,i,11954940526699117737,4821073240639973508,4 --trace-process-track-uuid=3190709002241582927
+ 165904 luiz      0.0  0.1 49456 /opt/google/chrome/chrome --type=renderer --crashpad-handler-pid=165536 --enable-crash-reporter=0d6a0117-7899-4f4e-9cae-da36380adab0, --change-stack-guard-on-fork=enable --ozone-platform=x11 --lang=pt-BR --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=22 --time-ticks-at-unix-epoch=-1789073723981111 --launch-time-ticks=918416084192 --shared-files=v8_context_snapshot_data:100 --metrics-shmem-handle=4,i,16096586927374316367,1041205293632862286,2097152 --field-trial-handle=3,i,14553191232213543172,14159593340767785558,262144 --variations-seed-version=20260921-010039.319000-production --pseudonymization-salt-handle=7,i,11954940526699117737,4821073240639973508,4 --trace-process-track-uuid=3190709006926792172
+ 166230 luiz      0.0  0.1 40292 /usr/bin/nemo
+ 165637 luiz      0.0  0.1 37208 /opt/google/chrome/chrome --type=renderer --top-chrome-webui --crashpad-handler-pid=165536 --enable-crash-reporter=0d6a0117-7899-4f4e-9cae-da36380adab0, --change-stack-guard-on-fork=enable --ozone-platform=x11 --lang=pt-BR --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=5 --time-ticks-at-unix-epoch=-1789073723981111 --launch-time-ticks=918415562832 --shared-files=v8_context_snapshot_data:100 --metrics-shmem-handle=4,i,15573999371043350912,12443037295459147463,2097152 --field-trial-handle=3,i,14553191232213543172,14159593340767785558,262144 --variations-seed-version=20260921-010039.319000-production --pseudonymization-salt-handle=7,i,11954940526699117737,4821073240639973508,4 --trace-process-track-uuid=3190708990997080739
+ 166556 luiz      0.0  0.1 34576 /usr/libexec/xdg-desktop-portal-gtk
+   2378 luiz      0.0  0.0 25980 /usr/libexec/evolution-calendar-factory
+ 202406 luiz      0.0  0.0 24964 /usr/libexec/gvfsd-http --spawner :1.16 /org/gtk/gvfs/exec_spaw/5
+ 165516 luiz      0.0  0.0 23524 mintUpdate
+
+>>> Script GPAW analisado
+/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05B_pbca_size_gate/05B_R2_pbca_case.py
+
+======================================================================
+DRY-RUN 4 PROCESSOS
+======================================================================
+
+[STATUS] dry-run 4 processos = 0
+
+======================================================================
+DRY-RUN 8 PROCESSOS
+======================================================================
+
+[STATUS] dry-run 8 processos = 0
+
+======================================================================
+RESUMO AUTOMÁTICO
+======================================================================
+
+Arquivos gerados:
+  /home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05B_pbca_size_gate/diagnostico_memoria_R2/saida-step05B-memory-diagnostic.txt
+  /home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05B_pbca_size_gate/diagnostico_memoria_R2/dryrun-step05B-R2-calcita80-4MPI.txt
+  /home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05B_pbca_size_gate/diagnostico_memoria_R2/dryrun-step05B-R2-calcita80-8MPI.txt
+  /home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05B_pbca_size_gate/diagnostico_memoria_R2/resumo-step05B-memory-diagnostic.txt
+
+Envie estes quatro arquivos para análise antes de rodar novamente o Step05B.
+======================================================================

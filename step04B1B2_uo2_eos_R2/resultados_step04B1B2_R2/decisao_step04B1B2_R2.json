@@ -1,0 +1,131 @@
+{
+  "step": "04B1B2-R2",
+  "purpose": "Rebuild UO2 EOS with deterministic LCAO initialization and determine the minimum converged PW cutoff from a 1400/1600/1800 eV ladder.",
+  "eos_summary": {
+    "3.0": {
+      "Ueff_eV": 3.0,
+      "npoints": 5,
+      "a0_A": 5.464393129623863,
+      "a_exp_A": 5.47127,
+      "lattice_error_percent": 0.12569056866388612,
+      "B0_GPa": 137.1021396362581,
+      "eos_rmse_meV_atom": 8.530596521094916,
+      "structural_pass": false
+    },
+    "4.0": {
+      "Ueff_eV": 4.0,
+      "npoints": 4,
+      "structural_pass": false,
+      "status": "incomplete_eos"
+    }
+  },
+  "center_branch_consistency": {
+    "3.0": {
+      "delta_energy_meV_atom": 0.0010308154738680742,
+      "delta_gap_eV": 0.01024187548889266,
+      "delta_moment_muB": 1.3742410865269505e-05,
+      "same_branch_as_B1B1": true
+    },
+    "4.0": {
+      "delta_energy_meV_atom": 1.65484035363761e-05,
+      "delta_gap_eV": 6.619831380483276e-05,
+      "delta_moment_muB": 4.366835310909423e-06,
+      "same_branch_as_B1B1": true
+    }
+  },
+  "cutoff_ladder": {
+    "3.0": {
+      "steps": [
+        {
+          "from_eV": 1400.0,
+          "to_eV": 1600.0,
+          "delta_energy_meV_atom": 0.14950372749389373,
+          "delta_gap_eV": 5.555812070845434e-05,
+          "delta_moment_muB": 3.667408260077387e-05,
+          "delta_hydrostatic_stress_GPa": 0.10676073338887837,
+          "passes": false
+        },
+        {
+          "from_eV": 1600.0,
+          "to_eV": 1800.0,
+          "delta_energy_meV_atom": 0.05783247956259174,
+          "delta_gap_eV": 4.6733718120250956e-05,
+          "delta_moment_muB": 4.355086192342483e-06,
+          "delta_hydrostatic_stress_GPa": 0.04659736172922857,
+          "passes": true
+        }
+      ],
+      "selected_production_cutoff_eV": 1600,
+      "validation_cutoff_eV": 1800,
+      "passes": true
+    },
+    "4.0": {
+      "steps": [
+        {
+          "from_eV": 1400.0,
+          "to_eV": 1600.0,
+          "delta_energy_meV_atom": 20.206031875432018,
+          "delta_gap_eV": 0.4620474593481365,
+          "delta_moment_muB": 0.018093184894736103,
+          "delta_hydrostatic_stress_GPa": 0.5866307588129329,
+          "passes": false
+        },
+        {
+          "from_eV": 1600.0,
+          "to_eV": 1800.0,
+          "delta_energy_meV_atom": 20.41090858989314,
+          "delta_gap_eV": 0.4621128376019765,
+          "delta_moment_muB": 0.018064939443499073,
+          "delta_hydrostatic_stress_GPa": 0.43339993410390387,
+          "passes": false
+        }
+      ],
+      "selected_production_cutoff_eV": null,
+      "validation_cutoff_eV": null,
+      "passes": false
+    }
+  },
+  "eligible_candidates": [],
+  "preferred_Ueff_eV": null,
+  "step04B1B2_R2_passes": false,
+  "failed_runs": [
+    {
+      "kind": "EOS",
+      "Ueff_eV": 4.0,
+      "scale": 0.98,
+      "record": {
+        "status": "failed_preconvergence",
+        "step": "04B1B2-R2",
+        "Ueff_eV": 4.0,
+        "ecut_eV": 1400.0,
+        "a_A": 5.361188,
+        "attempts": [
+          {
+            "stage": "preconvergence",
+            "attempt": 1,
+            "strategy": "lcao_0p10",
+            "smearing_eV": 0.1,
+            "maxiter": 800,
+            "iterations": 801,
+            "txt": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04B1B2_uo2_eos_R2/logs/UO2_nc6_U4p0_s0p98_1400_attempt1_lcao_0p10.txt",
+            "error": "KohnShamConvergenceError('Did not converge!  See text output for help.')"
+          },
+          {
+            "stage": "preconvergence",
+            "attempt": 2,
+            "strategy": "lcao_0p15_damped",
+            "smearing_eV": 0.15,
+            "maxiter": 1100,
+            "iterations": 1101,
+            "txt": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04B1B2_uo2_eos_R2/logs/UO2_nc6_U4p0_s0p98_1400_attempt2_lcao_0p15_damped.txt",
+            "error": "KohnShamConvergenceError('Did not converge!  See text output for help.')"
+          }
+        ],
+        "mpi_world_size": 4
+      }
+    }
+  ],
+  "production_authorization": false,
+  "next_gate": "If approved: Pb(II)/cerussite structural validation, then controlled SOC sensitivity for UO2 and realistic U(VI) validation.",
+  "warning": "The scalar-collinear UO2 EOS remains a benchmark model and does not replace the non-collinear 3-k magnetic ground state."
+}

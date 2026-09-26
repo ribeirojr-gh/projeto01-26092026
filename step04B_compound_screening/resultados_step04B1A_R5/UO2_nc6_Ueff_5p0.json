@@ -1,0 +1,49 @@
+{
+  "status": "converged",
+  "step": "04B1A-R5",
+  "system": "UO2",
+  "dataset": "nc6",
+  "Ueff_eV": 5.0,
+  "hubbard_normalized": true,
+  "symmetry_protocol": {
+    "point_group": false,
+    "time_reversal": true
+  },
+  "fixmagmom": false,
+  "scf_strategy": "common_noPG_primary",
+  "smearing_eV": 0.1,
+  "maxiter_allowed": 600,
+  "scf_iterations": 314,
+  "mpi_world_size": 4,
+  "ecut_eV": 1400.0,
+  "kpts": [
+    3,
+    3,
+    3
+  ],
+  "nbands": 80,
+  "energy_eV": -116.9602966173791,
+  "energy_eV_atom": -9.746691384781592,
+  "band_gap_eV": 3.950498251157075,
+  "band_gap_error": null,
+  "total_magnetic_moment_muB": -2.984196616524585e-08,
+  "U_local_moments_muB": [
+    1.9452395773025013,
+    -1.9452396267605017,
+    -1.9452396254944666,
+    1.9452396623629191
+  ],
+  "U_abs_mean_moment_muB": 1.9452396229800972,
+  "max_force_eV_A": 2.1941832403952525e-05,
+  "stress_GPa": [
+    -1.1536184922361823,
+    -1.152375702388449,
+    -0.9596789889479823,
+    -9.261685077904942e-05,
+    7.034607312619074e-05,
+    -0.0004819054512211193
+  ],
+  "max_abs_stress_GPa": 1.1536184922361823,
+  "gpw_file": null,
+  "failed_attempts_before_success": []
+}

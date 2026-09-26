@@ -1,0 +1,19 @@
+==============================================================================
+STEP 04B1B2-R3 — REANÁLISE STRESS–STRAIN UO2
+==============================================================================
+Data: qui 20 ago 2026 07:44:17 -03
+Host: alienware
+Projeto: /home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project
+
+================================================================================
+STEP 04B1B2-R3 — STRESS–STRAIN GATE
+================================================================================
+5 pontos: a0=5.47125185 Å | erro=0.0003% | B0=211.129 GPa | R²=0.992167
+3 centrais: a0=5.46591594 Å | erro=0.0979% | B0=207.415 GPa | R²=0.995250
+Δa0 entre fits = 0.005336 Å
+ΔB0 relativo   = 1.791%
+Cutoff U=3     = PASS
+B1B1 repro.    = PASS
+SCALAR/COLLINEAR UO2: APROVADO
+Produção com defeitos: NÃO AUTORIZADA.
+================================================================================

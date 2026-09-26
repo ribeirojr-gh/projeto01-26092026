@@ -1,0 +1,35 @@
+{
+  "status": "failed_scf",
+  "system": "UO2",
+  "structure_file": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04B_compound_screening/estruturas/UO2_fluorite_exp.traj",
+  "xc": "PBEsol",
+  "ecut_eV": 1400.0,
+  "kpts": [
+    3,
+    3,
+    3
+  ],
+  "mpi_world_size": 4,
+  "U_dataset": "nc6",
+  "Ueff_eV": 4.0,
+  "attempts": [
+    {
+      "attempt": 1,
+      "strategy": "mixersum_screening",
+      "smearing_eV": 0.15,
+      "maxiter": 500,
+      "scf_iterations_reached": 501,
+      "txt": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04B_compound_screening/logs/UO2_nc6_Ueff_4p0_gpaw_attempt1_mixersum_screening.txt",
+      "error": "KohnShamConvergenceError('Did not converge!  See text output for help.')"
+    },
+    {
+      "attempt": 2,
+      "strategy": "mixerdif_damped",
+      "smearing_eV": 0.2,
+      "maxiter": 700,
+      "scf_iterations_reached": 701,
+      "txt": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04B_compound_screening/logs/UO2_nc6_Ueff_4p0_gpaw_attempt2_mixerdif_damped.txt",
+      "error": "KohnShamConvergenceError('Did not converge!  See text output for help.')"
+    }
+  ]
+}

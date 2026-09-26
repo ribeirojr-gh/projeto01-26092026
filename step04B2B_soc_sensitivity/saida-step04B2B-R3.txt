@@ -1,0 +1,601 @@
+==============================================================================
+STEP 04B2B-R3 — SOC DIRETO DO RAMO UO2 APROVADO
+==============================================================================
+Data: sex 21 ago 2026 15:42:25 -03
+Host: alienware
+Projeto: /home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project
+
+>>> Reutilizando PbCO3 escalar já convergido
+
+>>> Registrando metadados do RAMO UO2 APROVADO
+{
+  "status": "approved_reference_reused",
+  "system": "UO2",
+  "dataset": "U14_nc6",
+  "Ueff_eV": 3.0,
+  "ecut_eV": 1600.0,
+  "kpts": [
+    3,
+    3,
+    3
+  ],
+  "energy_eV": -118.28124387572748,
+  "energy_eV_atom": -9.85677032297729,
+  "scalar_gap_eV": 2.531501613759467,
+  "scalar_gap_error": null,
+  "U_local_moments_muB": [
+    1.9291016506711332,
+    -1.9291016485470625,
+    1.9291016493704016,
+    -1.929101649426877
+  ],
+  "U_abs_mean_moment_muB": 1.9291016495038684,
+  "source_reference_json": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04B1B2_uo2_eos_R2/resultados_step04B1B2_R2/UO2_nc6_U3p0_center_1600.json",
+  "soc_source_gpw": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04B1B2_uo2_eos_R2/resultados_step04B1B2_R2/restart/UO2_nc6_U3p0_center_1600_tight.gpw",
+  "branch_policy": "Use exactly the Step04B1B2-R2 approved scalar branch. No new cold-start UO2 calculation is performed in Step04B2B-R3."
+}
+
+>>> SOC PbCO3
+[alienware][[16709,1],2][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[16709,1],2][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[16709,1],2][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[16709,1],3][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[16709,1],3][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[16709,1],3][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[16709,1],1][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[16709,1],1][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[16709,1],1][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[16709,1],0][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[16709,1],0][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[16709,1],0][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[SOC] PbCO3: scale0 scale=0.0 theta=0.0 phi=0.0
+[SOC] PbCO3: scale0 scale=0.0 theta=0.0 phi=0.0
+[SOC] PbCO3: scale0 scale=0.0 theta=0.0 phi=0.0
+[SOC] PbCO3: scale0 scale=0.0 theta=0.0 phi=0.0
+[SOC] PbCO3: scale0p5 scale=0.5 theta=0.0 phi=0.0
+[SOC] PbCO3: scale0p5 scale=0.5 theta=0.0 phi=0.0
+[SOC] PbCO3: scale0p5 scale=0.5 theta=0.0 phi=0.0
+[SOC] PbCO3: scale0p5 scale=0.5 theta=0.0 phi=0.0
+[SOC] PbCO3: scale1 scale=1.0 theta=0.0 phi=0.0
+[SOC] PbCO3: scale1 scale=1.0 theta=0.0 phi=0.0
+[SOC] PbCO3: scale1 scale=1.0 theta=0.0 phi=0.0
+[SOC] PbCO3: scale1 scale=1.0 theta=0.0 phi=0.0
+{
+  "status": "completed",
+  "step": "04B2B-R3",
+  "system": "PbCO3",
+  "method": "GPAW-25.7 non-self-consistent soc_eigenstates",
+  "gpw_file": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04B2B_soc_sensitivity/resultados_step04B2B/gpw/PbCO3_scalar_1600_k434_all.gpw",
+  "requires_mode_all_wavefunctions": false,
+  "results": {
+    "scale0": {
+      "fermi_level_eV": 5.448842778807384,
+      "indirect_gap_eV": 3.229185644269367,
+      "VBM_eV": 3.834249956672701,
+      "CBM_eV": 7.063435600942068,
+      "direct_gap_eV": 3.3183327928735773,
+      "scale": 0.0,
+      "theta_deg": 0.0,
+      "phi_deg": 0.0,
+      "band_energy_eV_cell": -831.9947349121044,
+      "band_energy_eV_fu": -207.9986837280261
+    },
+    "scale0p5": {
+      "fermi_level_eV": 5.420875683519997,
+      "indirect_gap_eV": 3.1730450934877217,
+      "VBM_eV": 3.8343531367761354,
+      "CBM_eV": 7.007398230263857,
+      "direct_gap_eV": 3.262516569580123,
+      "scale": 0.5,
+      "theta_deg": 0.0,
+      "phi_deg": 0.0,
+      "band_energy_eV_cell": -832.0972079493322,
+      "band_energy_eV_fu": -208.02430198733305
+    },
+    "scale1": {
+      "fermi_level_eV": 5.327886642324431,
+      "indirect_gap_eV": 2.986477881604012,
+      "VBM_eV": 3.8346477015224254,
+      "CBM_eV": 6.821125583126437,
+      "direct_gap_eV": 3.0769894536723403,
+      "scale": 1.0,
+      "theta_deg": 0.0,
+      "phi_deg": 0.0,
+      "band_energy_eV_cell": -832.4280097174443,
+      "band_energy_eV_fu": -208.10700242936107
+    }
+  }
+}
+{
+  "status": "completed",
+  "step": "04B2B-R3",
+  "system": "PbCO3",
+  "method": "GPAW-25.7 non-self-consistent soc_eigenstates",
+  "gpw_file": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04B2B_soc_sensitivity/resultados_step04B2B/gpw/PbCO3_scalar_1600_k434_all.gpw",
+  "requires_mode_all_wavefunctions": false,
+  "results": {
+    "scale0": {
+      "fermi_level_eV": 5.448842778807384,
+      "indirect_gap_eV": 3.229185644269367,
+      "VBM_eV": 3.834249956672701,
+      "CBM_eV": 7.063435600942068,
+      "direct_gap_eV": 3.3183327928735773,
+      "scale": 0.0,
+      "theta_deg": 0.0,
+      "phi_deg": 0.0,
+      "band_energy_eV_cell": -831.9947349121044,
+      "band_energy_eV_fu": -207.9986837280261
+    },
+    "scale0p5": {
+      "fermi_level_eV": 5.420875683519997,
+      "indirect_gap_eV": 3.1730450934877217,
+      "VBM_eV": 3.8343531367761354,
+      "CBM_eV": 7.007398230263857,
+      "direct_gap_eV": 3.262516569580123,
+      "scale": 0.5,
+      "theta_deg": 0.0,
+      "phi_deg": 0.0,
+      "band_energy_eV_cell": -832.0972079493322,
+      "band_energy_eV_fu": -208.02430198733305
+    },
+    "scale1": {
+      "fermi_level_eV": 5.327886642324431,
+      "indirect_gap_eV": 2.986477881604012,
+      "VBM_eV": 3.8346477015224254,
+      "CBM_eV": 6.821125583126437,
+      "direct_gap_eV": 3.0769894536723403,
+      "scale": 1.0,
+      "theta_deg": 0.0,
+      "phi_deg": 0.0,
+      "band_energy_eV_cell": -832.4280097174443,
+      "band_energy_eV_fu": -208.10700242936107
+    }
+  }
+}
+{
+  "status": "completed",
+  "step": "04B2B-R3",
+  "system": "PbCO3",
+  "method": "GPAW-25.7 non-self-consistent soc_eigenstates",
+  "gpw_file": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04B2B_soc_sensitivity/resultados_step04B2B/gpw/PbCO3_scalar_1600_k434_all.gpw",
+  "requires_mode_all_wavefunctions": false,
+  "results": {
+    "scale0": {
+      "fermi_level_eV": 5.448842778807384,
+      "indirect_gap_eV": 3.229185644269367,
+      "VBM_eV": 3.834249956672701,
+      "CBM_eV": 7.063435600942068,
+      "direct_gap_eV": 3.3183327928735773,
+      "scale": 0.0,
+      "theta_deg": 0.0,
+      "phi_deg": 0.0,
+      "band_energy_eV_cell": -831.9947349121044,
+      "band_energy_eV_fu": -207.9986837280261
+    },
+    "scale0p5": {
+      "fermi_level_eV": 5.420875683519997,
+      "indirect_gap_eV": 3.1730450934877217,
+      "VBM_eV": 3.8343531367761354,
+      "CBM_eV": 7.007398230263857,
+      "direct_gap_eV": 3.262516569580123,
+      "scale": 0.5,
+      "theta_deg": 0.0,
+      "phi_deg": 0.0,
+      "band_energy_eV_cell": -832.0972079493322,
+      "band_energy_eV_fu": -208.02430198733305
+    },
+    "scale1": {
+      "fermi_level_eV": 5.327886642324431,
+      "indirect_gap_eV": 2.986477881604012,
+      "VBM_eV": 3.8346477015224254,
+      "CBM_eV": 6.821125583126437,
+      "direct_gap_eV": 3.0769894536723403,
+      "scale": 1.0,
+      "theta_deg": 0.0,
+      "phi_deg": 0.0,
+      "band_energy_eV_cell": -832.4280097174443,
+      "band_energy_eV_fu": -208.10700242936107
+    }
+  }
+}
+{
+  "status": "completed",
+  "step": "04B2B-R3",
+  "system": "PbCO3",
+  "method": "GPAW-25.7 non-self-consistent soc_eigenstates",
+  "gpw_file": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04B2B_soc_sensitivity/resultados_step04B2B/gpw/PbCO3_scalar_1600_k434_all.gpw",
+  "requires_mode_all_wavefunctions": false,
+  "results": {
+    "scale0": {
+      "fermi_level_eV": 5.448842778807384,
+      "indirect_gap_eV": 3.229185644269367,
+      "VBM_eV": 3.834249956672701,
+      "CBM_eV": 7.063435600942068,
+      "direct_gap_eV": 3.3183327928735773,
+      "scale": 0.0,
+      "theta_deg": 0.0,
+      "phi_deg": 0.0,
+      "band_energy_eV_cell": -831.9947349121044,
+      "band_energy_eV_fu": -207.9986837280261
+    },
+    "scale0p5": {
+      "fermi_level_eV": 5.420875683519997,
+      "indirect_gap_eV": 3.1730450934877217,
+      "VBM_eV": 3.8343531367761354,
+      "CBM_eV": 7.007398230263857,
+      "direct_gap_eV": 3.262516569580123,
+      "scale": 0.5,
+      "theta_deg": 0.0,
+      "phi_deg": 0.0,
+      "band_energy_eV_cell": -832.0972079493322,
+      "band_energy_eV_fu": -208.02430198733305
+    },
+    "scale1": {
+      "fermi_level_eV": 5.327886642324431,
+      "indirect_gap_eV": 2.986477881604012,
+      "VBM_eV": 3.8346477015224254,
+      "CBM_eV": 6.821125583126437,
+      "direct_gap_eV": 3.0769894536723403,
+      "scale": 1.0,
+      "theta_deg": 0.0,
+      "phi_deg": 0.0,
+      "band_energy_eV_cell": -832.4280097174443,
+      "band_energy_eV_fu": -208.10700242936107
+    }
+  }
+}
+
+>>> SOC UO2 diretamente do .gpw aprovado do B1B2-R2
+[alienware][[54474,1],0][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[54474,1],0][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[54474,1],0][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[54474,1],2][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[54474,1],3][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[54474,1],2][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[54474,1],3][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[54474,1],2][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[54474,1],3][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[54474,1],1][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[54474,1],1][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[54474,1],1][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[SOC] UO2: scale0_z scale=0.0 theta=0.0 phi=0.0
+[SOC] UO2: scale0_z scale=0.0 theta=0.0 phi=0.0
+[SOC] UO2: scale0_z scale=0.0 theta=0.0 phi=0.0
+[SOC] UO2: scale0_z scale=0.0 theta=0.0 phi=0.0
+[SOC] UO2: scale0p5_z scale=0.5 theta=0.0 phi=0.0
+[SOC] UO2: scale0p5_z scale=0.5 theta=0.0 phi=0.0
+[SOC] UO2: scale0p5_z scale=0.5 theta=0.0 phi=0.0
+[SOC] UO2: scale0p5_z scale=0.5 theta=0.0 phi=0.0
+[SOC] UO2: scale1_z scale=1.0 theta=0.0 phi=0.0
+[SOC] UO2: scale1_z scale=1.0 theta=0.0 phi=0.0
+[SOC] UO2: scale1_z scale=1.0 theta=0.0 phi=0.0
+[SOC] UO2: scale1_z scale=1.0 theta=0.0 phi=0.0
+[SOC] UO2: scale1_x scale=1.0 theta=90.0 phi=0.0
+[SOC] UO2: scale1_x scale=1.0 theta=90.0 phi=0.0
+[SOC] UO2: scale1_x scale=1.0 theta=90.0 phi=0.0
+[SOC] UO2: scale1_x scale=1.0 theta=90.0 phi=0.0
+[SOC] UO2: scale1_y scale=1.0 theta=90.0 phi=90.0
+[SOC] UO2: scale1_y scale=1.0 theta=90.0 phi=90.0
+[SOC] UO2: scale1_y scale=1.0 theta=90.0 phi=90.0
+[SOC] UO2: scale1_y scale=1.0 theta=90.0 phi=90.0
+{
+  "status": "completed",
+  "step": "04B2B-R3",
+  "system": "UO2",
+  "method": "GPAW-25.7 non-self-consistent soc_eigenstates",
+  "gpw_file": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04B1B2_uo2_eos_R2/resultados_step04B1B2_R2/restart/UO2_nc6_U3p0_center_1600_tight.gpw",
+  "requires_mode_all_wavefunctions": false,
+  "results": {
+    "scale0_z": {
+      "fermi_level_eV": 12.42316700638164,
+      "indirect_gap_eV": 2.531501613759467,
+      "VBM_eV": 11.157416199501906,
+      "CBM_eV": 13.688917813261373,
+      "direct_gap_eV": 2.606485218843604,
+      "scale": 0.0,
+      "theta_deg": 0.0,
+      "phi_deg": 0.0,
+      "band_energy_eV_cell": -39.07132027541898,
+      "band_energy_eV_fu": -9.767830068854744
+    },
+    "scale0p5_z": {
+      "fermi_level_eV": 12.429204275578877,
+      "indirect_gap_eV": 2.4557252393717874,
+      "VBM_eV": 11.201341655892984,
+      "CBM_eV": 13.657066895264771,
+      "direct_gap_eV": 2.5180161806393695,
+      "scale": 0.5,
+      "theta_deg": 0.0,
+      "phi_deg": 0.0,
+      "band_energy_eV_cell": -39.295200467084,
+      "band_energy_eV_fu": -9.823800116771
+    },
+    "scale1_z": {
+      "fermi_level_eV": 12.41234287201034,
+      "indirect_gap_eV": 2.296196016678696,
+      "VBM_eV": 11.264244863670992,
+      "CBM_eV": 13.560440880349688,
+      "direct_gap_eV": 2.3290167472649568,
+      "scale": 1.0,
+      "theta_deg": 0.0,
+      "phi_deg": 0.0,
+      "band_energy_eV_cell": -39.953947148443255,
+      "band_energy_eV_fu": -9.988486787110814
+    },
+    "scale1_x": {
+      "fermi_level_eV": 12.412342630378603,
+      "indirect_gap_eV": 2.296195497215944,
+      "VBM_eV": 11.264244881770631,
+      "CBM_eV": 13.560440378986575,
+      "direct_gap_eV": 2.3290158652696107,
+      "scale": 1.0,
+      "theta_deg": 90.0,
+      "phi_deg": 0.0,
+      "band_energy_eV_cell": -39.95394713866129,
+      "band_energy_eV_fu": -9.988486784665323
+    },
+    "scale1_y": {
+      "fermi_level_eV": 12.4016179443736,
+      "indirect_gap_eV": 2.364126890409441,
+      "VBM_eV": 11.21955449916888,
+      "CBM_eV": 13.58368138957832,
+      "direct_gap_eV": 2.401350961092774,
+      "scale": 1.0,
+      "theta_deg": 90.0,
+      "phi_deg": 90.0,
+      "band_energy_eV_cell": -39.973105608402825,
+      "band_energy_eV_fu": -9.993276402100706
+    }
+  }
+}
+{
+  "status": "completed",
+  "step": "04B2B-R3",
+  "system": "UO2",
+  "method": "GPAW-25.7 non-self-consistent soc_eigenstates",
+  "gpw_file": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04B1B2_uo2_eos_R2/resultados_step04B1B2_R2/restart/UO2_nc6_U3p0_center_1600_tight.gpw",
+  "requires_mode_all_wavefunctions": false,
+  "results": {
+    "scale0_z": {
+      "fermi_level_eV": 12.42316700638164,
+      "indirect_gap_eV": 2.531501613759467,
+      "VBM_eV": 11.157416199501906,
+      "CBM_eV": 13.688917813261373,
+      "direct_gap_eV": 2.606485218843604,
+      "scale": 0.0,
+      "theta_deg": 0.0,
+      "phi_deg": 0.0,
+      "band_energy_eV_cell": -39.07132027541898,
+      "band_energy_eV_fu": -9.767830068854744
+    },
+    "scale0p5_z": {
+      "fermi_level_eV": 12.429204275578877,
+      "indirect_gap_eV": 2.4557252393717874,
+      "VBM_eV": 11.201341655892984,
+      "CBM_eV": 13.657066895264771,
+      "direct_gap_eV": 2.5180161806393695,
+      "scale": 0.5,
+      "theta_deg": 0.0,
+      "phi_deg": 0.0,
+      "band_energy_eV_cell": -39.295200467084,
+      "band_energy_eV_fu": -9.823800116771
+    },
+    "scale1_z": {
+      "fermi_level_eV": 12.41234287201034,
+      "indirect_gap_eV": 2.296196016678696,
+      "VBM_eV": 11.264244863670992,
+      "CBM_eV": 13.560440880349688,
+      "direct_gap_eV": 2.3290167472649568,
+      "scale": 1.0,
+      "theta_deg": 0.0,
+      "phi_deg": 0.0,
+      "band_energy_eV_cell": -39.953947148443255,
+      "band_energy_eV_fu": -9.988486787110814
+    },
+    "scale1_x": {
+      "fermi_level_eV": 12.412342630378603,
+      "indirect_gap_eV": 2.296195497215944,
+      "VBM_eV": 11.264244881770631,
+      "CBM_eV": 13.560440378986575,
+      "direct_gap_eV": 2.3290158652696107,
+      "scale": 1.0,
+      "theta_deg": 90.0,
+      "phi_deg": 0.0,
+      "band_energy_eV_cell": -39.95394713866129,
+      "band_energy_eV_fu": -9.988486784665323
+    },
+    "scale1_y": {
+      "fermi_level_eV": 12.4016179443736,
+      "indirect_gap_eV": 2.364126890409441,
+      "VBM_eV": 11.21955449916888,
+      "CBM_eV": 13.58368138957832,
+      "direct_gap_eV": 2.401350961092774,
+      "scale": 1.0,
+      "theta_deg": 90.0,
+      "phi_deg": 90.0,
+      "band_energy_eV_cell": -39.973105608402825,
+      "band_energy_eV_fu": -9.993276402100706
+    }
+  }
+}
+{
+  "status": "completed",
+  "step": "04B2B-R3",
+  "system": "UO2",
+  "method": "GPAW-25.7 non-self-consistent soc_eigenstates",
+  "gpw_file": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04B1B2_uo2_eos_R2/resultados_step04B1B2_R2/restart/UO2_nc6_U3p0_center_1600_tight.gpw",
+  "requires_mode_all_wavefunctions": false,
+  "results": {
+    "scale0_z": {
+      "fermi_level_eV": 12.42316700638164,
+      "indirect_gap_eV": 2.531501613759467,
+      "VBM_eV": 11.157416199501906,
+      "CBM_eV": 13.688917813261373,
+      "direct_gap_eV": 2.606485218843604,
+      "scale": 0.0,
+      "theta_deg": 0.0,
+      "phi_deg": 0.0,
+      "band_energy_eV_cell": -39.07132027541898,
+      "band_energy_eV_fu": -9.767830068854744
+    },
+    "scale0p5_z": {
+      "fermi_level_eV": 12.429204275578877,
+      "indirect_gap_eV": 2.4557252393717874,
+      "VBM_eV": 11.201341655892984,
+      "CBM_eV": 13.657066895264771,
+      "direct_gap_eV": 2.5180161806393695,
+      "scale": 0.5,
+      "theta_deg": 0.0,
+      "phi_deg": 0.0,
+      "band_energy_eV_cell": -39.295200467084,
+      "band_energy_eV_fu": -9.823800116771
+    },
+    "scale1_z": {
+      "fermi_level_eV": 12.41234287201034,
+      "indirect_gap_eV": 2.296196016678696,
+      "VBM_eV": 11.264244863670992,
+      "CBM_eV": 13.560440880349688,
+      "direct_gap_eV": 2.3290167472649568,
+      "scale": 1.0,
+      "theta_deg": 0.0,
+      "phi_deg": 0.0,
+      "band_energy_eV_cell": -39.953947148443255,
+      "band_energy_eV_fu": -9.988486787110814
+    },
+    "scale1_x": {
+      "fermi_level_eV": 12.412342630378603,
+      "indirect_gap_eV": 2.296195497215944,
+      "VBM_eV": 11.264244881770631,
+      "CBM_eV": 13.560440378986575,
+      "direct_gap_eV": 2.3290158652696107,
+      "scale": 1.0,
+      "theta_deg": 90.0,
+      "phi_deg": 0.0,
+      "band_energy_eV_cell": -39.95394713866129,
+      "band_energy_eV_fu": -9.988486784665323
+    },
+    "scale1_y": {
+      "fermi_level_eV": 12.4016179443736,
+      "indirect_gap_eV": 2.364126890409441,
+      "VBM_eV": 11.21955449916888,
+      "CBM_eV": 13.58368138957832,
+      "direct_gap_eV": 2.401350961092774,
+      "scale": 1.0,
+      "theta_deg": 90.0,
+      "phi_deg": 90.0,
+      "band_energy_eV_cell": -39.973105608402825,
+      "band_energy_eV_fu": -9.993276402100706
+    }
+  }
+}
+{
+  "status": "completed",
+  "step": "04B2B-R3",
+  "system": "UO2",
+  "method": "GPAW-25.7 non-self-consistent soc_eigenstates",
+  "gpw_file": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04B1B2_uo2_eos_R2/resultados_step04B1B2_R2/restart/UO2_nc6_U3p0_center_1600_tight.gpw",
+  "requires_mode_all_wavefunctions": false,
+  "results": {
+    "scale0_z": {
+      "fermi_level_eV": 12.42316700638164,
+      "indirect_gap_eV": 2.531501613759467,
+      "VBM_eV": 11.157416199501906,
+      "CBM_eV": 13.688917813261373,
+      "direct_gap_eV": 2.606485218843604,
+      "scale": 0.0,
+      "theta_deg": 0.0,
+      "phi_deg": 0.0,
+      "band_energy_eV_cell": -39.07132027541898,
+      "band_energy_eV_fu": -9.767830068854744
+    },
+    "scale0p5_z": {
+      "fermi_level_eV": 12.429204275578877,
+      "indirect_gap_eV": 2.4557252393717874,
+      "VBM_eV": 11.201341655892984,
+      "CBM_eV": 13.657066895264771,
+      "direct_gap_eV": 2.5180161806393695,
+      "scale": 0.5,
+      "theta_deg": 0.0,
+      "phi_deg": 0.0,
+      "band_energy_eV_cell": -39.295200467084,
+      "band_energy_eV_fu": -9.823800116771
+    },
+    "scale1_z": {
+      "fermi_level_eV": 12.41234287201034,
+      "indirect_gap_eV": 2.296196016678696,
+      "VBM_eV": 11.264244863670992,
+      "CBM_eV": 13.560440880349688,
+      "direct_gap_eV": 2.3290167472649568,
+      "scale": 1.0,
+      "theta_deg": 0.0,
+      "phi_deg": 0.0,
+      "band_energy_eV_cell": -39.953947148443255,
+      "band_energy_eV_fu": -9.988486787110814
+    },
+    "scale1_x": {
+      "fermi_level_eV": 12.412342630378603,
+      "indirect_gap_eV": 2.296195497215944,
+      "VBM_eV": 11.264244881770631,
+      "CBM_eV": 13.560440378986575,
+      "direct_gap_eV": 2.3290158652696107,
+      "scale": 1.0,
+      "theta_deg": 90.0,
+      "phi_deg": 0.0,
+      "band_energy_eV_cell": -39.95394713866129,
+      "band_energy_eV_fu": -9.988486784665323
+    },
+    "scale1_y": {
+      "fermi_level_eV": 12.4016179443736,
+      "indirect_gap_eV": 2.364126890409441,
+      "VBM_eV": 11.21955449916888,
+      "CBM_eV": 13.58368138957832,
+      "direct_gap_eV": 2.401350961092774,
+      "scale": 1.0,
+      "theta_deg": 90.0,
+      "phi_deg": 90.0,
+      "band_energy_eV_cell": -39.973105608402825,
+      "band_energy_eV_fu": -9.993276402100706
+    }
+  }
+}
+
+>>> Decisão
+{
+  "step": "04B2B",
+  "scope": "Controlled non-self-consistent SOC sensitivity for approved PbCO3 and UO2 references.",
+  "technical_consistency": {
+    "PbCO3_scale0_vs_scalar_gap_diff_eV": 0.0,
+    "PbCO3_pass": true,
+    "UO2_scale0_vs_scalar_gap_diff_eV": 0.0,
+    "UO2_pass": true,
+    "overall_pass": true
+  },
+  "PbCO3_SOC": {
+    "scalar_gap_eV": 3.229185644269367,
+    "SOC_gap_eV": 2.986477881604012,
+    "delta_gap_eV": -0.2427077626653551,
+    "band_energy_shift_eV_fu": -0.10831870133498,
+    "SOC_significant_for_electronic_structure": true
+  },
+  "UO2_SOC": {
+    "scalar_gap_eV": 2.531501613759467,
+    "SOC_gap_z_eV": 2.296196016678696,
+    "SOC_gap_x_eV": 2.296195497215944,
+    "SOC_gap_y_eV": 2.364126890409441,
+    "delta_gap_z_eV": -0.23530559708077092,
+    "band_energy_anisotropy_meV_fu": 4.78961743538342,
+    "SOC_significant": true
+  },
+  "policy": {
+    "structural_relaxations": "Remain scalar-relativistic at this stage.",
+    "electronic_structure": "Include SOC when classified significant.",
+    "defect_thermodynamics": "For U/Pb defects, carry a SOC single-point energy sensitivity correction if SOC is significant."
+  },
+  "step04B2B_passes": true,
+  "production_authorization": false,
+  "next_gate": "Step04B2C: realistic U(VI) compound validation before Step05 defect production.",
+  "warning": "soc_eigenstates is non-self-consistent; UO2 remains a collinear 1-k sensitivity test, not a self-consistent 3-k SOC calculation."
+}
+==============================================================================
+STEP 04B2B-R3 FINALIZADO
+==============================================================================

@@ -1,0 +1,40 @@
+{
+  "status": "converged",
+  "system": "delta_UO3",
+  "structure_file": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04B_compound_screening/estruturas/delta_UO3_ref.traj",
+  "xc": "PBEsol",
+  "ecut_eV": 1400.0,
+  "kpts": [
+    5,
+    5,
+    5
+  ],
+  "mpi_world_size": 4,
+  "U_dataset": "nc6",
+  "Ueff_eV": 0.0,
+  "scf_strategy": "standard_screening",
+  "smearing_eV": 0.05,
+  "maxiter_allowed": 400,
+  "scf_iterations": 60,
+  "energy_eV": -26.56224716762678,
+  "energy_eV_atom": -6.640561791906695,
+  "volume_A3": 72.292833462312,
+  "max_force_eV_A": 2.119748363774277e-27,
+  "stress_GPa": [
+    39.96287463586344,
+    39.96287463586343,
+    39.96287463586343,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "max_abs_stress_GPa": 39.96287463586344,
+  "total_magnetic_moment_muB": 0.0,
+  "U_local_moments_muB": [
+    0.0
+  ],
+  "U_abs_mean_moment_muB": 0.0,
+  "band_gap_eV": 0.0,
+  "band_gap_error": null,
+  "failed_attempts_before_success": []
+}

@@ -1,0 +1,11 @@
+{
+  "strategy": "largest_common_radius_passing_GPAW_check_all",
+  "generator": "gpaw dataset / generator2",
+  "valence_electrons": 14,
+  "scalar_relativistic": true,
+  "selected_common_radius_Bohr": null,
+  "PBE_passes": false,
+  "PBEsol_passes": false,
+  "no_check_flag_used": false,
+  "candidate_status": "FAILED_INTERNAL_ATOMIC_GATE"
+}

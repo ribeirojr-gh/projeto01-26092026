@@ -1,0 +1,898 @@
+==============================================================================
+STEP 05A — HOSTS PRISTINOS + DESIGN DE SUPERCÉLULAS
+==============================================================================
+Data: seg 14 set 2026 08:37:07 -03
+Host: alienware
+Projeto: /home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project
+
+
+>>> Relaxação fresh host: calcita
+{
+  "step": "05A-host-relax",
+  "mineral": "calcita",
+  "formula": "CaCO3",
+  "input": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step01_R2_final_references/referencias_finais/calcita_ref_experimental_primitiva.cif",
+  "xc": "PBEsol",
+  "ecut_eV": 1400.0,
+  "kpts": [
+    5,
+    5,
+    5
+  ],
+  "natoms": 10,
+  "atomic_stage_converged": true,
+  "cell_stage_converged": true,
+  "energy_eV": -79.69556065683308,
+  "energy_eV_atom": -7.969556065683308,
+  "max_force_eV_A": 0.005223956978016958,
+  "stress_GPa": [
+    -0.017931243438369354,
+    -0.027741775292816996,
+    -0.029001992538571213,
+    0.0014039084489617729,
+    0.0032993927782023207,
+    0.005097325494133058
+  ],
+  "max_abs_stress_GPa": 0.029001992538571213,
+  "volume_A3": 122.17925725842312,
+  "cell_lengths_A": [
+    6.335123793356957,
+    6.335123793356958,
+    6.335123793356957
+  ],
+  "cell_angles_deg": [
+    46.50544036200399,
+    46.50544036200401,
+    46.505440362004
+  ],
+  "spacegroup": {
+    "number": 167,
+    "international": "R-3c"
+  },
+  "expected_spacegroup": 167,
+  "traj": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05A_host_supercells/resultados_step05A/hosts_relaxed/calcita_PBEsol1400_relaxed.traj",
+  "cif": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05A_host_supercells/resultados_step05A/hosts_relaxed/calcita_PBEsol1400_relaxed.cif"
+}
+{
+  "step": "05A-host-relax",
+  "mineral": "calcita",
+  "formula": "CaCO3",
+  "input": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step01_R2_final_references/referencias_finais/calcita_ref_experimental_primitiva.cif",
+  "xc": "PBEsol",
+  "ecut_eV": 1400.0,
+  "kpts": [
+    5,
+    5,
+    5
+  ],
+  "natoms": 10,
+  "atomic_stage_converged": true,
+  "cell_stage_converged": true,
+  "energy_eV": -79.69556065683308,
+  "energy_eV_atom": -7.969556065683308,
+  "max_force_eV_A": 0.005223956978016958,
+  "stress_GPa": [
+    -0.017931243438369354,
+    -0.027741775292816996,
+    -0.029001992538571213,
+    0.0014039084489617729,
+    0.0032993927782023207,
+    0.005097325494133058
+  ],
+  "max_abs_stress_GPa": 0.029001992538571213,
+  "volume_A3": 122.17925725842312,
+  "cell_lengths_A": [
+    6.335123793356957,
+    6.335123793356958,
+    6.335123793356957
+  ],
+  "cell_angles_deg": [
+    46.50544036200399,
+    46.50544036200401,
+    46.505440362004
+  ],
+  "spacegroup": {
+    "number": 167,
+    "international": "R-3c"
+  },
+  "expected_spacegroup": 167,
+  "traj": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05A_host_supercells/resultados_step05A/hosts_relaxed/calcita_PBEsol1400_relaxed.traj",
+  "cif": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05A_host_supercells/resultados_step05A/hosts_relaxed/calcita_PBEsol1400_relaxed.cif"
+}
+{
+  "step": "05A-host-relax",
+  "mineral": "calcita",
+  "formula": "CaCO3",
+  "input": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step01_R2_final_references/referencias_finais/calcita_ref_experimental_primitiva.cif",
+  "xc": "PBEsol",
+  "ecut_eV": 1400.0,
+  "kpts": [
+    5,
+    5,
+    5
+  ],
+  "natoms": 10,
+  "atomic_stage_converged": true,
+  "cell_stage_converged": true,
+  "energy_eV": -79.69556065683308,
+  "energy_eV_atom": -7.969556065683308,
+  "max_force_eV_A": 0.005223956978016958,
+  "stress_GPa": [
+    -0.017931243438369354,
+    -0.027741775292816996,
+    -0.029001992538571213,
+    0.0014039084489617729,
+    0.0032993927782023207,
+    0.005097325494133058
+  ],
+  "max_abs_stress_GPa": 0.029001992538571213,
+  "volume_A3": 122.17925725842312,
+  "cell_lengths_A": [
+    6.335123793356957,
+    6.335123793356958,
+    6.335123793356957
+  ],
+  "cell_angles_deg": [
+    46.50544036200399,
+    46.50544036200401,
+    46.505440362004
+  ],
+  "spacegroup": {
+    "number": 167,
+    "international": "R-3c"
+  },
+  "expected_spacegroup": 167,
+  "traj": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05A_host_supercells/resultados_step05A/hosts_relaxed/calcita_PBEsol1400_relaxed.traj",
+  "cif": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05A_host_supercells/resultados_step05A/hosts_relaxed/calcita_PBEsol1400_relaxed.cif"
+}
+{
+  "step": "05A-host-relax",
+  "mineral": "calcita",
+  "formula": "CaCO3",
+  "input": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step01_R2_final_references/referencias_finais/calcita_ref_experimental_primitiva.cif",
+  "xc": "PBEsol",
+  "ecut_eV": 1400.0,
+  "kpts": [
+    5,
+    5,
+    5
+  ],
+  "natoms": 10,
+  "atomic_stage_converged": true,
+  "cell_stage_converged": true,
+  "energy_eV": -79.69556065683308,
+  "energy_eV_atom": -7.969556065683308,
+  "max_force_eV_A": 0.005223956978016958,
+  "stress_GPa": [
+    -0.017931243438369354,
+    -0.027741775292816996,
+    -0.029001992538571213,
+    0.0014039084489617729,
+    0.0032993927782023207,
+    0.005097325494133058
+  ],
+  "max_abs_stress_GPa": 0.029001992538571213,
+  "volume_A3": 122.17925725842312,
+  "cell_lengths_A": [
+    6.335123793356957,
+    6.335123793356958,
+    6.335123793356957
+  ],
+  "cell_angles_deg": [
+    46.50544036200399,
+    46.50544036200401,
+    46.505440362004
+  ],
+  "spacegroup": {
+    "number": 167,
+    "international": "R-3c"
+  },
+  "expected_spacegroup": 167,
+  "traj": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05A_host_supercells/resultados_step05A/hosts_relaxed/calcita_PBEsol1400_relaxed.traj",
+  "cif": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05A_host_supercells/resultados_step05A/hosts_relaxed/calcita_PBEsol1400_relaxed.cif"
+}
+
+>>> Validação 1600 eV: calcita
+{
+  "step": "05A-host-validation",
+  "mineral": "calcita",
+  "ecut_eV": 1600.0,
+  "kpts": [
+    5,
+    5,
+    5
+  ],
+  "energy_eV": -79.69612509863633,
+  "energy_eV_atom": -7.969612509863633,
+  "max_force_eV_A": 0.005170524255300274,
+  "stress_GPa": [
+    -0.0926340369806441,
+    -0.10206739440144598,
+    -0.10327916149862625,
+    0.001349933967049493,
+    0.0031725447519223614,
+    0.004901354380142339
+  ],
+  "max_abs_stress_GPa": 0.10327916149862625,
+  "mpi_world_size": 4
+}
+
+>>> Relaxação fresh host: dolomita
+{
+  "step": "05A-host-relax",
+  "mineral": "dolomita",
+  "formula": "CaMg(CO3)2",
+  "input": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step01_R2_final_references/referencias_finais/dolomita_ref_experimental_primitiva.cif",
+  "xc": "PBEsol",
+  "ecut_eV": 1400.0,
+  "kpts": [
+    5,
+    5,
+    5
+  ],
+  "natoms": 10,
+  "atomic_stage_converged": true,
+  "cell_stage_converged": true,
+  "energy_eV": -78.21821109073086,
+  "energy_eV_atom": -7.8218211090730865,
+  "max_force_eV_A": 0.006461253979391531,
+  "stress_GPa": [
+    0.20843563189153744,
+    0.1786344928400988,
+    0.1746089951102731,
+    0.0045425776241722225,
+    0.010426902393209375,
+    0.01602459935106929
+  ],
+  "max_abs_stress_GPa": 0.20843563189153744,
+  "volume_A3": 106.98273767913845,
+  "cell_lengths_A": [
+    6.000371526465533,
+    6.000371526465531,
+    6.000371526465531
+  ],
+  "cell_angles_deg": [
+    47.36844425502528,
+    47.36844425502529,
+    47.3684442550253
+  ],
+  "spacegroup": {
+    "number": 148,
+    "international": "R-3"
+  },
+  "expected_spacegroup": 148,
+  "traj": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05A_host_supercells/resultados_step05A/hosts_relaxed/dolomita_PBEsol1400_relaxed.traj",
+  "cif": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05A_host_supercells/resultados_step05A/hosts_relaxed/dolomita_PBEsol1400_relaxed.cif"
+}
+{
+  "step": "05A-host-relax",
+  "mineral": "dolomita",
+  "formula": "CaMg(CO3)2",
+  "input": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step01_R2_final_references/referencias_finais/dolomita_ref_experimental_primitiva.cif",
+  "xc": "PBEsol",
+  "ecut_eV": 1400.0,
+  "kpts": [
+    5,
+    5,
+    5
+  ],
+  "natoms": 10,
+  "atomic_stage_converged": true,
+  "cell_stage_converged": true,
+  "energy_eV": -78.21821109073086,
+  "energy_eV_atom": -7.8218211090730865,
+  "max_force_eV_A": 0.006461253979391531,
+  "stress_GPa": [
+    0.20843563189153744,
+    0.1786344928400988,
+    0.1746089951102731,
+    0.0045425776241722225,
+    0.010426902393209375,
+    0.01602459935106929
+  ],
+  "max_abs_stress_GPa": 0.20843563189153744,
+  "volume_A3": 106.98273767913845,
+  "cell_lengths_A": [
+    6.000371526465533,
+    6.000371526465531,
+    6.000371526465531
+  ],
+  "cell_angles_deg": [
+    47.36844425502528,
+    47.36844425502529,
+    47.3684442550253
+  ],
+  "spacegroup": {
+    "number": 148,
+    "international": "R-3"
+  },
+  "expected_spacegroup": 148,
+  "traj": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05A_host_supercells/resultados_step05A/hosts_relaxed/dolomita_PBEsol1400_relaxed.traj",
+  "cif": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05A_host_supercells/resultados_step05A/hosts_relaxed/dolomita_PBEsol1400_relaxed.cif"
+}
+{
+  "step": "05A-host-relax",
+  "mineral": "dolomita",
+  "formula": "CaMg(CO3)2",
+  "input": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step01_R2_final_references/referencias_finais/dolomita_ref_experimental_primitiva.cif",
+  "xc": "PBEsol",
+  "ecut_eV": 1400.0,
+  "kpts": [
+    5,
+    5,
+    5
+  ],
+  "natoms": 10,
+  "atomic_stage_converged": true,
+  "cell_stage_converged": true,
+  "energy_eV": -78.21821109073086,
+  "energy_eV_atom": -7.8218211090730865,
+  "max_force_eV_A": 0.006461253979391531,
+  "stress_GPa": [
+    0.20843563189153744,
+    0.1786344928400988,
+    0.1746089951102731,
+    0.0045425776241722225,
+    0.010426902393209375,
+    0.01602459935106929
+  ],
+  "max_abs_stress_GPa": 0.20843563189153744,
+  "volume_A3": 106.98273767913845,
+  "cell_lengths_A": [
+    6.000371526465533,
+    6.000371526465531,
+    6.000371526465531
+  ],
+  "cell_angles_deg": [
+    47.36844425502528,
+    47.36844425502529,
+    47.3684442550253
+  ],
+  "spacegroup": {
+    "number": 148,
+    "international": "R-3"
+  },
+  "expected_spacegroup": 148,
+  "traj": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05A_host_supercells/resultados_step05A/hosts_relaxed/dolomita_PBEsol1400_relaxed.traj",
+  "cif": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05A_host_supercells/resultados_step05A/hosts_relaxed/dolomita_PBEsol1400_relaxed.cif"
+}
+{
+  "step": "05A-host-relax",
+  "mineral": "dolomita",
+  "formula": "CaMg(CO3)2",
+  "input": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step01_R2_final_references/referencias_finais/dolomita_ref_experimental_primitiva.cif",
+  "xc": "PBEsol",
+  "ecut_eV": 1400.0,
+  "kpts": [
+    5,
+    5,
+    5
+  ],
+  "natoms": 10,
+  "atomic_stage_converged": true,
+  "cell_stage_converged": true,
+  "energy_eV": -78.21821109073086,
+  "energy_eV_atom": -7.8218211090730865,
+  "max_force_eV_A": 0.006461253979391531,
+  "stress_GPa": [
+    0.20843563189153744,
+    0.1786344928400988,
+    0.1746089951102731,
+    0.0045425776241722225,
+    0.010426902393209375,
+    0.01602459935106929
+  ],
+  "max_abs_stress_GPa": 0.20843563189153744,
+  "volume_A3": 106.98273767913845,
+  "cell_lengths_A": [
+    6.000371526465533,
+    6.000371526465531,
+    6.000371526465531
+  ],
+  "cell_angles_deg": [
+    47.36844425502528,
+    47.36844425502529,
+    47.3684442550253
+  ],
+  "spacegroup": {
+    "number": 148,
+    "international": "R-3"
+  },
+  "expected_spacegroup": 148,
+  "traj": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05A_host_supercells/resultados_step05A/hosts_relaxed/dolomita_PBEsol1400_relaxed.traj",
+  "cif": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05A_host_supercells/resultados_step05A/hosts_relaxed/dolomita_PBEsol1400_relaxed.cif"
+}
+
+>>> Validação 1600 eV: dolomita
+{
+  "step": "05A-host-validation",
+  "mineral": "dolomita",
+  "ecut_eV": 1600.0,
+  "kpts": [
+    5,
+    5,
+    5
+  ],
+  "energy_eV": -78.21888457054993,
+  "energy_eV_atom": -7.821888457054993,
+  "max_force_eV_A": 0.006433912733682462,
+  "stress_GPa": [
+    0.11899989794432088,
+    0.08928764974926943,
+    0.08527415927661523,
+    0.0045290280207654215,
+    0.010395801022164452,
+    0.015976801166002533
+  ],
+  "max_abs_stress_GPa": 0.11899989794432088,
+  "mpi_world_size": 4
+}
+
+>>> Busca de supercélulas HNF quase isotrópicas
+{
+  "step": "05A-supercell-design",
+  "policy": "Near-isotropic HNF supercells are selected by maximizing the shortest lattice translation, reducing periodic defect-image interaction without assuming diagonal replication.",
+  "hosts": {
+    "calcita": {
+      "primitive_natoms": 10,
+      "candidates": [
+        {
+          "determinant": 8,
+          "natoms": 80,
+          "matrix": [
+            [
+              1,
+              1,
+              0
+            ],
+            [
+              0,
+              2,
+              2
+            ],
+            [
+              0,
+              0,
+              4
+            ]
+          ],
+          "shortest_periodic_translation_A": 10.0041101447112,
+          "shortest_translation_coefficients": [
+            -2,
+            1,
+            0
+          ],
+          "cell_vector_lengths_A": [
+            11.641074648061984,
+            23.282149296123965,
+            25.34049517342783
+          ],
+          "basis_vector_anisotropy": 2.1768175138062995,
+          "traj": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05A_host_supercells/resultados_step05A/supercells/calcita_det8_80atoms.traj",
+          "cif": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05A_host_supercells/resultados_step05A/supercells/calcita_det8_80atoms.cif"
+        },
+        {
+          "determinant": 16,
+          "natoms": 160,
+          "matrix": [
+            [
+              1,
+              0,
+              13
+            ],
+            [
+              0,
+              1,
+              9
+            ],
+            [
+              0,
+              0,
+              16
+            ]
+          ],
+          "shortest_periodic_translation_A": 13.621884188889153,
+          "shortest_translation_coefficients": [
+            -2,
+            1,
+            1
+          ],
+          "cell_vector_lengths_A": [
+            86.83867978737032,
+            61.548309101013,
+            101.36198069371132
+          ],
+          "basis_vector_anisotropy": 1.6468686495896447,
+          "traj": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05A_host_supercells/resultados_step05A/supercells/calcita_det16_160atoms.traj",
+          "cif": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05A_host_supercells/resultados_step05A/supercells/calcita_det16_160atoms.cif"
+        },
+        {
+          "determinant": 24,
+          "natoms": 240,
+          "matrix": [
+            [
+              1,
+              0,
+              14
+            ],
+            [
+              0,
+              1,
+              20
+            ],
+            [
+              0,
+              0,
+              24
+            ]
+          ],
+          "shortest_periodic_translation_A": 17.639813814228905,
+          "shortest_translation_coefficients": [
+            -2,
+            -1,
+            2
+          ],
+          "cell_vector_lengths_A": [
+            93.16552883499415,
+            131.1434017573468,
+            152.04297104056695
+          ],
+          "basis_vector_anisotropy": 1.631965952877817,
+          "traj": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05A_host_supercells/resultados_step05A/supercells/calcita_det24_240atoms.traj",
+          "cif": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05A_host_supercells/resultados_step05A/supercells/calcita_det24_240atoms.cif"
+        }
+      ]
+    },
+    "dolomita": {
+      "primitive_natoms": 10,
+      "candidates": [
+        {
+          "determinant": 8,
+          "natoms": 80,
+          "matrix": [
+            [
+              2,
+              0,
+              0
+            ],
+            [
+              0,
+              2,
+              0
+            ],
+            [
+              0,
+              0,
+              2
+            ]
+          ],
+          "shortest_periodic_translation_A": 9.641291604070624,
+          "shortest_translation_coefficients": [
+            -1,
+            0,
+            1
+          ],
+          "cell_vector_lengths_A": [
+            12.000743052931066,
+            12.000743052931062,
+            12.000743052931062
+          ],
+          "basis_vector_anisotropy": 1.0000000000000002,
+          "traj": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05A_host_supercells/resultados_step05A/supercells/dolomita_det8_80atoms.traj",
+          "cif": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05A_host_supercells/resultados_step05A/supercells/dolomita_det8_80atoms.cif"
+        },
+        {
+          "determinant": 16,
+          "natoms": 160,
+          "matrix": [
+            [
+              1,
+              0,
+              13
+            ],
+            [
+              0,
+              1,
+              9
+            ],
+            [
+              0,
+              0,
+              16
+            ]
+          ],
+          "shortest_periodic_translation_A": 12.93276690314776,
+          "shortest_translation_coefficients": [
+            -2,
+            1,
+            1
+          ],
+          "cell_vector_lengths_A": [
+            82.18741825832186,
+            58.234853928070464,
+            96.0059444234485
+          ],
+          "basis_vector_anisotropy": 1.6485993858940813,
+          "traj": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05A_host_supercells/resultados_step05A/supercells/dolomita_det16_160atoms.traj",
+          "cif": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05A_host_supercells/resultados_step05A/supercells/dolomita_det16_160atoms.cif"
+        },
+        {
+          "determinant": 24,
+          "natoms": 240,
+          "matrix": [
+            [
+              1,
+              0,
+              14
+            ],
+            [
+              0,
+              1,
+              20
+            ],
+            [
+              0,
+              0,
+              24
+            ]
+          ],
+          "shortest_periodic_translation_A": 16.66021831199113,
+          "shortest_translation_coefficients": [
+            -2,
+            -1,
+            2
+          ],
+          "cell_vector_lengths_A": [
+            88.17971642749022,
+            124.14988384994186,
+            144.00891663517277
+          ],
+          "basis_vector_anisotropy": 1.6331297317517532,
+          "traj": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05A_host_supercells/resultados_step05A/supercells/dolomita_det24_240atoms.traj",
+          "cif": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05A_host_supercells/resultados_step05A/supercells/dolomita_det24_240atoms.cif"
+        }
+      ]
+    }
+  }
+}
+
+>>> Decisão
+{
+  "step": "05A",
+  "purpose": "Freeze a fresh PBEsol pristine-host baseline and design near-isotropic supercells before introducing U/Pb defects.",
+  "hosts": {
+    "calcita": {
+      "host_relaxation_passes": true,
+      "symmetry_passes": true,
+      "relaxation_passes": true,
+      "validation1600_passes": true,
+      "selected_supercells_for_PbCa_size_gate": [
+        {
+          "determinant": 8,
+          "natoms": 80,
+          "matrix": [
+            [
+              1,
+              1,
+              0
+            ],
+            [
+              0,
+              2,
+              2
+            ],
+            [
+              0,
+              0,
+              4
+            ]
+          ],
+          "shortest_periodic_translation_A": 10.0041101447112,
+          "shortest_translation_coefficients": [
+            -2,
+            1,
+            0
+          ],
+          "cell_vector_lengths_A": [
+            11.641074648061984,
+            23.282149296123965,
+            25.34049517342783
+          ],
+          "basis_vector_anisotropy": 2.1768175138062995,
+          "traj": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05A_host_supercells/resultados_step05A/supercells/calcita_det8_80atoms.traj",
+          "cif": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05A_host_supercells/resultados_step05A/supercells/calcita_det8_80atoms.cif"
+        },
+        {
+          "determinant": 16,
+          "natoms": 160,
+          "matrix": [
+            [
+              1,
+              0,
+              13
+            ],
+            [
+              0,
+              1,
+              9
+            ],
+            [
+              0,
+              0,
+              16
+            ]
+          ],
+          "shortest_periodic_translation_A": 13.621884188889153,
+          "shortest_translation_coefficients": [
+            -2,
+            1,
+            1
+          ],
+          "cell_vector_lengths_A": [
+            86.83867978737032,
+            61.548309101013,
+            101.36198069371132
+          ],
+          "basis_vector_anisotropy": 1.6468686495896447,
+          "traj": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05A_host_supercells/resultados_step05A/supercells/calcita_det16_160atoms.traj",
+          "cif": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05A_host_supercells/resultados_step05A/supercells/calcita_det16_160atoms.cif"
+        }
+      ],
+      "fallback_supercell": {
+        "determinant": 24,
+        "natoms": 240,
+        "matrix": [
+          [
+            1,
+            0,
+            14
+          ],
+          [
+            0,
+            1,
+            20
+          ],
+          [
+            0,
+            0,
+            24
+          ]
+        ],
+        "shortest_periodic_translation_A": 17.639813814228905,
+        "shortest_translation_coefficients": [
+          -2,
+          -1,
+          2
+        ],
+        "cell_vector_lengths_A": [
+          93.16552883499415,
+          131.1434017573468,
+          152.04297104056695
+        ],
+        "basis_vector_anisotropy": 1.631965952877817,
+        "traj": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05A_host_supercells/resultados_step05A/supercells/calcita_det24_240atoms.traj",
+        "cif": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05A_host_supercells/resultados_step05A/supercells/calcita_det24_240atoms.cif"
+      }
+    },
+    "dolomita": {
+      "host_relaxation_passes": true,
+      "symmetry_passes": true,
+      "relaxation_passes": true,
+      "validation1600_passes": true,
+      "selected_supercells_for_PbCa_size_gate": [
+        {
+          "determinant": 8,
+          "natoms": 80,
+          "matrix": [
+            [
+              2,
+              0,
+              0
+            ],
+            [
+              0,
+              2,
+              0
+            ],
+            [
+              0,
+              0,
+              2
+            ]
+          ],
+          "shortest_periodic_translation_A": 9.641291604070624,
+          "shortest_translation_coefficients": [
+            -1,
+            0,
+            1
+          ],
+          "cell_vector_lengths_A": [
+            12.000743052931066,
+            12.000743052931062,
+            12.000743052931062
+          ],
+          "basis_vector_anisotropy": 1.0000000000000002,
+          "traj": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05A_host_supercells/resultados_step05A/supercells/dolomita_det8_80atoms.traj",
+          "cif": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05A_host_supercells/resultados_step05A/supercells/dolomita_det8_80atoms.cif"
+        },
+        {
+          "determinant": 16,
+          "natoms": 160,
+          "matrix": [
+            [
+              1,
+              0,
+              13
+            ],
+            [
+              0,
+              1,
+              9
+            ],
+            [
+              0,
+              0,
+              16
+            ]
+          ],
+          "shortest_periodic_translation_A": 12.93276690314776,
+          "shortest_translation_coefficients": [
+            -2,
+            1,
+            1
+          ],
+          "cell_vector_lengths_A": [
+            82.18741825832186,
+            58.234853928070464,
+            96.0059444234485
+          ],
+          "basis_vector_anisotropy": 1.6485993858940813,
+          "traj": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05A_host_supercells/resultados_step05A/supercells/dolomita_det16_160atoms.traj",
+          "cif": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05A_host_supercells/resultados_step05A/supercells/dolomita_det16_160atoms.cif"
+        }
+      ],
+      "fallback_supercell": {
+        "determinant": 24,
+        "natoms": 240,
+        "matrix": [
+          [
+            1,
+            0,
+            14
+          ],
+          [
+            0,
+            1,
+            20
+          ],
+          [
+            0,
+            0,
+            24
+          ]
+        ],
+        "shortest_periodic_translation_A": 16.66021831199113,
+        "shortest_translation_coefficients": [
+          -2,
+          -1,
+          2
+        ],
+        "cell_vector_lengths_A": [
+          88.17971642749022,
+          124.14988384994186,
+          144.00891663517277
+        ],
+        "basis_vector_anisotropy": 1.6331297317517532,
+        "traj": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05A_host_supercells/resultados_step05A/supercells/dolomita_det24_240atoms.traj",
+        "cif": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05A_host_supercells/resultados_step05A/supercells/dolomita_det24_240atoms.cif"
+      }
+    }
+  },
+  "step05A_passes": true,
+  "production_authorization_from_step04": true,
+  "defect_production_started": false,
+  "next_gate": "Step05B: neutral Pb2+->Ca2+ substitution finite-size gate on the two selected supercells for calcite and dolomite. If the raw substitution-energy difference is not converged, use the fallback supercell. U substitutions and charged/compensated defects remain blocked until that finite-size gate is resolved."
+}
+==============================================================================
+STEP 05A FINALIZADO
+==============================================================================

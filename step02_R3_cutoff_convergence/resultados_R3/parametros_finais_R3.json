@@ -1,0 +1,39 @@
+{
+  "xc": "PBE",
+  "paw_datasets": "PBE oficiais GPAW",
+  "kgrid_primitiva": [
+    5,
+    5,
+    5
+  ],
+  "pulay_stress": "dedecut=estimate",
+  "energy_tolerance_meV_atom": 1.0,
+  "stress_tolerance_GPa": 0.05,
+  "required_consecutive_passes": 2,
+  "all_systems_converged": false,
+  "common_cutoff_eV": null,
+  "individual_recommendations": [
+    {
+      "converged": false,
+      "ecut_recomendado_eV": "",
+      "maior_ecut_calculado_eV": 1600,
+      "criterio_energia_meV_atom": 1.0,
+      "criterio_stress_GPa": 0.05,
+      "intervalos_consecutivos_exigidos": 2,
+      "mineral": "calcita",
+      "kgrid": 5,
+      "xc": "PBE"
+    },
+    {
+      "converged": false,
+      "ecut_recomendado_eV": "",
+      "maior_ecut_calculado_eV": 1600,
+      "criterio_energia_meV_atom": 1.0,
+      "criterio_stress_GPa": 0.05,
+      "intervalos_consecutivos_exigidos": 2,
+      "mineral": "dolomita",
+      "kgrid": 5,
+      "xc": "PBE"
+    }
+  ]
+}

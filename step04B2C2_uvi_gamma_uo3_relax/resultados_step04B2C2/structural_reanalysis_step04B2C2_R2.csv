@@ -1,0 +1,8 @@
+metric,value,passes
+Fddd at symprec=0.01,True,True
+I41/amd at loose symprec,True,True
+pseudotetragonal basal error (%),0.4944467520210782,True
+pseudotetragonal long-axis error (%),0.7961227864454483,True
+volume/f.u. error (%),1.7969580067666913,True
+shortest U-O error (%),0.9426233548756262,True
+U-O6 RMS relative error (%),1.199457230982821,True

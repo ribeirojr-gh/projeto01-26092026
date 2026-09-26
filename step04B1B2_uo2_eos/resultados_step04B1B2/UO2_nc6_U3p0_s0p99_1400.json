@@ -1,0 +1,32 @@
+{
+  "status": "failed_preconvergence",
+  "step": "04B1B2",
+  "system": "UO2",
+  "dataset": "nc6",
+  "Ueff_eV": 3.0,
+  "ecut_eV": 1400.0,
+  "a_A": 5.415894,
+  "attempts": [
+    {
+      "stage": "preconvergence",
+      "attempt": 1,
+      "strategy": "pre_0p10",
+      "smearing_eV": 0.1,
+      "maxiter": 700,
+      "scf_iterations_reached": 701,
+      "txt": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04B1B2_uo2_eos/logs/UO2_nc6_U3p0_s0p99_1400_attempt1_pre_0p10.txt",
+      "error": "KohnShamConvergenceError('Did not converge!  See text output for help.')"
+    },
+    {
+      "stage": "preconvergence",
+      "attempt": 2,
+      "strategy": "pre_0p15_damped",
+      "smearing_eV": 0.15,
+      "maxiter": 1000,
+      "scf_iterations_reached": 1001,
+      "txt": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04B1B2_uo2_eos/logs/UO2_nc6_U3p0_s0p99_1400_attempt2_pre_0p15_damped.txt",
+      "error": "KohnShamConvergenceError('Did not converge!  See text output for help.')"
+    }
+  ],
+  "mpi_world_size": 4
+}

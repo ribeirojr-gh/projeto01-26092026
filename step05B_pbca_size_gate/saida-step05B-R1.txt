@@ -1,0 +1,142 @@
+==============================================================================
+STEP 05B-R1 — Pb_Ca MEMORY-SAFE SIZE GATE
+==============================================================================
+Data: ter 22 set 2026 08:58:22 -03
+Host: alienware
+Projeto: /home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project
+
+>>> Preflight de k-points (sem DFT)
+{
+  "step": "05B-R1-preflight",
+  "reason": "Diagnose the k-point load before DFT after the original 80-atom calcite job was killed with SIGKILL.",
+  "cases": {
+    "calcita": {
+      "80": {
+        "original_24A": {
+          "min_distance_A": 24.0,
+          "mesh": [
+            1,
+            3,
+            5
+          ],
+          "reducible_kpoints": 15
+        },
+        "R1_final_16A": {
+          "min_distance_A": 16.0,
+          "mesh": [
+            1,
+            2,
+            3
+          ],
+          "reducible_kpoints": 6
+        }
+      },
+      "160": {
+        "original_24A": {
+          "min_distance_A": 24.0,
+          "mesh": [
+            4,
+            1,
+            2
+          ],
+          "reducible_kpoints": 8
+        },
+        "R1_final_16A": {
+          "min_distance_A": 16.0,
+          "mesh": [
+            2,
+            1,
+            2
+          ],
+          "reducible_kpoints": 4
+        }
+      },
+      "240": {
+        "original_24A": {
+          "min_distance_A": 24.0,
+          "mesh": [
+            3,
+            2,
+            1
+          ],
+          "reducible_kpoints": 6
+        },
+        "R1_final_16A": {
+          "min_distance_A": 16.0,
+          "mesh": [
+            1,
+            1,
+            2
+          ],
+          "reducible_kpoints": 2
+        }
+      }
+    },
+    "dolomita": {
+      "80": {
+        "original_24A": {
+          "min_distance_A": 24.0,
+          "mesh": [
+            1,
+            5,
+            3
+          ],
+          "reducible_kpoints": 15
+        },
+        "R1_final_16A": {
+          "min_distance_A": 16.0,
+          "mesh": [
+            1,
+            3,
+            2
+          ],
+          "reducible_kpoints": 6
+        }
+      },
+      "160": {
+        "original_24A": {
+          "min_distance_A": 24.0,
+          "mesh": [
+            2,
+            2,
+            2
+          ],
+          "reducible_kpoints": 8
+        },
+        "R1_final_16A": {
+          "min_distance_A": 16.0,
+          "mesh": [
+            1,
+            1,
+            3
+          ],
+          "reducible_kpoints": 3
+        }
+      },
+      "240": {
+        "original_24A": {
+          "min_distance_A": 24.0,
+          "mesh": [
+            3,
+            2,
+            1
+          ],
+          "reducible_kpoints": 6
+        },
+        "R1_final_16A": {
+          "min_distance_A": 16.0,
+          "mesh": [
+            1,
+            1,
+            2
+          ],
+          "reducible_kpoints": 2
+        }
+      }
+    }
+  }
+}
+>>> Reutilizando calcita 80
+
+>>> calcita: Pb_Ca 160 átomos
+[05B-R1] calcita_160: mesh original 24A=(4, 1, 2) (Nk=8); mesh final 16A=(2, 1, 2) (Nk=4)

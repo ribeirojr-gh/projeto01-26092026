@@ -1,0 +1,47 @@
+{
+  "xc": "PBE",
+  "kgrid_primitiva": [
+    5,
+    5,
+    5
+  ],
+  "candidate_cutoff_eV": 1400,
+  "upper_validation_cutoff_eV": 1600,
+  "all_systems_pass": true,
+  "criteria": {
+    "max_lattice_rel_diff_pct": 0.1,
+    "max_volume_rel_diff_pct": 0.2,
+    "max_bond_mean_diff_A": 0.005
+  },
+  "individual": [
+    {
+      "mineral": "calcita",
+      "ecut_candidato_eV": 1400,
+      "ecut_referencia_superior_eV": 1600,
+      "max_lattice_rel_diff_pct": 0.028730824899774104,
+      "volume_rel_diff_pct": 0.0878986534048202,
+      "max_angle_diff_deg": 0.0005937550500902944,
+      "max_bond_mean_diff_A": 0.0008737361074122596,
+      "delta_energy_meV_atom": 0.04845825971511175,
+      "criterion_lattice_pct": 0.1,
+      "criterion_volume_pct": 0.2,
+      "criterion_bond_A": 0.005,
+      "passes": true
+    },
+    {
+      "mineral": "dolomita",
+      "ecut_candidato_eV": 1400,
+      "ecut_referencia_superior_eV": 1600,
+      "max_lattice_rel_diff_pct": 0.09328780963779429,
+      "volume_rel_diff_pct": 0.13492095050610453,
+      "max_angle_diff_deg": 0.04177424240317862,
+      "max_bond_mean_diff_A": 0.0010850273919769116,
+      "delta_energy_meV_atom": 0.05143060757273332,
+      "criterion_lattice_pct": 0.1,
+      "criterion_volume_pct": 0.2,
+      "criterion_bond_A": 0.005,
+      "passes": true
+    }
+  ],
+  "decision": "ADOTAR_1400_eV"
+}

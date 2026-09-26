@@ -1,0 +1,53 @@
+{
+  "step": "04A-R8",
+  "matrix_reference_from_step03": {
+    "xc": "PBEsol",
+    "ecut_eV": 1400,
+    "kgrid_primitive": [
+      5,
+      5,
+      5
+    ]
+  },
+  "U": {
+    "selected_candidate_id": "U14_poly6",
+    "pseudization": "poly,6",
+    "internal_atomic_gate_PBE": true,
+    "internal_atomic_gate_PBEsol": true,
+    "status": "CANDIDATE_ONLY_REQUIRES_COMPOUND_VALIDATION"
+  },
+  "Pb": {
+    "official_PBE_available": true,
+    "generated_PBE_eos_gate": {
+      "max_relative_curve_difference_meV_atom": 2.6641354452294763e-05,
+      "criterion_max_relative_curve_difference_meV_atom": 0.2,
+      "energy_offset_span_meV_atom": 4.300160716397272e-05,
+      "criterion_energy_offset_span_meV_atom": 0.2,
+      "max_stress_component_difference_GPa": 0.0009394247768583774,
+      "criterion_max_stress_component_difference_GPa": 0.01,
+      "a0_relative_difference_percent": 2.752185216070553e-07,
+      "criterion_a0_relative_difference_percent": 0.05,
+      "B0_relative_difference_percent": 1.5131023886387349e-05,
+      "criterion_B0_relative_difference_percent": 1.0,
+      "passes": true
+    },
+    "official_PBE_fit": {
+      "v0_A3_atom": 32.378487959418415,
+      "a0_A": 5.059475746453877,
+      "e0_eV_atom": -3.7216606463803044,
+      "B0_GPa": 36.551866073386726
+    },
+    "generated_PBE_fit": {
+      "v0_A3_atom": 32.3784882267532,
+      "a0_A": 5.059475760378492,
+      "e0_eV_atom": -3.718799101463815,
+      "B0_GPa": 36.55186054271514
+    },
+    "generated_PBEsol_setup_exists_and_executes": true,
+    "status": "CANDIDATE_ONLY_REQUIRES_COMPOUND_VALIDATION"
+  },
+  "step04A_passes": true,
+  "production_authorization": false,
+  "next_gate": "Step04B: compound-level validation for Pb(II), U(IV) and U(VI). For U, compare at least U14_poly6 with U14_nc6 in reference compounds before fixing the production dataset.",
+  "warning": "Step04A validates atomic/internal quality and Pb generator consistency only. It does not yet validate chemistry, oxidation-state energetics, DFT+U, SOC, or carbonate-defect transferability."
+}

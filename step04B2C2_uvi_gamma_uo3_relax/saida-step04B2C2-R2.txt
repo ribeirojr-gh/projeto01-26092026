@@ -1,0 +1,24 @@
+==============================================================================
+STEP 04B2C2-R2 — REANÁLISE ESTRUTURAL SEM NOVO DFT
+==============================================================================
+Data: seg 14 set 2026 08:26:01 -03
+Host: alienware
+Projeto: /home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project
+
+================================================================================
+STEP 04B2C2-R2 — REANÁLISE ESTRUTURAL
+================================================================================
+Fddd @ 0.01 Å                  : True
+I41/amd em tolerância frouxa  : True
+Erro basal pseudotetragonal   : 0.4944 %
+Erro eixo longo               : 0.7961 %
+Erro volume/f.u.              : 1.7970 %
+Erro U-O mínimo               : 0.9426 %
+RMS perfil U-O6               : 1.1995 %
+Gate estrutural corrigido     : PASS
+Gate k-points                 : PASS
+Gate cutoff                   : PASS
+Gate SOC                      : PASS
+STEP04B2C2-R2                 : APROVADO
+PRODUCTION AUTHORIZATION      : True
+================================================================================

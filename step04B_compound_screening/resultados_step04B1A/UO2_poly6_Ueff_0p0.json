@@ -1,0 +1,43 @@
+{
+  "status": "converged",
+  "system": "UO2",
+  "structure_file": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04B_compound_screening/estruturas/UO2_fluorite_exp.traj",
+  "xc": "PBEsol",
+  "ecut_eV": 1400.0,
+  "kpts": [
+    3,
+    3,
+    3
+  ],
+  "mpi_world_size": 4,
+  "U_dataset": "poly6",
+  "Ueff_eV": 0.0,
+  "scf_strategy": "mixersum_screening",
+  "smearing_eV": 0.15,
+  "maxiter_allowed": 500,
+  "scf_iterations": 75,
+  "energy_eV": -121.36854762356324,
+  "energy_eV_atom": -10.114045635296938,
+  "volume_A3": 163.72118652781597,
+  "max_force_eV_A": 0.0004288255806420634,
+  "stress_GPa": [
+    11.23270656363772,
+    11.232930077802386,
+    10.795585798616745,
+    -1.1334902800855646e-10,
+    1.3774395387761356e-10,
+    0.0006892971627516089
+  ],
+  "max_abs_stress_GPa": 11.232930077802386,
+  "total_magnetic_moment_muB": -3.5464631969441687e-06,
+  "U_local_moments_muB": [
+    1.4645573233147942,
+    -1.4645605118297498,
+    -1.4645605012145646,
+    1.4645573356797823
+  ],
+  "U_abs_mean_moment_muB": 1.4645589180097227,
+  "band_gap_eV": null,
+  "band_gap_error": "ValueError('There are two Fermi-levels!')",
+  "failed_attempts_before_success": []
+}

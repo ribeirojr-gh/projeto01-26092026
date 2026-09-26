@@ -1,0 +1,79 @@
+==============================================================================
+STEP 02-R2 — RETOMADA GPAW COM DATASETS PAW PBE OFICIAIS
+==============================================================================
+Data: Wed Jul 22 12:42:53 -03 2026
+Host: AlienA51
+Step 02A detectado: /home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/step02_pristine_benchmark/resultados_mlip/resumo_mlip.csv
+Step 02A NÃO será reexecutado.
+XC da convergência numérica: PBE
+PAW datasets: PBE oficiais do GPAW
+
+>>> STEP 02B-R2 — GPAW/PBE (4 MPI)
+[PAW] Ca.PBE: OK -> /home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw_data/setups/Ca.PBE.gz
+[PAW] C.PBE: OK -> /home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw_data/setups/C.PBE.gz
+[PAW] O.PBE: OK -> /home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw_data/setups/O.PBE.gz
+[PAW] Mg.PBE: OK -> /home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw_data/setups/Mg.PBE.gz
+================================================================================
+STEP 02B-R2 — CONVERGÊNCIA GPAW/PBE
+================================================================================
+MPI world size: 4
+Script dir: /home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/step02_pristine_benchmark
+Cutoffs: [400, 500, 600, 700] eV
+k fixo no scan de cutoff: 5
+k-grids: [3, 4, 5, 6, 7]
+cutoff fixo no scan k: 600 eV
+Critérios de recomendação: 1.0 meV/átomo e 0.05 GPa
+Checkpoint existente: 0 pontos
+================================================================================
+[calcita] ecut: ecut=400 eV | k=5x5x5 | XC=PBE
+[calcita] ecut: ecut=500 eV | k=5x5x5 | XC=PBE
+[calcita] ecut: ecut=600 eV | k=5x5x5 | XC=PBE
+[calcita] ecut: ecut=700 eV | k=5x5x5 | XC=PBE
+[calcita] kgrid: ecut=600 eV | k=3x3x3 | XC=PBE
+[calcita] kgrid: ecut=600 eV | k=4x4x4 | XC=PBE
+[calcita] kgrid: reutilizando ecut=600 eV, k=5x5x5
+[calcita] kgrid: ecut=600 eV | k=6x6x6 | XC=PBE
+[calcita] kgrid: ecut=600 eV | k=7x7x7 | XC=PBE
+[dolomita] ecut: ecut=400 eV | k=5x5x5 | XC=PBE
+[dolomita] ecut: ecut=500 eV | k=5x5x5 | XC=PBE
+[dolomita] ecut: ecut=600 eV | k=5x5x5 | XC=PBE
+[dolomita] ecut: ecut=700 eV | k=5x5x5 | XC=PBE
+[dolomita] kgrid: ecut=600 eV | k=3x3x3 | XC=PBE
+[dolomita] kgrid: ecut=600 eV | k=4x4x4 | XC=PBE
+[dolomita] kgrid: reutilizando ecut=600 eV, k=5x5x5
+[dolomita] kgrid: ecut=600 eV | k=6x6x6 | XC=PBE
+[dolomita] kgrid: ecut=600 eV | k=7x7x7 | XC=PBE
+
+STEP 02B-R2 concluído.
+Convergência: /home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/step02_pristine_benchmark/resultados_gpaw/convergencia_gpaw.csv
+Recomendações: /home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/step02_pristine_benchmark/resultados_gpaw/parametros_recomendados_gpaw.csv
+Checkpoint: /home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/step02_pristine_benchmark/resultados_gpaw/convergencia_gpaw_checkpoint.csv
+
+>>> STEP 02C — Consolidação
+STEP 02 — RESUMO PRELIMINAR
+========================================================================
+
+1. MLIP × estrutura experimental
+ mineral       metodo                             arquivo      a_A      b_A      c_A  alpha_deg  beta_deg  gamma_deg  volume_A3  densidade_g_cm3  delta_volume_pct
+ calcita Experimental  calcita_experimental_primitiva.cif 6.360000 6.360000 6.360000  46.100000 46.100000  46.100000 121.856656         2.727766          0.000000
+ calcita       CHGNet            calcita_chgnet_relax.cif 6.431779 6.431779 6.431779  46.347943 46.347942  46.347943 127.146815              NaN          4.341297
+ calcita         MACE              calcita_mace_relax.cif 6.420640 6.420640 6.420640  46.273071 46.273071  46.273071 126.151543              NaN          3.524541
+dolomita Experimental dolomita_experimental_primitiva.cif 6.018998 6.018998 6.018998  47.081600 47.081600  47.081600 106.919033         2.863894          0.000000
+dolomita       CHGNet           dolomita_chgnet_relax.cif 6.081969 6.081969 6.081969  47.181418 47.181422  47.181414 110.691580              NaN          3.528415
+dolomita         MACE             dolomita_mace_relax.cif 6.079024 6.079024 6.079025  47.162174 47.162177  47.162171 110.457439              NaN          3.309426
+
+2. Parâmetros GPAW sugeridos automaticamente
+ mineral  xc  ecut_recomendado_eV  kgrid_recomendado  criterio_energia_meV_atom  criterio_stress_GPa                                                                 observacao
+ calcita PBE                  700                  3                        1.0                 0.05 Recomendação automática preliminar; revisar tabela antes da relaxação DFT.
+dolomita PBE                  700                  4                        1.0                 0.05 Recomendação automática preliminar; revisar tabela antes da relaxação DFT.
+
+IMPORTANTE:
+Os parâmetros GPAW são sugestões automáticas baseadas nos critérios
+de energia e stress definidos no config_step02.py. A relaxação DFT
+não é iniciada nesta etapa; os resultados devem ser revisados antes.
+
+Resumo salvo em: /home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/step02_pristine_benchmark/resumo_step02/resumo_step02.txt
+
+==============================================================================
+STEP 02-R2 CONCLUÍDO
+==============================================================================

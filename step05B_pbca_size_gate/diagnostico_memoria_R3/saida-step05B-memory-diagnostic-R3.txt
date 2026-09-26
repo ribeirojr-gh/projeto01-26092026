@@ -1,0 +1,66 @@
+======================================================================
+STEP 05B - DIAGNÓSTICO DE MEMÓRIA GPAW R3
+======================================================================
+Data: qua 23 set 2026 16:14:34 -03
+Host: alienware
+Projeto: /home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project
+
+>>> MEMÓRIA DO SISTEMA
+               total       usada       livre    compart.  buff/cache  disponível
+Mem.:           30Gi       3,9Gi        26Gi       864Mi       2,1Gi        26Gi
+Swap:           15Gi       1,4Gi        13Gi
+
+>>> CGROUP
+
+>>> EVENTOS OOM DO KERNEL (se acessíveis)
+set 14 14:42:33 alienware kernel: python invoked oom-killer: gfp_mask=0x140cca(GFP_HIGHUSER_MOVABLE|__GFP_COMP), order=0, oom_score_adj=200
+set 14 14:42:33 alienware kernel:  oom_kill_process+0xd7/0x250
+set 14 14:42:33 alienware kernel:  ? oom_evaluate_task+0x105/0x200
+set 14 14:42:33 alienware kernel:  __alloc_pages_may_oom+0x109/0x1d0
+set 14 14:42:33 alienware kernel: Memory cgroup min protection 0kB -- low protection 0kB
+set 14 14:42:33 alienware kernel: [  pid  ]   uid  tgid total_vm      rss rss_anon rss_file rss_shmem pgtables_bytes swapents oom_score_adj name
+set 14 14:42:33 alienware kernel: oom-kill:constraint=CONSTRAINT_NONE,nodemask=(null),cpuset=/,mems_allowed=0,global_oom,task_memcg=/user.slice/user-1000.slice/user@1000.service/app.slice/app-org.gnome.Terminal.slice/vte-spawn-954c3a46-d76e-4731-afa8-7d0b1efe42ee.scope,task=python,pid=63464,uid=1000
+set 14 14:42:33 alienware kernel: Out of memory: Killed process 63464 (python) total-vm:25747264kB, anon-rss:9085244kB, file-rss:16kB, shmem-rss:520kB, UID:1000 pgtables:23312kB oom_score_adj:200
+set 21 12:41:16 alienware kernel: python invoked oom-killer: gfp_mask=0x140dca(GFP_HIGHUSER_MOVABLE|__GFP_ZERO|__GFP_COMP), order=0, oom_score_adj=200
+set 21 12:41:16 alienware kernel:  oom_kill_process+0xd7/0x250
+set 21 12:41:16 alienware kernel:  ? oom_evaluate_task+0x105/0x200
+set 21 12:41:16 alienware kernel:  __alloc_pages_may_oom+0x109/0x1d0
+set 21 12:41:16 alienware kernel: Memory cgroup min protection 0kB -- low protection 0kB
+set 21 12:41:16 alienware kernel: [  pid  ]   uid  tgid total_vm      rss rss_anon rss_file rss_shmem pgtables_bytes swapents oom_score_adj name
+set 21 12:41:16 alienware kernel: oom-kill:constraint=CONSTRAINT_NONE,nodemask=(null),cpuset=/,mems_allowed=0,global_oom,task_memcg=/user.slice/user-1000.slice/user@1000.service/app.slice/app-org.gnome.Terminal.slice/vte-spawn-4ac94258-0e66-489c-ad3e-cd5f59e131be.scope,task=python,pid=168889,uid=1000
+set 21 12:41:16 alienware kernel: Out of memory: Killed process 168889 (python) total-vm:32752236kB, anon-rss:12283668kB, file-rss:12kB, shmem-rss:60kB, UID:1000 pgtables:24944kB oom_score_adj:200
+set 21 17:23:30 alienware kernel: python invoked oom-killer: gfp_mask=0x140cca(GFP_HIGHUSER_MOVABLE|__GFP_COMP), order=0, oom_score_adj=200
+set 21 17:23:30 alienware kernel:  oom_kill_process+0xd7/0x250
+set 21 17:23:30 alienware kernel:  ? oom_evaluate_task+0x105/0x200
+set 21 17:23:30 alienware kernel:  __alloc_pages_may_oom+0x109/0x1d0
+set 21 17:23:30 alienware kernel: Memory cgroup min protection 0kB -- low protection 0kB
+set 21 17:23:30 alienware kernel: [  pid  ]   uid  tgid total_vm      rss rss_anon rss_file rss_shmem pgtables_bytes swapents oom_score_adj name
+set 21 17:23:30 alienware kernel: oom-kill:constraint=CONSTRAINT_NONE,nodemask=(null),cpuset=/,mems_allowed=0,global_oom,task_memcg=/user.slice/user-1000.slice/user@1000.service/app.slice/app-org.gnome.Terminal.slice/vte-spawn-4ac94258-0e66-489c-ad3e-cd5f59e131be.scope,task=python,pid=172689,uid=1000
+set 21 17:23:30 alienware kernel: Out of memory: Killed process 172689 (python) total-vm:26175028kB, anon-rss:8527492kB, file-rss:116kB, shmem-rss:32kB, UID:1000 pgtables:22608kB oom_score_adj:200
+set 23 12:49:51 alienware kernel: python invoked oom-killer: gfp_mask=0x140cca(GFP_HIGHUSER_MOVABLE|__GFP_COMP), order=0, oom_score_adj=200
+set 23 12:49:51 alienware kernel:  oom_kill_process+0xd7/0x250
+set 23 12:49:51 alienware kernel:  ? oom_evaluate_task+0x105/0x200
+set 23 12:49:51 alienware kernel:  __alloc_pages_may_oom+0x109/0x1d0
+set 23 12:49:51 alienware kernel: Memory cgroup min protection 0kB -- low protection 0kB
+set 23 12:49:51 alienware kernel: [  pid  ]   uid  tgid total_vm      rss rss_anon rss_file rss_shmem pgtables_bytes swapents oom_score_adj name
+set 23 12:49:51 alienware kernel: oom-kill:constraint=CONSTRAINT_NONE,nodemask=(null),cpuset=/,mems_allowed=0,global_oom,task_memcg=/user.slice/user-1000.slice/user@1000.service/app.slice/app-org.gnome.Terminal.slice/vte-spawn-4ac94258-0e66-489c-ad3e-cd5f59e131be.scope,task=python,pid=198200,uid=1000
+set 23 12:49:51 alienware kernel: Out of memory: Killed process 198200 (python) total-vm:25767672kB, anon-rss:7498860kB, file-rss:12kB, shmem-rss:1180kB, UID:1000 pgtables:22036kB oom_score_adj:200
+
+>>> DRY-RUN: N=4, mode=auto
+[STATUS] N=4 mode=auto: 0
+
+>>> DRY-RUN: N=4, mode=domain
+[STATUS] N=4 mode=domain: 0
+
+>>> DRY-RUN: N=4, mode=hybrid
+[STATUS] N=4 mode=hybrid: 0
+
+>>> DRY-RUN: N=8, mode=auto
+[STATUS] N=8 mode=auto: 0
+
+>>> DRY-RUN: N=8, mode=domain
+[STATUS] N=8 mode=domain: 0
+
+>>> DRY-RUN: N=8, mode=hybrid
+[STATUS] N=8 mode=hybrid: 0
+

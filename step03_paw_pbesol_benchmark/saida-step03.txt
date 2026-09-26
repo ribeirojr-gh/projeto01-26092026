@@ -1,0 +1,68 @@
+==============================================================================
+STEP 03 — VALIDAÇÃO PAW + BENCHMARK PBE/PBEsol
+==============================================================================
+Data: sex 31 jul 2026 13:18:35 -03
+Host: alienware
+OMP_NUM_THREADS=1
+
+>>> STEP 03A — Geração dos PAWs PBE/PBEsol
+[PAW] Ca.PBE: já existe; reutilizando.
+[PAW] Mg.PBE: já existe; reutilizando.
+[PAW] C.PBE: já existe; reutilizando.
+[PAW] O.PBE: já existe; reutilizando.
+[PAW] Ca.PBEsol: já existe; reutilizando.
+[PAW] Mg.PBEsol: já existe; reutilizando.
+[PAW] C.PBEsol: já existe; reutilizando.
+[PAW] O.PBEsol: já existe; reutilizando.
+
+============================================================
+GERAÇÃO PAW CONCLUÍDA
+PBE:    /home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step03_paw_pbesol_benchmark/paw_generated/PBE
+PBEsol: /home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step03_paw_pbesol_benchmark/paw_generated/PBEsol
+Hashes: /home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step03_paw_pbesol_benchmark/paw_generated/paw_sha256.csv
+============================================================
+
+>>> STEP 03B — Validação PBE gerado + benchmark PBEsol
+[alienware][[16974,1],3][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[16974,1],3][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[16974,1],3][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[16974,1],2][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[16974,1],2][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[16974,1],2][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[16974,1],1][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[16974,1],1][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[16974,1],1][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[16974,1],0][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[16974,1],0][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[16974,1],0][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+========================================================================================
+STEP 03 — VALIDAÇÃO PAW + BENCHMARK PBE/PBEsol
+========================================================================================
+MPI world size: 4
+PBE gerado: /home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step03_paw_pbesol_benchmark/paw_generated/PBE
+PBEsol gerado: /home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step03_paw_pbesol_benchmark/paw_generated/PBEsol
+ecut principal: 1400 eV
+ecut de validação: 1600 eV
+k-grid: 5x5x5
+========================================================================================
+[calcita] PBE_generated_1400: XC=PBE, ecut=1400 eV, k=5x5x5
+[GATE PBE] calcita: APROVADO
+[dolomita] PBE_generated_1400: XC=PBE, ecut=1400 eV, k=5x5x5
+[GATE PBE] dolomita: APROVADO
+[calcita] PBEsol_generated_1400: XC=PBEsol, ecut=1400 eV, k=5x5x5
+[calcita] PBEsol_generated_1600: XC=PBEsol, ecut=1600 eV, k=5x5x5
+[CONV PBEsol] calcita: 1400 vs 1600 -> APROVADO
+[dolomita] PBEsol_generated_1400: XC=PBEsol, ecut=1400 eV, k=5x5x5
+[dolomita] PBEsol_generated_1600: XC=PBEsol, ecut=1600 eV, k=5x5x5
+[CONV PBEsol] dolomita: 1400 vs 1600 -> APROVADO
+
+========================================================================================
+STEP 03 CONCLUÍDO
+PAW PBE gerado: APROVADO
+PBEsol 1400 vs 1600: APROVADO
+Sugestão preliminar: PBEsol
+========================================================================================
+
+==============================================================================
+STEP 03 FINALIZADO
+==============================================================================

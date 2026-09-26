@@ -1,0 +1,35 @@
+{
+  "status": "converged",
+  "step": "04B2C1",
+  "case": "U0_NM_1600_k222",
+  "system": "gamma-UO3-Fddd",
+  "formal_U_oxidation_state": 6,
+  "dataset": "U14_nc6",
+  "xc": "PBEsol",
+  "Ueff_eV": 0.0,
+  "spin_mode": "nm",
+  "ecut_eV": 1600.0,
+  "kpts": [
+    2,
+    2,
+    2
+  ],
+  "natoms": 32,
+  "energy_eV": -304.6070724408768,
+  "energy_eV_atom": -9.5189710137774,
+  "band_gap_eV": 1.916680805723347,
+  "band_gap_error": null,
+  "max_force_eV_A": 0.6891460185903697,
+  "stress_GPa": [
+    -0.34593567968183336,
+    -0.4227163338090621,
+    -0.4730827849313938,
+    0.2447607509852298,
+    -0.16635549145235104,
+    0.1504848619605817
+  ],
+  "hydrostatic_stress_GPa": -0.41391159947409645,
+  "max_abs_stress_GPa": 0.4730827849313938,
+  "mpi_world_size": 4,
+  "gpw_file": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04B2C1_uvi_gamma_uo3_screen/resultados_step04B2C1/gpw/gammaUO3_U0_1600_k222.gpw"
+}

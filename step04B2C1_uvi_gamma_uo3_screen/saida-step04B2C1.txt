@@ -1,0 +1,500 @@
+==============================================================================
+STEP 04B2C1 — U(VI) / gamma-UO3 Fddd (293 K)
+==============================================================================
+Data: sex 21 ago 2026 16:05:44 -03
+Host: alienware
+Projeto: /home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project
+
+>>> Preparação e validação da estrutura COD 1527742
+/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/.envs/structures/lib/python3.11/site-packages/pymatgen/io/cif.py:1821: UserWarning: Site labels are not unique, which is not compliant with the CIF spec (https://www.iucr.org/__data/iucr/cifdic_html/1/cif_core.dic/Iatom_site_label.html):`['U2', 'U2', 'U2', 'U2', 'U2', 'U2', 'U2', 'U2', 'U2', 'U2', 'U2', 'U2', 'U2', 'U2', 'U2', 'U2', 'U1', 'U1', 'U1', 'U1', 'U1', 'U1', 'U1', 'U1', 'U1', 'U1', 'U1', 'U1', 'U1', 'U1', 'U1', 'U1', 'O3', 'O3', 'O3', 'O3', 'O3', 'O3', 'O3', 'O3', 'O3', 'O3', 'O3', 'O3', 'O3', 'O3', 'O3', 'O3', 'O3', 'O3', 'O3', 'O3', 'O3', 'O3', 'O3', 'O3', 'O3', 'O3', 'O3', 'O3', 'O3', 'O3', 'O3', 'O3', 'O2', 'O2', 'O2', 'O2', 'O2', 'O2', 'O2', 'O2', 'O2', 'O2', 'O2', 'O2', 'O2', 'O2', 'O2', 'O2', 'O2', 'O2', 'O2', 'O2', 'O2', 'O2', 'O2', 'O2', 'O2', 'O2', 'O2', 'O2', 'O2', 'O2', 'O2', 'O2', 'O1', 'O1', 'O1', 'O1', 'O1', 'O1', 'O1', 'O1', 'O1', 'O1', 'O1', 'O1', 'O1', 'O1', 'O1', 'O1', 'O1', 'O1', 'O1', 'O1', 'O1', 'O1', 'O1', 'O1', 'O1', 'O1', 'O1', 'O1', 'O1', 'O1', 'O1', 'O1']`.
+  return str(CifWriter(structure, **kwargs))
+/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/.envs/structures/lib/python3.11/site-packages/pymatgen/io/cif.py:1825: UserWarning: Site labels are not unique, which is not compliant with the CIF spec (https://www.iucr.org/__data/iucr/cifdic_html/1/cif_core.dic/Iatom_site_label.html):`['U2', 'U2', 'U2', 'U2', 'U2', 'U2', 'U2', 'U2', 'U2', 'U2', 'U2', 'U2', 'U2', 'U2', 'U2', 'U2', 'U1', 'U1', 'U1', 'U1', 'U1', 'U1', 'U1', 'U1', 'U1', 'U1', 'U1', 'U1', 'U1', 'U1', 'U1', 'U1', 'O3', 'O3', 'O3', 'O3', 'O3', 'O3', 'O3', 'O3', 'O3', 'O3', 'O3', 'O3', 'O3', 'O3', 'O3', 'O3', 'O3', 'O3', 'O3', 'O3', 'O3', 'O3', 'O3', 'O3', 'O3', 'O3', 'O3', 'O3', 'O3', 'O3', 'O3', 'O3', 'O2', 'O2', 'O2', 'O2', 'O2', 'O2', 'O2', 'O2', 'O2', 'O2', 'O2', 'O2', 'O2', 'O2', 'O2', 'O2', 'O2', 'O2', 'O2', 'O2', 'O2', 'O2', 'O2', 'O2', 'O2', 'O2', 'O2', 'O2', 'O2', 'O2', 'O2', 'O2', 'O1', 'O1', 'O1', 'O1', 'O1', 'O1', 'O1', 'O1', 'O1', 'O1', 'O1', 'O1', 'O1', 'O1', 'O1', 'O1', 'O1', 'O1', 'O1', 'O1', 'O1', 'O1', 'O1', 'O1', 'O1', 'O1', 'O1', 'O1', 'O1', 'O1', 'O1', 'O1']`.
+  CifWriter(structure, **kwargs).write_file(filename)
+{
+  "step": "04B2C1-structure",
+  "source": {
+    "COD_ID": "1527742",
+    "reference": "Loopstra, Taylor & Waugh, Journal of Solid State Chemistry 20 (1977) 9-19; neutron powder refinement at 293 K.",
+    "temperature_K": 293.0,
+    "spacegroup_expected": 70,
+    "cell_A": [
+      9.787,
+      19.932,
+      9.705
+    ],
+    "shortest_UO_reference_A": 1.796
+  },
+  "sha256_cif": "a5728ef3dbe5ebad0786a982c961b86a7569db28f9a0d6a1921c8b6a18135333",
+  "conventional": {
+    "natoms": 128,
+    "formula": "O96U32",
+    "cell_lengths_A": [
+      9.787,
+      19.932,
+      9.705
+    ],
+    "cell_angles_deg": [
+      90.0,
+      90.0,
+      90.0
+    ],
+    "spacegroup": {
+      "number": 70,
+      "international": "Fddd",
+      "hall": "F 2 2 -1d"
+    },
+    "sorted_cell_relative_errors_percent": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "primitive": {
+    "natoms": 32,
+    "nU": 8,
+    "nO": 24,
+    "formula": "O24U8",
+    "spacegroup": {
+      "number": 70,
+      "international": "Fddd",
+      "hall": "F 2 2 -1d"
+    },
+    "shortest_UO_A": 1.7929296756541402
+  },
+  "structure_gate_passes": true
+}
+
+[B2C1] U0_NM_1600_k222
+[alienware][[36624,1],2][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[36624,1],2][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[36624,1],2][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[36624,1],1][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[36624,1],1][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[36624,1],1][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[36624,1],3][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[36624,1],3][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[36624,1],3][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[36624,1],0][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[36624,1],0][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[36624,1],0][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+{
+  "status": "converged",
+  "step": "04B2C1",
+  "case": "U0_NM_1600_k222",
+  "system": "gamma-UO3-Fddd",
+  "formal_U_oxidation_state": 6,
+  "dataset": "U14_nc6",
+  "xc": "PBEsol",
+  "Ueff_eV": 0.0,
+  "spin_mode": "nm",
+  "ecut_eV": 1600.0,
+  "kpts": [
+    2,
+    2,
+    2
+  ],
+  "natoms": 32,
+  "energy_eV": -304.6070724408768,
+  "energy_eV_atom": -9.5189710137774,
+  "band_gap_eV": 1.916680805723347,
+  "band_gap_error": null,
+  "max_force_eV_A": 0.6891460185903697,
+  "stress_GPa": [
+    -0.34593567968183336,
+    -0.4227163338090621,
+    -0.4730827849313938,
+    0.2447607509852298,
+    -0.16635549145235104,
+    0.1504848619605817
+  ],
+  "hydrostatic_stress_GPa": -0.41391159947409645,
+  "max_abs_stress_GPa": 0.4730827849313938,
+  "mpi_world_size": 4,
+  "gpw_file": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04B2C1_uvi_gamma_uo3_screen/resultados_step04B2C1/gpw/gammaUO3_U0_1600_k222.gpw"
+}
+
+[B2C1] U3_NM_1600_k222
+[alienware][[9799,1],2][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[9799,1],2][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[9799,1],2][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[9799,1],3][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[9799,1],3][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[9799,1],3][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[9799,1],0][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[9799,1],0][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[9799,1],0][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[9799,1],1][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[9799,1],1][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[9799,1],1][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+{
+  "status": "converged",
+  "step": "04B2C1",
+  "case": "U3_NM_1600_k222",
+  "system": "gamma-UO3-Fddd",
+  "formal_U_oxidation_state": 6,
+  "dataset": "U14_nc6",
+  "xc": "PBEsol",
+  "Ueff_eV": 3.0,
+  "spin_mode": "nm",
+  "ecut_eV": 1600.0,
+  "kpts": [
+    2,
+    2,
+    2
+  ],
+  "natoms": 32,
+  "energy_eV": -285.75728927259684,
+  "energy_eV_atom": -8.929915289768651,
+  "band_gap_eV": 2.6604911395308735,
+  "band_gap_error": null,
+  "max_force_eV_A": 0.5836902610429948,
+  "stress_GPa": [
+    -0.45485835377979605,
+    -0.7922914506062243,
+    -0.8831323888726434,
+    0.44871574916871043,
+    -0.3993605315691004,
+    0.3614588589320945
+  ],
+  "hydrostatic_stress_GPa": -0.7100940644195545,
+  "max_abs_stress_GPa": 0.8831323888726434,
+  "mpi_world_size": 4,
+  "gpw_file": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04B2C1_uvi_gamma_uo3_screen/resultados_step04B2C1/gpw/gammaUO3_U3_1600_k222.gpw"
+}
+
+[B2C1] U3_NM_1600_k333
+[alienware][[32446,1],1][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[32446,1],1][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[32446,1],1][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[32446,1],0][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[32446,1],0][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[32446,1],0][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[32446,1],3][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[32446,1],3][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[32446,1],3][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[32446,1],2][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[32446,1],2][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[32446,1],2][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+{
+  "status": "converged",
+  "step": "04B2C1",
+  "case": "U3_NM_1600_k333",
+  "system": "gamma-UO3-Fddd",
+  "formal_U_oxidation_state": 6,
+  "dataset": "U14_nc6",
+  "xc": "PBEsol",
+  "Ueff_eV": 3.0,
+  "spin_mode": "nm",
+  "ecut_eV": 1600.0,
+  "kpts": [
+    3,
+    3,
+    3
+  ],
+  "natoms": 32,
+  "energy_eV": -285.7594637753111,
+  "energy_eV_atom": -8.929983242978471,
+  "band_gap_eV": 2.703760538859311,
+  "band_gap_error": null,
+  "max_force_eV_A": 0.584761272434328,
+  "stress_GPa": [
+    -0.45958999671488193,
+    -0.7859393562782052,
+    -0.8769805256804154,
+    0.4497403104431338,
+    -0.3945849066762305,
+    0.35713696425952385
+  ],
+  "hydrostatic_stress_GPa": -0.7075032928911674,
+  "max_abs_stress_GPa": 0.8769805256804154,
+  "mpi_world_size": 4,
+  "gpw_file": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04B2C1_uvi_gamma_uo3_screen/resultados_step04B2C1/gpw/gammaUO3_U3_1600_k333.gpw"
+}
+
+[B2C1] U3_NM_1800_k222
+[alienware][[47771,1],1][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[47771,1],0][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[47771,1],0][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[47771,1],1][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[47771,1],1][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[47771,1],0][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[47771,1],2][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[47771,1],2][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[47771,1],2][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[47771,1],3][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[47771,1],3][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[47771,1],3][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+{
+  "status": "converged",
+  "step": "04B2C1",
+  "case": "U3_NM_1800_k222",
+  "system": "gamma-UO3-Fddd",
+  "formal_U_oxidation_state": 6,
+  "dataset": "U14_nc6",
+  "xc": "PBEsol",
+  "Ueff_eV": 3.0,
+  "spin_mode": "nm",
+  "ecut_eV": 1800.0,
+  "kpts": [
+    2,
+    2,
+    2
+  ],
+  "natoms": 32,
+  "energy_eV": -285.7571277888566,
+  "energy_eV_atom": -8.92991024340177,
+  "band_gap_eV": 2.6605238878437225,
+  "band_gap_error": null,
+  "max_force_eV_A": 0.5834680259035306,
+  "stress_GPa": [
+    -0.4996268266024464,
+    -0.8377329775793507,
+    -0.9278911945281488,
+    0.44854812824738544,
+    -0.39954185545415805,
+    0.3616993342529323
+  ],
+  "hydrostatic_stress_GPa": -0.7550836662366486,
+  "max_abs_stress_GPa": 0.9278911945281488,
+  "mpi_world_size": 4,
+  "gpw_file": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04B2C1_uvi_gamma_uo3_screen/resultados_step04B2C1/gpw/gammaUO3_U3_1800_k222.gpw"
+}
+
+[B2C1] U3_seeded_1600_k222
+[alienware][[38002,1],3][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[38002,1],3][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[38002,1],3][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[38002,1],2][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[38002,1],2][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[38002,1],2][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[38002,1],1][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[38002,1],1][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[38002,1],1][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[38002,1],0][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[38002,1],0][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[38002,1],0][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+{
+  "status": "converged",
+  "step": "04B2C1",
+  "case": "U3_seeded_1600_k222",
+  "system": "gamma-UO3-Fddd",
+  "formal_U_oxidation_state": 6,
+  "dataset": "U14_nc6",
+  "xc": "PBEsol",
+  "Ueff_eV": 3.0,
+  "spin_mode": "seeded",
+  "ecut_eV": 1600.0,
+  "kpts": [
+    2,
+    2,
+    2
+  ],
+  "natoms": 32,
+  "energy_eV": -285.7572892969922,
+  "energy_eV_atom": -8.929915290531007,
+  "band_gap_eV": 2.6605793483392146,
+  "band_gap_error": null,
+  "max_force_eV_A": 0.5836689910230675,
+  "stress_GPa": [
+    -0.453181873977631,
+    -0.7904639840055734,
+    -0.8813121362971807,
+    0.4487535737212448,
+    -0.3993187252691424,
+    0.3614209542010618
+  ],
+  "hydrostatic_stress_GPa": -0.7083193314267952,
+  "max_abs_stress_GPa": 0.8813121362971807,
+  "mpi_world_size": 4,
+  "U_local_moments_muB": [
+    -4.536992555722745e-06,
+    4.426224008191285e-06,
+    2.5404369897679926e-05,
+    -2.5416723723719797e-05,
+    2.640538793852421e-05,
+    -2.6393413900108326e-05,
+    2.6413418522100727e-05,
+    -2.6324651930969967e-05
+  ],
+  "U_abs_mean_moment_muB": 2.0665147809627124e-05,
+  "total_magnetic_moment_muB": 7.585420907813265e-09,
+  "gpw_file": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04B2C1_uvi_gamma_uo3_screen/resultados_step04B2C1/gpw/gammaUO3_U3_seeded_1600_k222.gpw"
+}
+
+>>> SOC gamma-UO3 no estado U3/NM
+[alienware][[21704,1],1][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[21704,1],0][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[21704,1],3][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[21704,1],3][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[21704,1],2][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[21704,1],2][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] [alienware][[21704,1],1][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[21704,1],0][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+Unable to find reachable pairing between local and remote interfaces
+[alienware][[21704,1],0][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[21704,1],3][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[21704,1],1][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[21704,1],2][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+{
+  "status": "completed",
+  "step": "04B2C1-SOC",
+  "system": "gamma-UO3-Fddd",
+  "method": "GPAW-25.7 soc_eigenstates non-self-consistent",
+  "results": {
+    "scale0": {
+      "scale": 0.0,
+      "indirect_gap_eV": 2.6604911395308735,
+      "fermi_level_eV": 6.6855099390559065,
+      "band_energy_eV_cell": -1224.8709506301423
+    },
+    "scale0p5": {
+      "scale": 0.5,
+      "indirect_gap_eV": 2.339150816840137,
+      "fermi_level_eV": 6.754519258904087,
+      "band_energy_eV_cell": -1225.0894426633677
+    },
+    "scale1": {
+      "scale": 1.0,
+      "indirect_gap_eV": 1.7014180505956231,
+      "fermi_level_eV": 6.898639466742409,
+      "band_energy_eV_cell": -1225.7545460052825
+    }
+  }
+}
+{
+  "status": "completed",
+  "step": "04B2C1-SOC",
+  "system": "gamma-UO3-Fddd",
+  "method": "GPAW-25.7 soc_eigenstates non-self-consistent",
+  "results": {
+    "scale0": {
+      "scale": 0.0,
+      "indirect_gap_eV": 2.6604911395308735,
+      "fermi_level_eV": 6.6855099390559065,
+      "band_energy_eV_cell": -1224.8709506301423
+    },
+    "scale0p5": {
+      "scale": 0.5,
+      "indirect_gap_eV": 2.339150816840137,
+      "fermi_level_eV": 6.754519258904087,
+      "band_energy_eV_cell": -1225.0894426633677
+    },
+    "scale1": {
+      "scale": 1.0,
+      "indirect_gap_eV": 1.7014180505956231,
+      "fermi_level_eV": 6.898639466742409,
+      "band_energy_eV_cell": -1225.7545460052825
+    }
+  }
+}
+{
+  "status": "completed",
+  "step": "04B2C1-SOC",
+  "system": "gamma-UO3-Fddd",
+  "method": "GPAW-25.7 soc_eigenstates non-self-consistent",
+  "results": {
+    "scale0": {
+      "scale": 0.0,
+      "indirect_gap_eV": 2.6604911395308735,
+      "fermi_level_eV": 6.6855099390559065,
+      "band_energy_eV_cell": -1224.8709506301423
+    },
+    "scale0p5": {
+      "scale": 0.5,
+      "indirect_gap_eV": 2.339150816840137,
+      "fermi_level_eV": 6.754519258904087,
+      "band_energy_eV_cell": -1225.0894426633677
+    },
+    "scale1": {
+      "scale": 1.0,
+      "indirect_gap_eV": 1.7014180505956231,
+      "fermi_level_eV": 6.898639466742409,
+      "band_energy_eV_cell": -1225.7545460052825
+    }
+  }
+}
+{
+  "status": "completed",
+  "step": "04B2C1-SOC",
+  "system": "gamma-UO3-Fddd",
+  "method": "GPAW-25.7 soc_eigenstates non-self-consistent",
+  "results": {
+    "scale0": {
+      "scale": 0.0,
+      "indirect_gap_eV": 2.6604911395308735,
+      "fermi_level_eV": 6.6855099390559065,
+      "band_energy_eV_cell": -1224.8709506301423
+    },
+    "scale0p5": {
+      "scale": 0.5,
+      "indirect_gap_eV": 2.339150816840137,
+      "fermi_level_eV": 6.754519258904087,
+      "band_energy_eV_cell": -1225.0894426633677
+    },
+    "scale1": {
+      "scale": 1.0,
+      "indirect_gap_eV": 1.7014180505956231,
+      "fermi_level_eV": 6.898639466742409,
+      "band_energy_eV_cell": -1225.7545460052825
+    }
+  }
+}
+
+>>> Decisão
+{
+  "step": "04B2C1",
+  "system": "gamma-UO3-Fddd-293K",
+  "role": "realistic U(VI), formal 5f0 reference",
+  "structure_gate_passes": true,
+  "U0_screen": {
+    "gap_eV": 1.916680805723347,
+    "max_force_eV_A": 0.6891460185903697,
+    "max_abs_stress_GPa": 0.4730827849313938
+  },
+  "U3_screen": {
+    "gap_scalar_eV": 2.6604911395308735,
+    "gap_SOC_eV": 1.7014180505956231,
+    "experimental_gap_guide_eV": 2.38,
+    "SOC_gap_shift_eV": -0.9590730889352503,
+    "max_force_eV_A": 0.5836902610429948,
+    "max_abs_stress_GPa": 0.8831323888726434
+  },
+  "U3_vs_U0_delta_gap_eV": 0.7438103338075264,
+  "seeded_magnetism": {
+    "U_abs_mean_moment_muB": 2.0665147809627124e-05,
+    "UVI_nonmagnetic_gate_passes": true
+  },
+  "kpoint_convergence": {
+    "delta_energy_meV_atom": 0.06795320982000419,
+    "delta_gap_eV": 0.04326939932843743,
+    "delta_hydrostatic_stress_GPa": 0.002590771528387048,
+    "passes": true
+  },
+  "cutoff_convergence": {
+    "delta_energy_meV_atom": 0.005046366881700237,
+    "delta_gap_eV": 3.274831284905133e-05,
+    "delta_hydrostatic_stress_GPa": 0.044989601817094105,
+    "passes": true
+  },
+  "fixed_geometry_sanity_passes": true,
+  "SOC_scale0_consistency_passes": true,
+  "SOC_insulating_gate_passes": true,
+  "step04B2C1_passes": true,
+  "selected_UVI_scalar_matrix": {
+    "dataset": "U14_nc6",
+    "xc": "PBEsol",
+    "Ueff_eV": 3.0,
+    "ecut_eV": 1600,
+    "kpts_primitive_gammaUO3": [
+      2,
+      2,
+      2
+    ],
+    "spin_state": "nonmagnetic_5f0",
+    "SOC_for_electronic_structure": true
+  },
+  "production_authorization": false,
+  "next_gate": "If approved: Step04B2C2 relax the 32-atom primitive gamma-UO3 structure with the selected scalar matrix, validate the relaxed structure against the 293 K neutron reference, and repeat the final SOC gap. Only then can Step05 defect production be authorized."
+}
+==============================================================================
+STEP 04B2C1 FINALIZADO
+==============================================================================

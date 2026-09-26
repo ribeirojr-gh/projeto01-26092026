@@ -1,0 +1,55 @@
+{
+  "step": "04B2C1",
+  "system": "gamma-UO3-Fddd-293K",
+  "role": "realistic U(VI), formal 5f0 reference",
+  "structure_gate_passes": true,
+  "U0_screen": {
+    "gap_eV": 1.916680805723347,
+    "max_force_eV_A": 0.6891460185903697,
+    "max_abs_stress_GPa": 0.4730827849313938
+  },
+  "U3_screen": {
+    "gap_scalar_eV": 2.6604911395308735,
+    "gap_SOC_eV": 1.7014180505956231,
+    "experimental_gap_guide_eV": 2.38,
+    "SOC_gap_shift_eV": -0.9590730889352503,
+    "max_force_eV_A": 0.5836902610429948,
+    "max_abs_stress_GPa": 0.8831323888726434
+  },
+  "U3_vs_U0_delta_gap_eV": 0.7438103338075264,
+  "seeded_magnetism": {
+    "U_abs_mean_moment_muB": 2.0665147809627124e-05,
+    "UVI_nonmagnetic_gate_passes": true
+  },
+  "kpoint_convergence": {
+    "delta_energy_meV_atom": 0.06795320982000419,
+    "delta_gap_eV": 0.04326939932843743,
+    "delta_hydrostatic_stress_GPa": 0.002590771528387048,
+    "passes": true
+  },
+  "cutoff_convergence": {
+    "delta_energy_meV_atom": 0.005046366881700237,
+    "delta_gap_eV": 3.274831284905133e-05,
+    "delta_hydrostatic_stress_GPa": 0.044989601817094105,
+    "passes": true
+  },
+  "fixed_geometry_sanity_passes": true,
+  "SOC_scale0_consistency_passes": true,
+  "SOC_insulating_gate_passes": true,
+  "step04B2C1_passes": true,
+  "selected_UVI_scalar_matrix": {
+    "dataset": "U14_nc6",
+    "xc": "PBEsol",
+    "Ueff_eV": 3.0,
+    "ecut_eV": 1600,
+    "kpts_primitive_gammaUO3": [
+      2,
+      2,
+      2
+    ],
+    "spin_state": "nonmagnetic_5f0",
+    "SOC_for_electronic_structure": true
+  },
+  "production_authorization": false,
+  "next_gate": "If approved: Step04B2C2 relax the 32-atom primitive gamma-UO3 structure with the selected scalar matrix, validate the relaxed structure against the 293 K neutron reference, and repeat the final SOC gap. Only then can Step05 defect production be authorized."
+}

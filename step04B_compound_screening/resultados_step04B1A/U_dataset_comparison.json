@@ -1,0 +1,11 @@
+[
+  {
+    "Ueff_eV": 0.0,
+    "gap_poly6_eV": null,
+    "gap_nc6_eV": null,
+    "delta_gap_nc_minus_poly_eV": null,
+    "moment_poly6_muB": 1.4645589180097227,
+    "moment_nc6_muB": 1.5091864425297472,
+    "delta_moment_nc_minus_poly_muB": 0.0446275245200245
+  }
+]

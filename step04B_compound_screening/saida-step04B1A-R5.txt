@@ -1,0 +1,621 @@
+==============================================================================
+STEP 04B1A-R5 — UO2: GRADE Ueff SOB PROTOCOLO COMUM
+==============================================================================
+Data: qua 05 ago 2026 14:08:16 -03
+Host: alienware
+Projeto: /home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project
+
+[R5] UO2_poly6_Ueff_0p0
+[alienware][[43983,1],1][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[43983,1],1][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[43983,1],1][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[43983,1],0][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[43983,1],0][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[43983,1],0][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[43983,1],2][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[43983,1],3][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[43983,1],2][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[43983,1],3][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[43983,1],2][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[43983,1],3][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+{
+  "status": "converged",
+  "step": "04B1A-R5",
+  "system": "UO2",
+  "dataset": "poly6",
+  "Ueff_eV": 0.0,
+  "hubbard_normalized": true,
+  "symmetry_protocol": {
+    "point_group": false,
+    "time_reversal": true
+  },
+  "fixmagmom": false,
+  "scf_strategy": "common_noPG_damped",
+  "smearing_eV": 0.15,
+  "maxiter_allowed": 900,
+  "scf_iterations": 59,
+  "mpi_world_size": 4,
+  "ecut_eV": 1400.0,
+  "kpts": [
+    3,
+    3,
+    3
+  ],
+  "nbands": 80,
+  "energy_eV": -121.37566738827654,
+  "energy_eV_atom": -10.114638949023044,
+  "band_gap_eV": 0.0,
+  "band_gap_error": null,
+  "total_magnetic_moment_muB": -3.0341711976442964e-09,
+  "U_local_moments_muB": [
+    1.4622773398392455,
+    -1.4622773318773057,
+    -1.462277335340488,
+    1.4622773243155662
+  ],
+  "U_abs_mean_moment_muB": 1.4622773328431515,
+  "max_force_eV_A": 3.2499719599831302e-06,
+  "stress_GPa": [
+    11.23928150474616,
+    11.23893780816251,
+    10.837956768040664,
+    2.0112489130186112e-05,
+    -1.0901868556908717e-05,
+    -1.9735061583061123e-05
+  ],
+  "max_abs_stress_GPa": 11.23928150474616,
+  "gpw_file": null,
+  "failed_attempts_before_success": [
+    {
+      "attempt": 1,
+      "strategy": "common_noPG_primary",
+      "smearing_eV": 0.1,
+      "maxiter": 600,
+      "scf_iterations_reached": 601,
+      "txt": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04B_compound_screening/logs/R5/UO2_poly6_Ueff_0p0_attempt1_common_noPG_primary.txt",
+      "error": "KohnShamConvergenceError('Did not converge!  See text output for help.')"
+    }
+  ]
+}
+
+[R5] UO2_poly6_Ueff_2p0
+[alienware][[61270,1],1][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[61270,1],1][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[61270,1],1][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[61270,1],0][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[61270,1],0][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[61270,1],0][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[61270,1],3][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[61270,1],3][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[61270,1],3][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[61270,1],2][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[61270,1],2][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[61270,1],2][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+{
+  "status": "failed_scf",
+  "step": "04B1A-R5",
+  "system": "UO2",
+  "dataset": "poly6",
+  "Ueff_eV": 2.0,
+  "hubbard_normalized": true,
+  "symmetry_protocol": {
+    "point_group": false,
+    "time_reversal": true
+  },
+  "fixmagmom": false,
+  "attempts": [
+    {
+      "attempt": 1,
+      "strategy": "common_noPG_primary",
+      "smearing_eV": 0.1,
+      "maxiter": 600,
+      "scf_iterations_reached": 601,
+      "txt": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04B_compound_screening/logs/R5/UO2_poly6_Ueff_2p0_attempt1_common_noPG_primary.txt",
+      "error": "KohnShamConvergenceError('Did not converge!  See text output for help.')"
+    },
+    {
+      "attempt": 2,
+      "strategy": "common_noPG_damped",
+      "smearing_eV": 0.15,
+      "maxiter": 900,
+      "scf_iterations_reached": 901,
+      "txt": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04B_compound_screening/logs/R5/UO2_poly6_Ueff_2p0_attempt2_common_noPG_damped.txt",
+      "error": "KohnShamConvergenceError('Did not converge!  See text output for help.')"
+    }
+  ],
+  "mpi_world_size": 4
+}
+
+[R5] UO2_poly6_Ueff_3p0
+[alienware][[38377,1],3][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[38377,1],3][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[38377,1],3][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[38377,1],0][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[38377,1],0][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[38377,1],0][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[38377,1],2][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[38377,1],2][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[38377,1],2][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[38377,1],1][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[38377,1],1][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[38377,1],1][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+{
+  "status": "failed_scf",
+  "step": "04B1A-R5",
+  "system": "UO2",
+  "dataset": "poly6",
+  "Ueff_eV": 3.0,
+  "hubbard_normalized": true,
+  "symmetry_protocol": {
+    "point_group": false,
+    "time_reversal": true
+  },
+  "fixmagmom": false,
+  "attempts": [
+    {
+      "attempt": 1,
+      "strategy": "common_noPG_primary",
+      "smearing_eV": 0.1,
+      "maxiter": 600,
+      "scf_iterations_reached": 601,
+      "txt": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04B_compound_screening/logs/R5/UO2_poly6_Ueff_3p0_attempt1_common_noPG_primary.txt",
+      "error": "KohnShamConvergenceError('Did not converge!  See text output for help.')"
+    },
+    {
+      "attempt": 2,
+      "strategy": "common_noPG_damped",
+      "smearing_eV": 0.15,
+      "maxiter": 900,
+      "scf_iterations_reached": 901,
+      "txt": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04B_compound_screening/logs/R5/UO2_poly6_Ueff_3p0_attempt2_common_noPG_damped.txt",
+      "error": "KohnShamConvergenceError('Did not converge!  See text output for help.')"
+    }
+  ],
+  "mpi_world_size": 4
+}
+
+[R5] UO2_poly6_Ueff_4p0
+[alienware][[43821,1],0][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[43821,1],3][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[43821,1],3][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[43821,1],0][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[43821,1],0][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[43821,1],3][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[43821,1],2][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[43821,1],2][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[43821,1],2][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[43821,1],1][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[43821,1],1][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[43821,1],1][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+{
+  "status": "failed_scf",
+  "step": "04B1A-R5",
+  "system": "UO2",
+  "dataset": "poly6",
+  "Ueff_eV": 4.0,
+  "hubbard_normalized": true,
+  "symmetry_protocol": {
+    "point_group": false,
+    "time_reversal": true
+  },
+  "fixmagmom": false,
+  "attempts": [
+    {
+      "attempt": 1,
+      "strategy": "common_noPG_primary",
+      "smearing_eV": 0.1,
+      "maxiter": 600,
+      "scf_iterations_reached": 601,
+      "txt": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04B_compound_screening/logs/R5/UO2_poly6_Ueff_4p0_attempt1_common_noPG_primary.txt",
+      "error": "KohnShamConvergenceError('Did not converge!  See text output for help.')"
+    },
+    {
+      "attempt": 2,
+      "strategy": "common_noPG_damped",
+      "smearing_eV": 0.15,
+      "maxiter": 900,
+      "scf_iterations_reached": 901,
+      "txt": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04B_compound_screening/logs/R5/UO2_poly6_Ueff_4p0_attempt2_common_noPG_damped.txt",
+      "error": "KohnShamConvergenceError('Did not converge!  See text output for help.')"
+    }
+  ],
+  "mpi_world_size": 4
+}
+
+[R5] UO2_poly6_Ueff_5p0
+[alienware][[19256,1],3][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[19256,1],3][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[19256,1],3][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[19256,1],1][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[19256,1],1][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[19256,1],1][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[19256,1],0][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[19256,1],0][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[19256,1],0][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[19256,1],2][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[19256,1],2][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[19256,1],2][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+{
+  "status": "converged",
+  "step": "04B1A-R5",
+  "system": "UO2",
+  "dataset": "poly6",
+  "Ueff_eV": 5.0,
+  "hubbard_normalized": true,
+  "symmetry_protocol": {
+    "point_group": false,
+    "time_reversal": true
+  },
+  "fixmagmom": false,
+  "scf_strategy": "common_noPG_primary",
+  "smearing_eV": 0.1,
+  "maxiter_allowed": 600,
+  "scf_iterations": 282,
+  "mpi_world_size": 4,
+  "ecut_eV": 1400.0,
+  "kpts": [
+    3,
+    3,
+    3
+  ],
+  "nbands": 80,
+  "energy_eV": -114.17780442607055,
+  "energy_eV_atom": -9.51481703550588,
+  "band_gap_eV": 3.366977520576274,
+  "band_gap_error": null,
+  "total_magnetic_moment_muB": -1.5513528138523624e-06,
+  "U_local_moments_muB": [
+    1.9337914402082235,
+    -1.9337977864318803,
+    -1.9338021735383615,
+    1.933805943458935
+  ],
+  "U_abs_mean_moment_muB": 1.9337993359093502,
+  "max_force_eV_A": 0.0001440332004909087,
+  "stress_GPa": [
+    -0.935131008277794,
+    -0.9352561356455745,
+    -1.9523942313187863,
+    7.80343349573291e-07,
+    6.721161287522801e-07,
+    2.1282231129780212e-05
+  ],
+  "max_abs_stress_GPa": 1.9523942313187863,
+  "gpw_file": null,
+  "failed_attempts_before_success": []
+}
+
+[R5] UO2_nc6_Ueff_0p0
+[alienware][[50051,1],0][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[50051,1],0][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[50051,1],0][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[50051,1],3][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[50051,1],3][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[50051,1],3][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[50051,1],2][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[50051,1],2][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[50051,1],2][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[50051,1],1][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[50051,1],1][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[50051,1],1][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+{
+  "status": "failed_scf",
+  "step": "04B1A-R5",
+  "system": "UO2",
+  "dataset": "nc6",
+  "Ueff_eV": 0.0,
+  "hubbard_normalized": true,
+  "symmetry_protocol": {
+    "point_group": false,
+    "time_reversal": true
+  },
+  "fixmagmom": false,
+  "attempts": [
+    {
+      "attempt": 1,
+      "strategy": "common_noPG_primary",
+      "smearing_eV": 0.1,
+      "maxiter": 600,
+      "scf_iterations_reached": 601,
+      "txt": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04B_compound_screening/logs/R5/UO2_nc6_Ueff_0p0_attempt1_common_noPG_primary.txt",
+      "error": "KohnShamConvergenceError('Did not converge!  See text output for help.')"
+    },
+    {
+      "attempt": 2,
+      "strategy": "common_noPG_damped",
+      "smearing_eV": 0.15,
+      "maxiter": 900,
+      "scf_iterations_reached": 901,
+      "txt": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04B_compound_screening/logs/R5/UO2_nc6_Ueff_0p0_attempt2_common_noPG_damped.txt",
+      "error": "KohnShamConvergenceError('Did not converge!  See text output for help.')"
+    }
+  ],
+  "mpi_world_size": 4
+}
+
+[R5] UO2_nc6_Ueff_2p0
+[alienware][[11373,1],0][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[11373,1],0][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[11373,1],0][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[11373,1],2][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[11373,1],2][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[11373,1],2][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[11373,1],3][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[11373,1],3][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[11373,1],3][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[11373,1],1][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[11373,1],1][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[11373,1],1][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+{
+  "status": "converged",
+  "step": "04B1A-R5",
+  "system": "UO2",
+  "dataset": "nc6",
+  "Ueff_eV": 2.0,
+  "hubbard_normalized": true,
+  "symmetry_protocol": {
+    "point_group": false,
+    "time_reversal": true
+  },
+  "fixmagmom": false,
+  "scf_strategy": "common_noPG_primary",
+  "smearing_eV": 0.1,
+  "maxiter_allowed": 600,
+  "scf_iterations": 282,
+  "mpi_world_size": 4,
+  "ecut_eV": 1400.0,
+  "kpts": [
+    3,
+    3,
+    3
+  ],
+  "nbands": 80,
+  "energy_eV": -119.09180477508276,
+  "energy_eV_atom": -9.92431706459023,
+  "band_gap_eV": 1.6309508166524562,
+  "band_gap_error": null,
+  "total_magnetic_moment_muB": 1.8403538879042362e-07,
+  "U_local_moments_muB": [
+    1.918003086790683,
+    -1.9179979683654014,
+    -1.9179984337100648,
+    1.9179935754119337
+  ],
+  "U_abs_mean_moment_muB": 1.917998266069521,
+  "max_force_eV_A": 4.696573207982764e-05,
+  "stress_GPa": [
+    2.210752138818389,
+    2.206608037133815,
+    2.1374890834766407,
+    0.0007711816119659092,
+    -0.000539851696380792,
+    -0.00014824264117775527
+  ],
+  "max_abs_stress_GPa": 2.210752138818389,
+  "gpw_file": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04B_compound_screening/resultados_step04B1A_R5/gpw/UO2_nc6_Ueff_2p0.gpw",
+  "failed_attempts_before_success": []
+}
+
+[R5] UO2_nc6_Ueff_3p0
+[alienware][[28613,1],0][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[28613,1],0][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[28613,1],0][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[28613,1],2][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[28613,1],2][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[28613,1],2][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[28613,1],3][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[28613,1],3][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[28613,1],3][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[28613,1],1][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[28613,1],1][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[28613,1],1][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+{
+  "status": "converged",
+  "step": "04B1A-R5",
+  "system": "UO2",
+  "dataset": "nc6",
+  "Ueff_eV": 3.0,
+  "hubbard_normalized": true,
+  "symmetry_protocol": {
+    "point_group": false,
+    "time_reversal": true
+  },
+  "fixmagmom": false,
+  "scf_strategy": "common_noPG_damped",
+  "smearing_eV": 0.15,
+  "maxiter_allowed": 900,
+  "scf_iterations": 175,
+  "mpi_world_size": 4,
+  "ecut_eV": 1400.0,
+  "kpts": [
+    3,
+    3,
+    3
+  ],
+  "nbands": 80,
+  "energy_eV": -118.30053343377736,
+  "energy_eV_atom": -9.858377786148113,
+  "band_gap_eV": 2.529299745282188,
+  "band_gap_error": null,
+  "total_magnetic_moment_muB": 6.530729710313043e-08,
+  "U_local_moments_muB": [
+    1.9290714556041424,
+    -1.9290713937792217,
+    -1.9290713938052853,
+    1.9290714556025363
+  ],
+  "U_abs_mean_moment_muB": 1.9290714246977965,
+  "max_force_eV_A": 1.9630517007980546e-05,
+  "stress_GPa": [
+    1.0387156345737647,
+    1.0376648284950807,
+    1.0507837219330542,
+    6.324586195203344e-05,
+    -0.00012597203731427078,
+    -0.00019980290229384907
+  ],
+  "max_abs_stress_GPa": 1.0507837219330542,
+  "gpw_file": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04B_compound_screening/resultados_step04B1A_R5/gpw/UO2_nc6_Ueff_3p0.gpw",
+  "failed_attempts_before_success": [
+    {
+      "attempt": 1,
+      "strategy": "common_noPG_primary",
+      "smearing_eV": 0.1,
+      "maxiter": 600,
+      "scf_iterations_reached": 601,
+      "txt": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04B_compound_screening/logs/R5/UO2_nc6_Ueff_3p0_attempt1_common_noPG_primary.txt",
+      "error": "KohnShamConvergenceError('Did not converge!  See text output for help.')"
+    }
+  ]
+}
+
+[R5] UO2_nc6_Ueff_4p0
+[alienware][[53753,1],0][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[53753,1],0][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[53753,1],0][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[53753,1],1][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[53753,1],1][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[53753,1],1][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[53753,1],3][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[53753,1],3][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[53753,1],3][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[53753,1],2][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[53753,1],2][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[53753,1],2][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+{
+  "status": "converged",
+  "step": "04B1A-R5",
+  "system": "UO2",
+  "dataset": "nc6",
+  "Ueff_eV": 4.0,
+  "hubbard_normalized": true,
+  "symmetry_protocol": {
+    "point_group": false,
+    "time_reversal": true
+  },
+  "fixmagmom": false,
+  "scf_strategy": "common_noPG_damped",
+  "smearing_eV": 0.15,
+  "maxiter_allowed": 900,
+  "scf_iterations": 200,
+  "mpi_world_size": 4,
+  "ecut_eV": 1400.0,
+  "kpts": [
+    3,
+    3,
+    3
+  ],
+  "nbands": 80,
+  "energy_eV": -117.57221181305721,
+  "energy_eV_atom": -9.797684317754767,
+  "band_gap_eV": 3.3440048485571534,
+  "band_gap_error": null,
+  "total_magnetic_moment_muB": -5.588078153105168e-11,
+  "U_local_moments_muB": [
+    1.9378798223494562,
+    -1.9378798216877857,
+    -1.9378798216991475,
+    1.937879822224275
+  ],
+  "U_abs_mean_moment_muB": 1.937879821990166,
+  "max_force_eV_A": 4.714158643754394e-07,
+  "stress_GPa": [
+    -0.06415737673095073,
+    -0.06415591248338343,
+    -0.02437127773655802,
+    -2.860331675498881e-10,
+    4.130463716823866e-10,
+    -4.165535944411092e-08
+  ],
+  "max_abs_stress_GPa": 0.06415737673095073,
+  "gpw_file": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04B_compound_screening/resultados_step04B1A_R5/gpw/UO2_nc6_Ueff_4p0.gpw",
+  "failed_attempts_before_success": [
+    {
+      "attempt": 1,
+      "strategy": "common_noPG_primary",
+      "smearing_eV": 0.1,
+      "maxiter": 600,
+      "scf_iterations_reached": 601,
+      "txt": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step04B_compound_screening/logs/R5/UO2_nc6_Ueff_4p0_attempt1_common_noPG_primary.txt",
+      "error": "KohnShamConvergenceError('Did not converge!  See text output for help.')"
+    }
+  ]
+}
+
+[R5] UO2_nc6_Ueff_5p0
+[alienware][[13243,1],0][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[13243,1],0][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[13243,1],0][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[13243,1],1][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[13243,1],1][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[13243,1],1][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[13243,1],3][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[13243,1],3][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[13243,1],3][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[13243,1],2][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[13243,1],2][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+[alienware][[13243,1],2][btl_tcp_proc.c:266:mca_btl_tcp_proc_create_interface_graph] Unable to find reachable pairing between local and remote interfaces
+{
+  "status": "converged",
+  "step": "04B1A-R5",
+  "system": "UO2",
+  "dataset": "nc6",
+  "Ueff_eV": 5.0,
+  "hubbard_normalized": true,
+  "symmetry_protocol": {
+    "point_group": false,
+    "time_reversal": true
+  },
+  "fixmagmom": false,
+  "scf_strategy": "common_noPG_primary",
+  "smearing_eV": 0.1,
+  "maxiter_allowed": 600,
+  "scf_iterations": 314,
+  "mpi_world_size": 4,
+  "ecut_eV": 1400.0,
+  "kpts": [
+    3,
+    3,
+    3
+  ],
+  "nbands": 80,
+  "energy_eV": -116.9602966173791,
+  "energy_eV_atom": -9.746691384781592,
+  "band_gap_eV": 3.950498251157075,
+  "band_gap_error": null,
+  "total_magnetic_moment_muB": -2.984196616524585e-08,
+  "U_local_moments_muB": [
+    1.9452395773025013,
+    -1.9452396267605017,
+    -1.9452396254944666,
+    1.9452396623629191
+  ],
+  "U_abs_mean_moment_muB": 1.9452396229800972,
+  "max_force_eV_A": 2.1941832403952525e-05,
+  "stress_GPa": [
+    -1.1536184922361823,
+    -1.152375702388449,
+    -0.9596789889479823,
+    -9.261685077904942e-05,
+    7.034607312619074e-05,
+    -0.0004819054512211193
+  ],
+  "max_abs_stress_GPa": 1.1536184922361823,
+  "gpw_file": null,
+  "failed_attempts_before_success": []
+}
+
+>>> Pós-processamento
+================================================================================
+STEP 04B1A-R5 — PROTOCOLO COMUM
+================================================================================
+Convergidos: 6/10
+Falhas SCF: 4
+Melhor poly6: Ueff=5.0 eV | gap=3.366977520576274 eV | |mU|=1.9337993359093502 muB | score=4.243107
+Melhor nc6: Ueff=3.0 eV | gap=2.529299745282188 eV | |mU|=1.9290714246977965 muB | score=0.873485
+STEP04B1A-R5: INCOMPLETO
+Produção com defeitos: NÃO AUTORIZADA.
+================================================================================
+==============================================================================
+STEP 04B1A-R5 FINALIZADO
+==============================================================================

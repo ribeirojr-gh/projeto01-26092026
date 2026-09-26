@@ -1,0 +1,58 @@
+
+Scalar-relativistic atomic PBE calculation for C (Carbon, Z=6)
+300 radial gridpoints.
+|------------------------------------------------|
+|------------------------------------------------|
+Converged in 20 iterations.
+
+Energy contributions:
+-------------------------
+Kinetic:      +37.662629
+XC:            -5.078007
+Potential:    -70.349262
+-------------------------
+Total:        -37.764640
+
+state      eigenvalue         ekin         rmax
+-----------------------------------------------
+1s^2.0 :   -10.046298    15.958807        0.174
+2s^2.0 :    -0.505334     1.651367        1.213
+2p^2.0 :    -0.194204     1.221141        1.203
+-----------------------------------------------
+(units: Bohr and Hartree)
+
+Generating PAW setup
+Kinetic energy of the core from tauc = 31.93222329627275
+Cutoffs:
+rc(s)=1.200
+rc(p)=1.200
+rc(d)=1.200
+rc(vbar)=1.080
+rc(comp)=1.200
+rc(nct)=1.200
+
+Kinetic energy of the core states: 31.917614
+Charge: 0.0
+Core electrons: 2.0
+Valence electrons: 4.0
+Pseudo-core charge: 0.031265
+Shape function alpha=6.944
+Pseudo-electron charge 4.035260153915512
+state    eigenvalue         norm
+--------------------------------
+2s(2) :    -0.505334     1.046026
+*s    :     0.494666
+2p(2) :    -0.194204     0.955972
+*p    :     0.805796
+*d    :     0.000000
+--------------------------------
+
+Diagonalizing with gridspacing h=0.050
+
+state   all-electron     PAW
+-------------------------------
+2s:      -0.505334    -0.505970
+2p:      -0.194204    -0.194948
+*d:                    0.044948
+*f:                    0.074429
+-------------------------------

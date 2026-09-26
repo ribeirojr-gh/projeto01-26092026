@@ -1,0 +1,37 @@
+# ==============================================================================
+# .gitignore — Petrobras U-Pb Carbonate Geochronology Project
+# LCCMat / UnB-NTNU & Petrobras Collaboration
+# ==============================================================================
+
+# Virtual environments, packages & local tools
+.envs/
+.micromamba/
+backup_envs*/
+.tools/
+packages/*.zip
+
+# GPAW & DFT binary wavefunction / restart files (avoid multi-GB uploads)
+*.gpw
+*.restart
+*.tmp
+
+# Python bytecode & cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.ipynb_checkpoints/
+
+# OS and editor artifacts
+.DS_Store
+Thumbs.db
+*~
+*.swp
+*.swo
+*.desktop
+
+# Local runtime & memory dumps
+core
+core.*
+*.log.tmp

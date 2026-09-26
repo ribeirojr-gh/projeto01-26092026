@@ -1,0 +1,26 @@
+{
+  "status": "completed",
+  "step": "04B2C1-SOC",
+  "system": "gamma-UO3-Fddd",
+  "method": "GPAW-25.7 soc_eigenstates non-self-consistent",
+  "results": {
+    "scale0": {
+      "scale": 0.0,
+      "indirect_gap_eV": 2.6604911395308735,
+      "fermi_level_eV": 6.6855099390559065,
+      "band_energy_eV_cell": -1224.8709506301423
+    },
+    "scale0p5": {
+      "scale": 0.5,
+      "indirect_gap_eV": 2.339150816840137,
+      "fermi_level_eV": 6.754519258904087,
+      "band_energy_eV_cell": -1225.0894426633677
+    },
+    "scale1": {
+      "scale": 1.0,
+      "indirect_gap_eV": 1.7014180505956231,
+      "fermi_level_eV": 6.898639466742409,
+      "band_energy_eV_cell": -1225.7545460052825
+    }
+  }
+}

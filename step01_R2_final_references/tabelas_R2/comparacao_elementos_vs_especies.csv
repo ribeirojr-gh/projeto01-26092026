@@ -1,0 +1,9 @@
+comparador,scale,match,rms_normalizado,maxdist_normalizado,mineral,COD,MP
+SpeciesComparator,True,False,nan,nan,calcita,1010928,mp-3953
+SpeciesComparator,False,False,nan,nan,calcita,1010928,mp-3953
+ElementComparator,True,True,0.009520932405824349,0.01229147166716082,calcita,1010928,mp-3953
+ElementComparator,False,True,0.009520945506887866,0.012291488626743221,calcita,1010928,mp-3953
+SpeciesComparator,True,False,nan,nan,dolomita,1517796,mp-6459
+SpeciesComparator,False,False,nan,nan,dolomita,1517796,mp-6459
+ElementComparator,True,True,0.0025111600995583864,0.0030049789394429607,dolomita,1517796,mp-6459
+ElementComparator,False,True,0.0025111612702787603,0.0030049807482145988,dolomita,1517796,mp-6459

@@ -1,0 +1,220 @@
+{
+  "step": "04B2A",
+  "system": "cerussite_PbCO3",
+  "oxidation_state_role": "Pb(II) carbonate reference",
+  "experimental_reference": {
+    "a_A": 5.179,
+    "b_A": 8.492,
+    "c_A": 6.141,
+    "spacegroup_number": 62
+  },
+  "numerical_gate": {
+    "step": "04B2A-numerical-gate",
+    "system": "PbCO3_cerussite",
+    "production_candidate": {
+      "ecut_eV": 1400.0,
+      "kpts": [
+        3,
+        2,
+        3
+      ]
+    },
+    "validation_matrix": {
+      "ecut_eV": 1600.0,
+      "kpts": [
+        4,
+        3,
+        4
+      ]
+    },
+    "criteria": {
+      "max_delta_energy_meV_atom": 1.0,
+      "max_delta_gap_eV": 0.03,
+      "max_delta_hydrostatic_stress_GPa": 0.1,
+      "max_delta_force_eV_A": 0.02
+    },
+    "kpoint_1400": {
+      "delta_energy_meV_atom": 0.019868580532822477,
+      "delta_gap_eV": 0.00038220690667634116,
+      "delta_hydrostatic_stress_GPa": 0.001953716479026424,
+      "delta_max_force_eV_A": 0.003427506795264934,
+      "passes": true
+    },
+    "kpoint_1600": {
+      "delta_energy_meV_atom": 0.019940235373105963,
+      "delta_gap_eV": 0.0003666998922566833,
+      "delta_hydrostatic_stress_GPa": 0.0019423693508757722,
+      "delta_max_force_eV_A": 0.003286040381350608,
+      "passes": true
+    },
+    "cutoff_k323": {
+      "delta_energy_meV_atom": 0.04246807637997563,
+      "delta_gap_eV": 1.7275723612986127e-05,
+      "delta_hydrostatic_stress_GPa": 0.07429850324979892,
+      "delta_max_force_eV_A": 7.470756552963032e-05,
+      "passes": true
+    },
+    "cutoff_k434": {
+      "delta_energy_meV_atom": 0.042539731220259114,
+      "delta_gap_eV": 1.7687091933282773e-06,
+      "delta_hydrostatic_stress_GPa": 0.07428715612164827,
+      "delta_max_force_eV_A": 0.00021617397944395655,
+      "passes": true
+    },
+    "numerical_gate_passes": true
+  },
+  "relaxation": {
+    "all_stages_converged": true,
+    "production_matrix": {
+      "xc": "PBEsol",
+      "ecut_eV": 1400.0,
+      "kpts": [
+        3,
+        2,
+        3
+      ]
+    }
+  },
+  "structural_metrics": {
+    "step": "04B2A-structural-metrics",
+    "experimental_reference": {
+      "source": "Chevrier et al., Z. Kristallogr. 199 (1992) 67-74; neutron single-crystal refinement.",
+      "a_A": 5.179,
+      "b_A": 8.492,
+      "c_A": 6.141,
+      "volume_A3": 270.0815975880001,
+      "spacegroup_number": 62,
+      "carbonate_aplanarity_A": 0.026
+    },
+    "relaxed_lattice": {
+      "a_A": 5.168159504174424,
+      "b_A": 8.478786122248538,
+      "c_A": 6.082365058329479,
+      "alpha_deg": 90.0,
+      "beta_deg": 90.0,
+      "gamma_deg": 90.0,
+      "volume_A3": 266.52752820750015
+    },
+    "relative_errors": {
+      "a_percent": 0.20931638975817943,
+      "b_percent": 0.15560383598048735,
+      "c_percent": 0.9548109700459331,
+      "volume_percent": 1.3159243029662215,
+      "max_angle_error_deg": 0.0,
+      "CO_mean_percent": 0.797422471197734,
+      "PbO9_mean_percent": 0.48410028979457165
+    },
+    "experimental_structure_chemistry": {
+      "CO_bonds_A": {
+        "count": 12,
+        "mean": 1.2843069493889478,
+        "std": 0.0018437132452563695,
+        "min": 1.2816995451123792,
+        "max": 1.2856106515272325
+      },
+      "carbonate_C_to_O3_plane_A": {
+        "count": 4,
+        "mean": 0.026330320527243666,
+        "std": 1.5032157172419021e-16,
+        "min": 0.026330320527243416,
+        "max": 0.02633032052724382
+      },
+      "PbO_nearest9_A": {
+        "count": 36,
+        "mean": 2.8436687589354714,
+        "std": 0.45649789701882715,
+        "min": 2.5936617098106187,
+        "max": 4.128585479588029
+      }
+    },
+    "relaxed_structure_chemistry": {
+      "CO_bonds_A": {
+        "count": 12,
+        "mean": 1.2945483016025294,
+        "std": 0.0002466893280190758,
+        "min": 1.2943736815585904,
+        "max": 1.2948973623228732
+      },
+      "carbonate_C_to_O3_plane_A": {
+        "count": 4,
+        "mean": 0.027676634434101226,
+        "std": 4.765051865151392e-08,
+        "min": 0.0276765867835796,
+        "max": 0.02767668208462029
+      },
+      "PbO_nearest9_A": {
+        "count": 36,
+        "mean": 2.829902550232667,
+        "std": 0.4587509986098088,
+        "min": 2.565068302866073,
+        "max": 4.119760725568348
+      }
+    },
+    "symmetry": [
+      {
+        "symprec_A": 0.01,
+        "number": 62,
+        "international": "Pnma",
+        "hall": "-P 2ac 2n"
+      },
+      {
+        "symprec_A": 0.05,
+        "number": 62,
+        "international": "Pnma",
+        "hall": "-P 2ac 2n"
+      }
+    ],
+    "structural_gate_passes": true
+  },
+  "validation_singlepoint": {
+    "status": "converged",
+    "step": "04B2A",
+    "system": "PbCO3_cerussite",
+    "xc": "PBEsol",
+    "ecut_eV": 1600.0,
+    "kpts": [
+      4,
+      3,
+      4
+    ],
+    "mpi_world_size": 4,
+    "energy_eV": -149.33920578444204,
+    "energy_eV_atom": -7.4669602892221025,
+    "band_gap_eV": 3.2291856442697964,
+    "band_gap_error": null,
+    "max_force_eV_A": 0.009868441211743965,
+    "stress_GPa": [
+      0.15022053323118356,
+      0.07131930712918318,
+      -0.04664007219777912,
+      6.876018210115891e-06,
+      4.546819409832811e-06,
+      -4.7307282431922106e-07
+    ],
+    "hydrostatic_stress_GPa": 0.05829992272086254,
+    "max_abs_stress_GPa": 0.15022053323118356,
+    "volume_A3": 266.52752820750015
+  },
+  "validation_force_stress_passes": true,
+  "step04B2A_passes": true,
+  "selected_Pb_matrix": {
+    "dataset": "generated_Pb_PBEsol",
+    "xc": "PBEsol",
+    "production_cutoff_eV": 1400,
+    "validation_cutoff_eV": 1600,
+    "production_kpts_PbCO3": [
+      3,
+      2,
+      3
+    ],
+    "validation_kpts_PbCO3": [
+      4,
+      3,
+      4
+    ],
+    "SOC": false
+  },
+  "production_authorization": false,
+  "next_gate": "If approved: Step04B2B controlled non-self-consistent SOC sensitivity for PbCO3/Pb and UO2/U, followed by realistic U(VI) compound validation. Carbonate defect production remains blocked until those compound-level gates pass.",
+  "warning": "The scalar-relativistic PbCO3 gap is reported but is not an electronic-structure acceptance criterion before the SOC gate."
+}

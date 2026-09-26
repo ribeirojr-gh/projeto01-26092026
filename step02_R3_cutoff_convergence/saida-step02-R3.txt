@@ -1,0 +1,53 @@
+==============================================================================
+STEP 02-R3 — CONVERGÊNCIA REFINADA DE CUTOFF GPAW/PBE
+==============================================================================
+Data: Wed Jul 22 14:13:53 -03 2026
+Host: AlienA51
+OMP_NUM_THREADS=1
+Step 02A NÃO será reexecutado.
+Step 02B-R2 NÃO será reexecutado.
+
+[PAW] Ca.PBE: OK -> /home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw_data/setups/Ca.PBE.gz
+[PAW] C.PBE: OK -> /home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw_data/setups/C.PBE.gz
+[PAW] O.PBE: OK -> /home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw_data/setups/O.PBE.gz
+[PAW] Mg.PBE: OK -> /home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/.envs/gpaw/lib/python3.11/site-packages/gpaw_data/setups/Mg.PBE.gz
+==================================================================================
+STEP 02-R3 — CONVERGÊNCIA REFINADA DE CUTOFF GPAW/PBE
+==================================================================================
+MPI world size: 4
+k-grid fixo: 5x5x5
+Cutoffs: [600, 700, 800, 900, 1000, 1200, 1400, 1600]
+Pulay stress: PW(..., dedecut='estimate')
+Critérios: ΔE <= 1.0 meV/átomo; Δstress <= 0.05 GPa; 2 intervalos consecutivos.
+Checkpoint existente: 0 pontos
+==================================================================================
+[calcita] ecut=600 eV | k=5x5x5 | Pulay stress: dedecut='estimate'
+[calcita] ecut=700 eV | k=5x5x5 | Pulay stress: dedecut='estimate'
+[calcita] ecut=800 eV | k=5x5x5 | Pulay stress: dedecut='estimate'
+[calcita] ecut=900 eV | k=5x5x5 | Pulay stress: dedecut='estimate'
+[calcita] ecut=1000 eV | k=5x5x5 | Pulay stress: dedecut='estimate'
+[calcita] ecut=1200 eV | k=5x5x5 | Pulay stress: dedecut='estimate'
+[calcita] ecut=1400 eV | k=5x5x5 | Pulay stress: dedecut='estimate'
+[calcita] ecut=1600 eV | k=5x5x5 | Pulay stress: dedecut='estimate'
+[calcita] convergência de cutoff: NÃO ATINGIDA | recomendado: nenhum
+[dolomita] ecut=600 eV | k=5x5x5 | Pulay stress: dedecut='estimate'
+[dolomita] ecut=700 eV | k=5x5x5 | Pulay stress: dedecut='estimate'
+[dolomita] ecut=800 eV | k=5x5x5 | Pulay stress: dedecut='estimate'
+[dolomita] ecut=900 eV | k=5x5x5 | Pulay stress: dedecut='estimate'
+[dolomita] ecut=1000 eV | k=5x5x5 | Pulay stress: dedecut='estimate'
+[dolomita] ecut=1200 eV | k=5x5x5 | Pulay stress: dedecut='estimate'
+[dolomita] ecut=1400 eV | k=5x5x5 | Pulay stress: dedecut='estimate'
+[dolomita] ecut=1600 eV | k=5x5x5 | Pulay stress: dedecut='estimate'
+[dolomita] convergência de cutoff: NÃO ATINGIDA | recomendado: nenhum
+
+==================================================================================
+STEP 02-R3 CONCLUÍDO
+Tabela: /home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/step02_R3_cutoff_convergence/resultados_R3/convergencia_cutoff_R3.csv
+Recomendações: /home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/step02_R3_cutoff_convergence/resultados_R3/recomendacoes_cutoff_R3.csv
+Parâmetros: /home/luiz/python-codes/petrobras/datacao/petrobras_upb_project/step02_R3_cutoff_convergence/resultados_R3/parametros_finais_R3.json
+ATENÇÃO: o cutoff ainda não foi certificado para todos os sistemas.
+==================================================================================
+
+==============================================================================
+STEP 02-R3 FINALIZADO
+==============================================================================
