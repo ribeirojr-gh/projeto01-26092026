@@ -89,7 +89,7 @@ run_case() {
       OMP_NUM_THREADS=1 \
       UPB_PBCA_HOST="${mineral}" \
       UPB_PBCA_NATOMS="${natoms}" \
-      mpiexec -n "${mpi_current}" gpaw python -u \
+      mpiexec -n "${mpi_current}" gpaw python \
         "${SCRIPT_DIR}/05B_R3_pbca_case.py"
   ) |& tee "${case_log}" &
   jobpid=$!
