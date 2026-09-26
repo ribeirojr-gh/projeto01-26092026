@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "If you utilize the codes, parameters, structures, or methodologies from this project, please cite it as below."
+authors:
+  - family-names: "Ribeiro Junior"
+    given-names: "Luiz"
+    affiliation: "Computational Materials Science Laboratory (LCCMat) / Petrobras Research Collaboration"
+title: "First-Principles Quantum Simulations of U and Pb Incorporation, Point Defects, and Oxidation Pathways in Carbonate Minerals"
+version: 1.0.0
+date-released: 2026-09-26
+url: "https://github.com/ribeirojr-gh/projeto01-26092026"
+repository-code: "https://github.com/ribeirojr-gh/projeto01-26092026"
+keywords:
+  - "density functional theory"
+  - "geochronology"
+  - "uranium-lead dating"
+  - "carbonates"
+  - "calcite"
+  - "dolomite"
+  - "GPAW"
+  - "ASE"
+  - "petrobras"
