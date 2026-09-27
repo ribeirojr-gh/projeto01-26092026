@@ -80,6 +80,7 @@ run_dft_motif() {
   (
     run_in_upb_env gpaw env \
       PYTHONUNBUFFERED=1 \
+      PYTHONPATH="${SCRIPT_DIR}:${PYTHONPATH:-}" \
       OMP_NUM_THREADS=1 \
       UPB_MOTIF_TAG="${tag}" \
       mpiexec -n "${MPI_N}" gpaw python \

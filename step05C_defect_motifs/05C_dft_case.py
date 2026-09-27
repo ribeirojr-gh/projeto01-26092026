@@ -19,6 +19,8 @@ from ase.optimize import BFGS
 from gpaw import GPAW, PW
 from gpaw.mpi import world
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+
 from config_step05C import (
     XC,
     ECUT_EV,
