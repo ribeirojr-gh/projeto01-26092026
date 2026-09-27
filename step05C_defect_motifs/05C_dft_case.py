@@ -16,7 +16,7 @@ import numpy as np
 
 from ase.io import read, write
 from ase.optimize import BFGS
-from gpaw import GPAW, PW
+from gpaw import GPAW, PW, setup_paths
 from gpaw.mpi import world
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
@@ -27,10 +27,17 @@ from config_step05C import (
     SMEARING_EV,
     MPI_PROCESSES,
     NBANDS,
-    PAW_SETUPS,
+    PAW_DIRS,
+    SETUPS,
     FINAL_FMAX_EV_A,
     MAX_STEPS,
 )
+
+# Register validated PAW potential directories in GPAW search path
+for p in PAW_DIRS:
+    p_str = str(p.resolve())
+    if p_str not in setup_paths:
+        setup_paths.insert(0, p_str)
 
 SCRIPT_DIR = Path(__file__).resolve().parent
 STRUCTURES_DIR = SCRIPT_DIR / "structures_prescreened"
@@ -60,7 +67,7 @@ def create_calculator(txt_log: Path) -> GPAW:
         kpts={"size": (1, 1, 1), "gamma": True},
         nbands=NBANDS,
         occupations={"name": "fermi-dirac", "width": SMEARING_EV},
-        setups=PAW_SETUPS,
+        setups=SETUPS,
         random=False,
         parallel={
             "domain": world.size,

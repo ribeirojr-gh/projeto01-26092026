@@ -15,14 +15,20 @@ SUPERCELLS = {
     "dolomita": ROOT / "step05A_host_supercells" / "resultados_step05A" / "supercells_R1" / "dolomita_det16_160atoms_R1.cif",
 }
 
-# Validated PAW Datasets
-PAW_SETUPS = {
-    "Ca": str(ROOT / "step03_paw_pbesol_benchmark" / "paw_generated" / "PBEsol" / "Ca.PBEsol"),
-    "Mg": str(ROOT / "step03_paw_pbesol_benchmark" / "paw_generated" / "PBEsol" / "Mg.PBEsol"),
-    "C": str(ROOT / "step03_paw_pbesol_benchmark" / "paw_generated" / "PBEsol" / "C.PBEsol"),
-    "O": str(ROOT / "step03_paw_pbesol_benchmark" / "paw_generated" / "PBEsol" / "O.PBEsol"),
-    "Pb": str(ROOT / "step04_u_pb_paw_validation" / "paw_generated" / "Pb" / "PBEsol" / "Pb.PBEsol"),
-    "U": str(ROOT / "step04_u_pb_paw_validation" / "paw_generated" / "U" / "PBEsol" / "U.PBEsol") + ":5f,3.0,0",
+# Validated PAW Directories
+PAW_DIRS = [
+    ROOT / "step04_u_pb_paw_validation" / "paw_generated" / "U" / "PBEsol",
+    ROOT / "step04_u_pb_paw_validation" / "paw_generated" / "Pb" / "PBEsol",
+    ROOT / "step03_paw_pbesol_benchmark" / "paw_generated" / "PBEsol",
+]
+
+# DFT+U Hubbard parameter on localized U 5f manifold
+HUBBARD_U_EV = 3.0
+
+# GPAW setups dictionary
+SETUPS = {
+    "U": f":f,{HUBBARD_U_EV:.1f}",
+    "default": "paw",
 }
 
 # DFT & Parallelization parameters
