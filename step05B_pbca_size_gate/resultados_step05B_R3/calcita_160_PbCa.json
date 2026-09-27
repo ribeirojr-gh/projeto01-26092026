@@ -1,0 +1,42 @@
+{
+  "status": "converged",
+  "step": "05B-R3-PbCa",
+  "mineral": "calcita",
+  "natoms": 160,
+  "defect": "Pb2+_on_Ca2+",
+  "charge_state": 0,
+  "ecut_eV": 1400.0,
+  "nbands": -8,
+  "mpi_world_size": 8,
+  "parallelization": {
+    "domain": 8,
+    "band": 1,
+    "kpt": 1,
+    "sl_auto": true
+  },
+  "pb_atom_index": 30,
+  "selected_Ca_distance_from_fractional_center_A": 2.5010275361778014,
+  "energy_host_gamma_eV": -1275.1232465063736,
+  "energy_defect_unrelaxed_gamma_eV": -1271.8073922446551,
+  "energy_defect_relaxed_gamma_eV": -1272.4115041721745,
+  "raw_substitution_energy_gamma_eV": 2.711742334199016,
+  "relaxation_energy_gamma_eV": -0.6041119275193978,
+  "local_stage_converged": true,
+  "full_stage_converged": true,
+  "host_max_force_gamma_eV_A": 0.004978443494109411,
+  "defect_max_force_gamma_eV_A": 0.023356196342215186,
+  "PbO_first6_A": [
+    2.5158614056224895,
+    2.5158614056228563,
+    2.5185137203743824,
+    2.5185137203748975,
+    2.5187037676722053,
+    2.5187037676722492
+  ],
+  "PbO6_mean_A": 2.5176929645565136,
+  "PbO6_std_A": 0.0012974296615303564,
+  "dense80_calibration": null,
+  "relaxed_traj": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05B_pbca_size_gate/resultados_step05B_R3/relax/calcita_160_PbCa_relaxed_R3.traj",
+  "relaxed_cif": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05B_pbca_size_gate/resultados_step05B_R3/relax/calcita_160_PbCa_relaxed_R3.cif",
+  "note": "Gamma energies are used only for the finite-size gate. The 80-atom cell has an independent denser-k calibration. These are not defect formation energies."
+}

@@ -1,0 +1,51 @@
+{
+  "step": "05B-R3-initial",
+  "hosts": {
+    "calcita": {
+      "gamma_vs_dense_80_passes": true,
+      "gamma_vs_dense_80_delta_eV": 0.02275725617448643,
+      "sanity_80": true,
+      "sanity_160": true,
+      "comparison_80_to_160": {
+        "delta_raw_substitution_energy_gamma_eV": 0.0077674941991290325,
+        "delta_relaxation_energy_gamma_eV": 0.04592603058813438,
+        "delta_PbO6_mean_A": 0.013244454916194748,
+        "passes": true
+      },
+      "fallback_required": false,
+      "sanity_240": null,
+      "final_pair_comparison": {
+        "delta_raw_substitution_energy_gamma_eV": 0.0077674941991290325,
+        "delta_relaxation_energy_gamma_eV": 0.04592603058813438,
+        "delta_PbO6_mean_A": 0.013244454916194748,
+        "passes": true
+      },
+      "selected_supercell_natoms": 160,
+      "finite_size_gate_passes": true
+    },
+    "dolomita": {
+      "gamma_vs_dense_80_passes": true,
+      "gamma_vs_dense_80_delta_eV": 0.02686556223545722,
+      "sanity_80": true,
+      "sanity_160": true,
+      "comparison_80_to_160": {
+        "delta_raw_substitution_energy_gamma_eV": 0.008882152075216254,
+        "delta_relaxation_energy_gamma_eV": 0.03945537230708851,
+        "delta_PbO6_mean_A": 0.00822452337854429,
+        "passes": true
+      },
+      "fallback_required": false,
+      "sanity_240": null,
+      "final_pair_comparison": {
+        "delta_raw_substitution_energy_gamma_eV": 0.008882152075216254,
+        "delta_relaxation_energy_gamma_eV": 0.03945537230708851,
+        "delta_PbO6_mean_A": 0.00822452337854429,
+        "passes": true
+      },
+      "selected_supercell_natoms": 160,
+      "finite_size_gate_passes": true
+    }
+  },
+  "fallback_hosts": [],
+  "all_hosts_converged_at_80_to_160": true
+}

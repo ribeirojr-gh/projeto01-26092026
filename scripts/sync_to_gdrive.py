@@ -31,6 +31,7 @@ FOLDER_MAP = {
     "step04B": "14AjiMCwwCT4cA5GPw7AnrRTsQ83xKDyZ",      # step04B_compounds_uo2_pbco3_uo3
     "step05A": "1oT96x83hcu5S5xHc5f4gB8vZb3j73nNC",      # step05A_host_supercells
     "step05B": "1E7dH69INDVKmMu1i6TRAcUBdoYHDBXPC",      # step05B_pbca_finite_size_gate
+    "step05C": "1wU0-0SbErB_odyk6oRBV4jjfzorGa0j_",      # step05C_defect_motifs
 }
 
 
@@ -135,6 +136,60 @@ def sync_step05b():
     print(f"[SYNC] Step 05B-R3 mirrored ({synced} items updated).")
 
 
+def sync_step05c():
+    dst_folder = GDRIVE_PROJECT_DIR / FOLDER_MAP["step05C"]
+    if not dst_folder.exists():
+        print(f"[ERROR] Destination step05C folder does not exist: {dst_folder}")
+        return
+
+    step_dir = LOCAL_REPO / "step05C_defect_motifs"
+    if not step_dir.exists():
+        return
+
+    synced = 0
+    # Copy key JSON, report and CIF result files directly
+    res_dir = step_dir / "results"
+    if res_dir.exists():
+        for jf in res_dir.glob("*.json"):
+            if sync_file_if_changed(jf, dst_folder / jf.name):
+                synced += 1
+        for rf in res_dir.glob("*.md"):
+            if sync_file_if_changed(rf, dst_folder / rf.name):
+                synced += 1
+        relax_dir = res_dir / "relax"
+        if relax_dir.exists():
+            for cf in relax_dir.glob("*.cif"):
+                if sync_file_if_changed(cf, dst_folder / cf.name):
+                    synced += 1
+
+    # Copy prescreened CIFs
+    prescreen_dir = step_dir / "structures_prescreened"
+    if prescreen_dir.exists():
+        dst_pre = dst_folder / "structures_prescreened"
+        for cf in prescreen_dir.glob("*.cif"):
+            if sync_file_if_changed(cf, dst_pre / cf.name):
+                synced += 1
+
+    # Create / update compressed archive
+    zip_path = LOCAL_REPO / "step05C_defect_motifs.zip"
+    print(f"[SYNC] Creating compressed archive {zip_path.name}...")
+    with zipfile.ZipFile(zip_path, "w", zipfile.ZIP_DEFLATED) as z:
+        for root, dirs, files in os.walk(step_dir):
+            files = [f for f in files if not f.endswith((".gpw", ".tmp", ".pyc"))]
+            for file in files:
+                full_p = Path(root) / file
+                rel_p = full_p.relative_to(step_dir)
+                z.write(full_p, arcname=str(rel_p))
+
+    if sync_file_if_changed(zip_path, dst_folder / zip_path.name):
+        print(f"[SYNC] Updated {zip_path.name} on Google Drive.")
+        synced += 1
+
+    # Clean local zip
+    zip_path.unlink(missing_ok=True)
+    print(f"[SYNC] Step 05C mirrored ({synced} items updated).")
+
+
 def main():
     if not GDRIVE_PROJECT_DIR.exists():
         print(f"[ERROR] Google Drive project mount not found at {GDRIVE_PROJECT_DIR}")
@@ -145,8 +200,10 @@ def main():
     print(f"[SYNC] Target: GEMINI-APPLICATIONS/UPb-Carbonate-Geochronology-Petrobras")
     sync_documentation()
     sync_step05b()
+    sync_step05c()
     print("[SYNC] Synchronization completed successfully.")
 
 
 if __name__ == "__main__":
     main()
+
