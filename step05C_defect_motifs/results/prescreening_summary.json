@@ -1,0 +1,490 @@
+{
+  "calcita_160_Pb_Ca": {
+    "tag": "calcita_160_Pb_Ca",
+    "active_element": "Pb",
+    "active_index": 30,
+    "energy_unrelaxed_eV": -1260.1324462890625,
+    "energy_relaxed_eV": -1260.5577392578125,
+    "relaxation_energy_eV": -0.42529296875,
+    "fmax_eV_A": 0.04522768408060074,
+    "converged": true,
+    "steps": 13,
+    "elapsed_sec": 22.94,
+    "coord_init": {
+      "distances": [
+        2.352556357073781,
+        2.352556357073784,
+        2.352556357073786,
+        2.3525563570737926,
+        2.352556357073793,
+        2.352556357073794
+      ],
+      "mean_A": 2.3525563570737886,
+      "std_A": 4.965068306494546e-15,
+      "min_A": 2.352556357073781,
+      "max_A": 2.352556357073794
+    },
+    "coord_relaxed": {
+      "distances": [
+        2.5076494846679562,
+        2.507657970431841,
+        2.5080052411402183,
+        2.5080085632587243,
+        2.508036790791524,
+        2.5080370956988514
+      ],
+      "mean_A": 2.507899190998186,
+      "std_A": 0.0001740215248071086,
+      "min_A": 2.5076494846679562,
+      "max_A": 2.5080370956988514
+    },
+    "cif": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05C_defect_motifs/structures_prescreened/calcita_160_Pb_Ca_prescreened.cif",
+    "traj": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05C_defect_motifs/structures_prescreened/calcita_160_Pb_Ca_prescreened.traj",
+    "description": "Isovalent Pb2+ substitution on Ca2+ site (q=0)",
+    "type": "isovalent_Pb"
+  },
+  "calcita_160_U_Ca_V_Ca_NN": {
+    "tag": "calcita_160_U_Ca_V_Ca_NN",
+    "active_element": "U",
+    "active_index": 30,
+    "energy_unrelaxed_eV": -1263.848388671875,
+    "energy_relaxed_eV": -1265.6014404296875,
+    "relaxation_energy_eV": -1.7530517578125,
+    "fmax_eV_A": 0.045396748930215836,
+    "converged": true,
+    "steps": 56,
+    "elapsed_sec": 82.14,
+    "coord_init": {
+      "distances": [
+        2.352556357073781,
+        2.352556357073784,
+        2.352556357073786,
+        2.3525563570737926,
+        2.352556357073793,
+        2.352556357073794
+      ],
+      "mean_A": 2.3525563570737886,
+      "std_A": 4.965068306494546e-15,
+      "min_A": 2.352556357073781,
+      "max_A": 2.352556357073794
+    },
+    "coord_relaxed": {
+      "distances": [
+        2.1434867248831795,
+        2.274306927635653,
+        2.280662729614165,
+        2.2856209508625907,
+        2.3040421355994627,
+        2.306147814194297
+      ],
+      "mean_A": 2.2657112137982245,
+      "std_A": 0.05588236999837207,
+      "min_A": 2.1434867248831795,
+      "max_A": 2.306147814194297
+    },
+    "cif": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05C_defect_motifs/structures_prescreened/calcita_160_U_Ca_V_Ca_NN_prescreened.cif",
+    "traj": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05C_defect_motifs/structures_prescreened/calcita_160_U_Ca_V_Ca_NN_prescreened.traj",
+    "description": "U4+ on Ca site compensated by nearest-neighbor Ca vacancy (d_init = 4.036 A)",
+    "type": "charge_compensated_U_IV"
+  },
+  "calcita_160_U_Ca_V_Ca_NNN": {
+    "tag": "calcita_160_U_Ca_V_Ca_NNN",
+    "active_element": "U",
+    "active_index": 30,
+    "energy_unrelaxed_eV": -1263.4830322265625,
+    "energy_relaxed_eV": -1265.3140869140625,
+    "relaxation_energy_eV": -1.8310546875,
+    "fmax_eV_A": 0.04629763215780258,
+    "converged": true,
+    "steps": 39,
+    "elapsed_sec": 57.12,
+    "coord_init": {
+      "distances": [
+        2.352556357073781,
+        2.352556357073784,
+        2.352556357073786,
+        2.3525563570737926,
+        2.352556357073793,
+        2.352556357073794
+      ],
+      "mean_A": 2.3525563570737886,
+      "std_A": 4.965068306494546e-15,
+      "min_A": 2.352556357073781,
+      "max_A": 2.352556357073794
+    },
+    "coord_relaxed": {
+      "distances": [
+        2.1946434586530983,
+        2.214584952757428,
+        2.24737355870427,
+        2.252813472968292,
+        2.257604292112762,
+        2.2586739513117813
+      ],
+      "mean_A": 2.2376156144179387,
+      "std_A": 0.024311213864978778,
+      "min_A": 2.1946434586530983,
+      "max_A": 2.2586739513117813
+    },
+    "cif": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05C_defect_motifs/structures_prescreened/calcita_160_U_Ca_V_Ca_NNN_prescreened.cif",
+    "traj": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05C_defect_motifs/structures_prescreened/calcita_160_U_Ca_V_Ca_NNN_prescreened.traj",
+    "description": "U4+ on Ca site compensated by next-nearest-neighbor Ca vacancy (d_init = 5.002 A)",
+    "type": "charge_compensated_U_IV"
+  },
+  "calcita_160_U_Ca_Oi": {
+    "tag": "calcita_160_U_Ca_Oi",
+    "active_element": "U",
+    "active_index": 30,
+    "energy_unrelaxed_eV": -1275.9017333984375,
+    "energy_relaxed_eV": -1280.5870361328125,
+    "relaxation_energy_eV": -4.685302734375,
+    "fmax_eV_A": 0.035473331809043884,
+    "converged": true,
+    "steps": 37,
+    "elapsed_sec": 48.05,
+    "coord_init": {
+      "distances": [
+        2.1499999999999995,
+        2.352556357073781,
+        2.352556357073784,
+        2.352556357073786,
+        2.3525563570737926,
+        2.352556357073793,
+        2.352556357073794
+      ],
+      "mean_A": 2.3236197346346756,
+      "std_A": 0.07087995985539615,
+      "min_A": 2.1499999999999995,
+      "max_A": 2.352556357073794
+    },
+    "coord_relaxed": {
+      "distances": [
+        1.8939859881980725,
+        2.3510891729556196,
+        2.3544325305300524,
+        2.35524707139986,
+        2.3574523314913023,
+        2.3610172160105583,
+        2.3610193597149953
+      ],
+      "mean_A": 2.2906062386143513,
+      "std_A": 0.1619533242651154,
+      "min_A": 1.8939859881980725,
+      "max_A": 2.3610193597149953
+    },
+    "cif": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05C_defect_motifs/structures_prescreened/calcita_160_U_Ca_Oi_prescreened.cif",
+    "traj": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05C_defect_motifs/structures_prescreened/calcita_160_U_Ca_Oi_prescreened.traj",
+    "description": "U4+ on Ca site compensated by interstitial O2- (7-fold coordination)",
+    "type": "charge_compensated_U_IV"
+  },
+  "calcita_160_UO2_Ca": {
+    "tag": "calcita_160_UO2_Ca",
+    "active_element": "U",
+    "active_index": 30,
+    "energy_unrelaxed_eV": -1263.607177734375,
+    "energy_relaxed_eV": -1287.171630859375,
+    "relaxation_energy_eV": -23.564453125,
+    "fmax_eV_A": 0.04929738864302635,
+    "converged": true,
+    "steps": 73,
+    "elapsed_sec": 99.45,
+    "coord_init": {
+      "distances": [
+        1.79,
+        1.7900000000000007,
+        2.352556357073781,
+        2.352556357073784,
+        2.352556357073786,
+        2.3525563570737926
+      ],
+      "mean_A": 2.165037571382524,
+      "std_A": 0.2651916099243164,
+      "min_A": 1.79,
+      "max_A": 2.3525563570737926
+    },
+    "coord_relaxed": {
+      "distances": [
+        1.8615367274994132,
+        1.8619175487863122,
+        2.3705487176542563,
+        2.3708324800445326,
+        2.372404187114572,
+        2.3744391537912053
+      ],
+      "mean_A": 2.201946469148382,
+      "std_A": 0.2405747360105564,
+      "min_A": 1.8615367274994132,
+      "max_A": 2.3744391537912053
+    },
+    "cif": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05C_defect_motifs/structures_prescreened/calcita_160_UO2_Ca_prescreened.cif",
+    "traj": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05C_defect_motifs/structures_prescreened/calcita_160_UO2_Ca_prescreened.traj",
+    "description": "Uranyl [O=U=O]2+ moiety on Ca site with axial oxygens along 3-fold axis",
+    "type": "uranyl_U_VI"
+  },
+  "dolomita_160_Pb_Ca": {
+    "tag": "dolomita_160_Pb_Ca",
+    "active_element": "Pb",
+    "active_index": 130,
+    "energy_unrelaxed_eV": -1235.1907958984375,
+    "energy_relaxed_eV": -1235.53955078125,
+    "relaxation_energy_eV": -0.3487548828125,
+    "fmax_eV_A": 0.03380725160241127,
+    "converged": true,
+    "steps": 11,
+    "elapsed_sec": 21.7,
+    "coord_init": {
+      "distances": [
+        2.371454744178163,
+        2.3714547441781644,
+        2.3714547441781653,
+        2.3714547441781666,
+        2.3714547441781693,
+        2.3714547441781715
+      ],
+      "mean_A": 2.3714547441781666,
+      "std_A": 2.8951074449790722e-15,
+      "min_A": 2.371454744178163,
+      "max_A": 2.3714547441781715
+    },
+    "coord_relaxed": {
+      "distances": [
+        2.493474973229377,
+        2.4934943844163113,
+        2.4937071953043115,
+        2.49371702122507,
+        2.493754540072259,
+        2.4937748893998153
+      ],
+      "mean_A": 2.4936538339411904,
+      "std_A": 0.00012182742030595523,
+      "min_A": 2.493474973229377,
+      "max_A": 2.4937748893998153
+    },
+    "cif": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05C_defect_motifs/structures_prescreened/dolomita_160_Pb_Ca_prescreened.cif",
+    "traj": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05C_defect_motifs/structures_prescreened/dolomita_160_Pb_Ca_prescreened.traj",
+    "description": "Isovalent Pb2+ substitution on Ca2+ site (q=0)",
+    "type": "isovalent_Pb"
+  },
+  "dolomita_160_Pb_Mg": {
+    "tag": "dolomita_160_Pb_Mg",
+    "active_element": "Pb",
+    "active_index": 71,
+    "energy_unrelaxed_eV": -1234.1046142578125,
+    "energy_relaxed_eV": -1236.443603515625,
+    "relaxation_energy_eV": -2.3389892578125,
+    "fmax_eV_A": 0.04573104530572891,
+    "converged": true,
+    "steps": 22,
+    "elapsed_sec": 32.68,
+    "coord_init": {
+      "distances": [
+        2.091089743370125,
+        2.0910897433701265,
+        2.091089743370128,
+        2.09108974337013,
+        2.091089743370131,
+        2.091089743370135
+      ],
+      "mean_A": 2.091089743370129,
+      "std_A": 3.2177320244274195e-15,
+      "min_A": 2.091089743370125,
+      "max_A": 2.091089743370135
+    },
+    "coord_relaxed": {
+      "distances": [
+        2.4482058200412244,
+        2.4485571639788395,
+        2.448811736837792,
+        2.448844967465605,
+        2.4489356606479356,
+        2.4492520151981374
+      ],
+      "mean_A": 2.4487678940282556,
+      "std_A": 0.0003242210596500274,
+      "min_A": 2.4482058200412244,
+      "max_A": 2.4492520151981374
+    },
+    "cif": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05C_defect_motifs/structures_prescreened/dolomita_160_Pb_Mg_prescreened.cif",
+    "traj": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05C_defect_motifs/structures_prescreened/dolomita_160_Pb_Mg_prescreened.traj",
+    "description": "Isovalent Pb2+ substitution on Mg2+ site (q=0) for site-preference evaluation",
+    "type": "isovalent_Pb"
+  },
+  "dolomita_160_U_Ca_V_Ca_NN": {
+    "tag": "dolomita_160_U_Ca_V_Ca_NN",
+    "active_element": "U",
+    "active_index": 129,
+    "energy_unrelaxed_eV": -1238.6715087890625,
+    "energy_relaxed_eV": -1240.1778564453125,
+    "relaxation_energy_eV": -1.50634765625,
+    "fmax_eV_A": 0.04839427024126053,
+    "converged": true,
+    "steps": 33,
+    "elapsed_sec": 49.98,
+    "coord_init": {
+      "distances": [
+        2.371454744178163,
+        2.3714547441781644,
+        2.3714547441781653,
+        2.3714547441781666,
+        2.3714547441781693,
+        2.3714547441781715
+      ],
+      "mean_A": 2.3714547441781666,
+      "std_A": 2.8951074449790722e-15,
+      "min_A": 2.371454744178163,
+      "max_A": 2.3714547441781715
+    },
+    "coord_relaxed": {
+      "distances": [
+        2.2255160226253246,
+        2.24528635714913,
+        2.2696392377510977,
+        2.2924176724918723,
+        2.2963459020931576,
+        2.2970169717194158
+      ],
+      "mean_A": 2.2710370273049993,
+      "std_A": 0.027416057763003748,
+      "min_A": 2.2255160226253246,
+      "max_A": 2.2970169717194158
+    },
+    "cif": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05C_defect_motifs/structures_prescreened/dolomita_160_U_Ca_V_Ca_NN_prescreened.cif",
+    "traj": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05C_defect_motifs/structures_prescreened/dolomita_160_U_Ca_V_Ca_NN_prescreened.traj",
+    "description": "U4+ on Ca site compensated by nearest Ca vacancy (d_init = 4.821 A)",
+    "type": "charge_compensated_U_IV"
+  },
+  "dolomita_160_U_Ca_V_Mg_NN": {
+    "tag": "dolomita_160_U_Ca_V_Mg_NN",
+    "active_element": "U",
+    "active_index": 129,
+    "energy_unrelaxed_eV": -1239.969482421875,
+    "energy_relaxed_eV": -1241.7344970703125,
+    "relaxation_energy_eV": -1.7650146484375,
+    "fmax_eV_A": 0.03097751922905445,
+    "converged": true,
+    "steps": 41,
+    "elapsed_sec": 61.35,
+    "coord_init": {
+      "distances": [
+        2.371454744178163,
+        2.3714547441781644,
+        2.3714547441781653,
+        2.3714547441781666,
+        2.3714547441781693,
+        2.3714547441781715
+      ],
+      "mean_A": 2.3714547441781666,
+      "std_A": 2.8951074449790722e-15,
+      "min_A": 2.371454744178163,
+      "max_A": 2.3714547441781715
+    },
+    "coord_relaxed": {
+      "distances": [
+        2.1442800851979764,
+        2.295315605244221,
+        2.300546192708889,
+        2.31094140232847,
+        2.31476766164626,
+        2.342231581312907
+      ],
+      "mean_A": 2.284680421406454,
+      "std_A": 0.06452919415860056,
+      "min_A": 2.1442800851979764,
+      "max_A": 2.342231581312907
+    },
+    "cif": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05C_defect_motifs/structures_prescreened/dolomita_160_U_Ca_V_Mg_NN_prescreened.cif",
+    "traj": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05C_defect_motifs/structures_prescreened/dolomita_160_U_Ca_V_Mg_NN_prescreened.traj",
+    "description": "U4+ on Ca site compensated by nearest Mg vacancy in adjacent layer (d_init = 3.848 A)",
+    "type": "charge_compensated_U_IV"
+  },
+  "dolomita_160_U_Ca_Oi": {
+    "tag": "dolomita_160_U_Ca_Oi",
+    "active_element": "U",
+    "active_index": 130,
+    "energy_unrelaxed_eV": -1249.6783447265625,
+    "energy_relaxed_eV": -1254.281005859375,
+    "relaxation_energy_eV": -4.6026611328125,
+    "fmax_eV_A": 0.03701856732368469,
+    "converged": true,
+    "steps": 36,
+    "elapsed_sec": 56.95,
+    "coord_init": {
+      "distances": [
+        2.1499999999999977,
+        2.371454744178163,
+        2.3714547441781644,
+        2.3714547441781653,
+        2.3714547441781666,
+        2.3714547441781693,
+        2.3714547441781715
+      ],
+      "mean_A": 2.339818352152714,
+      "std_A": 0.07749301776501394,
+      "min_A": 2.1499999999999977,
+      "max_A": 2.3714547441781715
+    },
+    "coord_relaxed": {
+      "distances": [
+        1.8429220742901982,
+        2.3560148608809612,
+        2.3647642716638986,
+        2.3665622891335834,
+        2.3832086784187245,
+        2.3852113562721473,
+        2.4144974537102533
+      ],
+      "mean_A": 2.30188299776711,
+      "std_A": 0.18820670648953702,
+      "min_A": 1.8429220742901982,
+      "max_A": 2.4144974537102533
+    },
+    "cif": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05C_defect_motifs/structures_prescreened/dolomita_160_U_Ca_Oi_prescreened.cif",
+    "traj": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05C_defect_motifs/structures_prescreened/dolomita_160_U_Ca_Oi_prescreened.traj",
+    "description": "U4+ on Ca site compensated by interstitial O2- in dolomite void",
+    "type": "charge_compensated_U_IV"
+  },
+  "dolomita_160_UO2_Ca": {
+    "tag": "dolomita_160_UO2_Ca",
+    "active_element": "U",
+    "active_index": 130,
+    "energy_unrelaxed_eV": -1236.183349609375,
+    "energy_relaxed_eV": -1260.4031982421875,
+    "relaxation_energy_eV": -24.2198486328125,
+    "fmax_eV_A": 0.10485445708036423,
+    "converged": false,
+    "steps": 100,
+    "elapsed_sec": 161.93,
+    "coord_init": {
+      "distances": [
+        1.7899999999999991,
+        1.7900000000000003,
+        2.371454744178163,
+        2.3714547441781644,
+        2.3714547441781653,
+        2.3714547441781666
+      ],
+      "mean_A": 2.1776364961187764,
+      "std_A": 0.2741003950409798,
+      "min_A": 1.7899999999999991,
+      "max_A": 2.3714547441781666
+    },
+    "coord_relaxed": {
+      "distances": [
+        1.8109603684267594,
+        1.8363704918046715,
+        2.375249691440875,
+        2.3765588405512257,
+        2.391644868746032,
+        2.5041636545005526
+      ],
+      "mean_A": 2.2158246525783523,
+      "std_A": 0.280833432053117,
+      "min_A": 1.8109603684267594,
+      "max_A": 2.5041636545005526
+    },
+    "cif": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05C_defect_motifs/structures_prescreened/dolomita_160_UO2_Ca_prescreened.cif",
+    "traj": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05C_defect_motifs/structures_prescreened/dolomita_160_UO2_Ca_prescreened.traj",
+    "description": "Uranyl [O=U=O]2+ complex on Ca site in dolomite",
+    "type": "uranyl_U_VI"
+  }
+}

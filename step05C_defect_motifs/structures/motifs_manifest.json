@@ -1,0 +1,105 @@
+[
+  {
+    "tag": "calcita_160_Pb_Ca",
+    "formula": "C32Ca31O96Pb",
+    "natoms": 160,
+    "type": "isovalent_Pb",
+    "description": "Isovalent Pb2+ substitution on Ca2+ site (q=0)",
+    "cif": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05C_defect_motifs/structures/calcita_160_Pb_Ca.cif",
+    "traj": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05C_defect_motifs/structures/calcita_160_Pb_Ca.traj"
+  },
+  {
+    "tag": "calcita_160_U_Ca_V_Ca_NN",
+    "formula": "C32Ca30O96U",
+    "natoms": 159,
+    "type": "charge_compensated_U_IV",
+    "description": "U4+ on Ca site compensated by nearest-neighbor Ca vacancy (d_init = 4.036 A)",
+    "cif": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05C_defect_motifs/structures/calcita_160_U_Ca_V_Ca_NN.cif",
+    "traj": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05C_defect_motifs/structures/calcita_160_U_Ca_V_Ca_NN.traj",
+    "pair_distance_init_A": 4.035912177687832
+  },
+  {
+    "tag": "calcita_160_U_Ca_V_Ca_NNN",
+    "formula": "C32Ca30O96U",
+    "natoms": 159,
+    "type": "charge_compensated_U_IV",
+    "description": "U4+ on Ca site compensated by next-nearest-neighbor Ca vacancy (d_init = 5.002 A)",
+    "cif": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05C_defect_motifs/structures/calcita_160_U_Ca_V_Ca_NNN.cif",
+    "traj": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05C_defect_motifs/structures/calcita_160_U_Ca_V_Ca_NNN.traj",
+    "pair_distance_init_A": 5.0020550723556
+  },
+  {
+    "tag": "calcita_160_U_Ca_Oi",
+    "formula": "C32Ca31O97U",
+    "natoms": 161,
+    "type": "charge_compensated_U_IV",
+    "description": "U4+ on Ca site compensated by interstitial O2- (7-fold coordination)",
+    "cif": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05C_defect_motifs/structures/calcita_160_U_Ca_Oi.cif",
+    "traj": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05C_defect_motifs/structures/calcita_160_U_Ca_Oi.traj"
+  },
+  {
+    "tag": "calcita_160_UO2_Ca",
+    "formula": "C32Ca31O98U",
+    "natoms": 162,
+    "type": "uranyl_U_VI",
+    "description": "Uranyl [O=U=O]2+ moiety on Ca site with axial oxygens along 3-fold axis",
+    "cif": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05C_defect_motifs/structures/calcita_160_UO2_Ca.cif",
+    "traj": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05C_defect_motifs/structures/calcita_160_UO2_Ca.traj"
+  },
+  {
+    "tag": "dolomita_160_Pb_Ca",
+    "formula": "C32Ca15Mg16O96Pb",
+    "natoms": 160,
+    "type": "isovalent_Pb",
+    "description": "Isovalent Pb2+ substitution on Ca2+ site (q=0)",
+    "cif": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05C_defect_motifs/structures/dolomita_160_Pb_Ca.cif",
+    "traj": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05C_defect_motifs/structures/dolomita_160_Pb_Ca.traj"
+  },
+  {
+    "tag": "dolomita_160_Pb_Mg",
+    "formula": "C32Ca16Mg15O96Pb",
+    "natoms": 160,
+    "type": "isovalent_Pb",
+    "description": "Isovalent Pb2+ substitution on Mg2+ site (q=0) for site-preference evaluation",
+    "cif": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05C_defect_motifs/structures/dolomita_160_Pb_Mg.cif",
+    "traj": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05C_defect_motifs/structures/dolomita_160_Pb_Mg.traj"
+  },
+  {
+    "tag": "dolomita_160_U_Ca_V_Ca_NN",
+    "formula": "C32Ca14Mg16O96U",
+    "natoms": 159,
+    "type": "charge_compensated_U_IV",
+    "description": "U4+ on Ca site compensated by nearest Ca vacancy (d_init = 4.821 A)",
+    "cif": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05C_defect_motifs/structures/dolomita_160_U_Ca_V_Ca_NN.cif",
+    "traj": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05C_defect_motifs/structures/dolomita_160_U_Ca_V_Ca_NN.traj",
+    "pair_distance_init_A": 4.820645802035309
+  },
+  {
+    "tag": "dolomita_160_U_Ca_V_Mg_NN",
+    "formula": "C32Ca15Mg15O96U",
+    "natoms": 159,
+    "type": "charge_compensated_U_IV",
+    "description": "U4+ on Ca site compensated by nearest Mg vacancy in adjacent layer (d_init = 3.848 A)",
+    "cif": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05C_defect_motifs/structures/dolomita_160_U_Ca_V_Mg_NN.cif",
+    "traj": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05C_defect_motifs/structures/dolomita_160_U_Ca_V_Mg_NN.traj",
+    "pair_distance_init_A": 3.8484764649241
+  },
+  {
+    "tag": "dolomita_160_U_Ca_Oi",
+    "formula": "C32Ca15Mg16O97U",
+    "natoms": 161,
+    "type": "charge_compensated_U_IV",
+    "description": "U4+ on Ca site compensated by interstitial O2- in dolomite void",
+    "cif": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05C_defect_motifs/structures/dolomita_160_U_Ca_Oi.cif",
+    "traj": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05C_defect_motifs/structures/dolomita_160_U_Ca_Oi.traj"
+  },
+  {
+    "tag": "dolomita_160_UO2_Ca",
+    "formula": "C32Ca15Mg16O98U",
+    "natoms": 162,
+    "type": "uranyl_U_VI",
+    "description": "Uranyl [O=U=O]2+ complex on Ca site in dolomite",
+    "cif": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05C_defect_motifs/structures/dolomita_160_UO2_Ca.cif",
+    "traj": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05C_defect_motifs/structures/dolomita_160_UO2_Ca.traj"
+  }
+]
