@@ -32,6 +32,7 @@ FOLDER_MAP = {
     "step05A": "1oT96x83hcu5S5xHc5f4gB8vZb3j73nNC",      # step05A_host_supercells
     "step05B": "1E7dH69INDVKmMu1i6TRAcUBdoYHDBXPC",      # step05B_pbca_finite_size_gate
     "step05C": "1wU0-0SbErB_odyk6oRBV4jjfzorGa0j_",      # step05C_defect_motifs
+    "step06": "1vzaayh4Luvf17x4HazWoCZRe7LG1tynh",       # step06_electronic_oxidation
 }
 
 
@@ -192,6 +193,28 @@ def sync_step05c():
     print(f"[SYNC] Step 05C mirrored ({synced} items updated).")
 
 
+def sync_step06():
+    dst_folder = GDRIVE_PROJECT_DIR / FOLDER_MAP["step06"]
+    if not dst_folder.exists():
+        print(f"[ERROR] Destination step06 folder does not exist: {dst_folder}")
+        return
+
+    step_dir = LOCAL_REPO / "step06_electronic_oxidation"
+    if not step_dir.exists():
+        return
+
+    synced = 0
+    # Copy key reports, json, and png figures
+    for ext in ["*.json", "*.md", "*.png", "*.pdf"]:
+        for f in step_dir.rglob(ext):
+            rel_p = f.relative_to(step_dir)
+            target = dst_folder / rel_p
+            if sync_file_if_changed(f, target):
+                synced += 1
+
+    print(f"[SYNC] Step 06 mirrored ({synced} items updated).")
+
+
 def main():
     if not GDRIVE_PROJECT_DIR.exists():
         print(f"[ERROR] Google Drive project mount not found at {GDRIVE_PROJECT_DIR}")
@@ -203,6 +226,7 @@ def main():
     sync_documentation()
     sync_step05b()
     sync_step05c()
+    sync_step06()
     print("[SYNC] Synchronization completed successfully.")
 
 
