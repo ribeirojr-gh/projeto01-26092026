@@ -1,4 +1,78 @@
---------------------------------------------------------------------------
-prterun noticed that process rank 6 with PID 202990 on node alienware exited on
-signal 9 (Killed).
---------------------------------------------------------------------------
+>>> Trajetoria relaxada existente reutilizada: fmax=0.021245 eV/A <= 0.025
+/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05B_pbca_size_gate/05B_R3_pbca_case.py:217: FutureWarning: Please use atoms.calc = None
+  del defect.calc
+/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05B_pbca_size_gate/05B_R3_pbca_case.py:217: FutureWarning: Please use atoms.calc = None
+  del defect.calc
+/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05B_pbca_size_gate/05B_R3_pbca_case.py:217: FutureWarning: Please use atoms.calc = None
+  del defect.calc
+/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05B_pbca_size_gate/05B_R3_pbca_case.py:217: FutureWarning: Please use atoms.calc = None
+  del defect.calc
+/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05B_pbca_size_gate/05B_R3_pbca_case.py:240: FutureWarning: Please use atoms.calc = None
+  del host_dense.calc
+/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05B_pbca_size_gate/05B_R3_pbca_case.py:240: FutureWarning: Please use atoms.calc = None
+  del host_dense.calc
+/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05B_pbca_size_gate/05B_R3_pbca_case.py:240: FutureWarning: Please use atoms.calc = None
+  del host_dense.calc
+/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05B_pbca_size_gate/05B_R3_pbca_case.py:240: FutureWarning: Please use atoms.calc = None
+  del host_dense.calc
+/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05B_pbca_size_gate/05B_R3_pbca_case.py:254: FutureWarning: Please use atoms.calc = None
+  del defect_dense.calc
+/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05B_pbca_size_gate/05B_R3_pbca_case.py:254: FutureWarning: Please use atoms.calc = None
+  del defect_dense.calc
+/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05B_pbca_size_gate/05B_R3_pbca_case.py:254: FutureWarning: Please use atoms.calc = None
+  del defect_dense.calc
+/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05B_pbca_size_gate/05B_R3_pbca_case.py:254: FutureWarning: Please use atoms.calc = None
+  del defect_dense.calc
+{
+  "status": "converged",
+  "step": "05B-R3-PbCa",
+  "mineral": "calcita",
+  "natoms": 80,
+  "defect": "Pb2+_on_Ca2+",
+  "charge_state": 0,
+  "ecut_eV": 1400.0,
+  "nbands": -8,
+  "mpi_world_size": 4,
+  "parallelization": {
+    "domain": 4,
+    "band": 1,
+    "kpt": 1,
+    "sl_auto": true
+  },
+  "pb_atom_index": 0,
+  "selected_Ca_distance_from_fractional_center_A": 2.5010275361777987,
+  "energy_host_gamma_eV": -637.4648912313929,
+  "energy_defect_unrelaxed_gamma_eV": -634.2027304944618,
+  "energy_defect_relaxed_gamma_eV": -634.760916391393,
+  "raw_substitution_energy_gamma_eV": 2.703974839999887,
+  "relaxation_energy_gamma_eV": -0.5581858969312634,
+  "local_stage_converged": true,
+  "full_stage_converged": true,
+  "host_max_force_gamma_eV_A": 0.0037541148142324937,
+  "defect_max_force_gamma_eV_A": 0.0212448780450032,
+  "PbO_first6_A": [
+    2.50194040728755,
+    2.501940407287597,
+    2.5032941128841593,
+    2.503294112884481,
+    2.508111008748909,
+    2.508111008749217
+  ],
+  "PbO6_mean_A": 2.504448509640319,
+  "PbO6_std_A": 0.0026480879267664777,
+  "dense80_calibration": {
+    "kmesh": [
+      1,
+      2,
+      3
+    ],
+    "Nk_reducible": 6,
+    "energy_host_eV": -637.5341774290407,
+    "energy_defect_eV": -634.8074453328663,
+    "raw_substitution_energy_eV": 2.7267320961743735,
+    "gamma_to_dense_raw_delta_eV": 0.02275725617448643
+  },
+  "relaxed_traj": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05B_pbca_size_gate/resultados_step05B_R3/relax/calcita_80_PbCa_relaxed_R3.traj",
+  "relaxed_cif": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05B_pbca_size_gate/resultados_step05B_R3/relax/calcita_80_PbCa_relaxed_R3.cif",
+  "note": "Gamma energies are used only for the finite-size gate. The 80-atom cell has an independent denser-k calibration. These are not defect formation energies."
+}

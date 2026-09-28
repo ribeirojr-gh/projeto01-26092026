@@ -1,0 +1,29 @@
+{
+  "status": "converged",
+  "step": "05C-DFT",
+  "tag": "dolomita_160_U_Ca_Oi",
+  "formula": "C32Ca15Mg16O97U",
+  "natoms": 161,
+  "active_element": "U",
+  "energy_unrelaxed_eV": -1259.9576991642944,
+  "energy_relaxed_eV": -1261.3836348652844,
+  "relaxation_energy_eV": -1.4259357009900668,
+  "fmax_initial_eV_A": 3.9558816383932514,
+  "fmax_final_eV_A": 0.026643394290080336,
+  "bfgs_steps": 35,
+  "converged": true,
+  "relaxation_time_sec": 18381.95,
+  "coordination_first_shell_A": [
+    2.0598815982175926,
+    2.392933254408533,
+    2.3983085485405855,
+    2.3993057724024176,
+    2.4359708428465146,
+    2.438511566701844,
+    2.4389879874866605
+  ],
+  "coordination_mean_A": 2.366271367229164,
+  "coordination_std_A": 0.12652925685238642,
+  "relaxed_traj": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05C_defect_motifs/results/relax/dolomita_160_U_Ca_Oi_relaxed.traj",
+  "relaxed_cif": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05C_defect_motifs/results/relax/dolomita_160_U_Ca_Oi_relaxed.cif"
+}

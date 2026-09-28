@@ -1,0 +1,28 @@
+{
+  "status": "converged",
+  "step": "05C-DFT",
+  "tag": "calcita_160_U_Ca_V_Ca_NN",
+  "formula": "C32Ca30O96U",
+  "natoms": 159,
+  "active_element": "U",
+  "energy_unrelaxed_eV": -1270.8960677673788,
+  "energy_relaxed_eV": -1271.2863321874702,
+  "relaxation_energy_eV": -0.3902644200913983,
+  "fmax_initial_eV_A": 1.4669768534529122,
+  "fmax_final_eV_A": 0.028229821302495572,
+  "bfgs_steps": 53,
+  "converged": true,
+  "relaxation_time_sec": 33013.48,
+  "coordination_first_shell_A": [
+    2.172947528246531,
+    2.280095529070429,
+    2.3213884595568333,
+    2.3437612121313487,
+    2.3562705047058214,
+    2.3575107200421064
+  ],
+  "coordination_mean_A": 2.3053289922921785,
+  "coordination_std_A": 0.06482603913240954,
+  "relaxed_traj": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05C_defect_motifs/results/relax/calcita_160_U_Ca_V_Ca_NN_relaxed.traj",
+  "relaxed_cif": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05C_defect_motifs/results/relax/calcita_160_U_Ca_V_Ca_NN_relaxed.cif"
+}

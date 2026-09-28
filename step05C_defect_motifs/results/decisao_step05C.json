@@ -1,0 +1,17 @@
+{
+  "milestone": "05C",
+  "status": "PASSED",
+  "converged_motifs": [
+    "calcita_160_U_Ca_V_Ca_NN",
+    "dolomita_160_U_Ca_V_Mg_NN",
+    "dolomita_160_Pb_Mg",
+    "calcita_160_U_Ca_Oi",
+    "dolomita_160_U_Ca_Oi"
+  ],
+  "selected_supercells": {
+    "calcita": 160,
+    "dolomita": 160
+  },
+  "step05C_passes": true,
+  "next_step": "Step06_electronic_structure_and_oxidation_mechanisms"
+}

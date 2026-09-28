@@ -133,6 +133,8 @@ def sync_step05b():
         print(f"[SYNC] Updated {zip_path.name} on Google Drive.")
         synced += 1
 
+    # Clean local zip
+    zip_path.unlink(missing_ok=True)
     print(f"[SYNC] Step 05B-R3 mirrored ({synced} items updated).")
 
 

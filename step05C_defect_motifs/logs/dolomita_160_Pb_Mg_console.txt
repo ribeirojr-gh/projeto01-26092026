@@ -1,0 +1,24 @@
+==============================================================================
+STEP 05C DFT CASE: dolomita_160_Pb_Mg (8 MPI ranks)
+Structure: dolomita_160_Pb_Mg_prescreened.cif
+==============================================================================
+>>> SCF Unrelaxed: E = -1249.430002 eV | fmax = 0.393043 eV/A (951.7s)
+/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05C_defect_motifs/05C_dft_case.py:173: FutureWarning: Please use atoms.calc = None
+  del atoms.calc
+/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05C_defect_motifs/05C_dft_case.py:173: FutureWarning: Please use atoms.calc = None
+  del atoms.calc
+/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05C_defect_motifs/05C_dft_case.py:173: FutureWarning: Please use atoms.calc = None
+  del atoms.calc
+/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05C_defect_motifs/05C_dft_case.py:173: FutureWarning: Please use atoms.calc = None
+  del atoms.calc
+/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05C_defect_motifs/05C_dft_case.py:173: FutureWarning: Please use atoms.calc = None
+  del atoms.calc
+/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05C_defect_motifs/05C_dft_case.py:173: FutureWarning: Please use atoms.calc = None
+  del atoms.calc
+/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05C_defect_motifs/05C_dft_case.py:173: FutureWarning: Please use atoms.calc = None
+  del atoms.calc
+>>> Concluido dolomita_160_Pb_Mg: E_rel = -1249.538917 eV | fmax = 0.027633 eV/A (13 steps)
+>>> Geometria <Pb-O> = 2.4497 +/- 0.0016 A
+>>> Resultados salvos em /home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05C_defect_motifs/results/dolomita_160_Pb_Mg.json
+/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05C_defect_motifs/05C_dft_case.py:173: FutureWarning: Please use atoms.calc = None
+  del atoms.calc

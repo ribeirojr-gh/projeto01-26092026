@@ -9,6 +9,7 @@
 backup_envs*/
 .tools/
 packages/*.zip
+*.zip
 
 # GPAW & DFT binary wavefunction / restart files (avoid multi-GB uploads)
 *.gpw

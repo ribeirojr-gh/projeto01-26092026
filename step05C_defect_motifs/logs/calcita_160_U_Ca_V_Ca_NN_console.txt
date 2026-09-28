@@ -1,0 +1,24 @@
+==============================================================================
+STEP 05C DFT CASE: calcita_160_U_Ca_V_Ca_NN (8 MPI ranks)
+Structure: calcita_160_U_Ca_V_Ca_NN_prescreened.cif
+==============================================================================
+>>> SCF Unrelaxed: E = -1270.896068 eV | fmax = 1.466977 eV/A (3135.0s)
+/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05C_defect_motifs/05C_dft_case.py:173: FutureWarning: Please use atoms.calc = None
+  del atoms.calc
+/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05C_defect_motifs/05C_dft_case.py:173: FutureWarning: Please use atoms.calc = None
+  del atoms.calc
+/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05C_defect_motifs/05C_dft_case.py:173: FutureWarning: Please use atoms.calc = None
+  del atoms.calc
+/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05C_defect_motifs/05C_dft_case.py:173: FutureWarning: Please use atoms.calc = None
+  del atoms.calc
+/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05C_defect_motifs/05C_dft_case.py:173: FutureWarning: Please use atoms.calc = None
+  del atoms.calc
+/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05C_defect_motifs/05C_dft_case.py:173: FutureWarning: Please use atoms.calc = None
+  del atoms.calc
+>>> Concluido calcita_160_U_Ca_V_Ca_NN: E_rel = -1271.286332 eV | fmax = 0.028230 eV/A (53 steps)
+>>> Geometria <U-O> = 2.3053 +/- 0.0648 A
+>>> Resultados salvos em /home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05C_defect_motifs/results/calcita_160_U_Ca_V_Ca_NN.json
+/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05C_defect_motifs/05C_dft_case.py:173: FutureWarning: Please use atoms.calc = None
+  del atoms.calc
+/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05C_defect_motifs/05C_dft_case.py:173: FutureWarning: Please use atoms.calc = None
+  del atoms.calc

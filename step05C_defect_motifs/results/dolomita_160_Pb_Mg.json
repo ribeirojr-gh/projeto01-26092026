@@ -1,0 +1,28 @@
+{
+  "status": "converged",
+  "step": "05C-DFT",
+  "tag": "dolomita_160_Pb_Mg",
+  "formula": "C32Ca16Mg15O96Pb",
+  "natoms": 160,
+  "active_element": "Pb",
+  "energy_unrelaxed_eV": -1249.430002030731,
+  "energy_relaxed_eV": -1249.5389172617593,
+  "relaxation_energy_eV": -0.10891523102827705,
+  "fmax_initial_eV_A": 0.39304345932013984,
+  "fmax_final_eV_A": 0.027633227350295306,
+  "bfgs_steps": 13,
+  "converged": true,
+  "relaxation_time_sec": 5610.17,
+  "coordination_first_shell_A": [
+    2.447966635324115,
+    2.4479776572186607,
+    2.4494342042928556,
+    2.4494861005785853,
+    2.4517433301592413,
+    2.4517458284975295
+  ],
+  "coordination_mean_A": 2.449725626011831,
+  "coordination_std_A": 0.001551563206496897,
+  "relaxed_traj": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05C_defect_motifs/results/relax/dolomita_160_Pb_Mg_relaxed.traj",
+  "relaxed_cif": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05C_defect_motifs/results/relax/dolomita_160_Pb_Mg_relaxed.cif"
+}

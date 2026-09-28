@@ -1,0 +1,58 @@
+/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05B_pbca_size_gate/05B_R3_pbca_case.py:145: FutureWarning: Please use atoms.calc = None
+  del host.calc
+/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05B_pbca_size_gate/05B_R3_pbca_case.py:145: FutureWarning: Please use atoms.calc = None
+  del host.calc
+/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05B_pbca_size_gate/05B_R3_pbca_case.py:145: FutureWarning: Please use atoms.calc = None
+  del host.calc
+/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05B_pbca_size_gate/05B_R3_pbca_case.py:145: FutureWarning: Please use atoms.calc = None
+  del host.calc
+/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05B_pbca_size_gate/05B_R3_pbca_case.py:145: FutureWarning: Please use atoms.calc = None
+  del host.calc
+/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05B_pbca_size_gate/05B_R3_pbca_case.py:145: FutureWarning: Please use atoms.calc = None
+  del host.calc
+/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05B_pbca_size_gate/05B_R3_pbca_case.py:145: FutureWarning: Please use atoms.calc = None
+  del host.calc
+/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05B_pbca_size_gate/05B_R3_pbca_case.py:145: FutureWarning: Please use atoms.calc = None
+  del host.calc
+{
+  "status": "converged",
+  "step": "05B-R3-PbCa",
+  "mineral": "dolomita",
+  "natoms": 160,
+  "defect": "Pb2+_on_Ca2+",
+  "charge_state": 0,
+  "ecut_eV": 1400.0,
+  "nbands": -8,
+  "mpi_world_size": 8,
+  "parallelization": {
+    "domain": 8,
+    "band": 1,
+    "kpt": 1,
+    "sl_auto": true
+  },
+  "pb_atom_index": 130,
+  "selected_Ca_distance_from_fractional_center_A": 2.4103229010176537,
+  "energy_host_gamma_eV": -1251.4742928029114,
+  "energy_defect_unrelaxed_gamma_eV": -1248.2716098325513,
+  "energy_defect_relaxed_gamma_eV": -1248.750188452473,
+  "raw_substitution_energy_gamma_eV": 2.724104350438438,
+  "relaxation_energy_gamma_eV": -0.4785786199215636,
+  "local_stage_converged": true,
+  "full_stage_converged": true,
+  "host_max_force_gamma_eV_A": 0.00580833292342536,
+  "defect_max_force_gamma_eV_A": 0.020690542489828594,
+  "PbO_first6_A": [
+    2.5042968897403464,
+    2.504296889740529,
+    2.5044035462979655,
+    2.5044035462983967,
+    2.504563775532154,
+    2.5045637755324326
+  ],
+  "PbO6_mean_A": 2.5044214038569703,
+  "PbO6_std_A": 0.00010968492992220977,
+  "dense80_calibration": null,
+  "relaxed_traj": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05B_pbca_size_gate/resultados_step05B_R3/relax/dolomita_160_PbCa_relaxed_R3.traj",
+  "relaxed_cif": "/home/luiz/SIMULACOES/petrobras/datacao/petrobras_upb_project/step05B_pbca_size_gate/resultados_step05B_R3/relax/dolomita_160_PbCa_relaxed_R3.cif",
+  "note": "Gamma energies are used only for the finite-size gate. The 80-atom cell has an independent denser-k calibration. These are not defect formation energies."
+}
